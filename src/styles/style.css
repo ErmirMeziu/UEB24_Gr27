@@ -13,15 +13,45 @@ body{
     font-family: 'Poppins',sans-serif;
     line-height: 1.55;
 }
- 
+
+nav {
+    display: flex;
+    height: 76px;
+    width: auto;
+    padding: 13px 0px;
+    background-color: #e1e1d6;
+
+}
+nav img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: auto 50px;
+}
 nav ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-left: 50px;
 }
 
-ul a,li{
-    list-style-type: none;
+nav ul a{
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: #022F5D;
-    
+}
+
+nav ul li {
+    list-style: none;
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+nav form {
+    margin: auto;
+    margin-right: 50px;
 }
