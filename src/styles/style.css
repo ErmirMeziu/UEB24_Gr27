@@ -1,0 +1,27 @@
+/*Reset*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    line-height: 1.55;
+}
+ 
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+ul a,li{
+    list-style-type: none;
+    text-decoration: none;
+    color: #022F5D;
+    
+}
