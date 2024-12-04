@@ -15,32 +15,44 @@ body{
 }
 
 nav {
+    
     display: flex;
     height: 76px;
     width: auto;
     padding: 13px 0px;
-    background-color: #e1e1d6;
+    background-color: rgb(4,22,37);
 
+}
+.logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 nav img {
     width: 45px;
     height: 45px;
     border-radius: 50%;
     margin: auto 50px;
+    margin-right: 2px;
 }
 nav ul {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin: auto;
     gap: 30px;
     margin-left: 50px;
+}
+
+nav h3 {
+    display: flex;
+    margin: auto;
+    color: white;
 }
 
 nav ul a{
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #022F5D;
+    color: #FFFFFf;
 }
 
 nav ul li {

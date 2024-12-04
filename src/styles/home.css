@@ -1,7 +1,7 @@
 .home {
     width: 100%;
     height: 650px;
-    background-image: url(../images/homeBackground.jpg);
+    background-image: url(../images/homeBackground.webp);
    
     animation: fadeIn 2s ease-in-out;
 }
@@ -40,7 +40,7 @@
 }
 .search-bar input{
     border: none;
-    color: rgb(192, 202, 208);
+    color: #4E5F70;
     position: relative;
     bottom: 5px;
     font-weight: 700;
@@ -51,6 +51,7 @@
 }
 
 .search fieldset{
+    border: 1px solid rgb(192, 202, 208);
     font-size: 11px;
     font-family:'Poppins';
     color: #4E5F70;
@@ -58,9 +59,7 @@
     height: auto;
     padding: 10px 8px 8px;
     border-radius: 5px;
-    border-color: rgb(192, 202, 208);
 }
-
 .where-date{
     width: 30%;
 }
@@ -69,7 +68,7 @@
 }
 .search button{
     width: 10%;
-    margin-top: 8px;
+    margin-top: 8px ;
     background-color: rgb(196, 41, 29);
     border: none ;
     border-radius: 5px;
@@ -78,4 +77,82 @@
 .loop{
     margin: auto;
     margin-right: 7px;
+}
+.selected-lang
+{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+    width: 100px;
+}
+.selected-lang::before
+{
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(https://flagsapi.com/BE/flat/64.png);
+}
+.selected-lang
+.langu-menu
+{
+    margin-top: 6px; 
+}
+.langu-menu ul 
+{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    border: 1px solid #f8f8f8;
+    box-shadow: 0px 1px 10px rgb(0,0,0,0.2);
+    border-radius: 5px ;
+    display: none;
+
+
+}
+
+.langu-menu ul li
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.langu-menu ul li a
+{
+    width: 140px;
+    display: grid;
+    padding: 2px 18px;
+    color: red;
+
+}
+.langu-menu ul li a::before
+{
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background-image: url(https://flagsapi.com/BE/flat/64.png);
+
+    
+}
+.langu-menu ul li a:hover
+{
+    background-color: #f2f2f2;
+
+}
+.de::before
+{
+    background-image: url(https://flagsapi.com/DE/flat/32.png);
+
+}
+.us::before
+{
+    background-image: url(https://flagsapi.com/DE/flat/64.png);
+
+}
+.langu-menu:hover ul{
+    display: block;
 }
