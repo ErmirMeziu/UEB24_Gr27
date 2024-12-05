@@ -12,7 +12,8 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/c2f2fe035b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/home.css">  
+    <script src = "script/script.js" defer></script>
+    <link rel="stylesheet" href="styles/home.css">
 </head>
 
 <body>
@@ -40,18 +41,32 @@
                     <li>
                         <a  class="us"> English</a>
                     </li>
-                   
                 </ul>
             </div>
-            <!-- <form action="" method="post">
-                <select name="language" id="language">
-                    <option value="albanian">Albanian</option>
-                    <option value="english">English</option>
-                </select>
-                <button id="sign-in">Sign in/Register</button>
-            </form> -->
+            <div class="login-register">
+                    <button id="sign-in">Sign in/Register</button>
+            </div>
         </nav>
     </header>
+
+    <section class="login-section">
+            <form class = "login" action="" method="post">
+                <div class="header">
+                    <h2>Login Form</h2> <p class="iks">X</p>
+                </div>
+                <input class = "login-change" type="login-email" id = "login-email" placeholder="Enter your email" required>
+                <input class = "login-change" id = "login-password" placeholder="Enter your password" required>
+                <div class="remember-me1">
+                    <div class="check">
+                        <input type="checkbox" name="remember-me" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <div><a href="">Forgot password</a></div>
+                </div>
+                <button>Login</button>
+                <p>Don't have an account? <a href="#">Register</a></p>
+            </form>
+    </section>
 
     <div class="home">
         <div class="home-text">

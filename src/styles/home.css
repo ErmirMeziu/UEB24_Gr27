@@ -2,8 +2,8 @@
     width: 100%;
     height: 650px;
     background-image: url(../images/homeBackground.webp);
-   
     animation: fadeIn 2s ease-in-out;
+    z-index: -1;
 }
 
  @keyframes fadeIn {
@@ -13,7 +13,7 @@
     to {
         opacity: 0.8;
     }
-} 
+}
 
 .home-text {
     color: white;
@@ -72,7 +72,7 @@
     background-color: rgb(196, 41, 29);
     border: none ;
     border-radius: 5px;
-    color: white;   
+    color: white;
 }
 .loop{
     margin: auto;
@@ -97,9 +97,9 @@
 .selected-lang
 .langu-menu
 {
-    margin-top: 6px; 
+    margin-top: 6px;
 }
-.langu-menu ul 
+.langu-menu ul
 {
     margin: 0;
     padding: 0;
@@ -136,7 +136,7 @@
     vertical-align: middle;
     background-image: url(https://flagsapi.com/BE/flat/64.png);
 
-    
+
 }
 .langu-menu ul li a:hover
 {
@@ -156,3 +156,96 @@
 .langu-menu:hover ul{
     display: block;
 }
+
+.login {
+    visibility: hidden;
+    z-index: 2;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    color: white;
+    backdrop-filter: blur(5px);
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 450px;
+    height: auto;
+}
+
+.login .remember-me {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.login h2 {
+    font-size: 27px;
+    font-weight: 700;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.login button {
+    background-color: #271930;
+    color: #FFFFFF;
+    font-weight: 600;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 16px;
+    border: 2px solid transparent;
+ }
+
+.login  button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #ffffff;
+    }
+
+.remember-me1 {
+    display: flex;
+    justify-content: space-between;
+}
+.remember-me1 label, .remember-me1 a, .login{
+    font-size: 12px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+.login .login-change  {
+    margin: auto;
+    height: 40px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login p, .login a {
+    color: white;
+    margin-bottom: 40px;
+}
+
+.login .header {
+    display: flex;
+}
+
+.login .header p {
+    position: absolute;
+    top: 5%;
+    right: 7%;
+}
+
+.iks {cursor: pointer;}
+
+.login-special{
+    visibility: visible;
+}
+
+
+
