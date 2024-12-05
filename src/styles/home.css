@@ -2,6 +2,8 @@
     width: 100%;
     height: 650px;
     background-image: url(../images/homeBackground.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
     animation: fadeIn 2s ease-in-out;
     z-index: -1;
 }
