@@ -157,7 +157,8 @@
     display: block;
 }
 
-.login {
+/*Login-form, Registe-form*/
+.login, .register {
     visibility: hidden;
     z-index: 2;
     position: fixed;
@@ -168,7 +169,6 @@
     color: white;
     backdrop-filter: blur(5px);
     display: grid;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -178,72 +178,103 @@
     height: auto;
 }
 
-.login .remember-me {
+.login .header, .register .header {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
-.login h2 {
+
+.login h2, .register h2 {
     font-size: 27px;
     font-weight: 700;
     margin: auto;
     margin-top: 50px;
-}
-
-.login button {
-    background-color: #271930;
-    color: #FFFFFF;
-    font-weight: 600;
-    border: none;
-    padding: 15px 20px;
-    cursor: pointer;
-    border-radius: 25px;
-    font-size: 16px;
-    border: 2px solid transparent;
- }
-
-.login  button:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: #ffffff;
-    }
-
-.remember-me1 {
-    display: flex;
-    justify-content: space-between;
-}
-.remember-me1 label, .remember-me1 a, .login{
-    font-size: 12px;
-    text-decoration: none;
-    color: #FFFFFF;
+    margin-bottom: 15px;
 }
 
 
-.login .login-change  {
-    margin: auto;
-    height: 40px;
-    width: 300px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.login p, .login a {
-    color: white;
-    margin-bottom: 40px;
-}
-
-.login .header {
-    display: flex;
-}
-
-.login .header p {
+.iks, .iks1 {cursor: pointer;}
+.login .header p, .register .header p {
     position: absolute;
     top: 5%;
     right: 7%;
 }
 
-.iks {cursor: pointer;}
+.login-email, .login-password, .share
+ {
+    background-color: #271930;
+    border: 1px solid #271930;
+    color: white;
+    border-radius: 5px;
+    width: 300px;
+    margin:auto
 
-.login-special{
+}
+
+.name-surname {
+    display: grid;
+    width: 300px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+
+
+
+.login-change, .register-change{
+    background-color: #271930;
+    border: 1px solid #271930;
+    background-color: none;
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    border: none;
+    color: white;
+    outline: none;
+    padding:  12px;
+}
+
+
+
+
+.login .remember-me1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.login a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.login button, .register button {
+    background-color: #271930;
+    color: #FFFFFF;
+    font-weight: 600;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-top: 15px;
+    height: auto;
+    border: 2px solid transparent;
+ }
+
+.login  button:hover, .register button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #ffffff;
+    }
+
+    .login button + p, .register button + p {
+       margin-bottom: 50px;
+       font-size: 14px;
+    }
+    .login span, .register span {cursor: pointer;}
+.login-special, .register-special{
     visibility: visible;
 }
 
