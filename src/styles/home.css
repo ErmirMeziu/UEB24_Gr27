@@ -320,3 +320,132 @@
     color: rgb(95,115,136);
 }
 
+/*Homepage - destinations*/
+.routes {
+    display: grid;
+    width: 87%;
+    height: 100px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5%;
+    cursor: pointer;
+}
+
+.routes-same {
+    box-shadow: 0px 0px 5px 0px rgb(199, 202, 204);
+    border-radius: 5px;
+    width: 100%;
+    height: 370px;
+}
+
+.routes-image {
+    overflow: hidden;
+    width: 100%;
+    height: 240px;
+}
+
+.routes img {
+    width: 100%;
+    height: 240px;
+    border-radius: 5px 5px 0px 0px;
+    transition: transform 0.3s ease;
+}
+
+.routes img:hover{
+    transform: scale(1.2);
+}
+
+.destinations .top {
+    width: 87%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto 20px;
+    color: rgb(5,38,78);
+}
+
+.destinations .top button {
+    font-family: 'Poppins';
+    border: none;
+    border-radius: 5px;
+    width: 110px;
+    height: 45px;
+    background-color: rgb(255,230,229);
+    color: rgb(215,44,34);
+    font-size: 14px;
+    font-weight: 500;
+}
+.destinations .top button:hover {
+    background-color: rgb(215,44,34);
+    color: white;
+    cursor: pointer;
+}
+.directions {
+    margin-top: 7px;
+}
+.directions h4{
+    font-weight: 600;
+    color: rgb(5,38,78);
+    padding-left: 15px;
+    font-size: 18px;
+}
+.directions p{
+    font-size: 14px;
+    padding-left: 15px;
+    color: rgb(95,115,136);
+}
+.cost {
+    display: flex;
+    justify-content: end;
+    padding: 15px;
+}
+
+.cost h5, .cost p {
+    align-content: end;
+}
+
+.cost h5 {
+    font-size: 23px;
+    color: rgb(5,38,78);
+}
+
+.cost p {
+    position: relative;
+    font-size: 14px;
+    margin-right: 10px;
+    bottom: 3px;
+    color: rgb(95,115,136);
+}
+
+.routes-different {
+    background-image: url(../images/tr-4.webp);
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 rgb(199, 202, 204);
+    align-content: end;
+    cursor: auto;
+}
+
+.routes-different h4 {
+    font-weight: 700;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 18px;
+    margin-left: 10%;
+}
+
+.routes-different button {
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    height: 50px;
+    background-color: rgb(196,41,29);
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    position: relative;
+    left: 10%;
+    margin-bottom: 40px;
+}
+.routes-different button:hover {
+    background-color: rgb(171, 36, 26);
+    cursor: pointer;
+}

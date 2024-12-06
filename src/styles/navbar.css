@@ -16,6 +16,7 @@ body{
 
 nav {
     display: flex;
+    grid-template-columns: 1fr 1fr 1fr ;
     height: 76px;
     width: auto;
     padding: 13px 0px;
@@ -23,22 +24,21 @@ nav {
 
 }
 .logo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    position: relative;
+    padding-top: 2.5px;
 }
 nav img {
-    width: 45px;
+    width: 140px;
     height: 45px;
-    border-radius: 50%;
-    margin: auto 50px;
-    margin-right: 2px;
+    margin: auto 20px auto 50px;
 }
 nav ul {
     display: flex;
     justify-content: space-between;
     margin: auto;
     gap: 30px;
-    margin-left: 50px;
+    margin-left: 20px;
+    font-size: 14px;
 }
 
 nav h3 {
@@ -90,4 +90,8 @@ nav .langu-menu {
     height: 100%;
     background-color: rgb(196,41,29);
     color: white;
+}
+
+.login-register #sign-in:hover{
+    cursor: pointer;
 }
