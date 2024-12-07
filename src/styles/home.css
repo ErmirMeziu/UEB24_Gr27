@@ -41,6 +41,7 @@
     justify-content: space-evenly;
 }
 .search-bar input{
+    width: 100%;
     border: none;
     color: #4E5F70;
     position: relative;
@@ -165,70 +166,123 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 20px;
-    color: white;
-    backdrop-filter: blur(5px);
-    display: grid;
+    border-radius: 5px;
+    background-color: white;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 20px;
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 450px;
-    height: auto;
+    width: 498px;
+    height: 607px;
+    color: rgb(11,43,82);
+    font-family: 'Poppins';
+    font-weight: 500;
 }
 
-.login .header, .register .header {
+
+.login .login-head, .register .register-head {
     display: flex;
+    height: 67px;
+    padding: 16px;
+    font-size: 15px;
+    align-items: center;
+    font-weight: 500;
 }
 
-.login h2, .register h2 {
-    font-size: 27px;
-    font-weight: 700;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 15px;
-}
-
-
-.iks, .iks1 {cursor: pointer;}
-.login .header p, .register .header p {
+.iks, .iks1{
+    cursor: pointer;
     position: absolute;
-    top: 5%;
-    right: 7%;
+    right: 25px;
 }
 
-.login-email, .login-password, .share
+
+.login-form, .register-form {
+     height: 480px;
+     font-size: 15px;
+     border-top: solid 0.1px  rgb(173,181,189);
+     border-bottom: solid 0.1px  rgb(173,181,189);
+     padding: 16px;
+}
+
+.register-form {
+    padding: 24px 16px;
+}
+
+
+.login-form form {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 11%;
+}
+
+.register-form form {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10%;
+}
+
+.login-input{
+    width: 466px;
+    height: 320px;
+    padding: 24px 16px;
+}
+
+.login-change, .login-change, .share
  {
-    background-color: #271930;
-    border: 1px solid #271930;
-    color: white;
+    border: 1px solid rgb(173,181,189);
     border-radius: 5px;
-    width: 300px;
-    margin:auto
-
+    width: 434px;
+    height: 58px;
+    padding: 16px 12px;
+}
+.login-form .check{
+    display: flex;
+    justify-content: space-between;
 }
 
+.login .socials {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 24px;
+}
+
+.login .socials i {
+    font-size: 28px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.login .socials .social {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border: 1px dashed rgb(173,181,189);
+}
+
+.login .login-end, .register .register-end{
+    height: 60px;
+    align-content: center;
+}
+
+.login .login-end p, .register .register-end p {
+    font-size: 15px;
+}
 .name-surname {
     display: grid;
-    width: 300px;
+    width: 434px;
+    margin: auto;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    padding-top: 5px;
 }
 
-.login-change, .register-change{
-    background-color: #271930;
-    border: 1px solid #271930;
-    background-color: none;
-    width: 100%;
-    height: 40px;
+.divider {
+    position: relative;
+    top: 2px;
     margin: auto;
-    border-radius: 5px;
-    font-family: 'Poppins';
-    border: none;
-    color: white;
-    outline: none;
-    padding:  12px;
+}
+
+#register-name, #register-surname {
+    width: 100%;
 }
 
 .login .remember-me1 {
@@ -239,40 +293,36 @@
 }
 
 .login a {
-    color: white;
+    text-decoration: none;
+    color: rgb(206,46,37);
 }
 
 .login .sregister, .register .signbutton {
-    text-decoration: underline;
+    color: rgb(206,46,37);
 }
 
 .login a:hover, .login .sregister:hover, .register .signbutton:hover, .iks:hover, .iks1:hover{
-    color: yellow;
+    cursor: pointer;
 }
 
-
 .login button, .register button {
-    background-color: #271930;
-    color: #FFFFFF;
-    font-weight: 600;
+    background-color: rgb(206,46,37);
+    color: white;
+    font-weight: 300;
     border: none;
     padding: 12px 20px;
     cursor: pointer;
-    border-radius: 25px;
-    font-size: 16px;
-    margin-top: 15px;
-    height: auto;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 15px 22.5px;
+    height: 62px;
     border: 2px solid transparent;
  }
 
 .login  button:hover, .register button:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: #ffffff;
-    }
-
-.login button + p, .register button + p {
-    margin-bottom: 50px;
-   font-size: 14px;}
+    cursor: pointer;
+    background-color: rgb(154, 10, 0);
+}
 
 #remember-me {
     position: relative;
@@ -281,10 +331,12 @@
 }
 
 .login span, .register span {cursor: pointer;}
+
 .login-special, .register-special{
     visibility: visible;
 }
 
+/*offerts*/
 .sales-container {
     width: 87%;
     display: flex;
@@ -321,7 +373,6 @@
 }
 
 /*Homepage - destinations*/
-
 .routes {
     display: grid;
     width: 87%;
@@ -357,7 +408,7 @@
     transform: scale(1.2);
 }
 
-.destinations .top {
+.destinations .top, .rental .top {
     width: 87%;
     display: flex;
     justify-content: space-between;
@@ -365,7 +416,7 @@
     color: rgb(5,38,78);
 }
 
-.destinations .top button {
+.destinations .top button, .rental .top button {
     font-family: 'Poppins';
     border: none;
     border-radius: 5px;
@@ -376,7 +427,7 @@
     font-size: 14px;
     font-weight: 500;
 }
-.destinations .top button:hover {
+.destinations .top button:hover, .rental .top button:hover{
     background-color: rgb(215,44,34);
     color: white;
     cursor: pointer;
@@ -419,19 +470,32 @@
 }
 
 .routes-different {
-    background-image: url(../images/tr-4.webp);
+    height: 370px;
     border-radius: 5px;
     box-shadow: 0 0 3px 0 rgb(199, 202, 204);
     align-content: end;
     cursor: auto;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.routes-different img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 rgb(199, 202, 204);
+    z-index: -1;
 }
 
 .routes-different h4 {
+    z-index: 2;
     font-weight: 700;
     color: white;
-    font-size: 20px;
-    margin-bottom: 18px;
-    margin-left: 10%;
+    font-size: 17px;
+    position: relative;
+    bottom: 150px;
+    left: 25px;
 }
 
 .routes-different button {
@@ -443,20 +507,18 @@
     color: white;
     font-weight: 700;
     font-size: 15px;
-    position: relative;
-    left: 10%;
-    margin-bottom: 40px;
+    position: absolute;
 }
 .routes-different button:hover {
-    background-color: rgb(171, 36, 26);
+    background-color: rgb(154, 10, 0);
     cursor: pointer;
 }
 
 /*Property*/
   .card-container
   {
-    display: flex; 
-    width: 87%; 
+    display: flex;
+    width: 87%;
     gap: 1.5%;
     margin: auto;
     height: 400px;
@@ -472,7 +534,7 @@
     width: 100%;
     height: 400px;
     grid-template-rows: 1fr 1fr;
-    
+    cursor: pointer;
   }
   .card:hover{
     transform: translateY(-10px);
@@ -489,31 +551,38 @@
     width: 100%;
 }
 
+
 .card-container1 {
+    height: 220px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 2px;
-    margin: 20px;
+    padding: 20px;
 }
 
-.head {
-    height: auto;
+.card-different {
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    
 }
-.end {
-    height: auto;
 
+.card-different img:hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
 }
 
 
 .property-same {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    height: auto;
     }
 .property-same a
 {
+    font-family: 'Poppins';
     text-decoration: none;
-    border: 1px dashed black;
+    border: 1px dashed rgb(135,147,160);
+    color: #45596C;
     border-radius: 2px;
     padding: 3px;
     font-size: 12px;
