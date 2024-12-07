@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c2f2fe035b.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="../styles/hotels.css">
+    <script src = "../script/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="../images/uebLogo.webp" alt="ueb-logo"></div>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house icon"></i>Home</a></li>
+                <li><a href="hotels.html"><i class="fa-solid fa-hotel icon"></i>Hotels</a></li>
+                <li><a href="#Flights"><i class="fa-solid fa-jet-fighter icon"></i>Flights</a></li>
+                <li><a href="#Cars"><i class="fa-solid fa-car icon"></i>Cars</a></li>
+                <li><a href="#AboutUs"><i class="fa-solid fa-circle-info icon"></i>About Us</a></li>
+            </ul>
+            <div class="langu-menu">
+                <div class="selected-lang">
+                    English
+                </div>
+                <ul>
+                    <li>
+                        <a class="de">Germania</a>
+                    </li>
+                    <li>
+                        <a class="us"> English</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="login-register">
+                <button id="sign-in">Sign in/Register</button>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="login-section">
+        <form class = "login" action="" method="post">
+            <div class = "header">
+                <h2>Login Form</h2> <p class="iks">X</p>
+            </div>
+            <div class="login-email">
+                <input class = "login-change" type="login-email" id = "login-email" placeholder="Enter your email" required>
+            </div>
+            <div class="login-password">
+                <input class = "login-change" type = "password" id = "login-password" placeholder="Enter your password" required>
+            </div>
+            <div class="remember-me1">
+                <div class="check">
+                    <input type="checkbox" name="remember-me" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <div>
+                    <a href="">Forgot password</a>
+                </div>
+            </div>
+            <button>Login</button>
+            <p>Don't have an account?   <span class="sregister">Register</span></p>
+        </form>
+</section>
+
+<section class="register-section">
+    <form class = "register" action="" method="post">
+        <div class = "header">
+            <h2>Register Form</h2> <p class="iks1">X</p>
+        </div>
+        <div class = "name-surname">
+            <div><input class = "register-change" type="text" id = "register-name" placeholder="Name" required></div>
+            <div><input class = "register-change" type="text" id = "register-surname" placeholder="Surname" required></div>
+        </div>
+        <div class="register-email share">
+            <input class = "register-change" type="email" id = "register-email" placeholder="Enter your email" required>
+        </div>
+        <div class="register-password share">
+            <input class = "register-change" type = "password" id = "login-password" placeholder="Enter your password" required>
+        </div>
+        <div class="register-password share">
+            <input class = "register-change" type = "password" id = "login-password" placeholder="Confirm your password" required>
+        </div>
+        <button>Register</button>
+        <p>You have an account?<span class="signbutton">  Sign in</span></p>
+    </form>
+</section>
+
+<section class="search-bar">
+    <div class="search-input">
+        <fieldset>
+            <legend>Where</legend>
+            <input type="text" name="text" id="text" class="same" placeholder="Going To">
+        </fieldset>
+
+        <fieldset>
+            <legend>CheckIn & CheckOut</legend>
+            <input type="date" name="date" id="date" class="same" min="2025-01-01">
+        </fieldset>
+
+        <fieldset>
+            <legend>Guests & Rooms</legend>
+            <input type="number" name="number" id="number" min="1" class="same">
+        </fieldset>
+
+        <button><i class="fa-solid fa-magnifying-glass loop"></i>Search</button>
+    </div>
+</section>
+    
+<section class="hotel-body">
+    <div class="section1">
+        <div class="filter">
+            <div class="filter-text">
+                <p id="text1">Filters</p>
+                <p id="text2">Clear all</p>
+            </div>
+            <div class="filter-text">
+                <p id="text3">Showing 180 Hotels</p>
+            </div>
+        </div>
+        <hr>
+        <div class="bed" >
+            <p>Bed Type</p>
+            <div class="button-part">
+                <button>1 Double Bed</button>
+                <button>2 Beds</button>
+                <button>1 Single Bed</button>
+                <button>3 Beds</button>
+                <button>King Bed</button>
+            </div>
+        </div>
+        <hr>
+        <div class="pop-filter">
+            <p>Popular Filters</p>
+            <div class="select">
+                <form action="" method="post">
+                    <input type="checkbox" name="check" id="check">
+                    <label for="check">Free Cancellation Available</label>
+                    <br>
+                    <input type="checkbox" name="check1" id="check1">
+                    <label for="check1">Book</label>
+                    <br>
+                    <input type="checkbox" name="check2" id="check2">
+                    <label for="check2">Pay At Hotel Available</label>
+                    <br>
+                    <input type="checkbox" name="check3" id="check3">
+                    <label for="check3">Free Breakfast Included</label>
+                </form>
+            </div>   
+        </div>
+        <hr>
+    </div>
+
+    <div class="sec2-parent">
+            <div class="top-element">
+                <p id="text">Showing 280 Search Results</p>
+                <div class="button">
+                    <button>Our Trending</button>
+                    <button>Most popular</button>
+                    <button>Lowest Price</button>
+                </div>
+            </div>
+        <div class="section2">
+            <div class="hotel-img">
+                <img src="../images/hotel-1.jpg" alt="Picture of hotel">
+            </div>
+
+            <div class="hotel-text">
+                <div class="star">
+                    <p><i class="fa-solid fa-star"></i></p>
+                    <p><i class="fa-solid fa-star"></i></p>
+                    <p><i class="fa-solid fa-star"></i></p>
+                    <p><i class="fa-solid fa-star"></i></p>
+                    <p><i class="fa-solid fa-star"></i></p>
+                </div>
+                <p id="style-hotel-p">Hotel Chancellor@Orchard</p>
+                <p id="text5">Waterloo and Southwark. 9.8 km from Delhi Airport </p>
+
+                <div class="hotel-offers">
+                    <p>Parking</p>
+                    <p>Wifi</p>
+                    <p>Eating</p>
+                    <p>Cooling</p>
+                    <p>Pet</p>
+                </div>
+
+                <div class="middle-text">
+                    <p id="text6">Standard Twin Double Room</p>
+                    <p id="text7">Last booed 25min ago</p>
+                </div>
+
+                <div class="bottom-text">
+                    <p id="text8">Free Cancellation, till 1 hour of Pick up</p>
+                    <p id="text9">Login & get additional $15 Off Using Visa card</p>
+                </div>
+            </div>
+            <div class="hotel-button">
+                    <div class="parent">
+                        <div class="part1">
+                            <p id="text10">Exceptional</p>
+                            <p id="text11">3,014 reviews</p>
+                        </div>
+                        <button id="button">4.8</button>
+                    </div>
+
+                    <div class="price-section">
+                        <div class="discount-badge">
+                            <p>15% Off</p>
+                        </div>
+                        <div class="price-details">
+                            <p class="original-price">US$79</p>
+                            <p class="current-price">$59</p>
+                            <p class="additional-info">+ $22 taxes & Fees<br>For 2 Nights</p>
+                        </div>
+                        <button class="availability-button">See Availability</button>
+                    </div>
+                </div>
+        <div>
+</section>
+    
+
+</body>
+</html>
