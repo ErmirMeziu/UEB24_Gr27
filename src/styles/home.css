@@ -336,6 +336,10 @@
     visibility: visible;
 }
 
+.body-special {
+    overflow: hidden;
+}
+
 /*offerts*/
 .sales-container {
     width: 87%;
@@ -363,7 +367,8 @@
 
 .offpercent {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 3fr 2fr;
+    gap: 20px;
     padding: 10px;
 }
 
@@ -371,6 +376,142 @@
     font-size: 14px;
     color: rgb(95,115,136);
 }
+
+/*Download*/
+
+.app {
+    background-color: rgb(255,230,229);
+    width: 87%;
+    height: 275px;
+    margin: auto;
+    border-radius: 10px;
+}
+.app .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.app-container {
+    display: grid;
+    padding: 14px;
+    grid-template-columns: 3fr 2fr;
+    gap: 30px;
+    height: 100%;
+    color: rgb(5,38,78);
+}
+
+.app-container .left {
+   padding: 16px;
+}
+
+.app-container .left .download img{
+    margin: auto;
+}
+.app-container .left .download{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+ }
+
+ .app-container .left  h4 {
+    font-size: 30px;
+ }
+ .app-container .left .mobile  {
+    width: 70%;
+    margin-left: 30px;
+ }
+ .app-container .left .mobile form {
+    height: 75px;
+    background-color: white;
+    align-content: center;
+    border-radius: 5px;
+ }
+
+ .app-container .left .mobile form label {
+    padding: 20px;
+ }
+ .app-container .left .mobile form input{
+    border: none;
+    outline: none;
+    width: 57%;
+    height: 45px;
+    font-size: 16px;
+ }
+
+ .app-container .left .mobile form button {
+    font-family: 'Poppins';
+    border: none;
+    border-radius: 5px;
+    width: 110px;
+    height: 45px;
+    background-color: rgb(215,44,34);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+ }
+
+ .app-container .right {
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+ }
+
+ .app-container .right i {
+    font-size: 40px;
+    margin-right: 20px;
+    color: white;
+ }
+ .app-container .right .playstore{
+    display: flex;
+    font-family: 'Poppins';
+    border: none;
+    border-radius: 5px;
+    width: 217px;
+    height: 83px;
+    background-color: rgb(14,30,43);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    left: 250px;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 16px;
+
+ }
+
+ .app-container .right  .same {
+    position: relative;
+    bottom: 3px;
+
+ }
+
+ .app-container .right p {
+    color: rgb(238, 248, 255);
+ }
+ .app-container .right span {
+    font-size: 18px;
+    color: white;
+ }
+
+ .app-container .right .appstore{
+    display: flex;
+    font-family: 'Poppins';
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    height: 83px;
+    background-color: rgb(215,44,34);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    left: 217px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 700;
+ }
 
 /*Homepage - destinations*/
 .routes {
@@ -480,7 +621,7 @@
 
 }
 
-.routes-different img{
+.routes-different img, .card-different img{
     width: 100%;
     height: 100%;
     border-radius: 5px;
@@ -488,7 +629,7 @@
     z-index: -1;
 }
 
-.routes-different h4 {
+.routes-different h4, .card-different h4{
     z-index: 2;
     font-weight: 700;
     color: white;
@@ -498,7 +639,7 @@
     left: 25px;
 }
 
-.routes-different button {
+.routes-different button, .card-different button{
     border: none;
     border-radius: 10px;
     width: 80%;
@@ -509,7 +650,7 @@
     font-size: 15px;
     position: absolute;
 }
-.routes-different button:hover {
+.routes-different button:hover, .card-different button:hover {
     background-color: rgb(154, 10, 0);
     cursor: pointer;
 }
@@ -563,12 +704,16 @@
     width: 100%;
     cursor: pointer;
     overflow: hidden;
+    border-radius: 5px;
+
+}
+
+.card-different img {
     transition: transform 0.3s ease;
-    
+
 }
 
 .card-different img:hover{
-    transition: transform 0.3s ease;
     transform: scale(1.2);
 }
 
