@@ -41,7 +41,8 @@ body{
     border: none;
     cursor: pointer;
     position: relative;
-    top: 21px;
+    top: 21.5px;
+    cursor: pointer;
 }
 .search-input fieldset{
     border: none;
@@ -51,7 +52,7 @@ body{
     padding:5px;
 }
 fieldset input{
-    color: rgb(193,202,209);
+    color: #05264e;
     font-weight: 700;
 }
 .search-input button:hover{
@@ -125,6 +126,7 @@ fieldset input{
     font-size: 12px;
     font-weight: 600;
     color: rgb(121,131,141);
+    cursor: pointer;
 }
 
 .button-part button:hover{
@@ -146,12 +148,14 @@ fieldset input{
 
 .select form input{
     margin-right: 5px;
+    cursor: pointer;
 }
 
 .select label{
     position: relative;
     bottom: 2px;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .select input[type='checkbox']{
@@ -166,8 +170,6 @@ fieldset input{
 
 .sec2-parent .top-element{
     display: flex;
-    
-
 }
 .top-element{
     display: flex;
@@ -199,7 +201,7 @@ fieldset input{
     background-color:  rgb(205,44,34);
     color: white;
     cursor: pointer;
-    font-size: 13px;   
+    font-size: 13px;
     font-weight: 700;
 }
 
@@ -331,7 +333,7 @@ fieldset input{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px; 
+    gap: 12px;
     width: 100%;
 }
 
@@ -346,7 +348,7 @@ fieldset input{
     border-radius: 5px;
     text-align: center;
     margin-top: 25px;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
     margin-left: 78px;
 }
 
@@ -388,7 +390,7 @@ fieldset input{
     border-radius: 8px;
     position: relative;
     left: 25px;
-   
+    cursor: pointer;
 }
 
 .advertisement
@@ -428,6 +430,7 @@ fieldset input{
     background-color: white;
     font-size: 17px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 #adv-button button:hover{

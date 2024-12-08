@@ -26,3 +26,4 @@ signbutton.addEventListener('click', function(){
     login.classList.add('login-special');
     register.classList.remove('register-special');
 })
+

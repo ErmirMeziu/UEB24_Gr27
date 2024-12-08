@@ -78,20 +78,23 @@ nav .langu-menu {
     margin: auto;
     margin-right: 40px;
     color: white;
-    height: 36px;
+    height: 45px;
 }
 
 .login-register #sign-in {
     font-family: 'Poppins';
     display: inline-block;
     border: none;
-    border-radius: 10px;
-    width: 120px;
+    border-radius: 5px;
+    width: 130px;
     height: 100%;
     background-color: rgb(196,41,29);
     color: white;
+    letter-spacing: .8px;
 }
 
 .login-register #sign-in:hover{
     cursor: pointer;
+    background-color: rgb(255,230,229);
+    color: rgb(215,44,34);
 }
