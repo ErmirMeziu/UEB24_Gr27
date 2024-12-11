@@ -17,6 +17,9 @@
     }
 }
 
+body {
+    overflow-y: scroll;
+}
 .home-text {
     color: white;
     text-align: center;
@@ -81,87 +84,11 @@
 
 .search button:hover{
     background-color: rgb(255,230,229);
-    color: white;
+    color: rgb(215, 44, 33);    
 }
 .loop{
     margin: auto;
     margin-right: 7px;
-}
-.selected-lang
-{
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    line-height: 2;
-    width: 100px;
-}
-.selected-lang::before
-{
-    content: '';
-    display: block;
-    width: 32px;
-    height: 32px;
-    background-image: url(https://flagsapi.com/BE/flat/64.png);
-}
-.selected-lang
-.langu-menu
-{
-    margin-top: 6px;
-}
-.langu-menu ul
-{
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    border: 1px solid #f8f8f8;
-    box-shadow: 0px 1px 10px rgb(0,0,0,0.2);
-    border-radius: 5px ;
-    display: none;
-}
-
-.langu-menu ul li
-{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-.langu-menu ul li a
-{
-    width: 140px;
-    display: grid;
-    padding: 2px 18px;
-    color: red;
-
-}
-.langu-menu ul li a::before
-{
-    content: '';
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    margin-right: 10px;
-    vertical-align: middle;
-    background-image: url(https://flagsapi.com/BE/flat/64.png);
-
-
-}
-.langu-menu ul li a:hover
-{
-    background-color: #f2f2f2;
-
-}
-.de::before
-{
-    background-image: url(https://flagsapi.com/DE/flat/32.png);
-
-}
-.us::before
-{
-    background-image: url(https://flagsapi.com/DE/flat/64.png);
-
-}
-.langu-menu:hover ul{
-    display: block;
 }
 
 /*Login-form, Register-form*/
@@ -796,42 +723,50 @@
 
 
 footer {
+    width: 100%;
+    height: 550px;
     background-color: #f9f9f9;
     padding: 20px;
+ 
 }
 
 .footer-container {
-    max-width: 87%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    width: 87%;
+    height: 400px;
+    margin:  30px auto auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
 }
 
-.footer-section {
-    flex: 1;
-    margin: 10px;
-    min-width: 200px;
+.footer-section img {
+    margin-bottom: 20px;
 }
 
 .footer-section h3 {
     color: #003366;
     margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 700;
 }
+
+.footer-section p {
+    margin-bottom: 40px;
+    font-size: 13px;
+    color: #5D6F7D;
+    font-weight: 700;
+}
+
+
 
 .footer-section ul {
     list-style: none;
-    padding: 0;
-
-}
-
-.footer-section ul li {
-    margin-bottom: 10px;
 }
 
 .footer-section ul li a {
-    color: #333;
+    color: #5D6F7D;
+    font-weight: 700;
     text-decoration: none;
+    font-size: 13px;
 }
 
 
@@ -841,7 +776,7 @@ footer {
     display: inline-block;
     margin-right: 10px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 23px;
     color: #555;
     
 }
@@ -853,22 +788,11 @@ footer {
 }
 .footer-section .payment-links img
 {
-width: 400px;
-height:40px;
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
 }
 
-.footer-buttom {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-around;
-    
-    
-}
-.footer-buttom a
-{
-    text-decoration: none;
-    
-}
 .footer-section li
 {
     line-height: 40px;
@@ -880,26 +804,24 @@ height:40px;
 }
 .footer-section img
 {
-    width: 170px; 
-    height:55px;
-    /* margin-top: 20px; */
+    width: 250px; 
+    height:80px;
 }
 .footer-section {
-    flex: 1;
     margin: 10px;
-    min-width: 200px;
+    min-width: 150px;
     margin-top: 15px;
     color: #003366;
 }
 .partner-links img
 {
-    width: 100px; 
+    width: 100%; 
     height: 40px;
 }
 .partner-links
 {
     display: grid;
-    grid-template-columns: 122px 125px 134px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .partener1
 {
@@ -919,30 +841,55 @@ height:40px;
     border-radius: 0.2rem;
 }
 
-.footer-buttom .Terms 
+
+.footer-bottom {
+    width: 87%;
+    display: flex;
+    margin:  auto;
+    height: 150px;   
+    justify-content: space-between;
+    margin-top: 36.75px;
+    font-size: 13px;
+    color: #5D6F7D;
+}
+.footer-bottom .Terms 
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    gap: 20px;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+
 } 
+.footer-bottom .Terms a {
+    text-decoration: none;
+}
 .footer-section .social-links a
 {
-    background-color: #dce5eb !important;
+    background-color: #dce5eb ;
 }
 .footer-section .social-links a:hover
 {
-    background-color: #f0f5f8 !important;
+    background-color: #f0f5f8 ;
     color: #FFFFFF;
     transition: 0.5s;
 }
-.payment-links 
-{
-    margin-top: -20px;
+
+.footer-section .paymentmethods img{
+    width: 100%;
+    height: 35px;
 }
-.partner-links
-{
-    margin-top: -20px;
+
+.footer-section .ourpartners {
+    display: flex;
+    justify-content: space-between;
+    color: #5D6F7D;
 }
+
+.footer-section .ourpartners img {
+    width: 85%;
+    height: 30px;
+}
+
+
 .html
 {
     scroll-behavior: smooth;
@@ -961,6 +908,66 @@ height:40px;
     line-height: 50px;
     color: white;
     font-size:  22px;
-    border: 20px soldi beige;
+}
+.home1{
+    height: 500px;
+    background-image: url(../images/Backgound3.png);
+    background-repeat: no-repeat;
+    align-content: center;
+    text-align: center;
+    margin-top: 20px;
 
+}
+
+.home1 h4 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: -10px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.home1 .home-search1 {
+    width: 55%;
+    height: 55px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 3%;
+    background-color: white;
+    border: none;
+    padding: 0 10px;   
+    border-radius: 5px;
+    
+}
+ .input1 {
+    width: 100%;
+    height: 85%;
+ }
+ 
+ .button1 {
+    width: 100%;
+    height: 85%;
+
+}
+.home1 .button1 input{
+    width: 100%;
+    height: 100%;
+    margin-top: 4px;
+}
+
+.home1 .input1 input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin-top: 4px;
+    border: none;
+
+}
+.button1 input
+{
+    background-color: #c4281e;
+    color: white;
+    border:none;
+    border-radius: 8px !important;
 }
