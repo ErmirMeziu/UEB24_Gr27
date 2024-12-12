@@ -165,10 +165,16 @@
             </div>
         </div>
         <hr>
-        <div>
+        <div class="price-range">
             <p>Pricing Range in US$</p>
-            <div>
-                <input type="range" name="range" id="range"  min="0" max="400">
+            <div class="range-slider">
+                <input id="minRange" type="range" min="286" max="811" value="286" oninput="updateRange()">
+                <input id="maxRange" type="range" min="286" max="811" value="811" oninput="updateRange()">
+                <div class="range-track" id="rangeTrack"></div>
+            </div>
+            <div class="range-values">
+                <span id="minValue">286</span>
+                <span id="maxValue">811</span>
             </div>
         </div>
     </div>
@@ -523,6 +529,16 @@
                     </div>
                 </div>    
             </div>      
+        </div>
+
+        <div class="box" id="box-bottom">
+            <div class="bottom-part">
+                <p><i class="fa-solid fa-arrow-left" id="left-arrow"></i></p>
+                <a href="#1" style="background-color: rgb(205,44,34); color: white;">1</a>
+                <a href="#2" id="color-p">2</a>
+                <a href="#3" id="color-p">3</a>
+                <p><i class="fa-solid fa-arrow-right" id="right-arrow"></i></p>
+            </div>
         </div>
     <div>
 </section>
