@@ -20,6 +20,11 @@
 body {
     overflow-y: scroll;
 }
+
+.all-special {
+    filter: brightness(0.5);
+}
+
 .home-text {
     color: white;
     text-align: center;
@@ -721,13 +726,54 @@ body {
     justify-content: space-between;
 }
 
+/*all-international-routes*/
+.international-routes .buttons {
+    margin-left: 6.5%;
+}
+.international-routes .buttons button {
+    border: none;
+    border-radius: 10px;
+    width: auto;
+    height: 50px;
+    background-color: rgb(196,41,29);
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 15px;
+    font-family: 'Poppins';
+    cursor: pointer;
+}
 
+.international-routes .buttons .button-different {
+    background-color: rgb(19,27,36);
+}
+
+.international-routes .all-flights {
+    width: 87%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 70px;
+
+}
+.international-routes .all-flights  ul{
+    font-family: 'Poppins';
+    color: #455873;
+    font-size: 12px;
+    font-weight: 400;
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+    letter-spacing: -0.2px;
+    cursor: pointer;
+}
+
+/*footer*/
 footer {
     width: 100%;
     height: 550px;
     background-color: #f9f9f9;
     padding: 20px;
- 
 }
 
 .footer-container {
@@ -753,18 +799,15 @@ footer {
     margin-bottom: 40px;
     font-size: 13px;
     color: #5D6F7D;
-    font-weight: 700;
+    font-weight: 500;
 }
-
-
-
 .footer-section ul {
     list-style: none;
 }
 
 .footer-section ul li a {
     color: #5D6F7D;
-    font-weight: 700;
+    font-weight: 500;
     text-decoration: none;
     font-size: 13px;
 }
@@ -778,7 +821,6 @@ footer {
     text-decoration: none;
     font-size: 23px;
     color: #555;
-    
 }
 
 .social-links a:hover,
@@ -799,12 +841,12 @@ footer {
 }
 .footer-section li :hover
 {
-    color: red;
+    color: rgb(215, 44, 33);
     text-decoration: none;
 }
 .footer-section img
 {
-    width: 250px; 
+    width: 250px;
     height:80px;
 }
 .footer-section {
@@ -815,7 +857,7 @@ footer {
 }
 .partner-links img
 {
-    width: 100%; 
+    width: 100%;
     height: 40px;
 }
 .partner-links
@@ -823,15 +865,12 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.partener1
-{
-    display: grid;
-}
+
 .footer-section
 {
     line-height: 28px;
 }
-.social-links a 
+.social-links a
 {
     width: 50px;
     height: 50px;
@@ -846,21 +885,25 @@ footer {
     width: 87%;
     display: flex;
     margin:  auto;
-    height: 150px;   
+    height: 50px;
     justify-content: space-between;
     margin-top: 36.75px;
     font-size: 13px;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+.footer-bottom .copy {
     color: #5D6F7D;
 }
-.footer-bottom .Terms 
+.footer-bottom .Terms
 {
     width: 400px;
     display: flex;
     justify-content: space-evenly;
-
-} 
+}
 .footer-bottom .Terms a {
     text-decoration: none;
+    color: #003366;
 }
 .footer-section .social-links a
 {
@@ -902,16 +945,16 @@ footer {
     background: #27ae60;
     bottom: 40px;
     right: 50px;
-    
     text-decoration: none;
     text-align: center;
     line-height: 50px;
     color: white;
     font-size:  22px;
 }
+
 .home1{
-    height: 500px;
-    background-image: url(../images/Backgound3.png);
+    height: 550px;
+    background-image: url(../images/bg.jpg);
     background-repeat: no-repeat;
     align-content: center;
     text-align: center;
@@ -929,22 +972,20 @@ footer {
 
 .home1 .home-search1 {
     width: 55%;
-    height: 55px;
+    height: 65px;
     margin: auto;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 3%;
     background-color: white;
     border: none;
-    padding: 0 10px;   
+    padding: 0px 10px 0px 20px;
     border-radius: 5px;
-    
 }
  .input1 {
     width: 100%;
     height: 85%;
  }
- 
+
  .button1 {
     width: 100%;
     height: 85%;
@@ -954,6 +995,7 @@ footer {
     width: 100%;
     height: 100%;
     margin-top: 4px;
+
 }
 
 .home1 .input1 input {
@@ -962,12 +1004,24 @@ footer {
     height: 100%;
     margin-top: 4px;
     border: none;
+    outline: none;
+    font-family: 'Poppins';
+    color:#5D6F7D;
+    font-weight: 500;
 
 }
-.button1 input
+.home1 .button1 input
 {
-    background-color: #c4281e;
+    background-color: rgb(215, 44, 33);
+    font-family: 'Poppins';
+    font-weight: 500;
     color: white;
     border:none;
-    border-radius: 8px !important;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 4.5px;
+}
+.home1 .button1 input:hover {
+    background-color: rgb(255,230,229);
+    color: rgb(215, 44, 33);
 }
