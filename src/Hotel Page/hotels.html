@@ -156,18 +156,98 @@
             </div>
         </div>
         <hr>
-        <div class="price-range">
-            <p>Pricing Range in US$</p>
-            <div class="range-slider">
-                <input id="minRange" type="range" min="286" max="811" value="286" oninput="updateRange()">
-                <input id="maxRange" type="range" min="286" max="811" value="811" oninput="updateRange()">
-                <div class="range-track" id="rangeTrack"></div>
-            </div>
-            <div class="range-values">
-                <span id="minValue">286</span>
-                <span id="maxValue">811</span>
+        <div class="amenities-s">
+            <p>Amenities</p>
+            <div class="select">
+                <form action="" method="post">
+                    <input type="checkbox" name="check" id="check">
+                    <label for="check">Free Wifi</label>
+                    <br>
+                    <input type="checkbox" name="check1" id="check1">
+                    <label for="check1">3 Breakfast included</label>
+                    <br>
+                    <input type="checkbox" name="check2" id="check2">
+                    <label for="check2">Air Conditioning</label>
+                    <br>
+                    <input type="checkbox" name="check3" id="check3">
+                    <label for="check3">Pool</label>
+                    <br>
+                    <input type="checkbox" name="check3" id="check3">
+                    <label for="check3">Free Parking</label>
+                </form>
             </div>
         </div>
+        <hr>
+        <div class="fun-things">
+            <p>Fun things To Do</p>
+            <div class="select">
+                <form action="" method="post">
+                    <input type="checkbox" name="check" id="check">
+                    <label for="check">Beach</label>
+                    <br>
+                    <input type="checkbox" name="check1" id="check1">
+                    <label for="check1">Fitness center</label>
+                    <br>
+                    <input type="checkbox" name="check2" id="check2">
+                    <label for="check2">Cycling</label>
+                    <br>
+                    <input type="checkbox" name="check3" id="check3">
+                    <label for="check3">Animation Show</label>
+                    <br>
+                    <input type="checkbox" name="check3" id="check3">
+                    <label for="check3">Shopping center</label>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="costumer-rating">
+            <p>Customer Ratings</p>
+            <div class="select">
+                <form action="" method="post">
+                  <div>
+                    <input type="checkbox" name="checkbox" id="checkbox1"><br>
+                    <input type="checkbox" name="checkbox" id="checkbox2"><br>
+                    <input type="checkbox" name="checkbox" id="checkbox3"><br>
+                    <input type="checkbox" name="checkbox" id="checkbox4"><br>
+                  </div>
+                  
+                  <div class="star">
+                    <p><i class="fa-solid fa-star"></i></p>
+                    <p><i class="fa-solid fa-star"></i></p>
+                    <p><i class="fa-solid fa-star"></i></p>
+                    <p><i class="fa-solid fa-star"></i></p>
+                    <p><i class="fa-solid fa-star"></i></p>
+                    <p style="position: relative; left: 100px;">48</p>
+                  </div>
+
+                  <div class="star" id="position">
+                    <p><i class="fa-solid fa-star"></i></p>
+                    <p><i class="fa-solid fa-star"></i></p>
+                    <p><i class="fa-solid fa-star"></i></p>
+                    <p><i class="fa-solid fa-star"></i></p>
+                    <p><i class="fa-solid fa-star-half"></i></p>
+                    <p style="position: relative; left: 100px;">20</p>
+                  </div>
+
+                  <div class="star" id="position2">
+                    <p><i class="fa-solid fa-star"></i></p>
+                    <p><i class="fa-solid fa-star"></i></p>
+                    <p><i class="fa-solid fa-star"></i></p>
+                    <p><i class="fa-solid fa-star"></i></p>
+                    <p style="position: relative; left: 122px;">32</p>
+                  </div>
+
+                  <div class="star" id="position3">
+                    <p><i class="fa-solid fa-star"></i></p>
+                    <p><i class="fa-solid fa-star"></i></p>
+                    <p><i class="fa-solid fa-star"></i></p>
+                    <p style="position: relative; left: 148px;">8</p>
+                  </div>
+                </form>
+            </div>      
+        </div>
+        
+        
     </div>
 
     <div class="sec2-parent">
@@ -182,7 +262,7 @@
         <div class="box">
             <div class="section2">
                 <div class="hotel-img">
-                    <img src="../images/hotel-1.jpg" alt="Picture of hotel">
+                    <a href="hotel1.html" target="_blank"><img src="../images/hotel-1.jpg" alt="Picture of hotel"></a>   
                 </div>
                 <div class="hotel-text">
                     <div class="star">
@@ -522,7 +602,7 @@
             </div>      
         </div>
 
-        <div class="box" id="box-bottom">
+        <div class="bottom" id="box-bottom">
             <div class="bottom-part">
                 <p><i class="fa-solid fa-arrow-left" id="left-arrow"></i></p>
                 <a href="#1" style="background-color: rgb(205,44,34); color: white;">1</a>
