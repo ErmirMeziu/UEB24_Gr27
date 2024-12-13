@@ -39,3 +39,68 @@ body{
     font-size: 20px;
     font-weight: 700;
 }
+.pin-text{
+    display: flex;
+    justify-content: space-between;
+}
+.pin-text #btn-res{
+    background-color:rgb(196,41,29);
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    margin-right: 22px;
+    color: white;
+    height: 40px;
+}
+#btn-res:hover{
+    background-color: rgb(205,44,34);
+}
+.pin-text p{
+    font-size: 15px;
+}
+.pin-text p i{
+    color: rgb(0,108,228);
+    font-size: 22px;
+    margin-top: 15px;
+}
+.pin-text a{
+    text-decoration: none;
+    color: rgb(0,108,228);
+    font-weight: 700;
+}
+.photos{
+    margin-top: 20px;
+}
+.photos #first-photo{
+    width: 542px;
+    height: 359px;
+    border-radius: 10px;
+}
+.photos .photo{
+    width: 270px;
+    height: 177px;
+    border-radius: 10px;
+}
+.photos #second-photo{
+    position: relative;
+    bottom: 182px;
+}
+
+.photos #third-photo{
+    position: relative;
+    right: 274.8px;
+} 
+
+.bottom-photos{
+    display: flex;
+    gap: 5.47px;
+    height: 103px;
+}
+.bottom-photos .bottom-pht{
+    margin-top: -2px;
+    width: 159px;
+}
+
+.bottom-pht{
+    border-radius: 10px;
+}
