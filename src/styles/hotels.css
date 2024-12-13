@@ -135,11 +135,11 @@ fieldset input{
     transition: 1s ease
 }
 
-.bed, .pop-filter, .price-range {
+.bed, .pop-filter, .costumer-rating,.amenities-s,.fun-things{
     padding: 10px;
 }
 
-.bed p, .pop-filter p,.price-range p{
+.bed p, .pop-filter p,.costumer-rating p,.amenities-s p,.fun-things p{
     font-size: 15px;
     padding-bottom: 10px;
     color: rgb(14,35,71);
@@ -210,7 +210,7 @@ fieldset input{
     color:  rgb(205,44,34);
     transition: 0.3s ease;
 }
-.box{
+.box,.bottom{
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 2px 4px rgba(0, 0,0,0.3);
@@ -457,7 +457,6 @@ fieldset input{
     top: 12px;
     font-size: 25px;
 }
-
 .box:hover, .advertisement:hover {
     transform: translateY(-5px);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
@@ -468,7 +467,7 @@ fieldset input{
     height: 60px;
 }
 
-.box .bottom-part{
+.bottom .bottom-part{
     width: 100%;
     display: flex;
     padding: 13px 20px;
@@ -558,5 +557,20 @@ footer
     height: 30px;
 }
 
+.select .star{
+    position: absolute;
+    bottom: 88px;
+    left: 35px;
+}
 
+ #position{
+    bottom:61px ;
+}
 
+#position2{
+    bottom: 33px;
+} 
+
+#position3{
+    bottom: 5px;
+}
