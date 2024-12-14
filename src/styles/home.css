@@ -1033,6 +1033,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px !important;
+    margin-top: 20px;
 }
 
 .card1 {
@@ -1096,4 +1097,24 @@ footer {
 .container2 h2
 {
     margin: 18px;
+}
+.top
+{
+    display: flex;
+    justify-content: space-between;
+    width: 87%;
+    margin: 0 auto;
+    
+}
+.top button
+{
+    font-family: 'Poppins';
+    border: none;
+    border-radius: 5px;
+    width: 110px;
+    height: 45px;
+    background-color: rgb(255,230,229);
+    color: rgb(215,44,34);
+    font-size: 14px;
+    font-weight: 500;
 }
