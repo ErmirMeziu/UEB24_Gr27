@@ -344,6 +344,7 @@ body {
     gap: 30px;
     height: 100%;
     color: rgb(5,38,78);
+    margin-top: 20px;
 }
 
 .app-container .left {
@@ -1024,4 +1025,75 @@ footer {
 .home1 .button1 input:hover {
     background-color: rgb(255,230,229);
     color: rgb(215, 44, 33);
+}
+
+.container4 {
+    width: 87%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px !important;
+}
+
+.card1 {
+    position: relative; 
+    width: 320.33px;
+    height:400.65px;
+}
+
+.card1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.container2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    
+}
+
+.card1:hover .container2 {
+    opacity: 1; 
+}
+
+.text1 h2 {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.button3 button {
+   
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+
+  
+}
+
+.button3 button:hover {
+    background-color: #CD2c22;
+    color: white;
+}
+.container2 h2
+{
+    margin: 18px;
 }
