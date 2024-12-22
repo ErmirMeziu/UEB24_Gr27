@@ -21,6 +21,7 @@ nav {
     width: auto;
     padding: 13px 0px;
     background-color: rgb(4,22,37);
+    position: sticky;
 
 }
 .logo {
