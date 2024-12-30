@@ -9,16 +9,16 @@ body{
     
 }
 
-.sec1{ 
+.sec1,.body-part2{ 
     width:80%;
     position: relative;
     left: 10.9%; 
 }
 
 .sec2{
-    width: 20%;
+    width: 26%;
     position: relative;
-    right: 10.5%; 
+    right: 9%; 
     margin-top: 181px;
 }
 
@@ -54,10 +54,12 @@ body{
     background-color:rgb(196,41,29);
     border: none;
     border-radius: 5px;
-    width: 100px;
+    width: 120px;
     margin-right: 22px;
     color: white;
     height: 40px;
+    position: relative;
+    left: 8%;
 }
 #btn-res:hover{
     background-color: rgb(205,44,34);
@@ -125,6 +127,7 @@ body{
 
 .txt {
     margin: 0;
+    
 }
 
 .txt #first, .txt #third {
@@ -160,6 +163,7 @@ body{
 .map-container {
     position: relative;
     width: 100%;
+    height: 283px;
     max-width: 400px; 
     margin: 20px auto;
     border: 1px solid #ddd;
@@ -172,6 +176,9 @@ body{
     width: 100%;
     height: 300px;
     border: none;
+}
+.show-on-map-btn a{
+    text-decoration: none;
 }
 
 .show-on-map-btn {
@@ -192,5 +199,145 @@ body{
 }
 
 .show-on-map-btn:hover {
+    background-color: #0056b3;
+}
+
+.some-txt{
+    margin-top: 15px;
+    font-size: 16px;
+    width: 68%;
+}
+.property{
+    border: 1px solid rgb(231, 231, 231);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.property #imp{
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
+
+.property ul {
+    list-style: none;
+    padding: 0;
+}
+.property ul li {
+    display: flex;
+    align-items: center;
+    margin: 15px; 
+}
+.property ul li i {
+    font-size: 27px; 
+    margin-right: 20px;
+}
+.property  li h4 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+.property  li p {
+    margin: 0;
+    font-size: 13px;
+    color: gray;
+}
+
+.bottom-btn {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+}
+/*
+Perdor javascript per me ba efektin tek zemra save
+*/
+.bottom-btn button {
+    width: 90%; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 5px; 
+    border: 1px solid #007bff; 
+    background-color: #f0f0f0; 
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+.bottom-btn button:hover {
+    background-color: #007bff; 
+    color: white; 
+}
+
+.bottom-btn button i {
+    margin-right: 8px; 
+    font-size: 16px;
+}
+
+.room-table {
+    width: 100%;
+    border-collapse: separate; 
+    border-spacing: 0;
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.room-table th {
+    background-color: #2A6EBB;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.room-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+.room-table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px; 
+}
+
+.room-table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px; 
+}
+
+.expand-icon {
+    color: #f47c20;
+    margin-right: 5px;
+}
+
+.guest-info {
+    text-align: center;
+}
+
+.info-icon {
+    margin-left: 5px;
+    color: gray;
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
     background-color: #0056b3;
 }
