@@ -1,19 +1,21 @@
 .home {
     width: 100%;
-    height: 650px;
-    background-image: url(../images/homeBackground.webp);
+    height: 700px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     animation: fadeIn 2s ease-in-out;
     z-index: -1;
+    transition: 2s;
 }
 
- @keyframes fadeIn {
+@keyframes fadeIn {
     from {
         opacity: 0.3;
     }
+
     to {
-        opacity: 0.8;
+        opacity: 1;
     }
 }
 
@@ -21,34 +23,33 @@ body {
     overflow-y: scroll;
 }
 
-.all-special {
-    filter: brightness(0.5);
-}
 
 .home-text {
     color: white;
     text-align: center;
     position: relative;
-    top: 180px;
+    top: 220px;
 }
 
-.search{
+.search {
     background-color: white;
     border-radius: 10px;
     padding: 17px 13px;
     width: 80%;
     margin-left: 10%;
     height: auto;
-    margin-top: 210px;
+    margin-top: 230px;
 
 }
-.search-bar{
+
+.search-bar {
     display: flex;
     background-color: white;
     margin: auto;
     justify-content: space-evenly;
 }
-.search-bar input{
+
+.search-bar input {
     width: 100%;
     border: none;
     color: #4E5F70;
@@ -60,46 +61,62 @@ body {
 }
 
 
-.search fieldset{
+.search fieldset {
     border: 1px solid rgb(192, 202, 208);
     font-size: 11px;
-    font-family:'Poppins';
+    font-family: 'Poppins';
     color: #4E5F70;
     font-weight: 500;
     height: auto;
     padding: 10px 8px 8px;
     border-radius: 5px;
 }
-.where-date{
+
+.where-date {
     width: 30%;
 }
-.memb{
+
+.memb {
     width: 20%;
 }
-.search button{
+
+.search button {
     width: 10%;
-    margin-top: 8px ;
+    margin-top: 8px;
     background-color: rgb(215, 44, 33);
-    border: none ;
+    border: none;
     border-radius: 5px;
     color: white;
     cursor: pointer;
     font-family: 'Poppins';
 }
 
-.search button:hover{
-    background-color: rgb(255,230,229);
-    color: rgb(215, 44, 33);    
+.search button:hover {
+    background-color: rgb(255, 230, 229);
+    color: rgb(215, 44, 33);
 }
-.loop{
+
+.loop {
     margin: auto;
     margin-right: 7px;
 }
 
 /*Login-form, Register-form*/
-.login, .register {
+.login-all {
     visibility: hidden;
-    z-index: 2;
+    height: 100%;
+    width: 100%;
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.login,
+.register {
+    visibility: hidden;
+    z-index: 50;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -109,15 +126,16 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 498px;
-    height: 607px;
-    color: rgb(11,43,82);
+    color: rgb(11, 43, 82);
     font-family: 'Poppins';
     font-weight: 500;
+    width: 500px;
+    height: auto;
 }
 
 
-.login .login-head, .register .register-head {
+.login .login-head,
+.register .register-head {
     display: flex;
     height: 67px;
     padding: 16px;
@@ -126,23 +144,26 @@ body {
     font-weight: 500;
 }
 
-.iks, .iks1{
+.iks,
+.iks1 {
     cursor: pointer;
     position: absolute;
     right: 25px;
 }
 
 
-.login-form, .register-form {
-     height: 480px;
-     font-size: 15px;
-     border-top: solid 0.1px  rgb(173,181,189);
-     border-bottom: solid 0.1px  rgb(173,181,189);
-     padding: 16px;
+.login-form,
+.register-form {
+    height: 480px;
+    font-size: 15px;
+    border-top: solid 0.1px rgb(173, 181, 189);
+    border-bottom: solid 0.1px rgb(173, 181, 189);
+    padding: 16px;
 }
 
-.login-form input, .register-form input {
-    color: rgb(11,43,82);
+.login-form input,
+.register-form input {
+    color: rgb(11, 43, 82);
     font-weight: 700;
 }
 
@@ -163,22 +184,24 @@ body {
     gap: 10%;
 }
 
-.login-input{
+.login-input {
     width: 466px;
     height: 320px;
     padding: 24px 16px;
-    color: rgb(11,43,82);
+    color: rgb(11, 43, 82);
 }
 
-.login-change, .login-change, .share
- {
-    border: 1px solid rgb(173,181,189);
+.login-change,
+.login-change,
+.share {
+    border: 1px solid rgb(173, 181, 189);
     border-radius: 5px;
     width: 434px;
     height: 58px;
     padding: 16px 12px;
 }
-.login-form .check{
+
+.login-form .check {
     display: flex;
     justify-content: space-between;
 }
@@ -199,17 +222,20 @@ body {
     cursor: pointer;
     width: 60px;
     height: 60px;
-    border: 1px dashed rgb(173,181,189);
+    border: 1px dashed rgb(173, 181, 189);
 }
 
-.login .login-end, .register .register-end{
+.login .login-end,
+.register .register-end {
     height: 60px;
     align-content: center;
 }
 
-.login .login-end p, .register .register-end p {
+.login .login-end p,
+.register .register-end p {
     font-size: 15px;
 }
+
 .name-surname {
     display: grid;
     width: 434px;
@@ -225,7 +251,8 @@ body {
     margin: auto;
 }
 
-#register-name, #register-surname {
+#register-name,
+#register-surname {
     width: 100%;
 }
 
@@ -238,19 +265,25 @@ body {
 
 .login a {
     text-decoration: none;
-    color: rgb(206,46,37);
+    color: rgb(206, 46, 37);
 }
 
-.login .sregister, .register .signbutton {
-    color: rgb(206,46,37);
+.login .sregister,
+.register .signbutton {
+    color: rgb(206, 46, 37);
 }
 
-.login a:hover, .login .sregister:hover, .register .signbutton:hover, .iks:hover, .iks1:hover{
+.login a:hover,
+.login .sregister:hover,
+.register .signbutton:hover,
+.iks:hover,
+.iks1:hover {
     cursor: pointer;
 }
 
-.login button, .register button {
-    background-color: rgb(206,46,37);
+.login button,
+.register button {
+    background-color: rgb(206, 46, 37);
     color: white;
     font-weight: 300;
     border: none;
@@ -261,12 +294,13 @@ body {
     padding: 15px 22.5px;
     height: 62px;
     border: 2px solid transparent;
- }
+}
 
-.login  button:hover, .register button:hover {
+.login button:hover,
+.register button:hover {
     cursor: pointer;
-    background-color: rgb(255,230,229);
-    color: rgb(215,44,34);
+    background-color: rgb(255, 230, 229);
+    color: rgb(215, 44, 34);
 }
 
 #remember-me {
@@ -275,9 +309,13 @@ body {
     left: 1px;
 }
 
-.login span, .register span {cursor: pointer;}
+.login span,
+.register span {
+    cursor: pointer;
+}
 
-.login-special, .register-special{
+.login-special,
+.register-special {
     visibility: visible;
 }
 
@@ -303,6 +341,7 @@ body {
     width: 100%;
     height: auto;
 }
+
 .sales img {
     width: 80px;
     height: 80px;
@@ -319,157 +358,164 @@ body {
 
 .offpercent p {
     font-size: 14px;
-    color: rgb(95,115,136);
+    color: rgb(95, 115, 136);
 }
 
 /*Download*/
 
 .app {
-    background-color: rgb(255,230,229);
+    background-color: rgb(255, 230, 229);
     width: 87%;
     height: 275px;
     margin: auto;
     border-radius: 10px;
 }
+
 .app .left {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
 }
+
 .app-container {
     display: grid;
     padding: 14px;
     grid-template-columns: 3fr 2fr;
     gap: 30px;
     height: 100%;
-    color: rgb(5,38,78);
+    color: rgb(5, 38, 78);
     margin-top: 20px;
 }
 
 .app-container .left {
-   padding: 16px;
+    padding: 16px;
 }
 
-.app-container .left .download img{
+.app-container .left .download img {
     margin: auto;
 }
-.app-container .left .download{
+
+.app-container .left .download {
     display: grid;
     grid-template-columns: 1fr 5fr;
- }
+}
 
- .app-container .left  h4 {
+.app-container .left h4 {
     font-size: 30px;
- }
- .app-container .left .mobile  {
+}
+
+.app-container .left .mobile {
     width: 70%;
     margin-left: 30px;
- }
- .app-container .left .mobile form {
-    height: 75px;
-    background-color: white;
-    align-content: center;
-    border-radius: 5px;
- }
+}
 
- .app-container .left .mobile form label {
+.app-container .left .mobile form {
+    height: 75px;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.app-container .left .mobile form label {
     padding: 20px;
- }
- .app-container .left .mobile form input{
+}
+
+.app-container .left .mobile form input {
     border: none;
     outline: none;
-    width: 57%;
-    height: 45px;
+    width: 55%;
     font-size: 18px;
-    color: rgb(5,38,78);
+    color: rgb(5, 38, 78);
 
- }
+}
 
- .app-container .left .mobile form button {
+.app-container .left .mobile form button {
     font-family: 'Poppins';
     border: none;
     border-radius: 5px;
-    width: 110px;
-    height: 45px;
-    background-color: rgb(215,44,34);
+    width: 23%;
+    height: 100%;
+    background-color: rgb(215, 44, 34);
     color: white;
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
- }
-
- .app-container .mobile  form button:hover{
-    background-color: rgb(255,230,229);
-    color: rgb(215,44,34);
 }
 
- .app-container .right {
-    padding: 20px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
- }
+.app-container .mobile form button:hover {
+    background-color: rgb(255, 230, 229);
+    color: rgb(215, 44, 34);
+}
 
- .app-container .right i {
+.app-container .right {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+}
+
+.app-container .right i {
     font-size: 40px;
     margin-right: 20px;
     color: white;
- }
- .app-container .right .playstore{
+}
+
+.app-container .right .playstore {
     display: flex;
     font-family: 'Poppins';
     border: none;
     border-radius: 5px;
     width: 217px;
     height: 83px;
-    background-color: rgb(14,30,43);
+    background-color: rgb(14, 30, 43);
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
-    position: relative;
-    left: 250px;
     padding: 20px;
     font-weight: 700;
     font-size: 16px;
 
- }
+}
 
- .app-container .right  .same {
-    position: relative;
-    bottom: 3px;
+.app-container .right .same {
+    justify-content: center;
+}
 
- }
-
- .app-container .right p {
+.app-container .right p {
     color: rgb(238, 248, 255);
- }
- .app-container .right span {
+}
+
+.app-container .right span {
     font-size: 18px;
     color: white;
- }
+}
 
- .app-container .right .appstore{
+.app-container .right .appstore {
     display: flex;
     font-family: 'Poppins';
     border: none;
     border-radius: 5px;
     width: 250px;
     height: 83px;
-    background-color: rgb(215,44,34);
+    background-color: rgb(215, 44, 34);
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
-    position: relative;
-    left: 217px;
     padding: 20px;
     font-size: 16px;
     font-weight: 700;
- }
- .app-container .right .appstore:hover, .app-container .right .playstore:hover{
-    background-color: rgb(0, 0, 0);
- }
+}
 
-/*Homepage - destinations*/
+.app-container .right .appstore:hover,
+.app-container .right .playstore:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+/*Homepage - featured-routes*/
 .routes {
     display: grid;
     width: 87%;
@@ -500,64 +546,73 @@ body {
     width: 100%;
     height: 240px;
     border-radius: 5px 5px 0px 0px;
-    transition: transform 0.3s ease;
+    transition: .3s;
 }
 
-.routes img:hover{
+.routes img:hover {
     transform: scale(1.2);
 }
 
-.destinations .top, .rental .top {
+.destinations .top,
+.rental .top {
     width: 87%;
     display: flex;
     justify-content: space-between;
     margin: 50px auto 20px;
-    color: rgb(5,38,78);
+    color: rgb(5, 38, 78);
 }
 
-.destinations .top button, .rental .top button {
+.destinations .top button,
+.rental .top button {
     font-family: 'Poppins';
     border: none;
     border-radius: 5px;
     width: 110px;
     height: 45px;
-    background-color: rgb(255,230,229);
-    color: rgb(215,44,34);
+    background-color: rgb(255, 230, 229);
+    color: rgb(215, 44, 34);
     font-size: 14px;
     font-weight: 500;
 }
-.destinations .top button:hover, .rental .top button:hover{
-    background-color: rgb(215,44,34);
+
+.destinations .top button:hover,
+.rental .top button:hover {
+    background-color: rgb(215, 44, 34);
     color: white;
     cursor: pointer;
 }
+
 .directions {
     margin-top: 7px;
 }
-.directions h4{
+
+.directions h4 {
     font-weight: 600;
-    color: rgb(5,38,78);
+    color: rgb(5, 38, 78);
     padding-left: 15px;
     font-size: 16px;
 }
-.directions p{
+
+.directions p {
     font-size: 14px;
     padding-left: 15px;
-    color: rgb(95,115,136);
+    color: rgb(95, 115, 136);
 }
+
 .cost {
     display: flex;
     justify-content: end;
     padding: 15px;
 }
 
-.cost h5, .cost p {
+.cost h5,
+.cost p {
     align-content: end;
 }
 
 .cost h5 {
     font-size: 23px;
-    color: rgb(5,38,78);
+    color: rgb(5, 38, 78);
 }
 
 .cost p {
@@ -565,7 +620,7 @@ body {
     font-size: 14px;
     margin-right: 10px;
     bottom: 3px;
-    color: rgb(95,115,136);
+    color: rgb(95, 115, 136);
 }
 
 .routes-different {
@@ -576,10 +631,15 @@ body {
     cursor: auto;
     overflow: hidden;
     cursor: pointer;
-
+    justify-content: center;
+    position: relative;
+    text-align: center;
 }
 
-.routes-different img, .card-different img{
+
+
+.routes-different img,
+.card-different img {
     width: 100%;
     height: 100%;
     border-radius: 5px;
@@ -587,60 +647,64 @@ body {
     z-index: -1;
 }
 
-.routes-different h4, .card-different h4{
+.routes-different h4,
+.card-different h4 {
+    width: 90%;
     z-index: 2;
     font-weight: 700;
     color: white;
     font-size: 17px;
-    position: relative;
-    bottom: 150px;
-    left: 25px;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
 }
 
-.routes-different button, .card-different button{
+.routes-different button,
+.card-different button {
     border: none;
     border-radius: 10px;
     width: 80%;
     height: 50px;
-    background-color: rgb(196,41,29);
+    background-color: rgb(196, 41, 29);
     color: white;
     font-weight: 700;
     font-size: 15px;
-    position: absolute;
 }
-.routes-different button:hover, .card-different button:hover {
-    background-color: rgb(255,230,229);
-    color: rgb(215,44,34);
+
+.routes-different button:hover,
+.card-different button:hover {
+    background-color: rgb(255, 230, 229);
+    color: rgb(215, 44, 34);
     cursor: pointer;
 }
 
-/*Property*/
-  .card-container
-  {
+/*featured-rentals*/
+.card-container {
     display: flex;
     width: 87%;
     gap: 1.5%;
     margin: auto;
     height: 400px;
-  }
-  .card
-  {
+}
+
+.card {
     display: grid;
     background-color: #f4f4f4;
     border-radius: 10px;
-    box-shadow: 0px 2px 4px rgba(0, 0,0,0.3);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     transition: transform 0.6s;
     width: 100%;
     height: 400px;
     grid-template-rows: 1fr 1fr;
     cursor: pointer;
-  }
-  .card:hover{
+}
+
+.card:hover {
     transform: translateY(-10px);
-  }
-.card .image
-{
+}
+
+.card .image {
     width: 100%;
     height: 180px;
     object-fit: cover;
@@ -664,36 +728,35 @@ body {
     cursor: pointer;
     overflow: hidden;
     border-radius: 5px;
-
+    position: relative;
+    text-align: center;
 }
 
 .card-different img {
-    transition: transform 0.3s ease;
-
+    transition: 0.3s ease;
 }
 
-.card-different img:hover{
+.card-different img:hover {
     transform: scale(1.2);
 }
 
 
 .property-same {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    }
-.property-same a
-{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.property-same a {
     font-family: 'Poppins';
     text-decoration: none;
-    border: 1px dashed rgb(135,147,160);
+    border: 1px dashed rgb(135, 147, 160);
     color: #45596C;
     border-radius: 2px;
     padding: 3px;
     font-size: 12px;
 }
 
-.head button
-{
+.head button {
     font-family: 'Poppins';
     border: none;
     border-radius: 5px;
@@ -708,8 +771,8 @@ body {
 }
 
 .end button {
-    background-color: rgb(255,230,229);
-    color: rgb(215,44,34);
+    background-color: rgb(255, 230, 229);
+    color: rgb(215, 44, 34);
     font-family: 'Poppins';
     border: none;
     border-radius: 5px;
@@ -731,12 +794,13 @@ body {
 .international-routes .buttons {
     margin-left: 6.5%;
 }
+
 .international-routes .buttons button {
     border: none;
     border-radius: 10px;
     width: auto;
     height: 50px;
-    background-color: rgb(196,41,29);
+    background-color: rgb(196, 41, 29);
     color: white;
     font-weight: 500;
     font-size: 13px;
@@ -746,7 +810,7 @@ body {
 }
 
 .international-routes .buttons .button-different {
-    background-color: rgb(19,27,36);
+    background-color: rgb(19, 27, 36);
 }
 
 .international-routes .all-flights {
@@ -756,7 +820,8 @@ body {
     margin-bottom: 70px;
 
 }
-.international-routes .all-flights  ul{
+
+.international-routes .all-flights ul {
     font-family: 'Poppins';
     color: #455873;
     font-size: 12px;
@@ -771,12 +836,11 @@ body {
 
 
 
-.html
-{
+.html {
     scroll-behavior: smooth;
 }
-.gotopbtn
-{
+
+.gotopbtn {
     position: fixed;
     width: 50px;
     height: 50px;
@@ -787,10 +851,10 @@ body {
     text-align: center;
     line-height: 50px;
     color: white;
-    font-size:  22px;
+    font-size: 22px;
 }
 
-.home1{
+.home1 {
     height: 550px;
     background-image: url(../images/bg.jpg);
     background-repeat: no-repeat;
@@ -820,17 +884,19 @@ body {
     padding: 0px 10px 0px 20px;
     border-radius: 5px;
 }
- .input1 {
+
+.input1 {
     width: 100%;
     height: 85%;
- }
+}
 
- .button1 {
+.button1 {
     width: 100%;
     height: 85%;
 
 }
-.home1 .button1 input{
+
+.home1 .button1 input {
     width: 100%;
     height: 100%;
     margin-top: 4px;
@@ -845,23 +911,24 @@ body {
     border: none;
     outline: none;
     font-family: 'Poppins';
-    color:#5D6F7D;
+    color: #5D6F7D;
     font-weight: 500;
 
 }
-.home1 .button1 input
-{
+
+.home1 .button1 input {
     background-color: rgb(215, 44, 33);
     font-family: 'Poppins';
     font-weight: 500;
     color: white;
-    border:none;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 4.5px;
 }
-.home1 .button1 input:hover{
-    background-color: rgb(255,230,229);
+
+.home1 .button1 input:hover {
+    background-color: rgb(255, 230, 229);
     color: rgb(215, 44, 33);
 }
 
@@ -876,7 +943,7 @@ body {
 .card1 {
     position: relative;
     width: 100%;
-    height:400px;
+    height: 400px;
 }
 
 .card1 img {
@@ -900,11 +967,11 @@ body {
     padding: 20px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    
+
 }
 
 .card1:hover .container2 {
-    opacity: 1; 
+    opacity: 1;
 }
 
 .text1 h2 {
@@ -914,7 +981,7 @@ body {
 }
 
 .button3 button {
-   
+
     background-color: #ffffff;
     color: black;
     border: none;
@@ -924,40 +991,40 @@ body {
     width: 200px;
     height: 50px;
 
-  
+
 }
 
 .button3 button:hover {
     background-color: #CD2c22;
     color: white;
 }
-.container2 h2
-{
+
+.container2 h2 {
     margin: 18px;
 }
-.top
-{
+
+.top {
     display: flex;
     justify-content: space-between;
     width: 87%;
     margin: 0 auto;
-    
+
 }
-.top button
-{
+
+.top button {
     font-family: 'Poppins';
     border: none;
     border-radius: 5px;
     width: 110px;
     height: 45px;
-    background-color: rgb(255,230,229);
-    color: rgb(215,44,34);
+    background-color: rgb(255, 230, 229);
+    color: rgb(215, 44, 34);
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
 }
 
 .top button:hover {
-    background-color:  rgb(215, 44, 33);
-    color:rgb(255,230,229);
+    background-color: rgb(215, 44, 33);
+    color: rgb(255, 230, 229);
 }

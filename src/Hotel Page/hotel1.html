@@ -22,33 +22,34 @@
 </head>
 <body class="body">
     <header>
-        <nav>
-            <div class="logo"><img src="../images/uebLogo.webp" alt="ueb-logo"></div>
-            <ul>
-                <li><a href="../index.html"><i class="fa-solid fa-house icon"></i>Home</a></li>
-                <li><a href="hotels.html"><i class="fa-solid fa-hotel icon"></i>Hotels</a></li>
-                <li><a href="#Flights"><i class="fa-solid fa-jet-fighter icon"></i>Flights</a></li>
-                <li><a href="#Cars"><i class="fa-solid fa-car icon"></i>Cars</a></li>
-                <li><a href="#AboutUs"><i class="fa-solid fa-circle-info icon"></i>About Us</a></li>
-            </ul>
-           
-            <div class="login-register">
-                <button id="sign-in">Sign in/Sign up</button>
+        <div class="logo"><img src="../images/uebLogo.webp" alt="ueb-logo"></div>
+         <ul>
+            <li><a href="../index.html"><i class="fa-solid fa-house icon"></i>Home</a>
+               </li>
+               <li><a href="hotels.html" style="color: rgb(215, 44, 33);"><i class="fa-solid fa-hotel icon"></i>Hotels</a></li>
+               <li><a href="#Flights"><i class="fa-solid fa-jet-fighter icon"></i>Flights</a></li>
+               <li><a href="cars.html"><i class="fa-solid fa-car icon"></i>Cars</a></li>
+               <li><a href="#AboutUs"><i class="fa-solid fa-circle-info icon"></i>About Us</a></li>
+           </ul>
+           <div class="login-register">
+               <button id="sign-in">Sign in/Sign up</button>
+           </div>
+   </header>
+
+
+    <section class="login-all">
+        <div class="login">
+            <div class="login-head">
+                <h4>Sign in</h4>
+                <p class="iks"><i class="fa-solid fa-square-xmark fa-xl" style="color: #adb5bd;"></i></p>
             </div>
-        </nav>
-    </header>
-
-
-    <section class="login">
-        <div class="login-head">
-            <h4>Sign in</h4>
-            <p class="iks"><i class="fa-solid fa-square-xmark fa-xl" style="color: #adb5bd;"></i></p>
-        </div>
-        <div class="login-form">
-            <div class="login-input">
-                <form action="" method="post">
-                        <div><input class="login-change" type="email" id="login-email" placeholder="Enter your email" required></div>
-                        <div><input class="login-change" type="password" id="login-password" placeholder="Enter your password" required></div>
+            <div class="login-form">
+                <div class="login-input">
+                    <form action="" method="post">
+                        <div><input class="login-change" type="email" id="login-email" placeholder="Enter your email"
+                                required></div>
+                        <div><input class="login-change" type="password" id="login-password"
+                                placeholder="Enter your password" required></div>
                         <button>Log In</button>
                         <div class="check">
                             <div class="remember">
@@ -57,41 +58,48 @@
                             </div>
                             <div><a href="">Forgot password?</a></div>
                         </div>
-                </form>
-            </div>
-                <div class="divider"><p style="font-weight: 300; font-size: 14px;">------------Sign In With More Methods------------</p></div>
-                <div class="socials">
-                    <div class = "social"><i class="fa-brands fa-facebook" style="color: #0033ff;"></i></div>
-                    <div class = "social"><i class="fa-brands fa-whatsapp" style="color: #1bde32;"></i></div>
-                    <div class = "social"><i class="fa-brands fa-linkedin icon" style="color: #0033ff;"></i></i></div>
-                    <div class = "social"><i class="fa-brands fa-square-x-twitter" style="color: #002f80;"></i></div>
+                    </form>
                 </div>
-        </div>
-        <div class="login-end">
-            <p>Don't have an account yet?  <span class="sregister">Sign up</span></p>
+                <div class="divider">
+                    <p style="font-weight: 300; font-size: 14px;">------------Sign In With More Methods------------</p>
+                </div>
+                <div class="socials">
+                    <div class="social"><i class="fa-brands fa-facebook" style="color: #0033ff;"></i></div>
+                    <div class="social"><i class="fa-brands fa-whatsapp" style="color: #1bde32;"></i></div>
+                    <div class="social"><i class="fa-brands fa-linkedin icon" style="color: #0033ff;"></i></i></div>
+                    <div class="social"><i class="fa-brands fa-square-x-twitter" style="color: #002f80;"></i></div>
+                </div>
+            </div>
+            <div class="login-end">
+                <p>Don't have an account yet? <span class="sregister">Sign up</span></p>
+            </div>
         </div>
     </section>
+
 
     <section class="register">
         <div class="register-head">
             <h4>Sign up</h4>
             <p class="iks1"><i class="fa-solid fa-square-xmark fa-xl" style="color: #adb5bd;"></i></p>
         </div>
-
-            <div class="register-form">
-                <form action="" method="post">
-                        <div class = "name-surname">
-                             <input class="login-change" type="text" id="register-name" placeholder="Enter your name" required>
-                             <input class="login-change" type="text" id="register-surname" placeholder="Enter your surname" required>
-                        </div>
-                        <div><input class="login-change" type="email" id="register-email" placeholder="Enter your email" required></div>
-                        <div><input class="login-change" type="password" id="register-password" placeholder="Enter your password" required></div>
-                        <div><input class="login-change" type="password" id="registerc-password" placeholder="Confirm your password" required></div>
-                        <button style="width: 434px; margin: auto;">Sign up</button>
-                </form>
-            </div>
+        <div class="register-form">
+            <form action="" method="post">
+                <div class="name-surname">
+                    <input class="login-change" type="text" id="register-name" placeholder="Enter your name" required>
+                    <input class="login-change" type="text" id="register-surname" placeholder="Enter your surname"
+                        required>
+                </div>
+                <div><input class="login-change" type="email" id="register-email" placeholder="Enter your email"
+                        required></div>
+                <div><input class="login-change" type="password" id="register-password"
+                        placeholder="Enter your password" required></div>
+                <div><input class="login-change" type="password" id="registerc-password"
+                        placeholder="Confirm your password" required></div>
+                <button style="width: 434px; margin: auto;">Sign up</button>
+            </form>
+        </div>
         <div class="register-end">
-            <p>Do you have an account?  <span  class="signbutton">Sign in</span></p>
+            <p>You have an account? <span class="signbutton">Sign in</span></p>
         </div>
     </section>
 
