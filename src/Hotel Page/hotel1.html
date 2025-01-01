@@ -19,6 +19,7 @@
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="../styles/hotel-child.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"> 
+    
 </head>
 <body class="body">
     <header>
@@ -126,9 +127,9 @@
 
 <div class="body-part">
     <div class="sec1">
-            <div class="btn">
+            <div class="btn-first" style="width: 100%;">
                 <a href=""><p>Overview</p></a>
-                <a href=""><p>Apartament Info & Price</p></a>
+                <a href=""><p id="long">Apartament Info & Price</p></a>
                 <a href=""><p>Facilities</p></a>
                 <a href=""><p>House rule</p></a>
                 <a href=""><p>Guest reviews</p></a>
@@ -144,7 +145,7 @@
             </div>
 
             <div class="photos">
-                <img src="../images/Hotel1/hotel1-room.jpg" alt="Hotel img" id="first-photo">
+                <img src="../images/Hotel1/hotel1-room.jpg" alt="Hotel img" class="photo" id="first-photo">
                 <img src="../images/Hotel1/Building.jpg" alt="Hotel img" class="photo" id="second-photo">
                 <img src="../images/Hotel1/buffe.jpg" alt="Hotel img" class="photo" id="third-photo">
                 <div class="bottom-photos">
@@ -161,7 +162,14 @@
                 <p>Genius discounts at this property are subject to book dates, stay dates and other available deals.</p><br>
                 <p> Featuring a rooftop outdoor pool, Hotel Chancellor@Orchard is centrally located in Orchard Road where shopping, entertainment and dining destinations are just minutes away. The hotel is within a 5-minute walk to Somerset and Dhoby Ghaut MRT stations.</p><br>
                 <p>10 minutes away, shopping areas like Bugis Village, Chinatown and Little India are accessible by train. The property is a quick 1.1 km stroll from Singapore Art Museum and Orchard MRT Station. Changi Airport is approximately 17 km away.</p><br>
-                <p>With an al fresco and indoor dining area, Bistro@Chancellor Cafe on the second floor serves buffet breakfast every morning.</p>
+                <p>With an al fresco and indoor dining area, Bistro@Chancellor Cafe on the second floor serves buffet breakfast every morning.</p><br>
+
+                <div id="extra-text" class="hidden">
+                    <p>Hotel Chancellor@Orchard offers a 24-hour front desk, meeting facilities, luggage storage, children's playground and coin-operated laundry machines. Free WiFi is available throughout the property.</p><br>
+                    <p>Couples particularly like the location — they rated it <strong>8.1</strong> for a two-person trip.</p>
+                </div>
+
+                <button class="toggle-btn" id="toggle-btn">Show More</button>
             </div>
     </div>
 
@@ -234,7 +242,7 @@
 
 <div class="body-part2">
     <br><hr><br>
-    <h2>Availability</h2><br>
+    <h2 id="avb">Availability</h2>
 
     <table class="room-table">
         <thead>
@@ -324,6 +332,83 @@
         </tbody>
     </table>
 
+    <br>
+    <h2>Guest review</h2>
+    <div class="guest-reviews">
+        <button id="gst-btn">6.4</button>
+        <div class="gst-txt">
+            <p id="txt-first">Pleasant -</p>
+            <p id="txt-second">667 reviews</p>
+        </div>
+    </div>
+    <div class="reviews-container">
+        <div class="categories">
+            <div class="category">
+                <div class="category-title">
+                    <span>Staff</span>
+                    <span>&darr;</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar bar-red" style="width: 70%;"></div>
+                </div>
+                <div class="value">7.0</div>
+            </div>
+
+            <div class="category">
+                <div class="category-title">
+                    <span>Facilities</span>
+                    <span>&darr;</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar bar-red" style="width: 64%;"></div>
+                </div>
+                <div class="value">6.4</div>
+            </div>
+
+            <div class="category">
+                <div class="category-title">
+                    <span>Comfort</span>
+                    <span>&darr;</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar bar-red" style="width: 69%;"></div>
+                </div>
+                <div class="value">6.9</div>
+            </div>
+
+            <div class="category">
+                <div class="category-title">
+                    <span>Value for money</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar bar-blue" style="width: 67%;"></div>
+                </div>
+                <div class="value">6.7</div>
+            </div>
+
+            <div class="category">
+                <div class="category-title">
+                    <span>Free WiFi</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar bar-blue" style="width: 77%;"></div>
+                </div>
+                <div class="value">7.7</div>
+            </div>
+
+            <div class="category">
+                <div class="category-title">
+                    <span>Location</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar bar-blue" style="width: 84%;"></div>
+                </div>
+                <div class="value">8.4</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script/hotel1.js"></script>
 </div>
 </body>
 </html>
