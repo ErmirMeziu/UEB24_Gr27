@@ -22,22 +22,31 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 
 
+    <style>
+        .home-text {
+            color: white;
+            text-align: center;
+            position: relative;
+            top: 220px;
+        }
+    </style>
+
 </head>
 
 <body>
     <header>
-         <div class="logo"><img src="images/uebLogo.webp" alt="ueb-logo"></div>
-          <ul>
-             <li><a href="index.html" style="color: rgb(215, 44, 33);"><i class="fa-solid fa-house icon"></i>Home</a>
-                </li>
-                <li><a href="Hotel Page/hotels.html"><i class="fa-solid fa-hotel icon"></i>Hotels</a></li>
-                <li><a href="#Flights"><i class="fa-solid fa-jet-fighter icon"></i>Flights</a></li>
-                <li><a href="cars.html"><i class="fa-solid fa-car icon"></i>Cars</a></li>
-                <li><a href="#AboutUs"><i class="fa-solid fa-circle-info icon"></i>About Us</a></li>
-            </ul>
-            <div class="login-register">
-                <button id="sign-in">Sign in/Sign up</button>
-            </div>
+        <div class="logo"><img src="images/uebLogo.webp" alt="ueb-logo"></div>
+        <ul>
+            <li><a href="index.html" style="color: rgb(215, 44, 33);"><i class="fa-solid fa-house icon"></i>Home</a>
+            </li>
+            <li><a href="Hotel Page/hotels.html"><i class="fa-solid fa-hotel icon"></i>Hotels</a></li>
+            <li><a href="#Flights"><i class="fa-solid fa-jet-fighter icon"></i>Flights</a></li>
+            <li><a href="cars.html"><i class="fa-solid fa-car icon"></i>Cars</a></li>
+            <li><a href="#AboutUs"><i class="fa-solid fa-circle-info icon"></i>About Us</a></li>
+        </ul>
+        <div class="login-register">
+            <button id="sign-in">Sign in/Sign up</button>
+        </div>
     </header>
 
     <section class="login-all">
@@ -64,7 +73,8 @@
                     </form>
                 </div>
                 <div class="divider">
-                    <p style="font-weight: 300; font-size: 14px;">------------Sign In With More Methods------------</p>
+                    <p style="font-weight: 300; font-size: 14px; letter-spacing: .5px;">------------ <i>Sign In With
+                            More Methods</i> ------------</p>
                 </div>
                 <div class="socials">
                     <div class="social"><i class="fa-brands fa-facebook" style="color: #0033ff;"></i></div>
@@ -129,13 +139,15 @@
                         <legend>Members</legend>
                         <input type="number" name="members" id="members" min="0">
                     </fieldset>
-                    <button><i class="fa-solid fa-magnifying-glass loop"></i>Search</button>
                 </form>
+                <button><i class="fa-solid fa-magnifying-glass loop"></i>Search</button>
             </div>
         </div>
         <div class="sales-container">
             <div class="sales">
-                <div class="image"><img src="images/destination-sales.webp" alt="destination photo"></div>
+                <div class="image"><img src="images/destination-sales.webp" alt="destination photo"   width = "80"
+                    height="80"; 
+></div>
                 <div class="offpercent">
                     <h4>30% Off On Summer <br> Vacation</h4>
                     <p><small>Valid 31 March 2025</small></p>
@@ -208,7 +220,7 @@
     <section>
         <div class="top">
             <h4>Browse Popular Destinations</h4>
-            <button>More <i class="fa-solid fa-arrow-trend-up ms-2"></i></button>
+            <button>More<i class="fa-solid fa-arrow-trend-up ms-2"></i></button>
 
         </div>
         <div class="container4">
@@ -269,7 +281,7 @@
                 <div class="download">
                     <img src="images/app-link.png" style="width: 60px; height: 60px;" alt="">
                     <div class="download-app">
-                        <h4>Download App Now!</h4>
+                        <h4><mark style="background-color: rgb(255,230,229);">Download App Now!</mark></h4>
                         <p>Use code <span style="color: orangered;">WELCOME</span> and get <span
                                 style="color: rgb(69,171,118);">FLAT 20%</span>
                             OFF on your first<br>domestic flight booking</p>
@@ -279,8 +291,8 @@
                     <form action="" method="post">
                         <label for="mobile-number">+91 - </label>
                         <input type="text" name="mobile-number" id="mobile-number" placeholder="Enter Mobile Number">
-                        <button>Get App Link</button>
                     </form>
+                    <button>Get App Link</button>
                 </div>
             </div>
             <div class="right">
@@ -542,16 +554,14 @@
         </div>
         <hr>
         <div class="footer-bottom">
-            <div class="copy"> &copy; 2023 GeoTrip. Design by GeoTrip</div>
+            <div class="copy"> &copy; <u>2024 GeoTrip. Design by GeoTrip </u></div>
             <div class="Terms">
                 <a href="#">Terms of Service</a><a href="#">Privacy
                     Policy</a><a href="#">Cookies</a>
             </div>
         </div>
     </footer>
-    <!-- <a class="gotopbtn" href="#"><i class="fas fa-arrow-up "></i></a> -->
-
-
+    <a class="gotopbtn" href="#"><i class="fas fa-arrow-up "></i></a>
 
 </body>
 

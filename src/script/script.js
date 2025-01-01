@@ -63,7 +63,7 @@ changeImg();
 
 /* header */
 const header = document.querySelector("header");
-
+const gotopbtn = document.querySelector(".gotopbtn");
 
 window.onscroll = function() {
 
@@ -71,6 +71,12 @@ window.onscroll = function() {
         header.style.backgroundColor = "rgb(4,22,37)";
     } else {
         header.style.backgroundColor = "transparent";
+    }
+
+    if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+        gotopbtn.classList.add("gotopbtn-special");
+    } else {
+        gotopbtn.classList.remove("gotopbtn-special");
     }
 };
 
