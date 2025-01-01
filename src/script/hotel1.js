@@ -34,3 +34,17 @@ document.querySelectorAll('.photo, .bottom-pht').forEach(photo => {
         });
     });
 })
+
+//answer part
+document.querySelectorAll('.arrow').forEach(arrow => {
+    arrow.addEventListener('click', function () {
+        const answer = this.nextElementSibling;
+        if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+            this.innerHTML = '&#x25BC;'; // Down arrow
+        } else {
+            answer.style.display = 'block';
+            this.innerHTML = '&#x25B2;'; // Up arrow
+        }
+    });
+});
