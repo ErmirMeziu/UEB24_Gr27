@@ -53,3 +53,33 @@ const button = document.querySelector(".bottom-btn1");
 button.addEventListener('click', function(){
     button.classList.toggle('bottom-btn-special');
 })
+
+//Slider
+const recommendations = document.querySelector('.recommendations');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+
+let scrollAmount = 0;
+const cardWidth = 320; // Approximate width of a single card (adjust as needed)
+
+// Scroll to the left
+prevButton.addEventListener('click', () => {
+    scrollAmount -= cardWidth;
+    recommendations.style.transform = `translateX(${scrollAmount}px)`;
+
+    // Prevent scrolling beyond the first card
+    if (scrollAmount > 0) {
+        scrollAmount = 0;
+    }
+});
+
+// Scroll to the right
+nextButton.addEventListener('click', () => {
+    scrollAmount += cardWidth;
+    recommendations.style.transform = `translateX(${-scrollAmount}px)`;
+
+    // Prevent scrolling beyond the last card
+    if (scrollAmount < -recommendations.scrollWidth + cardWidth * 2) {
+        scrollAmount = -recommendations.scrollWidth + cardWidth * 2;
+    }
+});
