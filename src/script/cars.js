@@ -1,14 +1,25 @@
 const mimshef = document.querySelector('.mimshef');
 const viewmore = document.querySelector('.view-more');
-const BH = document.querySelector('BH');
-
+ let a = 0;
 
 viewmore.addEventListener('click', function () {
-        mimshef.classList.add('mimshef-special');
-        mimshef.classList.add('BH');
-
-
+        mimshef.classList.toggle('BH');
+        mimshef.classList.toggle('mimshef-special');
+    if (a == 0) {
+        viewmore.textContent = "view less";
+        mimshef.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        a = 1;
+    } else {
+        viewmore.textContent = "view more";
+        document.querySelector('.goTop').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        a = 0;
+    }
+    
 });
+
+
+
+
 
 
 const sliders = document.querySelectorAll('.slider');
