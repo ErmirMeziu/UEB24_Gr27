@@ -180,7 +180,7 @@ img:hover {
 
 }
 
-.txt #second {
+.txt #second,#somep {
     font-size: 14px;
     color: gray;
     margin-top: 5px;
@@ -649,7 +649,7 @@ ul {
     padding: 0;
 }
 
-ul li {
+.nearby-container ul li {
     font-size: 14px;
     margin-bottom: 8px;
     padding: 7px 0;
@@ -669,9 +669,6 @@ h3 i {
     margin-right: 8px;
 }
 
-ul li i {
-    margin-right: 8px;
-}
 
 .nearby-grid>div {
     border-right: 1px solid #ddd;
@@ -710,3 +707,126 @@ footer ul li {
     color: #4CAF50;
 }
 
+.hotel-snd h3{
+    padding-top: 15px;
+}
+
+.hotel-snd ul li{
+    color:#1a1a1a ;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.hotel-snd ul li::before{
+    content: "✔";
+    color: #1a1a1a;
+    margin-right: 14px;
+    font-size: 17px; 
+}
+#free{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    text-align:center;
+    padding-top: 5px;
+    font-size: 12px;
+    border-radius: 10px;
+    background-color: #f1fef6;
+    color:#008234 ;
+}
+
+.recommendations {
+    display: grid;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5%;
+    cursor: pointer;
+    margin-bottom: 300px;
+}
+
+.hotel-rec {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 100%;
+    height: 370px;
+    min-width: 300px;
+    margin: 0 10px;
+
+}
+.routes-image
+{
+    overflow: hidden;
+    width: 100%;
+    height: 240px;
+    border-radius: 5px;
+}
+.recommendations{
+    margin-top: 10px;
+    display: flex;
+    width: max-content;
+    transition: transform 0.3s ease-in-out;
+}
+.recommendations img {
+    width: 100%;
+    height: 240px;
+    border-radius: 5px 5px 0px 0px;
+    transition: .3s ease-in-out;
+}
+
+.recommendations img:hover {
+    transform: scale(1.2);
+}
+
+.h-review{
+    display: flex;
+    padding: 5px;
+}
+
+.h-review ul{
+    display: flex;
+    margin-right: 5px;
+}
+
+.h-review ul li i{
+    color:rgb(255, 183, 0);
+    padding: 2px;
+    font-size: 14px;
+}
+
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.recommendations-wrapper {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    width: 100%;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}

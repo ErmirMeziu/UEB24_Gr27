@@ -22,6 +22,37 @@
     <link rel="stylesheet" href="../styles/hotel-child.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <link rel="stylesheet" href="../styles/footer.css">
+
+    <style>
+        .hotel-snd  ul ol li{
+            list-style-type: none;
+            font-size: 14px;
+        }
+        .hotel-snd ul ol li::before{
+            content: '!';
+            color:red;
+            margin-left: 22px;
+        }
+        .h2-size{
+            font-size: 24px;
+        }
+        .h5-style{
+            margin-left: 5px;
+        }
+        .btn-style{
+            width: 24px;
+            height: 24px;
+            background-color: rgb(0, 45, 113);
+            color: white;
+            border: none;
+            border-radius: 5px 5px 5px 0;
+            margin-right: 5px;
+        }
+        .p-style{
+            font-size:14px;
+            color: rgb(118, 118, 118);
+        }
+    </style>
 </head>
 
 <body class="body">
@@ -269,7 +300,7 @@
     <div class="body-part2">
         <br>
         <hr><br>
-        <h2 id="avb">Availability</h2>
+        <h2 id="avb" class="h2-size">Availability</h2>
 
         <table class="room-table">
             <thead>
@@ -366,7 +397,7 @@
 
         <br>
         <div class="gs-btn">
-            <h2>Guest review</h2>
+            <h2 class="h2-size">Guest review</h2>
             <button id="gst-btn"><a href="#avb">See Availability</a></button>
         </div>
         <div class="guest-reviews">
@@ -447,7 +478,7 @@
 
         <br>
         <div class="gs-btn">
-            <h2>Travellers are asking</h2>
+            <h2 class="h2-size">Travellers are asking</h2>
             <button id="gst-btn"><a href="#avb">See Availability</a></button>
         </div>
 
@@ -532,7 +563,7 @@
 
         <br>
         <div class="gs-btn">
-            <h2>Hotel surroundings</h2>
+            <h2 class="h2-size">Hotel surroundings</h2>
             <button id="gst-btn"><a href="#avb">See Availability</a></button>
         </div>
 
@@ -616,7 +647,7 @@
 
         <br>
         <div class="gs-btn">
-            <h2>Hotel surroundings</h2>
+            <h2 class="h2-size">Facilities of Hotel Chancellor@Orchard</h2>
             <button id="gst-btn"><a href="#avb">See Availability</a></button>
         </div>
         <p id="su-p">Most popular facilities</p>
@@ -638,7 +669,7 @@
         <div class="hotel-fac">
 
             <div class="hotel-snd">
-                <h2><i class="fa-solid fa-user"></i>  Great for your stay</h2>
+                <h3><i class="fa-solid fa-user"></i>  Great for your stay</h3>
                 <ul>
                     <li>Restaurant</li>
                     <li>Parking</li>
@@ -651,20 +682,437 @@
                     <li>Room service</li>
                     <li>Tour desk</li>
                 </ul>
+
+                <h3><i class="fa-solid fa-bath"></i>  Bathroom</h3>
+                <ul>
+                    <li>Towels</li>
+                    <li>Private bathroom</li>
+                    <li>Toilet</li>
+                    <li>Hairdryer</li>
+                    <li>Shower</li>
+                </ul>
+
+                <h3><i class="fa-solid fa-bed"></i>  Bedroom</h3>
+                <ul>
+                    <li>Linen</li>
+                    <li>Wardrobe or closet</li>
+                </ul>
+
+                <h3><i class="fa-brands fa-slack"></i>  Outdoors</h3>
+                <ul>
+                    <li>Outdoor furniture</li>
+                    <li>Sun terrace</li>
+                    <li>Terrace</li>
+                </ul>
+
+                <h3><i class="fa-solid fa-kitchen-set"></i>  Kitchen</h3>
+                <ul>
+                    <li>Tumble dryer</li>
+                </ul>
+
+                <h3><i class="fa-solid fa-bed"></i>  Room Amenities</h3>
+                <ul>
+                    <li>Clothes rack</li>
+                </ul>
+                
+                <h3><i class="fa-solid fa-football"></i>  Activities</h3>
+                <ul>
+                    <li>Children's playground</li>
+                </ul>
+
+                <h3><i class="fa-solid fa-couch"></i> Living Area</h3>
+                <ul>
+                    <li>Desk</li>
+                </ul>
+
+                <h3><i class="fa-solid fa-burger"></i> Food & Drink</h3>
+                <ul>
+                    <li>Restaurant</li>
+                    <li>Vending machines</li>
+                </ul>
+
+            </div>
+            <div class="hotel-snd">
+                <h3><i class="fa-solid fa-laptop"></i>  Media & Technology</h3>
+                <ul>
+                    <li>Flat-screen TV</li>
+                    <li>Telephone</li>
+                </ul>
+
+                <h3><i class="fa-solid fa-square-parking"></i>  Parking</h3>
+                <ul>
+                    <li>Private parking is possible on site (reservation <br> is not needed) and costs S$ 10 per day.</li>
+                </ul>
+
+                <h3><i class="fa-solid fa-circle-info"></i>  Reception services</h3>
+                <ul>
+                    <li>Private check-in/check-out</li>
+                    <li>Concierge service</li>
+                    <li>Luggage storage</li>
+                    <li>Tour desk</li>
+                    <li>Currency exchange</li>
+                    <li>24-hour front desk</li>            
+                </ul>
+                
+                <h3><i class="fa-solid fa-people-group"></i> Entertainment and family services</h3>
+                <ul>
+                    <li>Kids' outdoor play equipment</li>
+                </ul>
+
+                <h3><i class="fa-solid fa-soap"></i> Cleaning services</h3>
+                <ul>
+                    <li>Daily housekeeping</li>
+                    <li>Dry cleaning
+                        <ol>
+                            <li>Additional charge</li>
+                        </ol>
+                    </li>
+                    <li>Laundry
+                        <ol>
+                            <li>Additional charge</li>
+                        </ol>
+                    </li>
+                </ul>
+                
+                <h3><i class="fa-solid fa-briefcase"></i>Business facilities</h3>
+                <ul>
+                    <li>Fax/photocopying
+                        <ol>
+                            <li>Additional charge</li>
+                        </ol>
+                    </li>
+                    <li>Meeting/banquet facilities
+                        <ol>
+                            <li>Additional charge</li>
+                        </ol>
+                    </li>
+                </ul>
+                
+                <h3><i class="fa-solid fa-lock"></i>  Safety & security</h3>
+                <ul>
+                    <li>Fire extinguishers</li>
+                    <li>CCTV outside property</li>
+                    <li>CCTV in common areas</li>
+                    <li>Smoke alarms</li>
+                    <li>Security alarm</li>
+                    <li>Key card access</li>   
+                    <li>Key access</li>
+                    <li>24-hour security</li>   
+                    <li>Safety deposit box</li>      
+                </ul>
             </div>
 
-            <div>
+            <div class="hotel-snd">
+                <h3><i class="fa-solid fa-wifi"></i>  Internet</h3>
+                <ul>
+                    <li>WiFi is available in all areas and is free of charge.</li>
+                </ul>
 
+                <h3><i class="fa-solid fa-info"></i> General</h3>
+                <ul>
+                    <li>Minimarket on site</li>
+                    <li>Vending machine (snacks)</li>
+                    <li>Vending machine (drinks)</li>
+                    <li>Designated smoking area</li>
+                    <li>Air conditioning</li>
+                    <li>Non-smoking throughout</li>
+                    <li>Soundproofing</li>
+                    <li>Carpeted</li>
+                    <li>Soundproof rooms</li>
+                    <li>Lift</li>
+                    <li>Facilities for disabled guests</li>
+                    <li>Non-smoking rooms</li>
+                    <li>Room service</li>
+                </ul>
+                <h3><i class="fa-solid fa-person-swimming"></i> Outdoor swimming pool <p id="free">Free!</p></h3>
+                <ul>
+                    <li>Open all year</li>
+                    <li>Pool with view</li>
+                    <li>Fence around pool</li>
+                </ul>
+
+                <h3><i class="fa-solid fa-wheelchair"></i> Accessibility</h3>
+                <ul>
+                    <li>Toilet with grab rails</li>
+                    <li>Wheelchair accessible</li>
+                    <li>Upper floors accessible by elevator</li>
+                </ul>
+                
+                <h3><i class="fa-solid fa-dumbbell"></i> Wellness</h3>
+                <ul>
+                    <li>Fitness</li>
+                    <li>Fitness centre</li>
+                </ul>
+
+                <h3><i class="fa-regular fa-comments"></i> Languages spoken</h3>
+                <ul>
+                    <li>English</li>
+                    <li>Indonesian</li>
+                    <li>Malay</li>
+                    <li>Alabanian</li>
+                    <li>Filipino</li>
+                    <li>Chinese</li>
+                </ul>
+
+               
             </div>
-
-            <div>
-
-            </div>
-
+            
         </div>
+
+        <br><br>
+        <div class="gs-btn">
+            <h2 class="h2-size">Similar properties you might like</h2>
+            <button id="gst-btn"><a href="#avb">See Availability</a></button>
+        </div>
+        <p id="somep">Travellers like you also liked these properties</p>
         
-
-
+        <div class="slider-container">
+            <button class="prev">&lt;</button>
+            <div class="recommendations-wrapper">
+                <div class="recommendations">
+                    <!--1-->
+                    <div class="hotel-rec">
+                        <div class="routes-image"><img src="../images/Hotel1/Hotel1-recommendation.jpg" alt="Hotel Grand Pacific"></div>
+                        <div class="h-review">
+                            <p id="somep">Hotel</p>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                            <h5 class="h5-style">Hotel Grand Pacific</h5>
+                        <div class="h-review">
+                            <button class="btn-style">7.2</button>
+                            <p class="p-style">Good - 1896 reviws</p>
+                        </div>
+                        <div class="h-review">
+                            <ul>
+                                <li><i class="fa-solid fa-location-dot"></i></li>
+                            </ul>
+                            <p class="p-style" style="margin-top: 5px;">0.8km from centre</p>
+                        </div>
+                    </div>
+                    <!--2-->
+                    <div class="hotel-rec">
+                        <div class="routes-image"><img src="../images/Hotel1/Hotel2-recommendation.jpg" alt=""></div>
+                        <div class="h-review">
+                            <p id="somep">Hotel</p>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star-half"></i></li>
+                            </ul>
+                        </div>
+                        <h5 class="h5-style">Hotel Royal Queens</h5>
+                        <div class="h-review">
+                            <button class="btn-style">7.7</button>
+                            <p class="p-style">Good - 3023 reviws</p>
+                        </div>
+                        <div class="h-review">
+                            <ul>
+                                <li><i class="fa-solid fa-location-dot"></i></li>
+                            </ul>
+                            <p class="p-style" style="margin-top: 5px;">0.8km from centre</p>
+                        </div>
+                    </div>
+                    <!--3-->
+                    <div class="hotel-rec">
+                        <div class="routes-image"><img src="../images/Hotel1/Hotel3-recommendation.jpg" alt="Jackson ville"></div>
+                        <div class="h-review">
+                            <p id="somep">Hotel</p>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <h5 class="h5-style">Hotel Bencoolen Singapore</h5>
+                        <div class="h-review">
+                            <button class="btn-style">6.3</button>
+                            <p class="p-style">Review score - 141 reviws</p>
+                        </div>
+                        <div class="h-review">
+                            <ul>
+                                <li><i class="fa-solid fa-location-dot"></i></li>
+                            </ul>
+                            <p class="p-style" style="margin-top: 5px;">1km from centre</p>
+                        </div>
+                    </div>
+                    <!--4-->
+                    <div class="hotel-rec">
+                        <div class="routes-image"><img src="../images/Hotel1/Hotel4-recommendation.jpg" alt="Jackson ville"></div>
+                        <div class="h-review">
+                            <p id="somep">Hotel</p>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <h5 class="h5-style">Hotel Mi Rochor</h5>
+                        <div class="h-review">
+                            <button class="btn-style">7.9</button>
+                            <p class="p-style">Good - 2787 reviws</p>
+                        </div>
+                        <div class="h-review">
+                            <ul>
+                                <li><i class="fa-solid fa-location-dot"></i></li>
+                            </ul>
+                            <p class="p-style" style="margin-top: 5px;">1.5km from centre</p>
+                        </div>
+                    </div> 
+                    <!--5-->   
+                    <div class="hotel-rec">
+                        <div class="routes-image"><img src="../images/Hotel1/Hotel5-recommendation.jpg" alt="Jackson ville"></div>
+                        <div class="h-review">
+                            <p id="somep">Hotel</p>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <h5 class="h5-style">Metropolitan YMCA Singapore</h5>
+                        <div class="h-review">
+                            <button class="btn-style">6.8</button>
+                            <p class="p-style">Review score - 182 reviws</p>
+                        </div>
+                        <div class="h-review">
+                            <ul>
+                                <li><i class="fa-solid fa-location-dot"></i></li>
+                            </ul>
+                            <p class="p-style" style="margin-top: 5px;">4.1km from centre</p>
+                        </div>
+                    </div> 
+                    <!--6-->
+                    <div class="hotel-rec">
+                        <div class="routes-image"><img src="../images/Hotel1/Hotel6-recommendation.jpg" alt="Jackson ville"></div>
+                        <div class="h-review">
+                            <p id="somep">Hotel</p>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star-half"></i></li>
+                            </ul>
+                        </div>
+                        <h5 class="h5-style">Hotel Royal</h5>
+                        <div class="h-review">
+                            <button class="btn-style">6.9</button>
+                            <p class="p-style">Review score - 740 reviws</p>
+                        </div>
+                        <div class="h-review">
+                            <ul>
+                                <li><i class="fa-solid fa-location-dot"></i></li>
+                            </ul>
+                            <p class="p-style" style="margin-top: 5px;">3.1km from centre</p>
+                        </div>
+                    </div> 
+                    <!--7-->
+                    <div class="hotel-rec">
+                        <div class="routes-image"><img src="../images/Hotel1/Hotel7-recommendation.jpg" alt="Jackson ville"></div>
+                        <div class="h-review">
+                            <p id="somep">Hotel</p>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <h5 class="h5-style">Village Hotel Albert Court by Far East</h5>
+                        <div class="h-review">
+                            <button class="btn-style">7.6</button>
+                            <p class="p-style">Good - 1102 reviws</p>
+                        </div>
+                        <div class="h-review">
+                            <ul>
+                                <li><i class="fa-solid fa-location-dot"></i></li>
+                            </ul>
+                            <p class="p-style" style="margin-top: 5px;">1.5km from centre</p>
+                        </div>
+                    </div> 
+                    <!--8-->
+                    <div class="hotel-rec">
+                        <div class="routes-image"><img src="../images/Hotel1/Hotel8-recommendation.jpg" alt="Jackson ville"></div>
+                        <div class="h-review">
+                            <p id="somep">Hotel</p>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star-half"></i></li>
+                            </ul>
+                        </div>
+                        <h5 class="h5-style">V Hotel Bencoolen</h5>
+                        <div class="h-review">
+                            <button class="btn-style">7.5</button>
+                            <p class="p-style">Good - 3579 reviws</p>
+                        </div>
+                        <div class="h-review">
+                            <ul>
+                                <li><i class="fa-solid fa-location-dot"></i></li>
+                            </ul>
+                            <p class="p-style" style="margin-top: 5px;">1km from centre</p>
+                        </div>
+                    </div> 
+                    <!--9-->
+                    <div class="hotel-rec">
+                        <div class="routes-image"><img src="../images/Hotel1/Hotel9-recommendation.jpg" alt="Jackson ville"></div>
+                        <div class="h-review">
+                            <p id="somep">Hotel</p>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star-half"></i></li>
+                            </ul>
+                        </div>
+                        <h5 class="h5-style">Hotel Boss</h5>
+                        <div class="h-review">
+                            <button class="btn-style">6.7</button>
+                            <p class="p-style">Review score - 11578 reviws</p>
+                        </div>
+                        <div class="h-review">
+                            <ul>
+                                <li><i class="fa-solid fa-location-dot"></i></li>
+                            </ul>
+                            <p class="p-style" style="margin-top: 5px;">1.9km from centre</p>
+                        </div>
+                    </div> 
+                    <!--10-->
+                    <div class="hotel-rec">
+                        <div class="routes-image"><img src="../images/Hotel1/Hotel10-recommendation.jpg" alt="Jackson ville"></div>
+                        <div class="h-review">
+                            <p id="somep">Hotel</p>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <h5 class="h5-style">Hotel Mono</h5>
+                        <div class="h-review">
+                            <button class="btn-style">7.3</button>
+                            <p class="p-style">Good - 547 reviws</p>
+                        </div>
+                        <div class="h-review">
+                            <ul>
+                                <li><i class="fa-solid fa-location-dot"></i></li>
+                            </ul>
+                            <p class="p-style" style="margin-top: 5px;">1.1km from centre</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <button class="next">&gt;</button>
+        </div>
     </div>
 
 
