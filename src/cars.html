@@ -5,38 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="cars.css">
+    <link rel="stylesheet" href="styles/cars.css">
     <link rel="stylesheet" href="styles/navbar.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/c2f2fe035b.js" crossorigin="anonymous"></script>
-    <script src="script/script.js" defer></script>
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-</head>
 
-<body> 
-    <section class="home">
-    <header>
-        <div class="logo"><img src="images/uebLogo.webp" alt="ueb-logo"></div>
-         <ul>
-            <li><a href="index.html"><i class="fa-solid fa-house icon"></i>Home</a>
-               </li>
-               <li><a href="Hotel Page/hotels.html"><i class="fa-solid fa-hotel icon"></i>Hotels</a></li>
-               <li><a href="#Flights"><i class="fa-solid fa-jet-fighter icon"></i>Flights</a></li>
-               <li><a href="cars.html"  style="color: rgb(215, 44, 33);"><i class="fa-solid fa-car icon"></i>Cars</a></li>
-               <li><a href="#AboutUs"><i class="fa-solid fa-circle-info icon"></i>About Us</a></li>
-           </ul>
-           <div class="login-register">
-               <button id="sign-in">Sign in/Sign up</button>
-           </div>
-   </header>
-   
-        <div>
+    <script src="script/cars.js" defer></script>
+    
+</head>
+<body>
+    <section>
+        <header>
+            <nav>
+                <div class="logo"><img src="images/uebLogo.webp" alt="ueb-logo"></div>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house icon"></i>Home</a></li>
+                    <li><a href="Hotel Page/hotels.html"><i class="fa-solid fa-hotel icon"></i>Hotels</a></li>
+                    <li><a href="#Flights"><i class="fa-solid fa-jet-fighter icon"></i>Flights</a></li>
+                    <li><a href="cars.html" style="color: rgb(215, 44, 33);"><i
+                                class="fa-solid fa-car icon"></i>Cars</a></li>
+                    <li><a href="#AboutUs"><i class="fa-solid fa-circle-info icon"></i>About Us</a></li>
+                </ul>
+
+            </nav>
+        </header>
+    </section>
+    <section>
+        <div class="home">
             <div class="home-text">
                 <h1>Starts Your Trip With GeoTrip</h1>
                 <p>Take a little break from the work stress of everyday. Discover plan trip and explore beautiful
@@ -57,11 +61,10 @@
                         <legend>Members</legend>
                         <input type="number" name="members" id="members" min="0">
                     </fieldset>
+                    <button><i class="fa-solid fa-magnifying-glass loop"></i>Search</button>
                 </form>
-                <button><i class="fa-solid fa-magnifying-glass loop"></i>Search</button>
             </div>
         </div>
-</section>
         <div class="sales-container">
             <div class="sales">
 
@@ -103,17 +106,367 @@
         </h1>
 
         <p>Cicero famously orated against his political opponent Lucius Sergius Catilina.</p>
+
+
     </div>
 
-    <a class="gotopbtn" href="#"><i class="fas fa-arrow-up "></i></a>
+    <section class="BH">
+        <div class="container12">
+            <div class="card5">
+                <div class="slider">
+                    <div class="slides">
+                        <img class="slide" src="images/Cars/Bmw-jasht.jpg" alt="Image #1">
+                        <img class="slide" src="images/Cars/BMW.jpg" alt="Image #2">
+                        <img class="slide" src="images/Cars/Bmw-mbrenda.jpg" alt="Image #3">
+                    </div>
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+                <div class="badge">600Kms included. After that $15/Kms</div>
+                <div class="card-body">
+                    <div>
+                        <div class="card-title">Suv, Innova Crysta</div>
+                        <p class="paragraph">SUV | AC | 5 Seats</p>
+                        <div class="Free">Free Cancellation Till 10 Aug 23</div>
+                        <div class="card-details">
+                            <div class="detail">Manual</div>
+                            <div class="detail">1 Large bag</div>
+                            <div class="detail">1 Small bag</div>
+                            <div class="detail">Diesel</div>
+                        </div>
+
+                        <div class="price-section">
+                            <div class="price-section2">
+                                <div class="discount">15% Off</div>
+                                <div class="price">US$59 <span class="old-price">US$79</span></div>
+                            </div>
+                            <div class="rating">
+                                <div class="reviews">Exceptional <br>3,014 reviews</div>
+                                <div class="score">4.8</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card5">
+                <div class="slider">
+                    <div class="slides">
+                        <img class="slide" src="images/Cars/Jasht.jpg" alt="Image #1">
+                        <img class="slide" src="images/Cars/Scoda-Mbrenda.jpg" alt="Image #2">
+                        <img class="slide" src="images/Cars/Scoda-jasht.jpg" alt="Image #3">
+                    </div>
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+                <div class="badge">600Kms included. After that $15/Kms</div>
+                <div class="card-body">
+                    <div>
+                        <div class="card-title">Toyota Aygo</div>
+                        <p class="paragraph">SUV | AC | 5 Seats</p>
+                        <div class="Free">Free Cancellation Till 10 Aug 23</div>
+                        <div class="card-details">
+                            <div class="detail">Manual</div>
+                            <div class="detail">1 Large bag</div>
+                            <div class="detail">1 Small bag</div>
+                            <div class="detail">Diesel</div>
+                        </div>
+                        <div class="price-section">
+                            <div class="price-section2">
+                                <div class="discount">15% Off</div>
+                                <div class="price">US$59 <span class="old-price">US$79</span></div>
+                            </div>
+                            <div class="rating">
+                                <div class="reviews">Exceptional <br>3,014 reviews</div>
+                                <div class="score">4.8</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card5">
+                <div class="slider">
+                    <div class="slides">
+                        <img class="slide" src="images/Cars/Bmw-Jasht-1.jpg" alt="Image #1">
+                        <img class="slide" src="images/Cars/Bmw-Jasht-2.jpg" alt="Image #2">
+                        <img class="slide" src="images/Cars/Bmw-Mbrenda-1.jpg" alt="Image #3">
+                    </div>
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+                <div class="badge">600Kms included. After that $15/Kms</div>
+
+                <div class="card-body">
+                    <div>
+                        <div class="card-title">Ford Focus</div>
+                        <p class="paragraph">SUV | AC | 5 Seats</p>
+                        <div class="Free">Free Cancellation Till 10 Aug 23</div>
+                        <div class="card-details">
+                            <div class="detail">Manual</div>
+                            <div class="detail">1 Large bag</div>
+                            <div class="detail">1 Small bag</div>
+                            <div class="detail">Diesel</div>
+                        </div>
+                        <div class="price-section">
+                            <div class="price-section2">
+                                <div class="discount">15% Off</div>
+                                <div class="price">US$59 <span class="old-price">US$79</span></div>
+                            </div>
+                            <div class="rating">
+                                <div class="reviews">Exceptional <br>3,014 reviews</div>
+                                <div class="score">4.8</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <section class="container3" style="margin-top: -120px;">
+        <div class="container12">
+            <div class="card5">
+                <div class="slider">
+                    <div class="slides">
+                        <img class="slide" src="images/Cars/Audi-jasht-1.jpg" alt="Image #1">
+                        <img class="slide" src="images/Cars/Audi-Jasht-2.jpg" alt="Image #2">
+                        <img class="slide" src="images/Cars/Audi-Mbrenda.jpg" alt="Image #3">
+                    </div>
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+                <div class="badge">600Kms included. After that $15/Kms</div>
+                <div class="card-body">
+                    <div>
+                        <div class="card-title">Suv, Innova Crysta</div>
+                        <p class="paragraph">SUV | AC | 5 Seats</p>
+                        <div class="Free">Free Cancellation Till 10 Aug 23</div>
+                        <div class="card-details">
+                            <div class="detail">Manual</div>
+                            <div class="detail">1 Large bag</div>
+                            <div class="detail">1 Small bag</div>
+                            <div class="detail">Diesel</div>
+                        </div>
+                        <div class="price-section">
+                            <div class="price-section2">
+                                <div class="discount">15% Off</div>
+                                <div class="price">US$59 <span class="old-price">US$79</span></div>
+                            </div>
+                            <div class="rating">
+                                <div class="reviews">Exceptional <br>3,014 reviews</div>
+                                <div class="score">4.8</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card5">
+                <div class="slider">
+                    <div class="slides">
+                        <img class="slide" src="images/Cars/Scoda-Jassht-1.jpg" alt="Image #1">
+                        <img class="slide" src="images/Cars/Scoda-jasht.jpg" alt="Image #2">
+                        <img class="slide" src="images/Cars/Scoda-Mbrenda.jpg" alt="Image #3">
+                    </div>
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+                <div class="badge">600Kms included. After that $15/Kms</div>
+                <div class="card-body">
+                    <div>
+                        <div class="card-title">Toyota Aygo</div>
+                        <p class="paragraph">SUV | AC | 5 Seats</p>
+                        <div class="Free">Free Cancellation Till 10 Aug 23</div>
+                        <div class="card-details">
+                            <div class="detail">Manual</div>
+                            <div class="detail">1 Large bag</div>
+                            <div class="detail">1 Small bag</div>
+                            <div class="detail">Diesel</div>
+                        </div>
+                        <div class="price-section">
+                            <div class="price-section2">
+                                <div class="discount">15% Off</div>
+                                <div class="price">US$59 <span class="old-price">US$79</span></div>
+                            </div>
+                            <div class="rating">
+                                <div class="reviews">Exceptional <br>3,014 reviews</div>
+                                <div class="score">4.8</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card5">
+                <div class="slider">
+                    <div class="slides">
+                        <img class="slide" src="images/Cars/Gle-Jasht-1.jpg" alt="Image #1">
+                        <img class="slide" src="images/Cars/Gle-Jasht-2.jpg" alt="Image #2">
+                        <img class="slide" src="images/Cars/Gle-Mbrenda.jpg" alt="Image #3">
+                    </div>
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+                <div class="badge">600Kms included. After that $15/Kms</div>
+                <div class="card-body">
+                    <div>
+                        <div class="card-title">Ford Focus</div>
+                        <p class="paragraph">SUV | AC | 5 Seats</p>
+                        <div class="Free">Free Cancellation Till 10 Aug 23</div>
+                        <div class="card-details">
+                            <div class="detail">Manual</div>
+                            <div class="detail">1 Large bag</div>
+                            <div class="detail">1 Small bag</div>
+                            <div class="detail">Diesel</div>
+                        </div>
+                        <div class="price-section">
+                            <div class="price-section2">
+                                <div class="discount">15% Off</div>
+                                <div class="price">US$59 <span class="old-price">US$79</span></div>
+                            </div>
+                            <div class="rating">
+                                <div class="reviews">Exceptional <br>3,014 reviews</div>
+                                <div class="score">4.8</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="mimshef">
+        <div class="container12">
+            <div class="card5">
+                <div class="slider">
+                    <div class="slides">
+                        <img class="slide" src="images/Cars/Bmw-Jasht-1.jpg" alt="Image #1">
+                        <img class="slide" src="images/Cars/Bmw-Jasht-2.jpg" alt="Image #2">
+                        <img class="slide" src="images/Cars/Bmw1-Mbrenda.jpg" alt="Image #3">
+                    </div>
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+                <div class="badge">600Kms included. After that $15/Kms</div>
+                <div class="card-body">
+                    <div>
+                        <div class="card-title">Suv, Innova Crysta</div>
+                        <p class="paragraph">SUV | AC | 5 Seats</p>
+                        <div class="Free">Free Cancellation Till 10 Aug 23</div>
+                        <div class="card-details">
+                            <div class="detail">Manual</div>
+                            <div class="detail">1 Large bag</div>
+                            <div class="detail">1 Small bag</div>
+                            <div class="detail">Diesel</div>
+                        </div>
+
+                        <div class="price-section">
+                            <div class="price-section2">
+                                <div class="discount">15% Off</div>
+                                <div class="price">US$59 <span class="old-price">US$79</span></div>
+                            </div>
+                            <div class="rating">
+                                <div class="reviews">Exceptional <br>3,014 reviews</div>
+                                <div class="score">4.8</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card5">
+                <div class="slider">
+                    <div class="slides">
+                        <img class="slide" src="images/Cars/G8-Jasht.jpg" alt="Image #1">
+                        <img class="slide" src="images/Cars/G8-Jasht1.jpg" alt="Image #2">
+                        <img class="slide" src="images/Cars/Mbrenda.jpg" alt="Image #3">
+                    </div>
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+                <div class="badge">600Kms included. After that $15/Kms</div>
+
+                <div class="card-body">
+                    <div>
+                        <div class="card-title">Toyota Aygo</div>
+                        <p class="paragraph">SUV | AC | 5 Seats</p>
+                        <div class="Free">Free Cancellation Till 10 Aug 23</div>
+                        <div class="card-details">
+                            <div class="detail">Manual</div>
+                            <div class="detail">1 Large bag</div>
+                            <div class="detail">1 Small bag</div>
+                            <div class="detail">Diesel</div>
+                        </div>
+                        <div class="price-section">
+                            <div class="price-section2">
+                                <div class="discount">15% Off</div>
+                                <div class="price">US$59 <span class="old-price">US$79</span></div>
+                            </div>
+                            <div class="rating">
+                                <div class="reviews">Exceptional <br>3,014 reviews</div>
+                                <div class="score">4.8</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card5">
+                <div class="slider">
+                    <div class="slides">
+                        <img class="slide" src="images/Cars/G8-Jasht.jpg" alt="Image #1">
+                        <img class="slide" src="images/Cars/G8-Jasht1.jpg" alt="Image #2">
+                        <img class="slide" src="images/Cars/Mbrenda.jpg" alt="Image #3">
+                    </div>
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+                <div class="badge">600Kms included. After that $15/Kms</div>
+
+                <div class="card-body">
+                    <div>
+                        <div class="card-title">Ford Focus</div>
+                        <p class="paragraph">SUV | AC | 5 Seats</p>
+                        <div class="Free">Free Cancellation Till 10 Aug 23</div>
+                        <div class="card-details">
+                            <div class="detail">Manual</div>
+                            <div class="detail">1 Large bag</div>
+                            <div class="detail">1 Small bag</div>
+                            <div class="detail">Diesel</div>
+                        </div>
+                        <div class="price-section">
+                            <div class="price-section2">
+                                <div class="discount">15% Off</div>
+                                <div class="price">US$59 <span class="old-price">US$79</span></div>
+                            </div>
+                            <div class="rating">
+                                <div class="reviews">Exceptional <br>3,014 reviews</div>
+                                <div class="score">4.8</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <div class="view-more">View more</div>
 </body>
 
 </html>
