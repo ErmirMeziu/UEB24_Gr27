@@ -1,4 +1,4 @@
-/*login/register */
+/* login/register */
 const sign = document.querySelector('.login-register');
 const iks = document.querySelector('.iks');
 const iks1 = document.querySelector('.iks1');
@@ -8,29 +8,54 @@ const sregister = document.querySelector('.sregister');
 const register = document.querySelector('.register');
 const signbutton = document.querySelector('.signbutton');
 const body = document.querySelector('body');
-sign.addEventListener('click', function(){
+
+
+sign.addEventListener('click', function () {
     login.classList.add('login-special');
     loginall.classList.add('login-special');
     body.classList.add('body-special');
-})
-iks.addEventListener('click', function(){
+});
+
+iks.addEventListener('click', function () {
     login.classList.remove('login-special');
     loginall.classList.remove('login-special');
     body.classList.remove('body-special');
-})
-iks1.addEventListener('click', function(){
+});
+
+
+iks1.addEventListener('click', function () {
     register.classList.remove('register-special');
     loginall.classList.remove('login-special');
     body.classList.remove('body-special');
-})
-sregister.addEventListener('click', function(){
+});
+
+sregister.addEventListener('click', function () {
     login.classList.remove('login-special');
     register.classList.add('register-special');
-})
-signbutton.addEventListener('click', function(){
+});
+
+
+signbutton.addEventListener('click', function () {
     login.classList.add('login-special');
     register.classList.remove('register-special');
-})
+});
+
+
+loginall.addEventListener('click', function () {
+    login.classList.remove('login-special');
+    register.classList.remove('register-special');
+    loginall.classList.remove('login-special');
+    body.classList.remove('body-special');
+});
+
+
+login.addEventListener('click', function (event) {
+    event.stopPropagation();
+});
+
+register.addEventListener('click', function (event) {
+    event.stopPropagation();
+});
 
 /* backgroud-slideshow */
 var i = 0;

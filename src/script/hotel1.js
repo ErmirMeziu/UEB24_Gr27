@@ -28,7 +28,6 @@ document.querySelectorAll('.photo, .bottom-pht').forEach(photo => {
         const img = document.createElement('img');
         img.src = photo.src;
         lightbox.appendChild(img);
-
         lightbox.addEventListener('click', () => {
             lightbox.remove();
         });
@@ -48,3 +47,9 @@ document.querySelectorAll('.arrow').forEach(arrow => {
         }
     });
 });
+
+/*save the property*/
+const button = document.querySelector(".bottom-btn1");
+button.addEventListener('click', function(){
+    button.classList.toggle('bottom-btn-special');
+})

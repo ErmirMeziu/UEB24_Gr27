@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,26 +16,27 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/c2f2fe035b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/hotels.css">
-    <script src = "../script/script.js" defer></script>
-    <link rel="stylesheet"
-    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="../script/script.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 </head>
+
 <body class="body">
     <header>
-        <div class="logo"><img src="../images/uebLogo.webp" alt="ueb-logo"></div>
-         <ul>
+        <div class="logo"><img src="../images/navbar-photos/uebLogo.webp" alt="ueb-logo"></div>
+        <ul>
             <li><a href="../index.html"><i class="fa-solid fa-house icon"></i>Home</a>
-               </li>
-               <li><a href="hotels.html" style="color: rgb(215, 44, 33);"><i class="fa-solid fa-hotel icon"></i>Hotels</a></li>
-               <li><a href="#Flights"><i class="fa-solid fa-jet-fighter icon"></i>Flights</a></li>
-               <li><a href="../cars.html"><i class="fa-solid fa-car icon"></i>Cars</a></li>
-               <li><a href="#AboutUs"><i class="fa-solid fa-circle-info icon"></i>About Us</a></li>
-           </ul>
-           <div class="login-register">
-               <button id="sign-in">Sign in/Sign up</button>
-           </div>
-   </header>
+            </li>
+            <li><a href="hotels.html" style="color: rgb(215, 44, 33);"><i class="fa-solid fa-hotel icon"></i>Hotels</a>
+            </li>
+            <li><a href="#Flights"><i class="fa-solid fa-jet-fighter icon"></i>Flights</a></li>
+            <li><a href="../cars.html"><i class="fa-solid fa-car icon"></i>Cars</a></li>
+            <li><a href="#AboutUs"><i class="fa-solid fa-circle-info icon"></i>About Us</a></li>
+        </ul>
+        <div class="login-register">
+            <button id="sign-in">Sign in/Sign up</button>
+        </div>
+    </header>
 
 
     <section class="login-all">
@@ -61,7 +63,7 @@
                     </form>
                 </div>
                 <div class="divider">
-                    <p style="font-weight: 300; font-size: 14px;">------------Sign In With More Methods------------</p>
+                    <p style="font-weight: 300; font-size: 14px;"><i>------------ Sign In With More Methods ------------</i></p>
                 </div>
                 <div class="socials">
                     <div class="social"><i class="fa-brands fa-facebook" style="color: #0033ff;"></i></div>
@@ -103,164 +105,164 @@
         </div>
     </section>
 
-<section class="search-bar">
-    <div class="search-input">
-        <fieldset>
-            <legend>Where</legend>
-            <input type="text" name="text" id="text" class="same" placeholder="Going To">
-        </fieldset>
+    <section class="search-bar">
+        <div class="search-input">
+            <fieldset>
+                <legend>Where</legend>
+                <input type="text" name="text" id="text" class="same" placeholder="Going To">
+            </fieldset>
 
-        <fieldset>
-            <legend>CheckIn & CheckOut</legend>
-            <input type="date" name="date" id="date" class="same" min="2025-01-01">
-        </fieldset>
+            <fieldset>
+                <legend>CheckIn & CheckOut</legend>
+                <input type="date" name="date" id="date" class="same" min="2025-01-01">
+            </fieldset>
 
-        <fieldset>
-            <legend>Guests & Rooms</legend>
-            <input type="number" name="number" id="number" min="1" class="same">
-        </fieldset>
-        
-        <button><i class="fa-solid fa-magnifying-glass loop"></i>Search</button>
-    </div>
-</section>
+            <fieldset>
+                <legend>Guests & Rooms</legend>
+                <input type="number" name="number" id="number" min="1" class="same">
+            </fieldset>
 
-<section class="hotel-body">
-    <div class="section1">
-        <div class="filter">
-            <div class="filter-text">
-                <p id="text1">Filters</p>
-                <p id="text2">Clear all</p>
-            </div>
-            <div class="filter-text">
-                <p id="text3">Showing 180 Hotels</p>
-            </div>
+            <button><i class="fa-solid fa-magnifying-glass loop"></i>Search</button>
         </div>
-        <hr>
-        <div class="bed" >
-            <p>Bed Type</p>
-            <div class="button-part" >
-                <button>1 Double Bed</button>
-                <button>2 Beds</button>
-                <button>1 Single Bed</button>
-                <button>3 Beds</button>
-                <button>King Bed</button>
-            </div>
-        </div>
-        <hr>
-        <div class="pop-filter">
-            <p>Popular Filters</p>
-            <div class="select">
-                <form action="" method="post">
-                    <input type="checkbox" name="check" id="check">
-                    <label for="check">Free Cancellation Available</label>
-                    <br>
-                    <input type="checkbox" name="check1" id="check1">
-                    <label for="check1">Book</label>
-                    <br>
-                    <input type="checkbox" name="check2" id="check2">
-                    <label for="check2">Pay At Hotel Available</label>
-                    <br>
-                    <input type="checkbox" name="check3" id="check3">
-                    <label for="check3">Free Breakfast Included</label>
-                </form>
-            </div>
-        </div>
-        <hr>
-        <div class="amenities-s">
-            <p>Amenities</p>
-            <div class="select">
-                <form action="" method="post">
-                    <input type="checkbox" name="check" id="check">
-                    <label for="check">Free Wifi</label>
-                    <br>
-                    <input type="checkbox" name="check1" id="check1">
-                    <label for="check1">3 Breakfast included</label>
-                    <br>
-                    <input type="checkbox" name="check2" id="check2">
-                    <label for="check2">Air Conditioning</label>
-                    <br>
-                    <input type="checkbox" name="check3" id="check3">
-                    <label for="check3">Pool</label>
-                    <br>
-                    <input type="checkbox" name="check3" id="check3">
-                    <label for="check3">Free Parking</label>
-                </form>
-            </div>
-        </div>
-        <hr>
-        <div class="fun-things">
-            <p>Fun things To Do</p>
-            <div class="select">
-                <form action="" method="post">
-                    <input type="checkbox" name="check" id="check">
-                    <label for="check">Beach</label>
-                    <br>
-                    <input type="checkbox" name="check1" id="check1">
-                    <label for="check1">Fitness center</label>
-                    <br>
-                    <input type="checkbox" name="check2" id="check2">
-                    <label for="check2">Cycling</label>
-                    <br>
-                    <input type="checkbox" name="check3" id="check3">
-                    <label for="check3">Animation Show</label>
-                    <br>
-                    <input type="checkbox" name="check3" id="check3">
-                    <label for="check3">Shopping center</label>
-                </form>
-            </div>
-        </div>
-        <hr>
-        <div class="costumer-rating">
-            <p>Customer Ratings</p>
-            <div class="select">
-                <form action="" method="post">
-                  <div>
-                    <input type="checkbox" name="checkbox" id="checkbox1"><br>
-                    <input type="checkbox" name="checkbox" id="checkbox2"><br>
-                    <input type="checkbox" name="checkbox" id="checkbox3"><br>
-                    <input type="checkbox" name="checkbox" id="checkbox4"><br>
-                  </div>
-                  
-                  <div class="star">
-                    <p><i class="fa-solid fa-star"></i></p>
-                    <p><i class="fa-solid fa-star"></i></p>
-                    <p><i class="fa-solid fa-star"></i></p>
-                    <p><i class="fa-solid fa-star"></i></p>
-                    <p><i class="fa-solid fa-star"></i></p>
-                    <p style="position: relative; left: 100px;">48</p>
-                  </div>
+    </section>
 
-                  <div class="star" id="position">
-                    <p><i class="fa-solid fa-star"></i></p>
-                    <p><i class="fa-solid fa-star"></i></p>
-                    <p><i class="fa-solid fa-star"></i></p>
-                    <p><i class="fa-solid fa-star"></i></p>
-                    <p><i class="fa-solid fa-star-half"></i></p>
-                    <p style="position: relative; left: 100px;">20</p>
-                  </div>
+    <section class="hotel-body">
+        <div class="section1">
+            <div class="filter">
+                <div class="filter-text">
+                    <p id="text1">Filters</p>
+                    <p id="text2">Clear all</p>
+                </div>
+                <div class="filter-text">
+                    <p id="text3">Showing 180 Hotels</p>
+                </div>
+            </div>
+            <hr>
+            <div class="bed">
+                <p>Bed Type</p>
+                <div class="button-part">
+                    <button>1 Double Bed</button>
+                    <button>2 Beds</button>
+                    <button>1 Single Bed</button>
+                    <button>3 Beds</button>
+                    <button>King Bed</button>
+                </div>
+            </div>
+            <hr>
+            <div class="pop-filter">
+                <p>Popular Filters</p>
+                <div class="select">
+                    <form action="" method="post">
+                        <input type="checkbox" name="check" id="check">
+                        <label for="check">Free Cancellation Available</label>
+                        <br>
+                        <input type="checkbox" name="check1" id="check1">
+                        <label for="check1">Book</label>
+                        <br>
+                        <input type="checkbox" name="check2" id="check2">
+                        <label for="check2">Pay At Hotel Available</label>
+                        <br>
+                        <input type="checkbox" name="check3" id="check3">
+                        <label for="check3">Free Breakfast Included</label>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="amenities-s">
+                <p>Amenities</p>
+                <div class="select">
+                    <form action="" method="post">
+                        <input type="checkbox" name="check" id="check">
+                        <label for="check">Free Wifi</label>
+                        <br>
+                        <input type="checkbox" name="check1" id="check1">
+                        <label for="check1">3 Breakfast included</label>
+                        <br>
+                        <input type="checkbox" name="check2" id="check2">
+                        <label for="check2">Air Conditioning</label>
+                        <br>
+                        <input type="checkbox" name="check3" id="check3">
+                        <label for="check3">Pool</label>
+                        <br>
+                        <input type="checkbox" name="check3" id="check3">
+                        <label for="check3">Free Parking</label>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="fun-things">
+                <p>Fun things To Do</p>
+                <div class="select">
+                    <form action="" method="post">
+                        <input type="checkbox" name="check" id="check">
+                        <label for="check">Beach</label>
+                        <br>
+                        <input type="checkbox" name="check1" id="check1">
+                        <label for="check1">Fitness center</label>
+                        <br>
+                        <input type="checkbox" name="check2" id="check2">
+                        <label for="check2">Cycling</label>
+                        <br>
+                        <input type="checkbox" name="check3" id="check3">
+                        <label for="check3">Animation Show</label>
+                        <br>
+                        <input type="checkbox" name="check3" id="check3">
+                        <label for="check3">Shopping center</label>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="costumer-rating">
+                <p>Customer Ratings</p>
+                <div class="select">
+                    <form action="" method="post">
+                        <div>
+                            <input type="checkbox" name="checkbox" id="checkbox1"><br>
+                            <input type="checkbox" name="checkbox" id="checkbox2"><br>
+                            <input type="checkbox" name="checkbox" id="checkbox3"><br>
+                            <input type="checkbox" name="checkbox" id="checkbox4"><br>
+                        </div>
 
-                  <div class="star" id="position2">
-                    <p><i class="fa-solid fa-star"></i></p>
-                    <p><i class="fa-solid fa-star"></i></p>
-                    <p><i class="fa-solid fa-star"></i></p>
-                    <p><i class="fa-solid fa-star"></i></p>
-                    <p style="position: relative; left: 122px;">32</p>
-                  </div>
+                        <div class="star">
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p style="position: relative; left: 100px;">48</p>
+                        </div>
 
-                  <div class="star" id="position3">
-                    <p><i class="fa-solid fa-star"></i></p>
-                    <p><i class="fa-solid fa-star"></i></p>
-                    <p><i class="fa-solid fa-star"></i></p>
-                    <p style="position: relative; left: 148px;">8</p>
-                  </div>
-                </form>
-            </div>      
+                        <div class="star" id="position">
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star-half"></i></p>
+                            <p style="position: relative; left: 100px;">20</p>
+                        </div>
+
+                        <div class="star" id="position2">
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p style="position: relative; left: 122px;">32</p>
+                        </div>
+
+                        <div class="star" id="position3">
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p style="position: relative; left: 148px;">8</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
         </div>
-        
-        
-    </div>
 
-    <div class="sec2-parent">
+        <div class="sec2-parent">
             <div class="top-element">
                 <p id="text">Showing 280 Search Results</p>
                 <div class="button">
@@ -269,38 +271,39 @@
                     <button>Lowest Price</button>
                 </div>
             </div>
-        <div class="box">
-            <div class="section2">
-                <div class="hotel-img">
-                    <a href="hotel1.html" target="_blank"><img src="../images/hotel-1.jpg" alt="Picture of hotel"></a>   
-                </div>
-                <div class="hotel-text">
-                    <div class="star">
-                        <p><i class="fa-solid fa-star"></i></p>
-                        <p><i class="fa-solid fa-star"></i></p>
-                        <p><i class="fa-solid fa-star"></i></p>
-                        <p><i class="fa-solid fa-star"></i></p>
-                        <p><i class="fa-solid fa-star"></i></p>
+            <div class="box">
+                <div class="section2">
+                    <div class="hotel-img">
+                        <a href="hotel1.html" target="_blank"><img src="../images/hotel-photo/hotel-1.jpg"
+                                alt="Picture of hotel"></a>
                     </div>
-                    <p id="style-hotel-p">Hotel Chancellor@Orchard</p>
-                    <p id="text5">Waterloo and Southwark. 9.8 km from Delhi Airport </p>
-                    <div class="hotel-offers">
-                        <p>Parking</p>
-                        <p>Wifi</p>
-                        <p>Eating</p>
-                        <p>Cooling</p>
-                        <p>Pet</p>
+                    <div class="hotel-text">
+                        <div class="star">
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                        </div>
+                        <p id="style-hotel-p">Hotel Chancellor@Orchard</p>
+                        <p id="text5">Waterloo and Southwark. 9.8 km from Delhi Airport </p>
+                        <div class="hotel-offers">
+                            <p>Parking</p>
+                            <p>Wifi</p>
+                            <p>Eating</p>
+                            <p>Cooling</p>
+                            <p>Pet</p>
+                        </div>
+                        <div class="middle-text">
+                            <p id="text6">Luxury Suite with Balcony</p>
+                            <p id="text7">Last booked 25min ago</p>
+                        </div>
+                        <div class="bottom-text">
+                            <p id="text8">Free Cancellation, till 1 hour of Pick up</p>
+                            <p id="text9">Login & get additional $15 Off Using Visa card</p>
+                        </div>
                     </div>
-                    <div class="middle-text">
-                        <p id="text6">Luxury Suite with Balcony</p>
-                        <p id="text7">Last booked 25min ago</p>
-                    </div>
-                    <div class="bottom-text">
-                        <p id="text8">Free Cancellation, till 1 hour of Pick up</p>
-                        <p id="text9">Login & get additional $15 Off Using Visa card</p>
-                    </div>
-                </div>
-                <div class="hotel-button">
+                    <div class="hotel-button">
                         <div class="parent">
                             <div class="part1">
                                 <p id="text10">Exceptional</p>
@@ -319,381 +322,382 @@
                             </div>
                             <button class="availability-button">See Availability</button>
                         </div>
-                </div>    
-                
-                
+                    </div>
+
+
+                </div>
+
+
             </div>
 
-               
-        </div>
+            <div class="box">
+                <div class="section2">
+                    <div class="hotel-img">
+                        <img src="../images/hotel-photo/hotel-2.jpg" alt="Hotel">
+                    </div>
 
-        <div class="box">
-            <div class="section2">
-                <div class="hotel-img">
-                    <img src="../images/hotel-2.jpg" alt="Hotel">
+                    <div class="hotel-text">
+                        <div class="star">
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star-half"></i></p>
+                        </div>
+                        <p id="style-hotel-p">Dorsett Singapore</p>
+                        <p id="text5">Waterloo and Southwark. 9.8 km from Delhi Airport.</p>
+                        <div class="hotel-offers">
+                            <p>Wifi</p>
+                            <p>Eating</p>
+                            <p>Pet</p>
+                        </div>
+
+                        <div class="middle-text">
+                            <p id="text6">Deluxe Suite with Partial Ocean View</p>
+                            <p id="text7">Last booked 3hours ago</p>
+                        </div>
+                        <div class="bottom-text">
+                            <p id="text8">Free Cancellation, till 1 hour of Pick up</p>
+                            <p id="text9">Login & get additional $15 Off Using Visa card</p>
+                        </div>
+                    </div>
+                    <div class="hotel-button">
+                        <div class="parent">
+                            <div class="part1">
+                                <p id="text10">Exceptional</p>
+                                <p id="text11">2,514 reviews</p>
+                            </div>
+                            <button id="button">3.6</button>
+                        </div>
+                        <div class="price-section">
+                            <div class="discount-badge">
+                                <p>7% Off</p>
+                            </div>
+                            <div class="price-details">
+                                <p class="original-price">US$89</p>
+                                <p class="current-price">$80</p>
+                                <p class="additional-info">+ $42 taxes & Fees<br>For 4 Nights</p>
+                            </div>
+                            <button class="availability-button">See Availability</button>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="hotel-text">
-                    <div class="star">
-                        <p><i class="fa-solid fa-star"></i></p>
-                        <p><i class="fa-solid fa-star"></i></p>
-                        <p><i class="fa-solid fa-star"></i></p>
-                        <p><i class="fa-solid fa-star"></i></p>
-                        <p><i class="fa-solid fa-star-half"></i></p>
-                    </div>
-                    <p id="style-hotel-p">Dorsett Singapore</p>
-                    <p id="text5">Waterloo and Southwark. 9.8 km from Delhi Airport.</p>
-                    <div class="hotel-offers">
-                        <p>Wifi</p>
-                        <p>Eating</p>
-                        <p>Pet</p>
-                    </div>
-
-                    <div class="middle-text">
-                        <p id="text6">Deluxe Suite with Partial Ocean View</p>
-                        <p id="text7">Last booked 3hours ago</p>
-                    </div>
-                    <div class="bottom-text">
-                        <p id="text8">Free Cancellation, till 1 hour of Pick up</p>
-                        <p id="text9">Login & get additional $15 Off Using Visa card</p>
-                    </div>
-                </div>
-                <div class="hotel-button">
-                    <div class="parent">
-                        <div class="part1">
-                            <p id="text10">Exceptional</p>
-                            <p id="text11">2,514 reviews</p>
-                        </div>
-                        <button id="button">3.6</button>
-                    </div>
-                    <div class="price-section">
-                        <div class="discount-badge">
-                            <p>7% Off</p>
-                        </div>
-                        <div class="price-details">
-                            <p class="original-price">US$89</p>
-                            <p class="current-price">$80</p>
-                            <p class="additional-info">+ $42 taxes & Fees<br>For 4 Nights</p>
-                        </div>
-                        <button class="availability-button">See Availability</button>
-                    </div>
-            </div>    
-            </div>
-        </div>
-
-        <div class="advertisement">
-            <div class="adv-img">
-                <p id="icon"><i class="fa-solid fa-gift fs-3 text-success"></i></p>
             </div>
 
-            <div class="text">
-                <p>Start Exploring The World</p>
-                <p id="text-child">Book Flights Effortless and Earn $50+ for each booking with Booking.com</p>
+            <div class="advertisement">
+                <div class="adv-img">
+                    <p id="icon"><i class="fa-solid fa-gift fs-3 text-success"></i></p>
+                </div>
+
+                <div class="text">
+                    <p>Start Exploring The World</p>
+                    <p id="text-child">Book Flights Effortless and Earn $50+ for each booking with Booking.com</p>
+                </div>
+
+                <div id="adv-button">
+                    <button>Get Started</button>
+                </div>
             </div>
 
-            <div id="adv-button">
-                <button>Get Started</button>
+            <div class="box">
+                <div class="section2">
+                    <div class="hotel-img">
+                        <img src="../images/hotel-photo/hotel-3.jpg" alt="Hotel">
+                    </div>
+
+                    <div class="hotel-text">
+                        <div class="star">
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                        </div>
+                        <p id="style-hotel-p">Royal Plaza on Scotts</p>
+                        <p id="text5">Waterloo and Southwark. 9.8 km from Delhi Airport.</p>
+                        <div class="hotel-offers">
+                            <p>Wifi</p>
+                            <p>Eating</p>
+                            <p>Pet</p>
+                            <p>Laundry</p>
+                        </div>
+
+                        <div class="middle-text">
+                            <p id="text6">Superior King Room</p>
+                            <p id="text7">Last booked a day ago</p>
+                        </div>
+                        <div class="bottom-text">
+                            <p id="text8">Free Cancellation,till 1 hour of Pick up</p>
+                            <p id="text9">Login & get additional $25 Off Using Visa card</p>
+                        </div>
+                    </div>
+                    <div class="hotel-button">
+                        <div class="parent">
+                            <div class="part1">
+                                <p id="text10">Exceptional</p>
+                                <p id="text11">1,514 reviews</p>
+                            </div>
+                            <button id="button">4.2</button>
+                        </div>
+                        <div class="price-section">
+                            <div class="discount-badge">
+                                <p>13% Off</p>
+                            </div>
+                            <div class="price-details">
+                                <p class="original-price">US$101</p>
+                                <p class="current-price">$88</p>
+                                <p class="additional-info">+ $12 taxes & Fees<br>For 2 Nights</p>
+                            </div>
+                            <button class="availability-button">See Availability</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="section2">
+                    <div class="hotel-img">
+                        <img src="../images/hotel-photo/hotel-4.jpg" alt="Hotel">
+                    </div>
+
+                    <div class="hotel-text">
+                        <div class="star">
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                        </div>
+                        <p id="style-hotel-p">Siloso Beach Resort - Sentosa</p>
+                        <p id="text5">51 Imbiah Walk, Singapore 099538.</p>
+                        <div class="hotel-offers">
+                            <p>Wifi</p>
+                            <p>Eating</p>
+                            <p>Pet</p>
+                        </div>
+
+                        <div class="middle-text">
+                            <p id="text6">Basic King Room</p>
+                            <p id="text7">Last booked a week ago</p>
+                        </div>
+                        <div class="bottom-text">
+                            <p id="text8">Free Cancellation,till 2 hour of Pick up</p>
+                            <p id="text9">Login & get additional $25 Off Using Visa card</p>
+                        </div>
+                    </div>
+                    <div class="hotel-button">
+                        <div class="parent">
+                            <div class="part1">
+                                <p id="text10">Exceptional</p>
+                                <p id="text11">514 reviews</p>
+                            </div>
+                            <button id="button">3.2</button>
+                        </div>
+                        <div class="price-section">
+                            <div class="discount-badge">
+                                <p>25% Off</p>
+                            </div>
+                            <div class="price-details">
+                                <p class="original-price">US$70</p>
+                                <p class="current-price">65</p>
+                                <p class="additional-info">+ $32 taxes & Fees<br>For 3 Nights</p>
+                            </div>
+                            <button class="availability-button">See Availability</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="section2">
+                    <div class="hotel-img">
+                        <img src="../images/hotel-photo/hotel-5.jpg" alt="Hotel">
+                    </div>
+
+                    <div class="hotel-text">
+                        <div class="star">
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star-half"></i></p>
+
+                        </div>
+                        <p id="style-hotel-p">Value Hotel Balestier</p>
+                        <p id="text5">218 Balestier Rd, Singapore 329684.</p>
+                        <div class="hotel-offers">
+                            <p>Wifi</p>
+                            <p>Eating</p>
+                            <p>Laundry</p>
+                        </div>
+
+                        <div class="middle-text">
+                            <p id="text6">Standard Room</p>
+                            <p id="text7">Last booked a day ago</p>
+                        </div>
+                        <div class="bottom-text">
+                            <p id="text8">Free Cancellation,till 4 hour of Pick up</p>
+                            <p id="text9">Login & get additional $7 Off Using Visa card</p>
+                        </div>
+                    </div>
+                    <div class="hotel-button">
+                        <div class="parent">
+                            <div class="part1">
+                                <p id="text10">Exceptional</p>
+                                <p id="text11">514 reviews</p>
+                            </div>
+                            <button id="button">4.4</button>
+                        </div>
+                        <div class="price-section">
+                            <div class="discount-badge">
+                                <p>15% Off</p>
+                            </div>
+                            <div class="price-details">
+                                <p class="original-price">US$80</p>
+                                <p class="current-price">$75</p>
+                                <p class="additional-info">+ $12 taxes & Fees<br>For 2 Nights</p>
+                            </div>
+                            <button class="availability-button">See Availability</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="section2">
+                    <div class="hotel-img">
+                        <img src="../images/hotel-photo/hotel-6.jpg" alt="Hotel">
+                    </div>
+
+                    <div class="hotel-text">
+                        <div class="star">
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                            <p><i class="fa-solid fa-star"></i></p>
+                        </div>
+                        <p id="style-hotel-p">Vigara Hotel Lavender</p>
+                        <p id="text5">Waterloo and Southwark. 9.8 km from Delhi Airport.</p>
+                        <div class="hotel-offers">
+                            <p>Wifi</p>
+                            <p>Eating</p>
+                            <p>Pet</p>
+                            <p>Laundry</p>
+                        </div>
+
+                        <div class="middle-text">
+                            <p id="text6">Superior King Room</p>
+                            <p id="text7">Last booked a day ago</p>
+                        </div>
+                        <div class="bottom-text">
+                            <p id="text8">Free Cancellation,till 1 hour of Pick up</p>
+                            <p id="text9">Login & get additional $25 Off Using Visa card</p>
+                        </div>
+                    </div>
+                    <div class="hotel-button">
+                        <div class="parent">
+                            <div class="part1">
+                                <p id="text10">Exceptional</p>
+                                <p id="text11">7,514 reviews</p>
+                            </div>
+                            <button id="button">5.0</button>
+                        </div>
+                        <div class="price-section">
+                            <div class="discount-badge">
+                                <p>13% Off</p>
+                            </div>
+                            <div class="price-details">
+                                <p class="original-price">US$301</p>
+                                <p class="current-price">$280</p>
+                                <p class="additional-info">+ $12 taxes & Fees<br>For 2 Nights</p>
+                            </div>
+                            <button class="availability-button">See Availability</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom" id="box-bottom">
+                <div class="bottom-part">
+                    <p><i class="fa-solid fa-arrow-left" id="left-arrow"></i></p>
+                    <a href="#1" style="background-color: rgb(205,44,34); color: white;">1</a>
+                    <a href="#2" id="color-p">2</a>
+                    <a href="#3" id="color-p">3</a>
+                    <p><i class="fa-solid fa-arrow-right" id="right-arrow"></i></p>
+                </div>
+            </div>
+            <div>
+    </section>
+    <footer style="margin-top: 150px;">
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="../images/footer-photos/logo.webp" alt="">
+                <p>We make your dream more beautiful & enjoyable with lots of happiness.</p>
+                <div class="social-links">
+                    <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                    <a href=""><i class='bx bxl-linkedin-square'></i></i></a>
+                    <a href=""><i class='bx bxl-github'></i></a>
+                    <a href=""><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>The Navigation</h3>
+                <ul>
+                    <li><a href="#">Talent Marketplace</a></li>
+                    <li><a href="#">Payroll Services</a></li>
+                    <li><a href="#">Direct Contracts</a></li>
+                    <li><a href="#">Hire Worldwide</a></li>
+                    <li><a href="#">Hire in the USA</a></li>
+                    <li><a href="#">How to Hire</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Our Resources</h3>
+                <ul>
+                    <li><a href="#">Free Business Tools</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                    <li><a href="#">Success Stories</a></li>
+                    <li><a href="#">Upwork Reviews</a></li>
+                    <li><a href="#">Help & Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>The Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Leadership</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Trust, Safety & Security</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Payment Methods</h3>
+                <div class="paymentmethods">
+                    <img src="../images/footer-photos/payment.webp" alt="">
+                </div>
+                <h3>Our Partners</h3>
+                <div class="ourpartners">
+                    <div class="partner1">
+                        <a><img src="../images/footer-photos/mytrip.webp" alt=""></a>
+                    </div>
+                    <div class="partner1">
+                        <a><img src="../images/footer-photos/tripadv.webp" alt=""></a>
+                    </div>
+                    <div class="partner1">
+                        <a><img src="../images/footer-photos/goibibo.webp" alt=""></a>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="box">
-            <div class="section2">
-                <div class="hotel-img">
-                    <img src="../images/hotel-3.jpg" alt="Hotel">
-                </div>
-
-                <div class="hotel-text">
-                    <div class="star">
-                        <p><i class="fa-solid fa-star"></i></p>
-                        <p><i class="fa-solid fa-star"></i></p>
-                        <p><i class="fa-solid fa-star"></i></p>
-                        <p><i class="fa-solid fa-star"></i></p>
-                        <p><i class="fa-solid fa-star"></i></p>
-                    </div>
-                    <p id="style-hotel-p">Royal Plaza on Scotts</p>
-                    <p id="text5">Waterloo and Southwark. 9.8 km from Delhi Airport.</p>
-                    <div class="hotel-offers">
-                        <p>Wifi</p>
-                        <p>Eating</p>
-                        <p>Pet</p>
-                        <p>Laundry</p>
-                    </div>
-
-                    <div class="middle-text">
-                        <p id="text6">Superior King Room</p>
-                        <p id="text7">Last booked a day ago</p>
-                    </div>
-                    <div class="bottom-text">
-                        <p id="text8">Free Cancellation,till 1 hour of Pick up</p>
-                        <p id="text9">Login & get additional $25 Off Using Visa card</p>
-                    </div>
-                </div>
-                <div class="hotel-button">
-                    <div class="parent">
-                        <div class="part1">
-                            <p id="text10">Exceptional</p>
-                            <p id="text11">1,514 reviews</p>
-                        </div>
-                        <button id="button">4.2</button>
-                    </div>
-                    <div class="price-section">
-                        <div class="discount-badge">
-                            <p>13% Off</p>
-                        </div>
-                        <div class="price-details">
-                            <p class="original-price">US$101</p>
-                            <p class="current-price">$88</p>
-                            <p class="additional-info">+ $12 taxes & Fees<br>For 2 Nights</p>
-                        </div>
-                        <button class="availability-button">See Availability</button>
-                    </div>
-                </div>    
-            </div>      
-        </div>
-
-        <div class="box">
-            <div class="section2">
-                <div class="hotel-img">
-                    <img src="../images/hotel-4.jpg" alt="Hotel">
-                </div>
-
-                <div class="hotel-text">
-                    <div class="star">
-                        <p><i class="fa-solid fa-star"></i></p>
-                        <p><i class="fa-solid fa-star"></i></p>
-                        <p><i class="fa-solid fa-star"></i></p>
-                    </div>
-                    <p id="style-hotel-p">Siloso Beach Resort - Sentosa</p>
-                    <p id="text5">51 Imbiah Walk, Singapore 099538.</p>
-                    <div class="hotel-offers">
-                        <p>Wifi</p>
-                        <p>Eating</p>
-                        <p>Pet</p>
-                    </div>
-
-                    <div class="middle-text">
-                        <p id="text6">Basic King Room</p>
-                        <p id="text7">Last booked a week ago</p>
-                    </div>
-                    <div class="bottom-text">
-                        <p id="text8">Free Cancellation,till 2 hour of Pick up</p>
-                        <p id="text9">Login & get additional $25 Off Using Visa card</p>
-                    </div>
-                </div>
-                <div class="hotel-button">
-                    <div class="parent">
-                        <div class="part1">
-                            <p id="text10">Exceptional</p>
-                            <p id="text11">514 reviews</p>
-                        </div>
-                        <button id="button">3.2</button>
-                    </div>
-                    <div class="price-section">
-                        <div class="discount-badge">
-                            <p>25% Off</p>
-                        </div>
-                        <div class="price-details">
-                            <p class="original-price">US$70</p>
-                            <p class="current-price">65</p>
-                            <p class="additional-info">+ $32 taxes & Fees<br>For 3 Nights</p>
-                        </div>
-                        <button class="availability-button">See Availability</button>
-                    </div>
-                </div>    
-            </div>      
-        </div>
-
-        <div class="box">
-            <div class="section2">
-                <div class="hotel-img">
-                    <img src="../images/hotel-5.jpg" alt="Hotel">
-                </div>
-
-                <div class="hotel-text">
-                    <div class="star">
-                        <p><i class="fa-solid fa-star"></i></p>
-                        <p><i class="fa-solid fa-star"></i></p>
-                        <p><i class="fa-solid fa-star"></i></p>
-                        <p><i class="fa-solid fa-star-half"></i></p>
-                        
-                    </div>
-                    <p id="style-hotel-p">Value Hotel Balestier</p>
-                    <p id="text5">218 Balestier Rd, Singapore 329684.</p>
-                    <div class="hotel-offers">
-                        <p>Wifi</p>
-                        <p>Eating</p>
-                        <p>Laundry</p>
-                    </div>
-
-                    <div class="middle-text">
-                        <p id="text6">Standard Room</p>
-                        <p id="text7">Last booked a day ago</p>
-                    </div>
-                    <div class="bottom-text">
-                        <p id="text8">Free Cancellation,till 4 hour of Pick up</p>
-                        <p id="text9">Login & get additional $7 Off Using Visa card</p>
-                    </div>
-                </div>
-                <div class="hotel-button">
-                    <div class="parent">
-                        <div class="part1">
-                            <p id="text10">Exceptional</p>
-                            <p id="text11">514 reviews</p>
-                        </div>
-                        <button id="button">4.4</button>
-                    </div>
-                    <div class="price-section">
-                        <div class="discount-badge">
-                            <p>15% Off</p>
-                        </div>
-                        <div class="price-details">
-                            <p class="original-price">US$80</p>
-                            <p class="current-price">$75</p>
-                            <p class="additional-info">+ $12 taxes & Fees<br>For 2 Nights</p>
-                        </div>
-                        <button class="availability-button">See Availability</button>
-                    </div>
-                </div>    
-            </div>      
-        </div>
-
-        <div class="box">
-            <div class="section2">
-                <div class="hotel-img">
-                    <img src="../images/hotel-6.jpg" alt="Hotel">
-                </div>
-
-                <div class="hotel-text">
-                    <div class="star">
-                        <p><i class="fa-solid fa-star"></i></p>
-                        <p><i class="fa-solid fa-star"></i></p>
-                        <p><i class="fa-solid fa-star"></i></p>
-                        <p><i class="fa-solid fa-star"></i></p>
-                        <p><i class="fa-solid fa-star"></i></p>
-                    </div>
-                    <p id="style-hotel-p">Vigara Hotel Lavender</p>
-                    <p id="text5">Waterloo and Southwark. 9.8 km from Delhi Airport.</p>
-                    <div class="hotel-offers">
-                        <p>Wifi</p>
-                        <p>Eating</p>
-                        <p>Pet</p>
-                        <p>Laundry</p>
-                    </div>
-
-                    <div class="middle-text">
-                        <p id="text6">Superior King Room</p>
-                        <p id="text7">Last booked a day ago</p>
-                    </div>
-                    <div class="bottom-text">
-                        <p id="text8">Free Cancellation,till 1 hour of Pick up</p>
-                        <p id="text9">Login & get additional $25 Off Using Visa card</p>
-                    </div>
-                </div>
-                <div class="hotel-button">
-                    <div class="parent">
-                        <div class="part1">
-                            <p id="text10">Exceptional</p>
-                            <p id="text11">7,514 reviews</p>
-                        </div>
-                        <button id="button">5.0</button>
-                    </div>
-                    <div class="price-section">
-                        <div class="discount-badge">
-                            <p>13% Off</p>
-                        </div>
-                        <div class="price-details">
-                            <p class="original-price">US$301</p>
-                            <p class="current-price">$280</p>
-                            <p class="additional-info">+ $12 taxes & Fees<br>For 2 Nights</p>
-                        </div>
-                        <button class="availability-button">See Availability</button>
-                    </div>
-                </div>    
-            </div>      
-        </div>
-
-        <div class="bottom" id="box-bottom">
-            <div class="bottom-part">
-                <p><i class="fa-solid fa-arrow-left" id="left-arrow"></i></p>
-                <a href="#1" style="background-color: rgb(205,44,34); color: white;">1</a>
-                <a href="#2" id="color-p">2</a>
-                <a href="#3" id="color-p">3</a>
-                <p><i class="fa-solid fa-arrow-right" id="right-arrow"></i></p>
+        <hr>
+        <div class="footer-bottom">
+            <div class="copy"> &copy; <u>2024 GeoTrip. Design by GeoTrip </u></div>
+            <div class="Terms">
+                <a href="#">Terms of Service</a><a href="#">Privacy
+                    Policy</a><a href="#">Cookies</a>
             </div>
         </div>
-    <div>
-</section>
-<footer  style="margin-top: 150px;">
-    <div class="footer-container">
-        <div class="footer-section">
-            <img src="../images/logo.webp" alt="">
-            <p>We make your dream more beautiful & enjoyable with lots of happiness.</p>
-            <div class="social-links" >
-                <a href="" ><i class='bx bxl-facebook-circle'></i></a>
-                <a href=""><i class='bx bxl-linkedin-square'></i></i></a>
-                <a href=""><i class='bx bxl-github' ></i></a>
-                <a href=""><i class='bx bxl-twitter' ></i></a>
-            </div>
-        </div>
-        <div class="footer-section">
-            <h3>The Navigation</h3>
-            <ul>
-                <li><a href="#">Talent Marketplace</a></li>
-                <li><a href="#">Payroll Services</a></li>
-                <li><a href="#">Direct Contracts</a></li>
-                <li><a href="#">Hire Worldwide</a></li>
-                <li><a href="#">Hire in the USA</a></li>
-                <li><a href="#">How to Hire</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>Our Resources</h3>
-            <ul>
-                <li><a href="#">Free Business Tools</a></li>
-                <li><a href="#">Affiliate Program</a></li>
-                <li><a href="#">Success Stories</a></li>
-                <li><a href="#">Upwork Reviews</a></li>
-                <li><a href="#">Help & Support</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>The Company</h3>
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Leadership</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Investor Relations</a></li>
-                <li><a href="#">Trust, Safety & Security</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>Payment Methods</h3>
-            <div class="paymentmethods"> 
-                <img src="../images/payment.webp" alt="">
-            </div>
-            <h3>Our Partners</h3>
-            <div class="ourpartners">
-                <div class="partener1">
-                    <a><img src="../images/mytrip.webp" alt="" ></a>
-                </div>
-                <div class="partner1">
-                    <a><img src="../images/tripadv.webp" alt="" ></a>
-                </div>
-                <div class="partner1">
-                    <a><img src="../images/goibibo.webp" alt="" ></a>
-                </div>
-            
-            </div>
-        </div>
-    </div>
-    <hr>
-    <div class="footer-bottom">
-        <div>&copy; 2023 GeoTrip. Design by GeoTrip</div>
-        <div class="Terms"> 
-          <a href="#"  style="color:#173966  ;">Terms of Service</a><a href="#" style="color:#173966 ;" >Privacy Policy</a><a href="#" style="color:#173966;">Cookies</a>
-        </div>
-    </div>
-</footer>
+    </footer>
 
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,33 +10,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="../styles/home.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/c2f2fe035b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/hotels.css">
-    <script src = "../script/script.js" defer></script>
-    <link rel="stylesheet"
-    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="../script/script.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="../styles/hotel-child.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"> 
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="../styles/footer.css">
 </head>
+
 <body class="body">
     <header>
-        <div class="logo"><img src="../images/uebLogo.webp" alt="ueb-logo"></div>
-         <ul>
+        <div class="logo"><img src="../images/navbar-photos/uebLogo.webp" alt="ueb-logo"></div>
+        <ul>
             <li><a href="../index.html"><i class="fa-solid fa-house icon"></i>Home</a>
-               </li>
-               <li><a href="hotels.html" style="color: rgb(215, 44, 33);"><i class="fa-solid fa-hotel icon"></i>Hotels</a></li>
-               <li><a href="#Flights"><i class="fa-solid fa-jet-fighter icon"></i>Flights</a></li>
-               <li><a href="../cars.html"><i class="fa-solid fa-car icon"></i>Cars</a></li>
-               <li><a href="#AboutUs"><i class="fa-solid fa-circle-info icon"></i>About Us</a></li>
-           </ul>
-           <div class="login-register">
-               <button id="sign-in">Sign in/Sign up</button>
-           </div>
-   </header>
+            </li>
+            <li><a href="hotels.html" style="color: rgb(215, 44, 33);"><i class="fa-solid fa-hotel icon"></i>Hotels</a>
+            </li>
+            <li><a href="#Flights"><i class="fa-solid fa-jet-fighter icon"></i>Flights</a></li>
+            <li><a href="../cars.html"><i class="fa-solid fa-car icon"></i>Cars</a></li>
+            <li><a href="#AboutUs"><i class="fa-solid fa-circle-info icon"></i>About Us</a></li>
+        </ul>
+        <div class="login-register">
+            <button id="sign-in">Sign in/Sign up</button>
+        </div>
+    </header>
 
 
     <section class="login-all">
@@ -62,7 +66,8 @@
                     </form>
                 </div>
                 <div class="divider">
-                    <p style="font-weight: 300; font-size: 14px;">------------Sign In With More Methods------------</p>
+                    <p style="font-weight: 300; font-size: 14px;">------------<i>Sign In With More
+                            Methods</i>------------</p>
                 </div>
                 <div class="socials">
                     <div class="social"><i class="fa-brands fa-facebook" style="color: #0033ff;"></i></div>
@@ -104,35 +109,45 @@
         </div>
     </section>
 
-<section class="search-bar">
-    <div class="search-input">
-        <fieldset>
-            <legend>Where</legend>
-            <input type="text" name="text" id="text" class="same" placeholder="Hotel Chancellor@Orchard">
-        </fieldset>
+    <section class="search-bar">
+        <div class="search-input">
+            <fieldset>
+                <legend>Where</legend>
+                <input type="text" name="text" id="text" class="same" placeholder="Hotel Chancellor@Orchard">
+            </fieldset>
 
-        <fieldset>
-            <legend>CheckIn & CheckOut</legend>
-            <input type="date" name="date" id="date" class="same" min="2025-01-01">
-        </fieldset>
+            <fieldset>
+                <legend>CheckIn & CheckOut</legend>
+                <input type="date" name="date" id="date" class="same" min="2025-01-01">
+            </fieldset>
 
-        <fieldset>
-            <legend>Guests & Rooms</legend>
-            <input type="number" name="number" id="number" min="1" class="same">
-        </fieldset>
-        
-        <button><i class="fa-solid fa-magnifying-glass loop"></i>Search</button>
-    </div>
-</section>
+            <fieldset>
+                <legend>Guests & Rooms</legend>
+                <input type="number" name="number" id="number" min="1" class="same">
+            </fieldset>
 
-<div class="body-part">
-    <div class="sec1">
+            <button><i class="fa-solid fa-magnifying-glass loop"></i>Search</button>
+        </div>
+    </section>
+
+    <div class="body-part">
+        <div class="sec1">
             <div class="btn-first" style="width: 100%;">
-                <a href=""><p>Overview</p></a>
-                <a href=""><p id="long">Apartament Info & Price</p></a>
-                <a href=""><p>Facilities</p></a>
-                <a href=""><p>House rule</p></a>
-                <a href=""><p>Guest reviews</p></a>
+                <a href="">
+                    <p>Overview</p>
+                </a>
+                <a href="">
+                    <p id="long">Apartament Info & Price</p>
+                </a>
+                <a href="">
+                    <p>Facilities</p>
+                </a>
+                <a href="">
+                    <p>House rule</p>
+                </a>
+                <a href="">
+                    <p>Guest reviews</p>
+                </a>
             </div>
 
             <div class="text">
@@ -140,447 +155,539 @@
             </div>
 
             <div class="pin-text">
-                <p><i class="fa-solid fa-location-dot"></i> 28 Cavenagh Road/Orchard Road, Orchard, 229635 Singapore, Singapore <a href="https://www.google.com/maps/place/Hotel+Chancellor/@1.3149209,103.8118214,13.59z/data=!4m9!3m8!1s0x31da199656c10c63:0x7634e84074996b35!5m2!4m1!1i2!8m2!3d1.3011349!4d103.8421518!16s%2Fg%2F11cjj86261?entry=ttu&g_ep=EgoyMDI0MTIwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank"> -Great location - show map</a></p>
+                <p><i class="fa-solid fa-location-dot"></i> 28 Cavenagh Road/Orchard Road, Orchard, 229635 Singapore,
+                    Singapore <a
+                        href="https://www.google.com/maps/place/Hotel+Chancellor/@1.3149209,103.8118214,13.59z/data=!4m9!3m8!1s0x31da199656c10c63:0x7634e84074996b35!5m2!4m1!1i2!8m2!3d1.3011349!4d103.8421518!16s%2Fg%2F11cjj86261?entry=ttu&g_ep=EgoyMDI0MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank"> -Great location - show map</a></p>
                 <button id="btn-res">Reserve</button>
             </div>
 
-            <div class="photos">
+            <div class="photos" >
                 <img src="../images/Hotel1/hotel1-room.jpg" alt="Hotel img" class="photo" id="first-photo">
                 <img src="../images/Hotel1/Building.jpg" alt="Hotel img" class="photo" id="second-photo">
                 <img src="../images/Hotel1/buffe.jpg" alt="Hotel img" class="photo" id="third-photo">
                 <div class="bottom-photos">
                     <img src="../images/Hotel1/Inside.jpg" alt="Hotel img" class="bottom-pht">
-                    <img src="../images/Hotel1/pool.jpg" alt="Hotel img"  class="bottom-pht">
-                    <img src="../images/Hotel1/conference.jpg" alt="Hotel img"  class="bottom-pht">
-                    <img src="../images/Hotel1/hall.jpg" alt="Hotel img"  class="bottom-pht">
-                    <img src="../images/Hotel1/pool2.jpg" alt="Hotel img"  class="bottom-pht">
+                    <img src="../images/Hotel1/pool.jpg" alt="Hotel img" class="bottom-pht">
+                    <img src="../images/Hotel1/conference.jpg" alt="Hotel img" class="bottom-pht">
+                    <img src="../images/Hotel1/hall.jpg" alt="Hotel img" class="bottom-pht">
+                    <img src="../images/Hotel1/pool2.jpg" alt="Hotel img" class="bottom-pht">
                 </div>
-            </div>    
-            
+            </div>
+
             <div class="some-txt">
-                <p>You might be eligible for a Genius discount at Hotel Chancellor@Orchard.To check if a Genius discount is available for your selected dates sign in.</p><br>
-                <p>Genius discounts at this property are subject to book dates, stay dates and other available deals.</p><br>
-                <p> Featuring a rooftop outdoor pool, Hotel Chancellor@Orchard is centrally located in Orchard Road where shopping, entertainment and dining destinations are just minutes away. The hotel is within a 5-minute walk to Somerset and Dhoby Ghaut MRT stations.</p><br>
-                <p>10 minutes away, shopping areas like Bugis Village, Chinatown and Little India are accessible by train. The property is a quick 1.1 km stroll from Singapore Art Museum and Orchard MRT Station. Changi Airport is approximately 17 km away.</p><br>
-                <p>With an al fresco and indoor dining area, Bistro@Chancellor Cafe on the second floor serves buffet breakfast every morning.</p><br>
+                <p>You might be eligible for a Genius discount at Hotel Chancellor@Orchard.To check if a Genius discount
+                    is available for your selected dates sign in.</p><br>
+                <p>Genius discounts at this property are subject to book dates, stay dates and other available deals.
+                </p><br>
+                <p> Featuring a rooftop outdoor pool, Hotel Chancellor@Orchard is centrally located in Orchard Road
+                    where shopping, entertainment and dining destinations are just minutes away. The hotel is within a
+                    5-minute walk to Somerset and Dhoby Ghaut MRT stations.</p><br>
+                <p>10 minutes away, shopping areas like Bugis Village, Chinatown and Little India are accessible by
+                    train. The property is a quick 1.1 km stroll from Singapore Art Museum and Orchard MRT Station.
+                    Changi Airport is approximately 17 km away.</p><br>
+                <p>With an al fresco and indoor dining area, Bistro@Chancellor Cafe on the second floor serves buffet
+                    breakfast every morning.</p><br>
 
                 <div id="extra-text" class="hidden">
-                    <p>Hotel Chancellor@Orchard offers a 24-hour front desk, meeting facilities, luggage storage, children's playground and coin-operated laundry machines. Free WiFi is available throughout the property.</p><br>
-                    <p>Couples particularly like the location — they rated it <strong>8.1</strong> for a two-person trip.</p>
+                    <p>Hotel Chancellor@Orchard offers a 24-hour front desk, meeting facilities, luggage storage,
+                        children's playground and coin-operated laundry machines. Free WiFi is available throughout the
+                        property.</p><br>
+                    <p>Couples particularly like the location — they rated it <strong>8.1</strong> for a two-person
+                        trip.</p>
                 </div>
 
                 <button class="toggle-btn" id="toggle-btn">Show More</button>
             </div>
+        </div>
+
+        <div class="sec2">
+            <div class="reviews">
+                <div class="txt">
+                    <p id="first">Pleasant</p>
+                    <p id="second">667 reviews</p>
+                </div>
+                <div class="btn">
+                    <button>6.4</button>
+                </div>
+            </div>
+
+            <div class="location">
+                <div class="txt">
+                    <p id="third">Great location!</p>
+                </div>
+                <div class="btn">
+                    <button>8.4</button>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.832399358039!2d103.8421518!3d1.3011349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da199656c10c63%3A0x7634e84074996b35!2sHotel%20Chancellor!5e0!3m2!1sen!2ssg!4v1693005872123!5m2!1sen!2ssg"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <button class="show-on-map-btn"> <a
+                        href="https://www.google.com/maps/place/Hotel+Chancellor/@1.3149209,103.8118214,13.59z/data=!4m9!3m8!1s0x31da199656c10c63:0x7634e84074996b35!5m2!4m1!1i2!8m2!3d1.3011349!4d103.8421518!16s%2Fg%2F11cjj86261?entry=ttu&g_ep=EgoyMDI0MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank"> Show on map</a></button>
+            </div>
+
+            <div class="property">
+                <p id="imp">Property highlights</p>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-wheelchair"></i>
+                        <div>
+                            <h4>Accessibility</h4>
+                            <p>Lift, Facilities for disabled guests</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-square-parking"></i>
+                        <div>
+                            <h4>Parking</h4>
+                            <p>Private parking, On-site parking</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-person-swimming"></i>
+                        <div>
+                            <h4>Swimming pool</h4>
+                            <p>Private, Outdoor swimming pool</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="bottom-btn">
+                    <button>Reserve</button><br>
+                    <button class="bottom-btn1"><i class="fa-regular fa-heart heart"></i> Save the property</button>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="sec2">
-        <div class="reviews">
-            <div class="txt">
-                <p id="first">Pleasant</p>
-                <p id="second">667 reviews</p>
-            </div>
+    <div class="body-part2">
+        <br>
+        <hr><br>
+        <h2 id="avb">Availability</h2>
+
+        <table class="room-table">
+            <thead>
+                <tr>
+                    <th>Room type</th>
+                    <th>Number of guests</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>
+                        <span class="expand-icon">&#9658;</span>
+                        <strong>Deluxe Double or Twin Room</strong><br>
+                        1 large double bed <i class="fa-solid fa-bed"></i> or 2 single beds <i
+                            class="fa-solid fa-user-group"></i>
+                    </td>
+                    <td class="guest-info">
+                        <i class="fa-solid fa-user-group"></i> + <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary">Show prices</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <span class="expand-icon">&#9658;</span>
+                        <strong>Deluxe Triple Room</strong><br>
+                        1 single bed <i class="fa-solid fa-bed"></i> and 1 large double bed <i
+                            class="fa-solid fa-bed"></i>
+                        or 3 single beds <i class="fa-solid fa-user-group"></i>
+                    </td>
+                    <td class="guest-info">
+                        <i class="fa-solid fa-user-group"></i> + <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary">Show prices</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <span class="expand-icon">&#9658;</span>
+                        <strong>Premier Double or Twin Room</strong><br>
+                        1 large double bed <i class="fa-solid fa-bed"></i> or 2 single beds <i
+                            class="fa-solid fa-user-group"></i>
+                    </td>
+                    <td class="guest-info">
+                        <i class="fa-solid fa-user-group"></i> + <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary">Show prices</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <span class="expand-icon">&#9658;</span>
+                        <strong>Connecting Rooms</strong><br>
+                        2 large double beds <i class="fa-solid fa-bed"></i> or 4 single beds <i
+                            class="fa-solid fa-user-group"></i>
+                    </td>
+                    <td class="guest-info">
+                        <i class="fa-solid fa-user-group"></i> x 4
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary">Show prices</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <span class="expand-icon">&#9658;</span>
+                        <strong>Penthouse Suite with City View</strong><br>
+                        1 king-sized bed <i class="fa-solid fa-bed"></i>, private terrace, and panoramic city views <i
+                            class="fa-solid fa-city"></i>
+                    </td>
+                    <td class="guest-info">
+                        <i class="fa-solid fa-user"></i> x 2
+                        <i class="fa-solid fa-circle-info info-icon"></i>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary">Show prices</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <div class="gs-btn">
+            <h2>Guest review</h2>
+            <button id="gst-btn"><a href="#avb">See Availability</a></button>
+        </div>
+        <div class="guest-reviews">
             <div class="btn">
                 <button>6.4</button>
             </div>
-        </div>
-    
-        <div class="location">
-            <div class="txt">
-                <p id="third">Great location!</p>
-            </div>
-            <div class="btn">
-                <button>8.4</button>
+            <div class="gst-txt">
+                <p id="txt-first">Pleasant -</p>
+                <p id="txt-second">667 reviews</p>
             </div>
         </div>
-
-        <div class="map-container">
-            <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.832399358039!2d103.8421518!3d1.3011349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da199656c10c63%3A0x7634e84074996b35!2sHotel%20Chancellor!5e0!3m2!1sen!2ssg!4v1693005872123!5m2!1sen!2ssg"
-            width="100%" 
-            height="300" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-            <button class="show-on-map-btn"> <a href="https://www.google.com/maps/place/Hotel+Chancellor/@1.3149209,103.8118214,13.59z/data=!4m9!3m8!1s0x31da199656c10c63:0x7634e84074996b35!5m2!4m1!1i2!8m2!3d1.3011349!4d103.8421518!16s%2Fg%2F11cjj86261?entry=ttu&g_ep=EgoyMDI0MTIwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank"> Show on map</a></button>
-        </div>
-
-        <div class="property">
-            <p id="imp">Property highlights</p>
-            <ul>
-                <li>
-                    <i class="fa-solid fa-wheelchair"></i>
-                    <div>
-                        <h4>Accessibility</h4>
-                        <p>Lift, Facilities for disabled guests</p>
+        <div class="reviews-container">
+            <div class="categories">
+                <div class="category">
+                    <div class="category-title">
+                        <span>Staff</span>
+                        <span>&darr;</span>
                     </div>
-                </li>
-                <li>
-                    <i class="fa-solid fa-square-parking"></i>
-                    <div>
-                        <h4>Parking</h4>
-                        <p>Private parking, On-site parking</p>
+                    <div class="bar-container">
+                        <div class="bar bar-red" style="width: 70%;"></div>
                     </div>
-                </li>
-                <li>
-                    <i class="fa-solid fa-person-swimming"></i>
-                    <div>
-                        <h4>Swimming pool</h4>
-                        <p>Private, Outdoor swimming pool</p>
+                    <div class="value">7.0</div>
+                </div>
+
+                <div class="category">
+                    <div class="category-title">
+                        <span>Facilities</span>
+                        <span>&darr;</span>
                     </div>
-                </li>
-            </ul>
+                    <div class="bar-container">
+                        <div class="bar bar-red" style="width: 64%;"></div>
+                    </div>
+                    <div class="value">6.4</div>
+                </div>
 
-            <div class="bottom-btn">
-                <button>Reserve</button><br>
-                <button><i class="fa-regular fa-heart"></i> Save the property</button>
+                <div class="category">
+                    <div class="category-title">
+                        <span>Comfort</span>
+                        <span>&darr;</span>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar bar-red" style="width: 69%;"></div>
+                    </div>
+                    <div class="value">6.9</div>
+                </div>
+
+                <div class="category">
+                    <div class="category-title">
+                        <span>Value for money</span>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar bar-blue" style="width: 67%;"></div>
+                    </div>
+                    <div class="value">6.7</div>
+                </div>
+
+                <div class="category">
+                    <div class="category-title">
+                        <span>Free WiFi</span>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar bar-blue" style="width: 77%;"></div>
+                    </div>
+                    <div class="value">7.7</div>
+                </div>
+
+                <div class="category">
+                    <div class="category-title">
+                        <span>Location</span>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar bar-blue" style="width: 84%;"></div>
+                    </div>
+                    <div class="value">8.4</div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="gs-btn">
+            <h2>Travellers are asking</h2>
+            <button id="gst-btn"><a href="#avb">See Availability</a></button>
+        </div>
+
+        <div class="ask">
+            <div class="ask-first">
+                <ol>
+                    <li>
+                        Do they serve breakfast?
+                        <span class="arrow">&#x25BC;</span>
+                        <p class="answer">Yes, breakfast is served from 7 AM to 10 AM.</p>
+                    </li>
+                    <hr>
+                    <li>
+                        Can I park there?
+                        <span class="arrow">&#x25BC;</span>
+                        <p class="answer">Yes, free parking is available on-site.</p>
+                    </li>
+                    <hr>
+                    <li>
+                        Is there a restaurant?
+                        <span class="arrow">&#x25BC;</span>
+                        <p class="answer">Yes, the hotel has a fine-dining restaurant.</p>
+                    </li>
+                    <hr>
+                    <li>
+                        Is there a spa?
+                        <span class="arrow">&#x25BC;</span>
+                        <p class="answer">Yes, a full-service spa is available.</p>
+                    </li>
+                    <hr>
+                    <li>
+                        Is the swimming pool open?
+                        <span class="arrow">&#x25BC;</span>
+                        <p class="answer">Yes, the pool is open from 8 AM to 8 PM.</p>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="ask-first">
+                <ol style="list-style-type: upper-roman;">
+                    <li>
+                        What are the check-in and check-out times?
+                        <span class="arrow">&#x25BC;</span>
+                        <p class="answer">Check-in is from 3 PM, and check-out is until 11 AM.</p>
+                    </li>
+                    <hr>
+                    <li>
+                        What restaurants, attractions, and public transport options are nearby?
+                        <span class="arrow">&#x25BC;</span>
+                        <p class="answer">Several restaurants, museums, and a metro station are within walking distance.
+                        </p>
+                    </li>
+                    <hr>
+                    <li>
+                        Are there rooms with a private bathroom?
+                        <span class="arrow">&#x25BC;</span>
+                        <p class="answer">Yes, all rooms come with a private bathroom.</p>
+                    </li>
+                    <hr>
+                    <li>
+                        Are there rooms with a hot tub?
+                        <span class="arrow">&#x25BC;</span>
+                        <p class="answer">Yes, select suites feature private hot tubs.</p>
+                    </li>
+                    <hr>
+                    <li>
+                        Is there an airport shuttle service?
+                        <span class="arrow">&#x25BC;</span>
+                        <p class="answer">Yes, the hotel provides an airport shuttle service for an additional fee.</p>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="ask-first">
+                <div class="ask-txt">
+                    <h3>Still lloking?</h3>
+                    <button>Ask a question</button>
+                    <p>We have an instant answer to most questions</p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="gs-btn">
+            <h2>Hotel surroundings</h2>
+            <button id="gst-btn"><a href="#avb">See Availability</a></button>
+        </div>
+
+        <div class="nearby-container">
+            <div class="nearby-grid">
+                <!-- Column 1 -->
+                <div>
+                    <h3><i class="fas fa-map-marker-alt"></i> What's nearby</h3>
+                    <ul>
+                        <li>Golfer Alley <span class="distance">100 m</span></li>
+                        <li>Playground, Somerset <span class="distance">350 m</span></li>
+                        <li>The Drome, the Atrium <span class="distance">400 m</span></li>
+                        <li>Cine Level 2 Running Track <span class="distance">550 m</span></li>
+                        <li>Smoking Area, Hawpar Center <span class="distance">600 m</span></li>
+                        <li>Tempat Berteduh <span class="distance">650 m</span></li>
+                        <li>Travel Club <span class="distance">750 m</span></li>
+                        <li>Funhouse, Orchard <span class="distance">800 m</span></li>
+                        <li>Kidz, Play <span class="distance">950 m</span></li>
+                        <li>Singapore Art Museum <span class="distance">1.2 km</span></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div>
+                    <h3><i class="fas fa-landmark"></i> Top attractions</h3>
+                    <ul>
+                        <li>National Gallery Singapore <span class="distance">2.1 km</span></li>
+                        <li>Statue of Sir Stamford Raffles <span class="distance">2.1 km</span></li>
+                        <li>Asian Civilisations Museum <span class="distance">2.4 km</span></li>
+                        <li>Singapore City Gallery <span class="distance">3.1 km</span></li>
+                        <li>ArtScience Museum <span class="distance">3.2 km</span></li>
+                        <li>Sands SkyPark Observation Deck <span class="distance">3.4 km</span></li>
+                        <li>National Orchid Garden <span class="distance">3.7 km</span></li>
+                        <li>Cloud Forest <span class="distance">4 km</span></li>
+                        <li>Gardens by the Bay <span class="distance">4 km</span></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div>
+                    <h3><i class="fas fa-umbrella-beach"></i> Beaches in the neighbourhood</h3>
+                    <ul>
+                        <li>East Coast Beach <span class="distance">7 km</span></li>
+                        <li>Palawan Beach <span class="distance">7 km</span></li>
+                        <li>Siloso Beach <span class="distance">8 km</span></li>
+                        <li>Tanjong Beach <span class="distance">8 km</span></li>
+                    </ul>
+
+                    <h3><i class="fas fa-train"></i> Public transport</h3>
+                    <ul>
+                        <li>Train • Somerset MRT Station <span class="distance">400 m</span></li>
+                        <li>Metro • Somerset <span class="distance">450 m</span></li>
+                        <li>Metro • Dhoby Ghaut MRT Station <span class="distance">500 m</span></li>
+                        <li>Train • Little India MRT Station <span class="distance">1.9 km</span></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div>
+                    <h3><i class="fas fa-utensils"></i> Restaurants & cafes</h3>
+                    <ul>
+                        <li>Restaurant • Golden Seafood Restaurant <span class="distance">8 m</span></li>
+                        <li>Cafe/bar • Papa Gayo <span class="distance">8 m</span></li>
+                        <li>Cafe/bar • So High Social Club <span class="distance">50 m</span></li>
+                    </ul>
+
+                    <h3><i class="fas fa-tree"></i> Natural beauty</h3>
+                    <ul>
+                        <li>Lake • Marina Reservoir <span class="distance">5 km</span></li>
+                    </ul>
+
+                    <h3><i class="fas fa-plane"></i> Closest airports</h3>
+                    <ul>
+                        <li>Seletar Airport <span class="distance">14 km</span></li>
+                        <li>Changi Airport <span class="distance">19 km</span></li>
+                        <li>Hang Nadim International Airport <span class="distance">35 km</span></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="body-part2">
-    <br><hr><br>
-    <h2 id="avb">Availability</h2>
-        
-    <table class="room-table">
-        <thead>
-            <tr>
-                <th>Room type</th>
-                <th>Number of guests</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-
-            <tr>
-                <td>
-                    <span class="expand-icon">&#9658;</span>
-                    <strong>Deluxe Double or Twin Room</strong><br>
-                    1 large double bed <i class="fa-solid fa-bed"></i> or 2 single beds <i class="fa-solid fa-user-group"></i>
-                </td>
-                <td class="guest-info">
-                    <i class="fa-solid fa-user-group"></i> + <i class="fa-solid fa-user"></i>
-                    <i class="fa-solid fa-circle-info info-icon"></i>
-                </td>
-                <td>
-                    <button class="btn btn-primary">Show prices</button>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <span class="expand-icon">&#9658;</span>
-                    <strong>Deluxe Triple Room</strong><br>
-                    1 single bed <i class="fa-solid fa-bed"></i> and 1 large double bed <i class="fa-solid fa-bed"></i> 
-                    or 3 single beds <i class="fa-solid fa-user-group"></i>
-                </td>
-                <td class="guest-info">
-                    <i class="fa-solid fa-user-group"></i> + <i class="fa-solid fa-user"></i>
-                    <i class="fa-solid fa-circle-info info-icon"></i>
-                </td>
-                <td>
-                    <button class="btn btn-primary">Show prices</button>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <span class="expand-icon">&#9658;</span>
-                    <strong>Premier Double or Twin Room</strong><br>
-                    1 large double bed <i class="fa-solid fa-bed"></i> or 2 single beds <i class="fa-solid fa-user-group"></i>
-                </td>
-                <td class="guest-info">
-                    <i class="fa-solid fa-user-group"></i> + <i class="fa-solid fa-user"></i>
-                    <i class="fa-solid fa-circle-info info-icon"></i>
-                </td>
-                <td>
-                    <button class="btn btn-primary">Show prices</button>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <span class="expand-icon">&#9658;</span>
-                    <strong>Connecting Rooms</strong><br>
-                    2 large double beds <i class="fa-solid fa-bed"></i> or 4 single beds <i class="fa-solid fa-user-group"></i>
-                </td>
-                <td class="guest-info">
-                    <i class="fa-solid fa-user-group"></i> x 4
-                    <i class="fa-solid fa-circle-info info-icon"></i>
-                </td>
-                <td>
-                    <button class="btn btn-primary">Show prices</button>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <span class="expand-icon">&#9658;</span>
-                    <strong>Penthouse Suite with City View</strong><br>
-                    1 king-sized bed <i class="fa-solid fa-bed"></i>, private terrace, and panoramic city views <i class="fa-solid fa-city"></i>
-                </td>
-                <td class="guest-info">
-                    <i class="fa-solid fa-user"></i> x 2
-                    <i class="fa-solid fa-circle-info info-icon"></i>
-                </td>
-                <td>
-                    <button class="btn btn-primary">Show prices</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-
-    <br>
-    <div class="gs-btn">
-        <h2>Guest review</h2>
-        <button id="gst-btn"><a href="#avb">See Availability</a></button>
-    </div>
-    <div class="guest-reviews">
-        <div class="btn">
-            <button >6.4</button>
-        </div>
-        <div class="gst-txt">
-            <p id="txt-first">Pleasant -</p>
-            <p id="txt-second">667 reviews</p>
-        </div>
-    </div>
-    <div class="reviews-container">
-        <div class="categories">
-            <div class="category">
-                <div class="category-title">
-                    <span>Staff</span>
-                    <span>&darr;</span>
+    <footer style="margin-top: 50px;">
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="../images/footer-photos/logo.webp" alt="">
+                <p>We make your dream more beautiful & enjoyable with lots of happiness.</p>
+                <div class="social-links">
+                    <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                    <a href=""><i class='bx bxl-linkedin-square'></i></i></a>
+                    <a href=""><i class='bx bxl-github'></i></a>
+                    <a href=""><i class='bx bxl-twitter'></i></a>
                 </div>
-                <div class="bar-container">
-                    <div class="bar bar-red" style="width: 70%;"></div>
-                </div>
-                <div class="value">7.0</div>
             </div>
-
-            <div class="category">
-                <div class="category-title">
-                    <span>Facilities</span>
-                    <span>&darr;</span>
-                </div>
-                <div class="bar-container">
-                    <div class="bar bar-red" style="width: 64%;"></div>
-                </div>
-                <div class="value">6.4</div>
-            </div>
-
-            <div class="category">
-                <div class="category-title">
-                    <span>Comfort</span>
-                    <span>&darr;</span>
-                </div>
-                <div class="bar-container">
-                    <div class="bar bar-red" style="width: 69%;"></div>
-                </div>
-                <div class="value">6.9</div>
-            </div>
-
-            <div class="category">
-                <div class="category-title">
-                    <span>Value for money</span>
-                </div>
-                <div class="bar-container">
-                    <div class="bar bar-blue" style="width: 67%;"></div>
-                </div>
-                <div class="value">6.7</div>
-            </div>
-
-            <div class="category">
-                <div class="category-title">
-                    <span>Free WiFi</span>
-                </div>
-                <div class="bar-container">
-                    <div class="bar bar-blue" style="width: 77%;"></div>
-                </div>
-                <div class="value">7.7</div>
-            </div>
-
-            <div class="category">
-                <div class="category-title">
-                    <span>Location</span>
-                </div>
-                <div class="bar-container">
-                    <div class="bar bar-blue" style="width: 84%;"></div>
-                </div>
-                <div class="value">8.4</div>
-            </div>
-        </div>
-    </div>
-
-    <br>
-    <div class="gs-btn">
-        <h2>Travellers are asking</h2>
-        <button id="gst-btn"><a href="#avb">See Availability</a></button>
-    </div>
-
-    <div class="ask">
-        <div class="ask-first">
-            <ol>
-                <li>
-                    Do they serve breakfast?
-                    <span class="arrow">&#x25BC;</span>
-                    <p class="answer">Yes, breakfast is served from 7 AM to 10 AM.</p>
-                </li>
-                <hr>
-                <li>
-                    Can I park there?
-                    <span class="arrow">&#x25BC;</span>
-                    <p class="answer">Yes, free parking is available on-site.</p>
-                </li>
-                <hr>
-                <li>
-                    Is there a restaurant?
-                    <span class="arrow">&#x25BC;</span>
-                    <p class="answer">Yes, the hotel has a fine-dining restaurant.</p>
-                </li>
-                <hr>
-                <li>
-                    Is there a spa?
-                    <span class="arrow">&#x25BC;</span>
-                    <p class="answer">Yes, a full-service spa is available.</p>
-                </li>
-                <hr>
-                <li>
-                    Is the swimming pool open?
-                    <span class="arrow">&#x25BC;</span>
-                    <p class="answer">Yes, the pool is open from 8 AM to 8 PM.</p>
-                </li>
-            </ol>
-        </div>
-        
-        <div class="ask-first">
-            <ol style="list-style-type: upper-roman;">
-                <li>
-                    What are the check-in and check-out times?
-                    <span class="arrow">&#x25BC;</span>
-                    <p class="answer">Check-in is from 3 PM, and check-out is until 11 AM.</p>
-                </li>
-                <hr>
-                <li>
-                    What restaurants, attractions, and public transport options are nearby?
-                    <span class="arrow">&#x25BC;</span>
-                    <p class="answer">Several restaurants, museums, and a metro station are within walking distance.</p>
-                </li>
-                <hr>
-                <li>
-                    Are there rooms with a private bathroom?
-                    <span class="arrow">&#x25BC;</span>
-                    <p class="answer">Yes, all rooms come with a private bathroom.</p>
-                </li>
-                <hr>
-                <li>
-                    Are there rooms with a hot tub?
-                    <span class="arrow">&#x25BC;</span>
-                    <p class="answer">Yes, select suites feature private hot tubs.</p>
-                </li>
-                <hr>
-                <li>
-                    Is there an airport shuttle service?
-                    <span class="arrow">&#x25BC;</span>
-                    <p class="answer">Yes, the hotel provides an airport shuttle service for an additional fee.</p>
-                </li>
-            </ol>
-        </div>
-
-        <div class="ask-first">
-            <div class="ask-txt">
-                <h3>Still lloking?</h3>
-                <button>Ask a question</button>
-                <p>We have an instant answer to most questions</p>
-            </div>
-        </div>
-    </div>
-    
-    <br>
-    <div class="gs-btn">
-        <h2>Hotel surroundings</h2>
-        <button id="gst-btn"><a href="#avb">See Availability</a></button>
-    </div>
-
-    <div class="nearby-container">
-        <div class="nearby-grid">
-            <!-- Column 1 -->
-            <div>
-                <h3><i class="fas fa-map-marker-alt"></i> What's nearby</h3>
+            <div class="footer-section">
+                <h3>The Navigation</h3>
                 <ul>
-                    <li>Golfer Alley <span class="distance">100 m</span></li>
-                    <li>Playground, Somerset <span class="distance">350 m</span></li>
-                    <li>The Drome, the Atrium <span class="distance">400 m</span></li>
-                    <li>Cine Level 2 Running Track <span class="distance">550 m</span></li>
-                    <li>Smoking Area, Hawpar Center <span class="distance">600 m</span></li>
-                    <li>Tempat Berteduh <span class="distance">650 m</span></li>
-                    <li>Travel Club <span class="distance">750 m</span></li>
-                    <li>Funhouse, Orchard <span class="distance">800 m</span></li>
-                    <li>Kidz, Play <span class="distance">950 m</span></li>
-                    <li>Singapore Art Museum <span class="distance">1.2 km</span></li>
+                    <li><a href="#">Talent Marketplace</a></li>
+                    <li><a href="#">Payroll Services</a></li>
+                    <li><a href="#">Direct Contracts</a></li>
+                    <li><a href="#">Hire Worldwide</a></li>
+                    <li><a href="#">Hire in the USA</a></li>
+                    <li><a href="#">How to Hire</a></li>
                 </ul>
             </div>
-
-            <!-- Column 2 -->
-            <div>
-                <h3><i class="fas fa-landmark"></i> Top attractions</h3>
+            <div class="footer-section">
+                <h3>Our Resources</h3>
                 <ul>
-                    <li>National Gallery Singapore <span class="distance">2.1 km</span></li>
-                    <li>Statue of Sir Stamford Raffles <span class="distance">2.1 km</span></li>
-                    <li>Asian Civilisations Museum <span class="distance">2.4 km</span></li>
-                    <li>Singapore City Gallery <span class="distance">3.1 km</span></li>
-                    <li>ArtScience Museum <span class="distance">3.2 km</span></li>
-                    <li>Sands SkyPark Observation Deck <span class="distance">3.4 km</span></li>
-                    <li>National Orchid Garden <span class="distance">3.7 km</span></li>
-                    <li>Cloud Forest <span class="distance">4 km</span></li>
-                    <li>Gardens by the Bay <span class="distance">4 km</span></li>
+                    <li><a href="#">Free Business Tools</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                    <li><a href="#">Success Stories</a></li>
+                    <li><a href="#">Upwork Reviews</a></li>
+                    <li><a href="#">Help & Support</a></li>
                 </ul>
             </div>
-
-            <!-- Column 3 -->
-            <div>
-                <h3><i class="fas fa-umbrella-beach"></i> Beaches in the neighbourhood</h3>
+            <div class="footer-section">
+                <h3>The Company</h3>
                 <ul>
-                    <li>East Coast Beach <span class="distance">7 km</span></li>
-                    <li>Palawan Beach <span class="distance">7 km</span></li>
-                    <li>Siloso Beach <span class="distance">8 km</span></li>
-                    <li>Tanjong Beach <span class="distance">8 km</span></li>
-                </ul>
-
-                <h3><i class="fas fa-train"></i> Public transport</h3>
-                <ul>
-                    <li>Train • Somerset MRT Station <span class="distance">400 m</span></li>
-                    <li>Metro • Somerset <span class="distance">450 m</span></li>
-                    <li>Metro • Dhoby Ghaut MRT Station <span class="distance">500 m</span></li>
-                    <li>Train • Little India MRT Station <span class="distance">1.9 km</span></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Leadership</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Trust, Safety & Security</a></li>
                 </ul>
             </div>
-
-            <!-- Column 4 -->
-            <div>
-                <h3><i class="fas fa-utensils"></i> Restaurants & cafes</h3>
-                <ul>
-                    <li>Restaurant • Golden Seafood Restaurant <span class="distance">8 m</span></li>
-                    <li>Cafe/bar • Papa Gayo <span class="distance">8 m</span></li>
-                    <li>Cafe/bar • So High Social Club <span class="distance">50 m</span></li>
-                </ul>
-
-                <h3><i class="fas fa-tree"></i> Natural beauty</h3>
-                <ul>
-                    <li>Lake • Marina Reservoir <span class="distance">5 km</span></li>
-                </ul>
-
-                <h3><i class="fas fa-plane"></i> Closest airports</h3>
-                <ul>
-                    <li>Seletar Airport <span class="distance">14 km</span></li>
-                    <li>Changi Airport <span class="distance">19 km</span></li>
-                    <li>Hang Nadim International Airport <span class="distance">35 km</span></li>
-                </ul>
+            <div class="footer-section">
+                <h3>Payment Methods</h3>
+                <div class="paymentmethods">
+                    <img src="../images/footer-photos/payment.webp" alt="">
+                </div>
+                <h3>Our Partners</h3>
+                <div class="ourpartners">
+                    <div class="partner1">
+                        <a><img src="../images/footer-photos/mytrip.webp" alt=""></a>
+                    </div>
+                    <div class="partner1">
+                        <a><img src="../images/footer-photos/tripadv.webp" alt=""></a>
+                    </div>
+                    <div class="partner1">
+                        <a><img src="../images/footer-photos/goibibo.webp" alt=""></a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<script src="../script/hotel1.js"></script>
+        <hr>
+        <div class="footer-bottom">
+            <div class="copy"> &copy; <u>2024 GeoTrip. Design by GeoTrip </u></div>
+            <div class="Terms">
+                <a href="#">Terms of Service</a><a href="#">Privacy
+                    Policy</a><a href="#">Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script/hotel1.js"></script>
 </body>
+
 </html>

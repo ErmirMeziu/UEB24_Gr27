@@ -1,60 +1,63 @@
-body{
-    background-color: rgb(255,255,255);
+body {
+    background-color: rgb(255, 255, 255);
 }
 
-.body-part{
+.body-part {
     width: 100%;
     margin-top: 30px;
     display: flex;
-    
+
 }
 
-.sec1,.body-part2{ 
-    width:80%;
+.sec1,
+.body-part2 {
+    width: 80%;
     position: relative;
-    left: 10.9%; 
+    left: 10.9%;
 }
 
-.sec2{
+.sec2 {
     width: 26%;
     position: relative;
-    right: 9%; 
+    right: 9%;
     margin-top: 181px;
 }
 
-.btn-first a{
+.btn-first a {
     text-decoration: none;
     color: black;
     position: relative;
     left: 3%;
 }
 
-.btn-first a p{
+.btn-first a p {
     display: inline-block;
     width: 19.33%;
     height: 50px;
-    
-    text-align: center; 
+
+    text-align: center;
     font-size: 16px;
     padding-top: 13px;
-    border-bottom: 1px solid rgb(231,231,231);
+    border-bottom: 1px solid rgb(231, 231, 231);
 }
 
-.btn-first a p:hover{
-    background-color: rgb(242,242,242)
+.btn-first a p:hover {
+    background-color: rgb(242, 242, 242)
 }
 
-.text p{
+.text p {
     padding-top: 40px;
     font-size: 20px;
     font-weight: 700;
 }
-.pin-text{
+
+.pin-text {
     display: flex;
     justify-content: space-between;
 }
-.pin-text #btn-res{
-    background-color:rgb(196,41,29);
+
+.pin-text #btn-res {
+    background-color: rgb(196, 41, 29);
     border: none;
     border-radius: 5px;
     width: 120px;
@@ -64,56 +67,72 @@ body{
     position: relative;
     left: 8%;
 }
-#btn-res:hover{
-    background-color: rgb(205,44,34);
+
+#btn-res:hover {
+    background-color: rgb(205, 44, 34);
 }
-.pin-text p{
+
+.pin-text p {
     font-size: 15px;
 }
-.pin-text p i{
-    color: rgb(0,108,228);
+
+.pin-text p i {
+    color: rgb(0, 108, 228);
     font-size: 22px;
     margin-top: 15px;
 }
-.pin-text a{
+
+.pin-text a {
     text-decoration: none;
-    color: rgb(0,108,228);
+    color: rgb(0, 108, 228);
     font-weight: 700;
 }
-.photos{
+
+.photos {
     margin-top: 20px;
 }
-.photos #first-photo{
+
+.photos #first-photo {
     width: 542px;
     height: 359px;
     border-radius: 10px;
+
 }
-.photos .photo{
+
+.photos .photo {
     width: 270px;
     height: 177px;
     border-radius: 10px;
+
 }
-.photos #second-photo{
+
+.photos #second-photo {
     position: relative;
     bottom: 182px;
+
 }
 
-.photos #third-photo{
+.photos #third-photo {
     position: relative;
     right: 274.8px;
-} 
+}
 
-.bottom-photos{
+img:hover {
+    cursor: pointer;
+}
+
+.bottom-photos {
     display: flex;
     gap: 5.47px;
     height: 103px;
 }
-.bottom-photos .bottom-pht{
+
+.bottom-photos .bottom-pht {
     margin-top: -2px;
     width: 159px;
 }
 
-.bottom-pht{
+.bottom-pht {
     border-radius: 10px;
 }
 
@@ -135,33 +154,36 @@ body{
     max-height: 90%;
 }
 
-.sec2 .reviews, .sec2 .location {
+.sec2 .reviews,
+.sec2 .location {
     display: grid;
-    grid-template-columns: auto 50px; 
-    align-items: center; 
-    padding: 15px; 
-    border: 1px solid rgb(231, 231, 231); 
-    border-radius: 5px; 
+    grid-template-columns: auto 50px;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 5px;
     margin-bottom: 10px;
     background-color: white;
 }
 
 .txt {
     margin: 0;
-    
+
 }
 
-.txt #first, .txt #third {
-    font-size: 18px; 
+.txt #first,
+.txt #third {
+    font-size: 18px;
     font-weight: 600;
     color: black;
     margin: 0;
+
 }
 
 .txt #second {
     font-size: 14px;
     color: gray;
-    margin-top: 5px; 
+    margin-top: 5px;
 }
 
 
@@ -185,7 +207,7 @@ body{
     position: relative;
     width: 100%;
     height: 273px;
-    max-width: 400px; 
+    max-width: 400px;
     margin: 20px auto;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -198,7 +220,8 @@ body{
     height: 300px;
     border: none;
 }
-.show-on-map-btn a{
+
+.show-on-map-btn a {
     text-decoration: none;
 }
 
@@ -223,7 +246,7 @@ body{
     background-color: #0056b3;
 }
 
-.some-txt{
+.some-txt {
     margin-top: 15px;
     font-size: 16px;
     width: 68%;
@@ -234,7 +257,8 @@ body{
 }
 
 
-.toggle-btn, #gst-btn {
+.toggle-btn,
+#gst-btn {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
@@ -245,17 +269,19 @@ body{
     cursor: pointer;
 }
 
-.toggle-btn:hover ,#gst-btn:hover {
+.toggle-btn:hover,
+#gst-btn:hover {
     background-color: #0056b3;
 }
 
-.property{
+.property {
     border: 1px solid rgb(231, 231, 231);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
-.property #imp{
+
+.property #imp {
     font-size: 22px;
     font-weight: bold;
     color: black;
@@ -265,66 +291,79 @@ body{
     list-style: none;
     padding: 0;
 }
+
 .property ul li {
     display: flex;
     align-items: center;
-    margin: 15px; 
+    margin: 15px;
 }
+
 .property ul li i {
-    font-size: 27px; 
+    font-size: 27px;
     margin-right: 20px;
 }
-.property  li h4 {
+
+.property li h4 {
     margin: 0;
     font-size: 15px;
     font-weight: bold;
     color: black;
 }
-.property  li p {
+
+.property li p {
     margin: 0;
     font-size: 13px;
     color: gray;
 }
 
 .bottom-btn {
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     width: 100%;
 }
+
 /*
 Perdor javascript per me ba efektin tek zemra save
 */
 .bottom-btn button {
-    width: 90%; 
-    padding: 10px 20px; 
-    font-size: 16px; 
-    border-radius: 5px; 
-    border: 1px solid #007bff; 
-    background-color: #f0f0f0; 
-    cursor: pointer;
-    transition: all 0.3s ease; 
+    width: 90%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    background-color: #f0f0f0;
+    transition: all 0.3s ease;
 }
 
+.bottom-btn-special {
+    background-color: red !important;
+    border: 1px solid red !important;
+    color: white;
+}
+
+
+
 .bottom-btn button:hover {
-    background-color: #007bff; 
-    color: white; 
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
 }
 
 .bottom-btn button i {
-    margin-right: 8px; 
+    margin-right: 8px;
     font-size: 16px;
 }
 
 .room-table {
     width: 100%;
-    border-collapse: separate; 
+    border-collapse: separate;
     border-spacing: 0;
     font-family: Arial, sans-serif;
     margin: 20px 0;
     border: 1px solid #ddd;
     border-radius: 10px;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .room-table th {
@@ -342,11 +381,11 @@ Perdor javascript per me ba efektin tek zemra save
 }
 
 .room-table tr:last-child td:first-child {
-    border-bottom-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
 }
 
 .room-table tr:last-child td:last-child {
-    border-bottom-right-radius: 10px; 
+    border-bottom-right-radius: 10px;
 }
 
 .expand-icon {
@@ -376,41 +415,45 @@ Perdor javascript per me ba efektin tek zemra save
 }
 
 .btn-primary {
+    display: flex;
     background-color: #007bff;
     color: white;
+    margin: auto;
 }
 
 .btn-primary:hover {
     background-color: #0056b3;
 }
 
-.gs-btn{
+.gs-btn {
     display: flex;
     justify-content: space-between;
 }
-.gs-btn a{
+
+.gs-btn a {
     text-decoration: none;
     color: white;
     font-size: 17px;
     font-weight: 600;
 }
-.guest-reviews{
+
+.guest-reviews {
     display: flex;
-    gap:15px;
+    gap: 15px;
 }
 
-.gst-txt{
+.gst-txt {
     display: flex;
     padding-top: 15px;
     gap: 10px;
 }
 
-.gst-txt #txt-first{
+.gst-txt #txt-first {
     font-size: 16px;
     font-weight: 600;
 }
 
-.gst-txt #txt-second{
+.gst-txt #txt-second {
     font-size: 14px;
     color: #595959;
     font-weight: 600;
@@ -514,6 +557,7 @@ Perdor javascript per me ba efektin tek zemra save
 
 .button:hover {
     background-color: #005a8c;
+    cursor: pointer;
 }
 
 .value {
@@ -535,43 +579,50 @@ Perdor javascript per me ba efektin tek zemra save
     margin-top: 10px;
 }
 
-.ask{
+.ask {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
-.ask-first{
+
+.ask-first {
     border: 1px solid #e7e7e7;
     width: 32%;
     padding: 30px;
-    border-radius: 10px;  
-    box-shadow: 0px 2px 4px rgba(0, 0,0,0.3);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
-.ask-first li{
+
+.ask-first li {
     padding: 15px;
     font-size: 15px;
 }
-.ask-first hr{
+
+.ask-first hr {
     width: 90%;
 }
-.ask-txt{
+
+.ask-txt {
     margin-top: 100px;
     justify-items: center;
 }
-.ask-txt button{
+
+.ask-txt button {
     border: 1px solid #006ce4;
     width: 130px;
     height: 40px;
     background-color: white;
-    color:#006ce4;
+    color: #006ce4;
     margin: 20px;
     border-radius: 5px;
 }
-.ask-txt button:hover{
+
+.ask-txt button:hover {
     background-color: #f0f6fd;
 }
-.ask-txt p{
+
+.ask-txt p {
     font-size: 14px;
 }
 
@@ -626,11 +677,15 @@ ul li i {
     margin-right: 8px;
 }
 
-.nearby-grid > div {
+.nearby-grid>div {
     border-right: 1px solid #ddd;
     padding-right: 20px;
 }
 
-.nearby-grid > div:last-child {
+.nearby-grid>div:last-child {
     border-right: none;
+}
+
+footer ul li {
+    margin-bottom: -10px !important;
 }
