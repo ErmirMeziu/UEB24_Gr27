@@ -448,7 +448,7 @@ Perdor javascript per me ba efektin tek zemra save
     gap: 10px;
 }
 
-.gst-txt #txt-first {
+.gst-txt #txt-first, #su-p{
     font-size: 16px;
     font-weight: 600;
 }
@@ -579,7 +579,7 @@ Perdor javascript per me ba efektin tek zemra save
     margin-top: 10px;
 }
 
-.ask {
+.ask, .hotel-fac {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -625,10 +625,6 @@ Perdor javascript per me ba efektin tek zemra save
 .ask-txt p {
     font-size: 14px;
 }
-
-
-
-
 
 .nearby-container {
     max-width: 1200px;
@@ -689,3 +685,28 @@ ul li i {
 footer ul li {
     margin-bottom: -10px !important;
 }
+
+
+.popular-facilities {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.popular-facilities ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.popular-facilities ul li {
+    font-size: 1em;
+    color: #333;
+}
+
+.popular-facilities ul li i {
+    margin-right: 9px;
+    color: #4CAF50;
+}
+
