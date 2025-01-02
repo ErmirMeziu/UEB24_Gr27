@@ -62,7 +62,12 @@
                         </fieldset>
                         <fieldset class="memb">
                             <legend>Members</legend>
-                            <input type="number" name="members" id="members" min="0">
+                            <div class="counter-container">
+                                <label id="countLabel">0</label><br>
+                                <button type="button" id="decreasebtn">Decrease</button>
+                                <button type="button" id="resetbtn">Reset</button>
+                                <button type="button" id="increasebtn">Increase</button>
+                            </div>
                         </fieldset>
                         <button><i class="fa-solid fa-magnifying-glass loop"></i>Search</button>
                     </form>

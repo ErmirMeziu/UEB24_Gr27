@@ -1,0 +1,300 @@
+.home {
+    width: 100%;
+    height: 650px;
+    background-image: url(../images/Porshe1.webp) !important;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    animation: fadeIn 2s ease-in-out;
+    z-index: -1;
+}
+
+ @keyframes fadeIn {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 0.8;
+    }
+}
+
+body {
+    overflow-y: scroll;
+}
+
+.all-special {
+    filter: brightness(0.5);
+}
+
+.home-text {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 180px;
+}
+.offpercent
+{
+    cursor: pointer;
+}
+.sales
+{
+    border: 2px dashed #dce0e4 !important;
+}
+.text
+{
+    width: 87%;
+    margin: 0 auto;
+    margin-top: 80px;
+    
+}
+.text h1
+{
+    text-align: center;
+    color: #052449;
+}
+.text p
+{
+    text-align: center;
+    color: #052449;
+}
+
+.BH
+{
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 20px;
+}
+
+.container3
+{
+    width: 100%;
+    font-family: Arial, sans-serif;
+    margin: auto;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container12 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
+    width: 87%;
+}
+
+.card5 {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    height: 550px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.card5 .slider {
+    height: 70%; 
+}
+.card5 img {
+    width: 100%;
+    height: 51%;
+    object-fit: cover;
+}
+
+.badge {
+    position: absolute;
+    background-color: #e74c3c;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 0 0 5px 5px;
+    top: 11px;
+    left: 9px;
+    padding: 4px 15px;
+}
+
+.card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+ .discount {
+    background-color: #FFE2E0;
+    color: #D44726;
+    padding: 5px 10px;
+    font-size: 75%;
+    font-weight: 500;
+    border-radius: 5px;
+   width: 51px;
+    top: 10px;
+    right: 10px;
+}
+.Free
+{
+    background-color: #D4EEE3;
+    color: #37A974;
+    padding: 5px 10px;
+    font-size: 75%;
+    font-weight: 500;
+    border-radius: 5px;
+   width: 73%;
+   margin-bottom: 20px;
+}
+
+.card-details {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+   
+}
+.card-details .detail
+{
+    border: 1px dashed #ccd5de !important;
+}
+
+.detail {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    
+}
+
+.price-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.old-price {
+    font-size: 18px;
+    text-decoration: line-through;
+    color: #888;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.rating .score {
+    background: #e74c3c;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 40px;
+    height: 30px;
+    align-content: center;
+}
+.reviews
+{
+    font-size: 14px;
+    color: #0E1E38 ;
+}
+
+.paragraph 
+{
+    color: #455873 !important;
+    font-size: 14px !important;
+    padding-top: 3px !important;
+}
+
+.view-more {
+    width: 85%;
+    height: 40px;
+    font-weight: 900;
+    background-color: #e74c3c;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    color: white;
+}
+
+
+.mimshef {
+    display: none;
+    margin-top: -120px;
+}
+
+.mimshef-special {
+    display: flex;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 50vh; 
+    margin: auto;
+    overflow: hidden;
+}
+.slider img{
+    width: 100%;
+    display: none;
+}
+img.displaySlide
+{
+    display: block;
+    animation-name: fade;
+    animation-duration:1.5s ;
+}
+.slider button
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 32px;
+    padding: 10px 15px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.prev
+{
+    left: 0;
+}
+.next
+{
+    right: 0;
+}
+
+@keyframes fade {
+    from{opacity: .5}
+    to{opacity: 1}
+}
+.slider .slides {
+    position: relative;
+}
+
+.slider .slide {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.slider .slide:first-child {
+    display: block; 
+}
