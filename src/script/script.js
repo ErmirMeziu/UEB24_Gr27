@@ -27,7 +27,7 @@ submit.addEventListener('click', function validate(event) {
         var contains = textAfter.split('.');
         if (contains.length == 1) {
             isValid = false;
-            text = text.concat(' ', 'Email doesnt contain \'.\'');
+            text = text.concat(' ', 'Email doesnt contain \' . \'.');
         }else if(email[position + 1] == '.'){
             isValid = false;
             text = text.concat(' ', '\' . \' - is used at wrong position.');

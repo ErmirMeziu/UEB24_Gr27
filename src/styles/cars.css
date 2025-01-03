@@ -144,7 +144,7 @@ display: flex;
     font-size: 75%;
     font-weight: 500;
     border-radius: 5px;
-   width: 72px;
+   width: 51px;
     top: 10px;
     right: 10px;
 }
@@ -152,14 +152,12 @@ display: flex;
 {
     background-color: #D4EEE3;
     color: #37A974;
+    padding: 5px 10px;
     font-size: 75%;
     font-weight: 500;
     border-radius: 5px;
-    width: 220px;
-    height: 25px;
-    margin-bottom: 20px;
-    text-align: center;
-    align-content: center;
+   width: 73%;
+   margin-bottom: 20px;
 }
 
 .card-details {
@@ -211,9 +209,9 @@ display: flex;
     font-size: 14px;
     font-weight: bold;
     border-radius: 10px;
-    text-align: center;
-    width: 43px;
-    height: 43px;
+    padding: 5px 10px;
+    width: 40px;
+    height: 30px;
     align-content: center;
 }
 .reviews
@@ -238,7 +236,7 @@ display: flex;
 .view-more {
     border: none;
     display: flex;
-    width: 87%;
+    width: 85%;
     height: 40px;
     font-weight: 900;
     background-color: #e74c3c;
