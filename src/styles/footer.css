@@ -124,6 +124,8 @@ footer {
 }
 .footer-bottom .copy {
     color: #5D6F7D;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+
 }
 .footer-bottom .Terms
 {

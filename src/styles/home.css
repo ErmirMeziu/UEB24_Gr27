@@ -19,6 +19,13 @@
     }
 }
 
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     overflow-y: scroll;
 }
@@ -76,13 +83,13 @@ body {
 }
 
 .search button {
+    border: none;
     width: 10%;
     height: 46px;
     align-self: center;
     margin-top: 7px;
     margin-right: 5px;
     background-color: rgb(215, 44, 33);
-    border: none;
     border-radius: 5px;
     color: white;
     cursor: pointer;
@@ -92,6 +99,7 @@ body {
 .search button:hover {
     background-color: rgb(255, 230, 229);
     color: rgb(215, 44, 33);
+
 }
 
 .loop {
@@ -254,6 +262,10 @@ body {
     width: 100%;
 }
 
+#message {
+    margin-top: -30px;
+}
+
 .login .remember-me1 {
     display: flex;
     justify-content: space-between;
@@ -280,7 +292,7 @@ body {
 }
 
 .login button,
-.register button {
+.register input[type = "submit"] {
     background-color: rgb(206, 46, 37);
     color: white;
     font-weight: 300;
@@ -434,7 +446,6 @@ body {
 
 .app-container .left .mobile button {
     font-family: 'Poppins';
-    border: none;
     border-radius: 5px;
     width: 30%;
     height: 50px;
@@ -444,6 +455,8 @@ body {
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
+    border-image: linear-gradient(to right, red, orange) 1;
+
 }
 
 .app-container .mobile button:hover {
@@ -874,16 +887,17 @@ html {
 }
 
 .home1 {
+    padding: 20px;
     height: 550px;
     background-image: url(../images/home-background/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
+    background-origin: padding-box;
     align-content: center;
     text-align: center;
     margin-top: 20px;
     background-position: 0px 5px;
-
 }
 
 
@@ -906,6 +920,7 @@ html {
     border: none;
     padding: 0px 10px 0px 20px;
     border-radius: 5px;
+
 }
 
 .input1 {
@@ -931,11 +946,12 @@ html {
     width: 100%;
     height: 100%;
     margin-top: 4px;
-    border: none;
     outline: none;
     font-family: 'Poppins';
     color: #5D6F7D;
     font-weight: 500;
+    border: none;
+
 
 }
 
@@ -944,10 +960,11 @@ html {
     font-family: 'Poppins';
     font-weight: 500;
     color: white;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 4.5px;
+    border-image: radial-gradient(ellipse at center, red, orange) 1;
+
 }
 
 .home1 .button1 input:hover {

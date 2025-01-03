@@ -1,3 +1,57 @@
+/*register-form*/
+
+const submit = document.getElementById('register-submit')
+submit.addEventListener('click', function validate(event) {
+    var isValid = true;
+    var isValid1 = true;
+    var name = document.getElementById('register-name').value;
+    var surname = document.getElementById('register-surname').value;
+    var email = document.getElementById('register-email').value;
+    var password = document.getElementById('register-password').value;
+    var confirmPassword = document.getElementById('confirm-password').value;
+    var mesazhi = document.getElementById('message');
+    var text = '';
+
+    if (name.length == 0 || surname.length == 0 || email.length == 0 || password.length == 0 || confirmPassword == 0) {
+        isValid = false;
+        isValid1 = false;
+        text = 'One of the required fields isn\'\t filled.';
+    }
+    if(email.length > 0 && !email.includes('@') && isValid1){
+        text = text.concat(' ', 'Email does not contain \'@\'.');
+        isValid = false;
+    }
+    if (email.length > 0 && email.includes('@') && isValid1) {
+        var position = email.indexOf('@');
+        var textAfter = email.substring(position + 1);
+        var contains = textAfter.split('.');
+        if (contains.length == 1) {
+            isValid = false;
+            text = text.concat(' ', 'Email doesnt contain \'.\'');
+        }else if(email[position + 1] == '.'){
+            isValid = false;
+            text = text.concat(' ', '\' . \' - is used at wrong position.');
+        }
+    }
+
+    if (password !== confirmPassword && isValid1) {
+        isValid = false;
+        text = text.concat(' ', 'Passwords doesn\'t match.');
+    }
+
+    if (isValid) {
+        mesazhi.style.color = 'green';
+        mesazhi.innerHTML = 'Form successfully submitted.';
+        alert('Form successfully submitted.');
+    } else {
+        mesazhi.style.color = 'red';
+        mesazhi.innerHTML = text;
+    }
+    event.preventDefault();
+    return isValid;
+});
+
+
 /* login/register */
 const sign = document.querySelector('.login-register');
 const iks = document.querySelector('.iks');
