@@ -14,7 +14,6 @@ viewmore.addEventListener('click', function () {
         document.querySelector('.goTop').scrollIntoView({ behavior: 'smooth', block: 'start' });
         a = 0;
     }
-    
 });
 
 
@@ -65,3 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 initializeSlider(index);
         });
 });
+
+
+

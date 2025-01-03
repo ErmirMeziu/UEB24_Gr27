@@ -50,6 +50,7 @@ document.querySelectorAll('.arrow').forEach(arrow => {
 
 /*save the property*/
 const button = document.querySelector(".bottom-btn1");
+const favorit = document.querySelector(".favorit");
 button.addEventListener('click', function(){
     button.classList.toggle('bottom-btn-special');
 })
