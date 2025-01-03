@@ -60,27 +60,32 @@ const recommendations = document.querySelector('.recommendations');
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
 
-let scrollAmount = 0;
 const cardWidth = 320; // Approximate width of a single card (adjust as needed)
+const visibleCards = Math.floor(window.innerWidth / cardWidth); // Number of visible cards
+const maxScroll = recommendations.scrollWidth - cardWidth * visibleCards;
+
+let scrollAmount = 0;
 
 // Scroll to the left
 prevButton.addEventListener('click', () => {
     scrollAmount -= cardWidth;
-    recommendations.style.transform = `translateX(${scrollAmount}px)`;
 
     // Prevent scrolling beyond the first card
-    if (scrollAmount > 0) {
+    if (scrollAmount < 0) {
         scrollAmount = 0;
     }
+
+    recommendations.style.transform = `translateX(-${scrollAmount}px)`;
 });
 
 // Scroll to the right
 nextButton.addEventListener('click', () => {
     scrollAmount += cardWidth;
-    recommendations.style.transform = `translateX(${-scrollAmount}px)`;
 
     // Prevent scrolling beyond the last card
-    if (scrollAmount < -recommendations.scrollWidth + cardWidth * 2) {
-        scrollAmount = -recommendations.scrollWidth + cardWidth * 2;
+    if (scrollAmount > maxScroll) {
+        scrollAmount = maxScroll;
     }
+
+    recommendations.style.transform = `translateX(-${scrollAmount}px)`;
 });
