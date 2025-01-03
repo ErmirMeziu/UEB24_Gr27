@@ -830,3 +830,78 @@ button.prev {
 button.next {
     right: 10px;
 }
+
+.house-rules{
+    border: 1px solid #e7e7e7;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.container {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+}
+
+.rule {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.rule:last-child {
+    border-bottom: none;
+}
+
+.icon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #666;
+}
+
+.details h4 {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+}
+
+.details p, .details table {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.rule table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    
+}
+.rule table td {
+    border: 1px solid #ccc;
+    padding: 5px; 
+    text-align: center;
+}
