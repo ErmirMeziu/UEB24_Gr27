@@ -365,6 +365,19 @@ Perdor javascript per me ba efektin tek zemra save
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
+    
+}
+
+.room-table tr {
+    cursor: move; 
+}
+
+.room-table tr.dragging {
+    opacity: 0.5; /* Reduce opacity of the dragged row */
+}
+
+.room-table tr.over {
+    background-color: #f0f0f0; /* Change background color when hovering over a row */
 }
 
 .room-table th {
@@ -391,7 +404,8 @@ Perdor javascript per me ba efektin tek zemra save
 
 .expand-icon {
     color: #f47c20;
-    margin-right: 5px;
+    font-weight: bold;
+    margin-right: 10px;
 }
 
 .guest-info {

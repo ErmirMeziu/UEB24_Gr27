@@ -188,6 +188,11 @@ window.onscroll = function () {
     }
 };
 
+//Audio
+const audio = document.getElementById("audio");
+const audioIcon = document.getElementById("audio-icon");
 
-
+audioIcon.addEventListener("click", function() {
+    audio.play();
+});
 
