@@ -53,6 +53,7 @@
             color: rgb(118, 118, 118);
         }
     </style>
+    
 </head>
 
 <body class="body">
@@ -235,12 +236,13 @@
         <div class="sec2">
             <div class="reviews">
                 <div class="txt">
-                    <p id="first">Pleasant</p>
+                    <p id="first">Pleasant <i class="fa-solid fa-volume-high audio-icon" id="audio-icon"></i></p>
                     <p id="second">667 reviews</p>
                 </div>
                 <div class="btn">
                     <button>6.4</button>
                 </div>
+                <audio id="audio" src="../Video/Audio2.mp3" preload="auto"></audio>
             </div>
 
             <div class="location">
@@ -312,12 +314,11 @@
             </thead>
             <tbody>
 
-                <tr>
+                <tr draggable="true" id="room1">
                     <td>
-                        <span class="expand-icon">&#9658;</span>
+                        <span class="expand-icon" id="number-1">1</span>
                         <strong>Deluxe Double or Twin Room</strong><br>
-                        1 large double bed <i class="fa-solid fa-bed"></i> or 2 single beds <i
-                            class="fa-solid fa-user-group"></i>
+                        1 large double bed <i class="fa-solid fa-bed"></i> or 2 single beds <i class="fa-solid fa-user-group"></i>
                     </td>
                     <td class="guest-info">
                         <i class="fa-solid fa-user-group"></i> + <i class="fa-solid fa-user"></i>
@@ -328,13 +329,11 @@
                     </td>
                 </tr>
 
-                <tr>
+                <tr draggable="true" id="room2">
                     <td>
-                        <span class="expand-icon">&#9658;</span>
+                        <span class="expand-icon" id="number-2">2</span>
                         <strong>Deluxe Triple Room</strong><br>
-                        1 single bed <i class="fa-solid fa-bed"></i> and 1 large double bed <i
-                            class="fa-solid fa-bed"></i>
-                        or 3 single beds <i class="fa-solid fa-user-group"></i>
+                        1 single bed <i class="fa-solid fa-bed"></i> and 1 large double bed <i class="fa-solid fa-bed"></i>
                     </td>
                     <td class="guest-info">
                         <i class="fa-solid fa-user-group"></i> + <i class="fa-solid fa-user"></i>
@@ -345,9 +344,9 @@
                     </td>
                 </tr>
 
-                <tr>
+                <tr draggable="true" id="room3">
                     <td>
-                        <span class="expand-icon">&#9658;</span>
+                        <span class="expand-icon" id="number-3">3</span>
                         <strong>Premier Double or Twin Room</strong><br>
                         1 large double bed <i class="fa-solid fa-bed"></i> or 2 single beds <i
                             class="fa-solid fa-user-group"></i>
@@ -361,9 +360,9 @@
                     </td>
                 </tr>
 
-                <tr>
+                <tr draggable="true" id="room4">
                     <td>
-                        <span class="expand-icon">&#9658;</span>
+                        <span class="expand-icon" id="number-4">4</span>
                         <strong>Connecting Rooms</strong><br>
                         2 large double beds <i class="fa-solid fa-bed"></i> or 4 single beds <i
                             class="fa-solid fa-user-group"></i>
@@ -377,9 +376,9 @@
                     </td>
                 </tr>
 
-                <tr>
+                <tr draggable="true" id="room4">
                     <td>
-                        <span class="expand-icon">&#9658;</span>
+                        <span class="expand-icon" id="number-5">5</span>
                         <strong>Penthouse Suite with City View</strong><br>
                         1 king-sized bed <i class="fa-solid fa-bed"></i>, private terrace, and panoramic city views <i
                             class="fa-solid fa-city"></i>
@@ -1270,6 +1269,13 @@
         </div>
     </footer>
 
+    <script>
+        const audio = document.getElementById("audio");
+        const audioIcon = document.getElementById("audio-icon");
+        audioIcon.addEventListener("click", function() {
+        audio.play();
+        }); 
+    </script>
     <script src="../script/hotel1.js"></script>
 </body>
 

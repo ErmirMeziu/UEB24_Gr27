@@ -19,6 +19,7 @@
     <script src="../script/script.js" defer></script>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
 </head>
 
 <body class="body">
@@ -109,7 +110,17 @@
         <div class="search-input">
             <fieldset>
                 <legend>Where</legend>
-                <input type="text" name="text" id="text" class="same" placeholder="Going To">
+                <input type="text" name="text" id="text" class="same" placeholder="Going To" list="locations">
+                <datalist id="locations">
+                    <option value="Paris">
+                    <option value="New York">
+                    <option value="London">
+                    <option value="Tokyo">
+                    <option value="Dubai">
+                    <option value="Rome">
+                    <option value="Sydney">
+                    <option value="Los Angeles">
+                </datalist>
             </fieldset>
 
             <fieldset>
@@ -259,7 +270,6 @@
                 </div>
             </div>
 
-
         </div>
 
         <div class="sec2-parent">
@@ -307,7 +317,9 @@
                         <div class="parent">
                             <div class="part1">
                                 <p id="text10">Exceptional</p>
-                                <p id="text11">3,014 reviews</p>
+                                <p id="text11"> 
+                                    <output name="reviews-count" id="reviews-count">3,014</output> reviews
+                                </p>
                             </div>
                             <button id="button">4.8</button>
                         </div>
@@ -365,7 +377,9 @@
                         <div class="parent">
                             <div class="part1">
                                 <p id="text10">Exceptional</p>
-                                <p id="text11">2,514 reviews</p>
+                                <p id="text11"> 
+                                    <output name="reviews-count" id="reviews-count">2,514</output> reviews
+                                </p>
                             </div>
                             <button id="button">3.6</button>
                         </div>
@@ -435,7 +449,9 @@
                         <div class="parent">
                             <div class="part1">
                                 <p id="text10">Exceptional</p>
-                                <p id="text11">1,514 reviews</p>
+                                <p id="text11"> 
+                                    <output name="reviews-count" id="reviews-count">1,514</output> reviews
+                                </p>
                             </div>
                             <button id="button">4.2</button>
                         </div>
@@ -487,7 +503,9 @@
                         <div class="parent">
                             <div class="part1">
                                 <p id="text10">Exceptional</p>
-                                <p id="text11">514 reviews</p>
+                                <p id="text11"> 
+                                    <output name="reviews-count" id="reviews-count">514</output> reviews
+                                </p>
                             </div>
                             <button id="button">3.2</button>
                         </div>
@@ -541,7 +559,9 @@
                         <div class="parent">
                             <div class="part1">
                                 <p id="text10">Exceptional</p>
-                                <p id="text11">514 reviews</p>
+                                <p id="text11"> 
+                                    <output name="reviews-count" id="reviews-count">514</output> reviews
+                                </p>
                             </div>
                             <button id="button">4.4</button>
                         </div>
@@ -596,7 +616,9 @@
                         <div class="parent">
                             <div class="part1">
                                 <p id="text10">Exceptional</p>
-                                <p id="text11">7,514 reviews</p>
+                                <p id="text11"> 
+                                    <output name="reviews-count" id="reviews-count">7,514</output> reviews
+                                </p>
                             </div>
                             <button id="button">5.0</button>
                         </div>
