@@ -115,6 +115,7 @@ display: flex;
 }
 
 .badge {
+    display: flex;
     position: absolute;
     background-color: #e74c3c;
     color: #fff;
@@ -122,7 +123,10 @@ display: flex;
     border-radius: 0 0 5px 5px;
     top: 11px;
     left: 9px;
-    padding: 4px 15px;
+    height: 30px;
+    width: 220px;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-body {
@@ -138,26 +142,32 @@ display: flex;
     margin-bottom: 10px;
 }
  .discount {
+    display: flex;
     background-color: #FFE2E0;
     color: #D44726;
-    padding: 5px 10px;
     font-size: 75%;
     font-weight: 500;
     border-radius: 5px;
-   width: 51px;
+    width: 70px;
+    height: 30px;
     top: 10px;
     right: 10px;
+    align-items: center;
+    justify-content: center;
 }
 .Free
 {
+    display: flex;
     background-color: #D4EEE3;
     color: #37A974;
-    padding: 5px 10px;
     font-size: 75%;
     font-weight: 500;
     border-radius: 5px;
-   width: 73%;
-   margin-bottom: 20px;
+    width: 200px;
+    height: 30px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-details {
@@ -204,15 +214,16 @@ display: flex;
 }
 
 .rating .score {
+    display: flex;
     background: #e74c3c;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
     border-radius: 10px;
-    padding: 5px 10px;
     width: 40px;
-    height: 30px;
-    align-content: center;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
 }
 .reviews
 {
@@ -312,5 +323,5 @@ img.displaySlide
 }
 
 .slider .slide:first-child {
-    display: block; 
+    display: block;
 }

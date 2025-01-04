@@ -1,5 +1,4 @@
 /*register-form*/
-
 const submit = document.getElementById('register-submit')
 submit.addEventListener('click', function validate(event) {
     var isValid = true;
@@ -15,20 +14,24 @@ submit.addEventListener('click', function validate(event) {
     if (name.length == 0 || surname.length == 0 || email.length == 0 || password.length == 0 || confirmPassword == 0) {
         isValid = false;
         isValid1 = false;
-        text = 'One of the required fields isn\'\t filled.';
+        text = 'One of the required fields isn\'t filled.';
     }
-    if(email.length > 0 && !email.includes('@') && isValid1){
-        text = text.concat(' ', 'Email does not contain \'@\'.');
+    if (email.length > 0 && !email.includes('@') && isValid1) {
+        text = text.concat(' ', 'Email doesn\'t contain \'@\'.');
         isValid = false;
     }
     if (email.length > 0 && email.includes('@') && isValid1) {
         var position = email.indexOf('@');
         var textAfter = email.substring(position + 1);
         var contains = textAfter.split('.');
-        if (contains.length == 1) {
+        if (position == 0) {
+            isValid = false;
+            text = text.concat(' ', '\' @ \' - is used at wrong position.');
+        } else if (contains.length == 1) {
             isValid = false;
             text = text.concat(' ', 'Email doesnt contain \' . \'.');
-        }else if(email[position + 1] == '.'){
+        }
+        else if (email[position + 1] == '.') {
             isValid = false;
             text = text.concat(' ', '\' . \' - is used at wrong position.');
         }
@@ -36,19 +39,45 @@ submit.addEventListener('click', function validate(event) {
 
     if (password !== confirmPassword && isValid1) {
         isValid = false;
-        text = text.concat(' ', 'Passwords doesn\'t match.');
+        text = text.concat(' ', 'Passwords don\'t match.');
     }
 
     if (isValid) {
         mesazhi.style.color = 'green';
-        mesazhi.innerHTML = 'Form successfully submitted.';
-        alert('Form successfully submitted.');
+        mesazhi.innerHTML = 'You have successfully signed up.';
+        alert('You have successfully signed up.');
     } else {
         mesazhi.style.color = 'red';
         mesazhi.innerHTML = text;
     }
     event.preventDefault();
     return isValid;
+});
+
+/*login-form*/
+var login_submit = document.getElementById("login-submit");
+
+login_submit.addEventListener('click', function (event) {
+    var login_email = document.getElementById("login-email").value;
+    var login_password = document.getElementById("login-password").value;
+    var valid = true;
+
+    if (login_email.length === 0 || !login_email.includes('@') || login_password.length === 0) {
+        valid = false;
+    } else {
+        var position1 = login_email.indexOf('@');
+        var textAfter1 = login_email.substring(position1 + 1);
+        var contains1 = textAfter1.split('.');
+
+        if (contains1.length < 2 || login_email[position1 + 1] === '.' || textAfter1.endsWith('.') || position1 === 0) {
+            valid = false;
+        }
+    }
+
+    if (valid) {
+        event.preventDefault();
+        alert("You have successfully logged in.");
+    }
 });
 
 
@@ -144,7 +173,7 @@ changeImg();
 const header = document.querySelector("header");
 const gotopbtn = document.querySelector(".gotopbtn");
 
-window.onscroll = function() {
+window.onscroll = function () {
 
     if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
         header.style.backgroundColor = "rgb(4,22,37)";
