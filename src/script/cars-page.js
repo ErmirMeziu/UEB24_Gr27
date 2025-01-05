@@ -43,7 +43,6 @@ function updateDates() {
             return;
         }
 
-
         // document.getElementById('pickup-date').textContent = formatDate(pickupDate);
         // document.getElementById('dropoff-date').textContent = formatDate(dropoffDate);
 
