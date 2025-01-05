@@ -13,7 +13,7 @@ var time = 5000;
 const home = document.querySelector(".home");
 
 
-function changeImg() {
+function changeImg(callback) {
     home.style.backgroundImage = `url(${images[i]})`;
 
     if (i < images.length - 1) {
@@ -22,11 +22,11 @@ function changeImg() {
         i = 0;
     }
 
-    setTimeout(changeImg, time);
+    setTimeout(() => callback(changeImg), time);
 }
 
-changeImg();
-
+// callback function
+changeImg(changeImg);
 
 /* header */
 const header = document.querySelector("header");

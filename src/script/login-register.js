@@ -170,12 +170,13 @@ class Account {
     displayInfo() {
         console.log(`Name: ${this.name} ${this.surname}`);
         console.log(`Email: ${this.email}`);
+        console.log(`Email Length: ${this.email.length.toExponential()}`)
     }
 }
 
 /*hidden/show password*/
 $(document).ready(function(){
-    $('#login-password').siblings('.toggle-password1').on('click', function() {
+    $('.toggle-password1').on('click', function() {
         var inputField = $('#login-password');
         var fieldType = inputField.attr('type');
 
