@@ -202,6 +202,7 @@ hr
     color: #3D3D3D;
     font-size: 22px;
 }
+
 .Capacity h3
 {
     color: #393939;
@@ -213,6 +214,21 @@ hr
 {
     color: #3D3D3D;
     font-size: 22px;
+
+}
+
+.Extra p {
+    color: #3D3D3D;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.Extra h3 {
+    color: #393939;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 .extra-button button
 {
@@ -223,18 +239,20 @@ hr
     border: 1px solid #eee;
     font-size: 14px;
 }
-.extra-button
-{
-    margin-top: 20px;
+
+.Extra .btnrezervo{
+    margin-top: 10px;
 }
+
 .Capacity
 {
-    margin-top: 45px;
+    margin-top: 15px;
 }
 .Extra
 {
     margin-top: 20px;
 }
+
 
 .btnrezervo {
     background-color: #4CAF50;
@@ -311,4 +329,12 @@ hr
 
 footer ul li a, footer h3 {
     color: white !important;
+}
+
+#pickup-input, #dropoff-input {
+    width: 250px;
+    height: 30px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    padding: 5px;
 }
