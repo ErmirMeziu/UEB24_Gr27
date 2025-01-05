@@ -18,6 +18,8 @@
     <script src="https://kit.fontawesome.com/c2f2fe035b.js" crossorigin="anonymous"></script>
     <script src="script/home.js" defer></script>
     <script src="script/login-register.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/login-register.css">
 
@@ -64,10 +66,13 @@
                         <div><input class="login-change" type="email" id="login-email" placeholder="Enter your email" required></div>
                         <div style="position: relative;">
                             <input class="login-change" type="password" id="login-password" placeholder="Enter your password" required>
-                            <i class="fa fa-eye-slash toggle-password" aria-hidden="true"></i>
+                            <i class="fa fa-eye-slash toggle-password1" aria-hidden="true"></i>
                         </div>
     
-                        <button id="login-submit" style="width: 100%;">Log In</button>
+                        <div style="position: relative; margin-bottom: -20px;">
+                            <button id="login-submit" style="width: 100%;">Log In</button>
+                            <p id = "message1" style="position: absolute; top: -23px; left: 50%; transform: translateX(-50%); font-size: 13px;"></p>
+                        </div>
     
                         <div class="check">
                             <div class="remember">
@@ -79,7 +84,7 @@
                     </form>
                 </div>
                 <div class="divider">
-                    <p style="font-weight: 300; font-size: 14px; margin-top: 5px; margin-bottom: 5px;">-------------
+                    <p style="font-weight: 300; font-size: 14px; margin-top: -10px; margin-bottom: 10px;">-------------
                         <i>Sign In With More Methods</i> -------------</p>
                 </div>
                 <div class="socials">
@@ -111,14 +116,16 @@
                 </div>
                 <div style="position: relative;">
                     <input class="login-change" type="password" id="register-password" placeholder="Enter your password" required>
-                    <i class="fa fa-eye-slash toggle-password" aria-hidden="true" style="right: 30px;"></i>
+                    <i class="fa fa-eye-slash toggle-password2" aria-hidden="true" style="right: 30px;"></i>
                 </div>
                 <div style="position: relative;">
                     <input class="login-change" type="password" id="confirm-password" placeholder="Confirm your password" required>
-                    <i class="fa fa-eye-slash toggle-password" aria-hidden="true" style="right: 30px;"></i>
+                    <i class="fa fa-eye-slash toggle-password3" aria-hidden="true" style="right: 30px;"></i>
                 </div>
-                <input type="submit" style="width: 434px; margin: auto;" value="Sign up" id="register-submit">
-                <span id="message"></span>
+                <div style="position: relative;">
+                    <input type="submit" style="width: 434px; margin: auto;" value="Sign up" id="register-submit"><br>
+                    <span id="message" style="position:absolute;font-size: 13px; top: -25px; width: 434px; transform: translateX(-50%);"></span>
+                </div>
             </form>
         </div>
         <div class="register-end">

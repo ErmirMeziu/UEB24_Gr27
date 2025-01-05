@@ -41,7 +41,7 @@
     font-weight: 500;
 }
 
-.toggle-password {
+.toggle-password1, .toggle-password2, .toggle-password3  {
     position: absolute;
     right: 15px;
     top: 50%;
@@ -161,9 +161,6 @@
     width: 100%;
 }
 
-#message {
-    margin-top: -30px;
-}
 
 .login .remember-me1 {
     display: flex;

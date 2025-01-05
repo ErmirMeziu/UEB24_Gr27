@@ -61,11 +61,14 @@ register.addEventListener('click', function (event) {
 var login_submit = document.getElementById("login-submit");
 
 login_submit.addEventListener('click', function (event) {
+    event.preventDefault();
     var login_email = document.getElementById("login-email").value;
     var login_password = document.getElementById("login-password").value;
+    var mesazhi1 = document.getElementById('message1');
+    var text1 = '';
     var valid = true;
 
-    if (login_email.length === 0 || !login_email.includes('@') || login_password.length === 0) {
+    if (login_email.length === 0 || !login_email.includes('@') || login_password.length < 8) {
         valid = false;
     } else {
         var position1 = login_email.indexOf('@');
@@ -78,15 +81,23 @@ login_submit.addEventListener('click', function (event) {
     }
 
     if (valid) {
-        event.preventDefault();
-        alert("You have successfully logged in.");
+        mesazhi1.style.color = 'green';
+        mesazhi1.innerHTML = 'You have successfully logged in.';
+        alert('You have successfully logged in.');
+    }else {
+        mesazhi1.style.color = 'red';
+        mesazhi1.innerHTML = 'Wrong Email or Password';
     }
+
+    return valid;
 });
 
 
 /*register-form*/
 const submit = document.getElementById('register-submit')
 submit.addEventListener('click', function validate(event) {
+    event.preventDefault();
+
     var isValid = true;
     var isValid1 = true;
     var name = document.getElementById('register-name').value;
@@ -123,7 +134,7 @@ submit.addEventListener('click', function validate(event) {
         }
     }
 
-    if(password.length < 8){
+    if(password.length < 8 && isValid1){
         isValid = false;
         text = text.concat(' ', 'Password is too short.');
     }
@@ -142,7 +153,6 @@ submit.addEventListener('click', function validate(event) {
         mesazhi.style.color = 'red';
         mesazhi.innerHTML = text.replace();
     }
-    event.preventDefault();
     return isValid;
 });
 
@@ -165,42 +175,42 @@ class Account {
 
 /*hidden/show password*/
 $(document).ready(function(){
-    // Kur përdoruesi klikoni mbi ikonën, ndryshoni tipin e fushës
-    $('#login-password').siblings('.toggle-password').on('click', function() {
+    $('#login-password').siblings('.toggle-password1').on('click', function() {
         var inputField = $('#login-password');
         var fieldType = inputField.attr('type');
 
         if (fieldType === 'password') {
-            inputField.attr('type', 'text'); // Shfaq fjalëkalimin
-            $(this).removeClass('fa-eye-slash').addClass('fa-eye'); // Ndrysho ikonën
+            inputField.attr('type', 'text');
+            $(this).removeClass('fa-eye-slash').addClass('fa-eye');
         } else {
-            inputField.attr('type', 'password'); // Fshih fjalëkalimin
-            $(this).removeClass('fa-eye').addClass('fa-eye-slash'); // Kthe ikonën
-        }
-    });
-    $('.toggle-password').on('click', function(){
-        var inputField = $('#register-password'); // Përdorimi i klasës login-password
-        var fieldType = inputField.attr('type');
-
-        if (fieldType === 'password') {
-            inputField.attr('type', 'text'); // Shfaq fjalëkalimin
-            $(this).removeClass('fa-eye-slash').addClass('fa-eye'); // Ndrysho ikonën
-        } else {
-            inputField.attr('type', 'password'); // Fshih fjalëkalimin
-            $(this).removeClass('fa-eye').addClass('fa-eye-slash'); // Kthe ikonën
+            inputField.attr('type', 'password');
+            $(this).removeClass('fa-eye').addClass('fa-eye-slash'); 
         }
     });
 
-    $('.toggle-password').on('click', function(){
-        var inputField = $('#confirm-password'); // Përdorimi i klasës login-password
+    $('.toggle-password2').on('click', function(){
+        var inputField = $('#register-password');
         var fieldType = inputField.attr('type');
 
         if (fieldType === 'password') {
-            inputField.attr('type', 'text'); // Shfaq fjalëkalimin
-            $(this).removeClass('fa-eye-slash').addClass('fa-eye'); // Ndrysho ikonën
+            inputField.attr('type', 'text');
+            $(this).removeClass('fa-eye-slash').addClass('fa-eye');
         } else {
-            inputField.attr('type', 'password'); // Fshih fjalëkalimin
-            $(this).removeClass('fa-eye').addClass('fa-eye-slash'); // Kthe ikonën
+            inputField.attr('type', 'password');
+            $(this).removeClass('fa-eye').addClass('fa-eye-slash');
+        }
+    });
+
+    $('.toggle-password3').on('click', function(){
+        var inputField = $('#confirm-password');
+        var fieldType = inputField.attr('type');
+
+        if (fieldType === 'password') {
+            inputField.attr('type', 'text');
+            $(this).removeClass('fa-eye-slash').addClass('fa-eye');
+        } else {
+            inputField.attr('type', 'password');
+            $(this).removeClass('fa-eye').addClass('fa-eye-slash');
         }
     });
 });

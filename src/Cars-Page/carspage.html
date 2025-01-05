@@ -60,15 +60,17 @@
             <div class="login-form">
                 <div class="login-input">
                     <form action="" method="post">
-                        <div><input class="login-change" type="email" id="login-email" placeholder="Enter your email"
-                                required></div>
-                        <div style="position: relative;"><input class="login-change" type="password" id="login-password"
-                                placeholder="Enter your password" required>
-                               <i class="fa fa-eye-slash toggle-password" aria-hidden="true"></i></div>
-                                
-
-                        <button id="login-submit" style="width: 100%;">Log In</button>
-
+                        <div><input class="login-change" type="email" id="login-email" placeholder="Enter your email" required></div>
+                        <div style="position: relative;">
+                            <input class="login-change" type="password" id="login-password" placeholder="Enter your password" required>
+                            <i class="fa fa-eye-slash toggle-password1" aria-hidden="true"></i>
+                        </div>
+    
+                        <div style="position: relative; margin-bottom: -20px;">
+                            <button id="login-submit" style="width: 100%;">Log In</button>
+                            <p id = "message1" style="position: absolute; top: -23px; left: 50%; transform: translateX(-50%); font-size: 13px;"></p>
+                        </div>
+    
                         <div class="check">
                             <div class="remember">
                                 <input type="checkbox" name="remember-me" id="remember-me">
@@ -79,9 +81,8 @@
                     </form>
                 </div>
                 <div class="divider">
-                    <p style="font-weight: 300; font-size: 14px; margin-top: 5px; margin-bottom: 5px;">-------------
-                        <i>Sign In With
-                            More Methods</i> -------------</p>
+                    <p style="font-weight: 300; font-size: 14px; margin-top: -10px; margin-bottom: 10px;">-------------
+                        <i>Sign In With More Methods</i> -------------</p>
                 </div>
                 <div class="socials">
                     <div class="social"><i class="fa-brands fa-facebook" style="color: #0033ff;"></i></div>
@@ -95,7 +96,7 @@
             </div>
         </div>
     </section>
-
+    
     <section class="register">
         <div class="register-head">
             <h4>Sign up</h4>
@@ -105,26 +106,23 @@
             <form action="" method="post">
                 <div class="name-surname">
                     <input class="login-change" type="text" id="register-name" placeholder="Enter your name" required>
-                    <input class="login-change" type="text" id="register-surname" placeholder="Enter your surname"
-                        required>
+                    <input class="login-change" type="text" id="register-surname" placeholder="Enter your surname" required>
                 </div>
                 <div>
-                    <input class="login-change" type="email" id="register-email" placeholder="Enter your email"
-                        required>
+                    <input class="login-change" type="email" id="register-email" placeholder="Enter your email" required>
                 </div>
                 <div style="position: relative;">
-                    <input class="login-change" type="password" id="register-password" placeholder="Enter your password"
-                        required>
-                        <i class="fa fa-eye-slash toggle-password" aria-hidden="true" style="right: 30px;"></i>
-
+                    <input class="login-change" type="password" id="register-password" placeholder="Enter your password" required>
+                    <i class="fa fa-eye-slash toggle-password2" aria-hidden="true" style="right: 30px;"></i>
                 </div>
                 <div style="position: relative;">
-                    <input class="login-change" type="password" id="confirm-password"
-                        placeholder="Confirm your password" required>
-                    <i class="fa fa-eye-slash toggle-password" aria-hidden="true" style="right: 30px;"></i>
+                    <input class="login-change" type="password" id="confirm-password" placeholder="Confirm your password" required>
+                    <i class="fa fa-eye-slash toggle-password3" aria-hidden="true" style="right: 30px;"></i>
                 </div>
-                <input type="submit" style="width: 434px; margin: auto;" value="Sign up" id="register-submit">
-                <span id="message"></span>
+                <div style="position: relative;">
+                    <input type="submit" style="width: 434px; margin: auto;" value="Sign up" id="register-submit"><br>
+                    <span id="message" style="position:absolute;font-size: 13px; top: -25px; width: 434px; transform: translateX(-50%);"></span>
+                </div>
             </form>
         </div>
         <div class="register-end">
