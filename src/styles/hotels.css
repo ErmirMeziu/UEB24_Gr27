@@ -209,13 +209,18 @@ fieldset input{
     /* background-color: rgb(240,240,240); */
 }
 
+.page-btn:hover {
+    background-color: rgb(205,44,34);
+    color: white;
+    cursor: pointer;
+}
+
 .top-element .input  input[type="submit"] {
     height: 32px;
     background-color: white;
     cursor: pointer;
     position: absolute;
     right: 7px;
-    
 }
 
 .top-element #text{

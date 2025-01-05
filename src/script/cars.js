@@ -41,73 +41,61 @@ const sliders = document.querySelectorAll('.slider');
 let intervalId = null;
 
 function initializeSlider(sliderIndex) {
-        const slides = sliders[sliderIndex].querySelectorAll('.slide');
-        let slideIndex = 0;
+    const slides = sliders[sliderIndex].querySelectorAll('.slide');
+    let slideIndex = 0;
 
-        function showSlide() {
-                slides.forEach(slide => {
-                        slide.style.display = 'none';
-                });
-
-                slides[slideIndex].style.display = 'block';
-        }
-
-        function nextSlide() {
-                slideIndex++;
-                if (slideIndex >= slides.length) slideIndex = 0;
-                showSlide();
-            }
-    
-            function prevSlide() {
-                slideIndex--;
-                if (slideIndex < 0) slideIndex = slides.length - 1;
-                showSlide();
-            }
-    
-    
-            $(sliders[sliderIndex]).find('.next').click(function() {
-                nextSlide(); 
-    
-            });
-    
-            $(sliders[sliderIndex]).find('.prev').click(function() {
-                prevSlide(); 
-            });
-    
-            showSlide(); 
-        }
-    
-        sliders.each(function(index) {
-            initializeSlider(index);
+    function showSlide() {
+        slides.forEach(slide => {
+            slide.style.display = 'none';
         });
-        sliders[sliderIndex].querySelector('.prev').addEventListener('click', function () {
-                prevSlide();
-        });
+        slides[slideIndex].style.display = 'block';
+    }
 
+    function nextSlide() {
+        slideIndex++;
+        if (slideIndex >= slides.length) slideIndex = 0;
         showSlide();
+    }
+
+    function prevSlide() {
+        slideIndex--;
+        if (slideIndex < 0) slideIndex = slides.length - 1;
+        showSlide();
+    }
+
+    $(sliders[sliderIndex]).find('.next').click(function() {
+        nextSlide();
+
+    });
+
+    $(sliders[sliderIndex]).find('.prev').click(function() {
+        prevSlide();
+    });
+
+    showSlide();
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-        sliders.forEach((slider, index) => {
-                initializeSlider(index);
-        });
+sliders.forEach((slider, index) => {
+    initializeSlider(index);
 });
 
-//Filtrimi i veturave
-$(document).ready(function () {
-        $('#filterAvailableBtn').click(function () {
-                var buttonText = $(this).text();
-                if (buttonText === "Show Available Cars") {
-                        $(this).text("Show All Cars");
-                        $('.card5').each(function () {
-                                var status = $(this).data('status');
-                                if (status === "reserved") {
-                                        $(this).hide();
-                                }
-                        });
-                } else {
-                        $(this).text("Show Available Cars");
-                        $('.card5').show();
-                }
+///Fade
+$(document).ready(function() {
+        $('#filterAvailableBtn').click(function() {
+            var buttonText = $(this).text();
+            if (buttonText === "Show Available Cars") {
+                $(this).text("Show All Cars");
+                $('.card5').each(function() {
+                    var status = $(this).data('status');
+                    if (status === "reserved") {
+                        $(this).fadeOut("slow"); 
+                    }
+                });
+            } else {
+                $(this).text("Show Available Cars");
+                $('.card5').each(function() {
+                    $(this).fadeIn("slow");
+                });
+            }
         });
 });
