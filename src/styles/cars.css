@@ -1,7 +1,7 @@
 .home {
     width: 100%;
     height: 650px;
-    background-image: url(../images/Porshe1.webp) !important;
+    background-image: url(../images/Porshe1.webp);
     background-repeat: no-repeat; 
     background-size: cover;
     animation: fadeIn 2s ease-in-out;

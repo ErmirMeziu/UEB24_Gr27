@@ -16,9 +16,13 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/c2f2fe035b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/hotels.css">
-    <script src="../script/script.js" defer></script>
+    <script src="../script/hotel-mainpage.js" defer></script>
+    <script src="../script/login-register.js" defer></script>
+
+
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="../styles/login-register.css">
 
 </head>
 
@@ -281,11 +285,15 @@
         <div class="sec2-parent">
             <div class="top-element">
                 <p id="text">Showing 280 Search Results</p>
-                <div class="button">
-                    <button>Our Trending</button>
-                    <button>Most popular</button>
-                    <button>Lowest Price</button>
+
+                <div class="input">
+                    <form action="">
+                        <input type="number" name="lowest" id="lowest" class="lowest" placeholder="lowest" min="0" step="50">
+                        <input type="number" name="lowest" id="highest"class="highest" placeholder="highest" min="0" step="50">
+                    </form>
+                    <input type="submit" value="Submit" id = "submit" class="submit">
                 </div>
+
             </div>
             <div class="box">
                 <div class="section2">
@@ -323,7 +331,7 @@
                         <div class="parent">
                             <div class="part1">
                                 <p id="text10">Exceptional</p>
-                                <p id="text11"> 
+                                <p id="text11">
                                     <output name="reviews-count" id="reviews-count">3,014</output> reviews
                                 </p>
                             </div>
@@ -344,8 +352,6 @@
 
 
                 </div>
-
-
             </div>
 
             <div class="box">
@@ -521,7 +527,7 @@
                             </div>
                             <div class="price-details">
                                 <p class="original-price">US$70</p>
-                                <p class="current-price">65</p>
+                                <p class="current-price">$65</p>
                                 <p class="additional-info">+ $32 taxes & Fees<br>For 3 Nights</p>
                             </div>
                             <button class="availability-button">See Availability</button>

@@ -1,15 +1,25 @@
-const toggleButton = document.getElementById('toggle-btn');
-const extraText = document.getElementById('extra-text');
+try {
+    const toggleButton = document.getElementById('toggle-btn');
+    const extraText = document.getElementById('extra-text');
 
-toggleButton.addEventListener('click', () => {
-    if (extraText.classList.contains('hidden')) {
-        extraText.classList.remove('hidden');
-        toggleButton.textContent = 'Show Less';
-    } else {
-        extraText.classList.add('hidden');
-        toggleButton.textContent = 'Show More';
+
+    if (!toggleButton || !extraText) {
+        throw new Error("Toggle button or extra text element not found in the DOM");
     }
-});
+
+
+    toggleButton.addEventListener('click', () => {
+        if (extraText.classList.contains('hidden')) {
+            extraText.classList.remove('hidden');
+            toggleButton.textContent = 'Show Less';
+        } else {
+            extraText.classList.add('hidden');
+            toggleButton.textContent = 'Show More';
+        }
+    });
+} catch (error) {
+    console.error("Error in toggle button functionality:", error.message);
+}
 
 
 //photo part
@@ -88,18 +98,16 @@ nextButton.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', function() {
     // Step 1: Select all the rows in the table
     const rows = document.querySelectorAll('.room-table tbody tr');
-    
     // Step 2: Add event listeners to each row
     rows.forEach(function(row, index) {
         // Allow each row to be dragged
         row.setAttribute('draggable', 'true'); // Mundet edhe pa qet rresht se e kem specifiku ne html dokument
-        
+
         // Step 3: When a row starts being dragged, mark it
         row.addEventListener('dragstart', function() {
             row.classList.add('dragging');  // Add a class to style the dragged row
         });
         //Krijojm klase te re kur bojm drag me u dall rreshti qe po bahet drag -> ne style e kem klasen qe po e krijojm(.dragging)
-        
         // Step 4: When a row is dropped, move it to its new place
         row.addEventListener('dragover', function(event) {
             event.preventDefault(); // This is needed for the drop to work
@@ -133,3 +141,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+

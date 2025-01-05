@@ -182,13 +182,40 @@ fieldset input{
     align-items: center; 
 }
 
-.top-element .button{
-    border: none;
-    width: 320px;
+.top-element .input{
+    display: flex;
+    width: 270px;
     height:40px ;
-    background-color: rgb(205,44,34);
+    background-color: rgb(44,167,113);
     border-radius: 10px;
-    padding: 3px;
+    padding: 4px 5px;
+    position: relative;
+}
+
+.top-element .input form {
+    display: flex;
+    width: 50px;
+    gap: 5px;
+   
+}
+
+
+.top-element .input  input {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 83px;
+    font-weight: 700;
+    /* background-color: rgb(240,240,240); */
+}
+
+.top-element .input  input[type="submit"] {
+    height: 32px;
+    background-color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 7px;
+    
 }
 
 .top-element #text{
@@ -529,4 +556,8 @@ fieldset input{
 
 #position3{
     bottom: 5px;
+}
+
+.hidden {
+    display: none !important;
 }
