@@ -29,13 +29,15 @@
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
     
 }
 
+
+
 .about-us h2 {
     font-size: 2em;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 
@@ -46,6 +48,7 @@
     margin-bottom: 30px; 
     flex-wrap: wrap; 
     width: 100%;
+    margin-top: 30px;
 }
 
 
@@ -78,15 +81,28 @@
 .about-section {
     background-color: #f9f9f9;
     padding: 50px 20px;
-    text-align: center;
+    
+    
 }
 
 .about-container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     color: #333;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Avenir LT Std' ;
+    font-size: 50px;
+    font-size: 3.3333333333333rem;
+    font-family: Avenir LT Std,Helvetica,Arial,sans-serif;
+
 }
+
+.about-container h1,
+.about-container h2,
+.about-container h3 {
+    text-align: center;
+}
+
+
 
 .about-container h1 {
     font-size: 2.5rem;
@@ -97,7 +113,7 @@
 
 .about-container h2 {
     font-size: 1.5rem;
-    color: #58a358; /* Green */
+    color: #58a358; 
     font-style: italic;
     margin-bottom: 20px;
 }
@@ -111,11 +127,181 @@
 
 .about-container p {
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.5;
     margin-bottom: 20px;
+    text-align: justify;
+}
+
+.button-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center; /* Center aligns the buttons if needed */
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+  .button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .button:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+
+
+/* General styling */
+.news-section-wrapper {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+
+/* Styling for the news section */
+.news-section {
+    background-color: #ffffff; 
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 80%; 
+    text-align: center; 
+ 
+}
+
+/* Headline styling */
+.news-section h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+/* Grid layout for news items */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+    justify-content: center; 
+}
+
+/* Styling for each news item */
+.news-item {
+    background-color: #ffffff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+}
+
+/* Image styling */
+.news-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; 
+}
+
+/* Text styling */
+.news-item h2 {
+    font-size: 16px;
+    margin: 10px;
+    color: #333;
+}
+
+.news-item p {
+    font-size: 14px;
+    margin: 10px;
+    color: #666;
 }
 
 
 
+.page-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Sidebar Container */
+.sidebar {
+    width: 200px; 
+    background-color: rgba(248, 250, 255, 0.9);
+    padding: 20px 15px; 
+    position: fixed;
+    top: 90px; 
+    right: 45px; 
+    max-height: calc(100% - 140px); 
+    overflow-y: auto; 
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 6px; 
+    font-family: "Poppins", Arial, sans-serif;
+    z-index: 999;
+}
+
+/* Sidebar Links */
+.sidebar a {
+    display: block;
+    color: #455873;
+    text-decoration: none;
+    padding: 10px 16px; 
+    margin: 6px 0; 
+    border-radius: 4px;
+    font-size: 16px; 
+    font-weight: 500; 
+    transition: all 0.3s ease;
+}
+
+/* Active Link Styling */
+.sidebar a.active {
+    color: #007aff;
+    font-weight: bold;
+    border-left: 4px solid #007aff; 
+    padding-left: 18px; 
+    background-color: #eef6ff;
+}
+
+/* Hover Effect */
+.sidebar a:hover {
+    background-color: #eef6ff;
+    color: #007aff;
+    transform: scale(1.02); 
+}
 
 
+
+/* Page Container Styling */
+.page-container {
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none; /* Hide the sidebar on smaller screens */
+    }
+}

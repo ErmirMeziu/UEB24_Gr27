@@ -957,6 +957,7 @@ footer {
     height: 550px;
     background-image: url(../images/bg.jpg);
     background-repeat: no-repeat;
+    background-size: 100% auto;
     align-content: center;
     text-align: center;
     margin-top: 20px;
