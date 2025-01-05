@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/c2f2fe035b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c2f2fe035b.js" crossorigin="anonymous"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,22 +23,23 @@
     <link rel="stylesheet" href="../styles/carspage.css">
     <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/footer.css">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../script/cars-page.js" defer></script>
     <script src="../script/script.js" defer></script>
 
 </head>
+
 <body>
 
-    <header>
+    <header style="background-color:#003149 !important;">
         <div class="logo"><img src="../images/navbar-photos/uebLogo.webp" alt="ueb-logo"></div>
         <ul>
             <li><a href="../index.html"><i class="fa-solid fa-house icon"></i>Home</a>
             </li>
             <li><a href="../Hotel Page/hotels.html"><i class="fa-solid fa-hotel icon"></i>Hotels</a></li>
             <li><a href="#Flights"><i class="fa-solid fa-jet-fighter icon"></i>Flights</a></li>
-            <li><a href="../cars.html" style="color: rgb(215, 44, 33);"><i
-                        class="fa-solid fa-car icon"></i>Cars</a></li>
+            <li><a href="../cars.html" style="color: rgb(215, 44, 33);"><i class="fa-solid fa-car icon"></i>Cars</a>
+            </li>
             <li><a href="#AboutUs"><i class="fa-solid fa-circle-info icon"></i>About Us</a></li>
         </ul>
         <div class="login-register">
@@ -52,7 +61,7 @@
                         <div><input class="login-change" type="password" id="login-password"
                                 placeholder="Enter your password" required></div>
 
-                            <button id="login-submit" style="width: 100%;">Log In</button>
+                        <button id="login-submit" style="width: 100%;">Log In</button>
 
                         <div class="check">
                             <div class="remember">
@@ -64,7 +73,8 @@
                     </form>
                 </div>
                 <div class="divider">
-                    <p style="font-weight: 300; font-size: 14px; margin-top: 5px; margin-bottom: 5px;">------------- <i>Sign In With
+                    <p style="font-weight: 300; font-size: 14px; margin-top: 5px; margin-bottom: 5px;">-------------
+                        <i>Sign In With
                             More Methods</i> -------------</p>
                 </div>
                 <div class="socials">
@@ -113,8 +123,30 @@
         </div>
     </section>
 
-
-
+    <div class="container15">
+        <div class="pick">
+            <p>Pick up location</p>
+            <h3>Prishtina International Airport</h3>
+            <input type="date" id="pickup-input" style="width: 190px;"> 
+            <h5 id="pickup-date"></h5> 
+        </div>
+        <div class="pick">
+            <p>Drop off location</p>
+            <h3>Prishtina International Airport</h3>
+            <input type="date" id="dropoff-input"  style="width: 190px;"> 
+            <h5 id="dropoff-date"></h5> 
+        </div>
+        <div class="pick">
+            <p>Duration</p>
+            <h4 id="duration"></h4> 
+        </div>
+        <div class="pick">
+            <p>Total</p>
+            <h4 id="total-cost">64.00 €</h4> 
+        </div>
+    </div>
+    <br>
+    <hr style="background-color: gray;height: 3px;">
     <div class="price4">
         <h1>Bmw F10</h1>
         <h1>64.00 € / <span style="color: orange;">DAY</span></h1>
@@ -181,15 +213,23 @@
 
 
     </section>
+<!-- 
+    <section>
+        <div class="container-video">
+            <video width="100%" height="280" controls>
+                <source src="/src/images/Cars/videoplayback (2).webm" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section> -->
 
-
-
-    <footer style="background-color: rgb(0,0,0); margin-top: 100px;">
+    <footer style="background-color: #003149; margin-top: 100px;">
         <div class="footer-container">
-            <div class="footer-section" >
+            <div class="footer-section">
                 <img src="../images/navbar-photos/uebLogo.webp" alt="">
-                <p style="color: white !important">We make your dream more beautiful & enjoyable with lots of happiness.</p>
-                <div class="social-links" >
+                <p style="color: white !important">We make your dream more beautiful & enjoyable with lots of happiness.
+                </p>
+                <div class="social-links">
                     <a href=""><i class='bx bxl-facebook-circle'></i></a>
                     <a href=""><i class='bx bxl-linkedin-square'></i></i></a>
                     <a href=""><i class='bx bxl-github'></i></a>
@@ -247,14 +287,16 @@
             </div>
         </div>
         <hr>
-        <div class="footer-bottom" >
+        <div class="footer-bottom">
             <div class="copy" style="color: white !important"> &copy; <u>2024 GeoTrip. Design by GeoTrip </u></div>
             <div class="Terms">
-                <a href="#" style="color: white !important">Terms of Service</a><a href="#" style="color: white !important">Privacy
+                <a href="#" style="color: white !important">Terms of Service</a><a href="#"
+                    style="color: white !important">Privacy
                     Policy</a><a href="#" style="color: white !important">Cookies</a>
             </div>
         </div>
     </footer>
 
 </body>
+
 </html>

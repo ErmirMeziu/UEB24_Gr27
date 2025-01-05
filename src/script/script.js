@@ -195,4 +195,3 @@ const audioIcon = document.getElementById("audio-icon");
 audioIcon.addEventListener("click", function() {
     audio.play();
 });
-
