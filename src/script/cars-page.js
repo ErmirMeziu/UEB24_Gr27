@@ -62,3 +62,4 @@ function updateDates() {
 
 document.getElementById('pickup-input').addEventListener('change', updateDates);
 document.getElementById('dropoff-input').addEventListener('change', updateDates);
+

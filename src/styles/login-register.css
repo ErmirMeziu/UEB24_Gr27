@@ -41,6 +41,14 @@
     font-weight: 500;
 }
 
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
 .iks,
 .iks1 {
     cursor: pointer;

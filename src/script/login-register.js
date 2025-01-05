@@ -162,3 +162,48 @@ class Account {
         console.log(`Email: ${this.email}`);
     }
 }
+
+/*hidden/show password*/
+$(document).ready(function(){
+    // Kur përdoruesi klikoni mbi ikonën, ndryshoni tipin e fushës
+    $('#login-password').siblings('.toggle-password').on('click', function() {
+        var inputField = $('#login-password');
+        var fieldType = inputField.attr('type');
+
+        if (fieldType === 'password') {
+            inputField.attr('type', 'text'); // Shfaq fjalëkalimin
+            $(this).removeClass('fa-eye-slash').addClass('fa-eye'); // Ndrysho ikonën
+        } else {
+            inputField.attr('type', 'password'); // Fshih fjalëkalimin
+            $(this).removeClass('fa-eye').addClass('fa-eye-slash'); // Kthe ikonën
+        }
+    });
+    $('.toggle-password').on('click', function(){
+        var inputField = $('#register-password'); // Përdorimi i klasës login-password
+        var fieldType = inputField.attr('type');
+
+        if (fieldType === 'password') {
+            inputField.attr('type', 'text'); // Shfaq fjalëkalimin
+            $(this).removeClass('fa-eye-slash').addClass('fa-eye'); // Ndrysho ikonën
+        } else {
+            inputField.attr('type', 'password'); // Fshih fjalëkalimin
+            $(this).removeClass('fa-eye').addClass('fa-eye-slash'); // Kthe ikonën
+        }
+    });
+
+    $('.toggle-password').on('click', function(){
+        var inputField = $('#confirm-password'); // Përdorimi i klasës login-password
+        var fieldType = inputField.attr('type');
+
+        if (fieldType === 'password') {
+            inputField.attr('type', 'text'); // Shfaq fjalëkalimin
+            $(this).removeClass('fa-eye-slash').addClass('fa-eye'); // Ndrysho ikonën
+        } else {
+            inputField.attr('type', 'password'); // Fshih fjalëkalimin
+            $(this).removeClass('fa-eye').addClass('fa-eye-slash'); // Kthe ikonën
+        }
+    });
+});
+
+
+

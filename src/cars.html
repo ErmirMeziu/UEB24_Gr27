@@ -118,8 +118,10 @@
                     <form action="" method="post">
                         <div><input class="login-change" type="email" id="login-email" placeholder="Enter your email"
                                 required></div>
-                        <div><input class="login-change" type="password" id="login-password"
-                                placeholder="Enter your password" required></div>
+                        <div style="position: relative;"><input class="login-change" type="password" id="login-password"
+                                placeholder="Enter your password" required>
+                               <i class="fa fa-eye-slash toggle-password" aria-hidden="true"></i></div>
+                                
 
                         <button id="login-submit" style="width: 100%;">Log In</button>
 
@@ -140,8 +142,8 @@
                 <div class="socials">
                     <div class="social"><i class="fa-brands fa-facebook" style="color: #0033ff;"></i></div>
                     <div class="social"><i class="fa-brands fa-whatsapp" style="color: #1bde32;"></i></div>
-                    <div class="social"><i class="fa-brands fa-linkedin icon" style="color: #0033ff;"></i></i></div>
-                    <div class="social"><i class="fa-brands fa-square-x-twitter" style="color: #002f80;"></i></div>
+                    <div class="social"><i class="fa-brands fa-linkedin icon" style="color: #0033ff;"></i></div>
+                    <div class="social"><i class="fa-brands fa-square-x-twitter icon" style="color: #002f80;"></i></div>
                 </div>
             </div>
             <div class="login-end">
@@ -166,13 +168,16 @@
                     <input class="login-change" type="email" id="register-email" placeholder="Enter your email"
                         required>
                 </div>
-                <div>
+                <div style="position: relative;">
                     <input class="login-change" type="password" id="register-password" placeholder="Enter your password"
                         required>
+                        <i class="fa fa-eye-slash toggle-password" aria-hidden="true" style="right: 30px;"></i>
+
                 </div>
-                <div>
+                <div style="position: relative;">
                     <input class="login-change" type="password" id="confirm-password"
                         placeholder="Confirm your password" required>
+                    <i class="fa fa-eye-slash toggle-password" aria-hidden="true" style="right: 30px;"></i>
                 </div>
                 <input type="submit" style="width: 434px; margin: auto;" value="Sign up" id="register-submit">
                 <span id="message"></span>

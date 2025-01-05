@@ -24,14 +24,11 @@
     <link rel="stylesheet" href="../styles/carspage.css">
     <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/footer.css">
-<<<<<<< HEAD
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-=======
     <link rel="stylesheet" href="../styles/login-register.css">
 
->>>>>>> b0c95e57019e3d3a8fd0d10ccf7ea43a91aad41b
     <script src="../script/cars-page.js" defer></script>
-    <script src="../script/login-register.js"></script>
+    <script src="../script/login-register.js" defer></script>
 
 
 </head>
@@ -65,8 +62,10 @@
                     <form action="" method="post">
                         <div><input class="login-change" type="email" id="login-email" placeholder="Enter your email"
                                 required></div>
-                        <div><input class="login-change" type="password" id="login-password"
-                                placeholder="Enter your password" required></div>
+                        <div style="position: relative;"><input class="login-change" type="password" id="login-password"
+                                placeholder="Enter your password" required>
+                               <i class="fa fa-eye-slash toggle-password" aria-hidden="true"></i></div>
+                                
 
                         <button id="login-submit" style="width: 100%;">Log In</button>
 
@@ -113,13 +112,16 @@
                     <input class="login-change" type="email" id="register-email" placeholder="Enter your email"
                         required>
                 </div>
-                <div>
+                <div style="position: relative;">
                     <input class="login-change" type="password" id="register-password" placeholder="Enter your password"
                         required>
+                        <i class="fa fa-eye-slash toggle-password" aria-hidden="true" style="right: 30px;"></i>
+
                 </div>
-                <div>
+                <div style="position: relative;">
                     <input class="login-change" type="password" id="confirm-password"
                         placeholder="Confirm your password" required>
+                    <i class="fa fa-eye-slash toggle-password" aria-hidden="true" style="right: 30px;"></i>
                 </div>
                 <input type="submit" style="width: 434px; margin: auto;" value="Sign up" id="register-submit">
                 <span id="message"></span>
