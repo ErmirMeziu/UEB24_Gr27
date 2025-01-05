@@ -43,11 +43,6 @@ function updateDates() {
             alert("You selected the wrong date!");
             return; 
         }
-
-      
-        document.getElementById('pickup-date').textContent = formatDate(pickupDate);
-        document.getElementById('dropoff-date').textContent = formatDate(dropoffDate);
-
         const durationInMillis = dropoffDate - pickupDate;
         const durationInDays = durationInMillis / (1000 * 60 * 60 * 24); 
 
