@@ -65,3 +65,21 @@ document.addEventListener("DOMContentLoaded", () => {
                 initializeSlider(index);
         });
 });
+//Filtrimi i veturave
+$(document).ready(function() {
+        $('#filterAvailableBtn').click(function() {
+            var buttonText = $(this).text();
+            if (buttonText === "Show Available Cars") {
+                $(this).text("Show All Cars");
+                $('.card5').each(function() {
+                    var status = $(this).data('status');
+                    if (status === "reserved") {
+                        $(this).hide(); 
+                    }
+                });
+            } else {
+                $(this).text("Show Available Cars");
+                $('.card5').show(); 
+            }
+        });
+    });

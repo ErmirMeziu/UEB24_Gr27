@@ -32,7 +32,6 @@
 
 
 </head>
-
 <body>
 
     <header style="background-color:#003149 !important;">
@@ -185,8 +184,14 @@
             <div class="car-features">
                 <h3>Car features</h3>
                 <p><i class="fa-solid fa-wind"></i>Air Conditioning</p>
-                <p>5 Doors</p>
+                <div style="display: flex;">
+                    <img src="/src/images/Cars/Doors.png" alt="" width="40" height="40"><p>5 Doors</p>
+                </div>
+                <div style="display: flex;">
+                    <img src="/src/images/Cars/Automatike.webp" alt="" width="50" height="50">
                 <p>Transmission Automatic</p>
+                </div>
+                
             </div>
             <div class="Capacity">
                 <h3>Capacity</h3>
@@ -202,14 +207,15 @@
                     <button class="Air_Condition">Air Condition</button>
                 </div>
                 <div class="rezervo">
-                    <h3>Shtyp butonin per ta rezervuar</h3>
-                    <button class="btnrezervo" onclick="rezervo()">Rezervo</button>
+                    <h3>Press the button to reserve it!</h3>
+                    <button class="btnrezervo" onclick="rezervo()">Book Now</button>
                 </div>
                 <div id="modal" class="modal">
                     <div class="modal-content">
                         <span class="close" onclick="closeModal()">&times;</span>
-                        <h2>Rezervimi u krye me sukses!</h2>
-                        <p>Faleminderit për rezervimin.</p>
+                        <h2>
+                            Booking completed successfully!</h2>
+                        <p>Thank you for booking.</p>
                         <button class="btn-ok" onclick="closeModal()">OK</button>
                     </div>
                 </div>

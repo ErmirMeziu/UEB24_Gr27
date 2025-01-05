@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GeoTrip - Tour & Travel Booking</title>
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/cars.css">
-    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="icon" href="/src/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/src/styles/cars.css">
+    <link rel="stylesheet" href="/src/styles/navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -17,16 +17,16 @@
     <script src="https://kit.fontawesome.com/c2f2fe035b.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/login-register.css">
+    <link rel="stylesheet" href="/src/styles/home.css">
+    <link rel="stylesheet" href="/src/styles/footer.css">
+    <link rel="stylesheet" href="/src/styles/login-register.css">
 
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 
 
-    <script src="script/cars.js" defer></script>
-    <script src="script/login-register.js" defer></script>
+    <script src="/src/script/cars.js" defer></script>
+    <script src="/src/script/login-register.js" defer></script>
 
 </head>
 
@@ -34,13 +34,13 @@
     <section>
         <div class="home">
             <header>
-                <div class="logo"><img src="images/navbar-photos/uebLogo.webp" alt="ueb-logo"></div>
+                <div class="logo"><img src="/src/images/navbar-photos/uebLogo.webp" alt="ueb-logo"></div>
                 <ul>
-                    <li><a href="index.html"><i class="fa-solid fa-house icon"></i>Home</a>
+                    <li><a href="../index.html"><i class="fa-solid fa-house icon"></i>Home</a>
                     </li>
-                    <li><a href="Hotel Page/hotels.html"><i class="fa-solid fa-hotel icon"></i>Hotels</a></li>
+                    <li><a href="../Hotel Page/hotels.html"><i class="fa-solid fa-hotel icon"></i>Hotels</a></li>
                     <li><a href="#Flights"><i class="fa-solid fa-jet-fighter icon"></i>Flights</a></li>
-                    <li><a href="cars.html" style="color: rgb(215, 44, 33);"><i
+                    <li><a href="../Cars-Page/cars.html" style="color: rgb(215, 44, 33);"><i
                                 class="fa-solid fa-car icon"></i>Cars</a></li>
                     <li><a href="#AboutUs"><i class="fa-solid fa-circle-info icon"></i>About Us</a></li>
                 </ul>
@@ -79,7 +79,7 @@
 
                 <div class="image">
 
-                    <img src="images/cars-destinations/Chicago.webp" alt="destination photo">
+                    <img src="/src/images/cars-destinations/Chicago.webp" alt="destination photo">
 
                 </div>
                 <div class="offpercent">
@@ -90,7 +90,7 @@
                 </div>
             </div>
             <div class="sales">
-                <div class="image"><img src="images/cars-destinations/France.webp" alt="destination photo"></div>
+                <div class="image"><img src="/src/images/cars-destinations/France.webp" alt="destination photo"></div>
                 <div class="offpercent">
                     <h5>Los Angeles</h5>
                     <p>Round-Trip | 3D/4N | 3 Person </p>
@@ -98,7 +98,7 @@
                 </div>
             </div>
             <div class="sales">
-                <div class="image"><img src="images/cars-destinations/United Kingdom.webp" alt="destination photo">
+                <div class="image"><img src="/src/images/cars-destinations/United Kingdom.webp" alt="destination photo">
                 </div>
                 <div class="offpercent">
                     <h5>Los Angeles</h5>
@@ -118,17 +118,21 @@
             <div class="login-form">
                 <div class="login-input">
                     <form action="" method="post">
-                        <div><input class="login-change" type="email" id="login-email" placeholder="Enter your email" required></div>
+                        <div><input class="login-change" type="email" id="login-email" placeholder="Enter your email"
+                                required></div>
                         <div style="position: relative;">
-                            <input class="login-change" type="password" id="login-password" placeholder="Enter your password" required>
+                            <input class="login-change" type="password" id="login-password"
+                                placeholder="Enter your password" required>
                             <i class="fa fa-eye-slash toggle-password1" aria-hidden="true"></i>
                         </div>
-    
+
                         <div style="position: relative; margin-bottom: -20px;">
                             <button id="login-submit" style="width: 100%;">Log In</button>
-                            <p id = "message1" style="position: absolute; top: -23px; left: 50%; transform: translateX(-50%); font-size: 13px;"></p>
+                            <p id="message1"
+                                style="position: absolute; top: -23px; left: 50%; transform: translateX(-50%); font-size: 13px;">
+                            </p>
                         </div>
-    
+
                         <div class="check">
                             <div class="remember">
                                 <input type="checkbox" name="remember-me" id="remember-me">
@@ -140,7 +144,8 @@
                 </div>
                 <div class="divider">
                     <p style="font-weight: 300; font-size: 14px; margin-top: -10px; margin-bottom: 10px;">-------------
-                        <i>Sign In With More Methods</i> -------------</p>
+                        <i>Sign In With More Methods</i> -------------
+                    </p>
                 </div>
                 <div class="socials">
                     <div class="social"><i class="fa-brands fa-facebook" style="color: #0033ff;"></i></div>
@@ -154,7 +159,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="register">
         <div class="register-head">
             <h4>Sign up</h4>
@@ -164,22 +169,27 @@
             <form action="" method="post">
                 <div class="name-surname">
                     <input class="login-change" type="text" id="register-name" placeholder="Enter your name" required>
-                    <input class="login-change" type="text" id="register-surname" placeholder="Enter your surname" required>
+                    <input class="login-change" type="text" id="register-surname" placeholder="Enter your surname"
+                        required>
                 </div>
                 <div>
-                    <input class="login-change" type="email" id="register-email" placeholder="Enter your email" required>
+                    <input class="login-change" type="email" id="register-email" placeholder="Enter your email"
+                        required>
                 </div>
                 <div style="position: relative;">
-                    <input class="login-change" type="password" id="register-password" placeholder="Enter your password" required>
+                    <input class="login-change" type="password" id="register-password" placeholder="Enter your password"
+                        required>
                     <i class="fa fa-eye-slash toggle-password2" aria-hidden="true" style="right: 30px;"></i>
                 </div>
                 <div style="position: relative;">
-                    <input class="login-change" type="password" id="confirm-password" placeholder="Confirm your password" required>
+                    <input class="login-change" type="password" id="confirm-password"
+                        placeholder="Confirm your password" required>
                     <i class="fa fa-eye-slash toggle-password3" aria-hidden="true" style="right: 30px;"></i>
                 </div>
                 <div style="position: relative;">
                     <input type="submit" style="width: 434px; margin: auto;" value="Sign up" id="register-submit"><br>
-                    <span id="message" style="position:absolute;font-size: 13px; top: -25px; width: 434px; transform: translateX(-50%);"></span>
+                    <span id="message"
+                        style="position:absolute;font-size: 13px; top: -25px; width: 434px; transform: translateX(-50%);"></span>
                 </div>
             </form>
         </div>
@@ -194,20 +204,22 @@
         <h1>
             Out Awesome Vehicles
         </h1>
-
         <p>Cicero famously orated against his political opponent Lucius Sergius Catilina.</p>
-
-
     </div>
+    <section style="background-color: #f5f5f5;">
+        <div class="filter-section">
+            <button id="filterAvailableBtn">Show Available Cars</button>
+        </div>
+    </section>
+    <section class="BH" style="margin-top: -70px;">
 
-    <section class="BH">
         <div class="container12 goTop">
             <div class="card5">
                 <div class="slider">
                     <div class="slides">
-                        <img class="slide" src="images/Cars/Bmw-jasht.jpg" alt="Image #1">
-                        <img class="slide" src="images/Cars/BMW.jpg" alt="Image #2">
-                        <img class="slide" src="images/Cars/Bmw-mbrenda.jpg" alt="Image #3">
+                        <img class="slide" src="/src/images/Cars/Bmw-jasht.jpg" alt="Image #1">
+                        <img class="slide" src="/src/images/Cars/BMW.jpg" alt="Image #2">
+                        <img class="slide" src="/src/images/Cars/Bmw-mbrenda.jpg" alt="Image #3">
                     </div>
                     <button class="prev" onclick="prevSlide()">&#10094;</button>
                     <button class="next" onclick="nextSlide()">&#10095;</button>
@@ -215,11 +227,10 @@
 
                 <div class="badge">600Kms included. After that $15/Kms</div>
                 <div class="card-body">
-                    <a href="Cars-Page/carspage.html" style="text-decoration: none; color: black;">
+                    <a href="carspage.html" style="text-decoration: none; color: black;">
                         <div>
                             <div class="card-title">BMW 520d Xdrive</div>
                             <p class="paragraph">SUV | AC | 5 Seats</p>
-                            <div class="Free">Free Cancellation Till 10 Aug 23</div>
                             <div class="card-details">
                                 <div class="detail">Manual</div>
                                 <div class="detail">1 Large bag</div>
@@ -237,6 +248,9 @@
                                     <div class="score">4.9</div>
                                 </div>
                             </div>
+                            <div class="Detajet">
+                                <button style="width: 100%;" href="carspage.html">More</button>
+                            </div>
                         </div>
                     </a>
 
@@ -246,20 +260,19 @@
             <div class="card5">
                 <div class="slider">
                     <div class="slides">
-                        <img class="slide" src="images/Cars/Jasht.jpg" alt="Image #1">
-                        <img class="slide" src="images/Cars/Scoda-Mbrenda.jpg" alt="Image #2">
-                        <img class="slide" src="images/Cars/Scoda-jasht.jpg" alt="Image #3">
+                        <img class="slide" src="/src/images/Cars/Jasht.jpg" alt="Image #1">
+                        <img class="slide" src="/src/images/Cars/Scoda-Mbrenda.jpg" alt="Image #2">
+                        <img class="slide" src="/src/images/Cars/Scoda-jasht.jpg" alt="Image #3">
                     </div>
                     <button class="prev" onclick="prevSlide()">&#10094;</button>
                     <button class="next" onclick="nextSlide()">&#10095;</button>
                 </div>
                 <div class="badge">600Kms included. After that $15/Kms</div>
                 <div class="card-body">
-                    <a href="Cars-Page/carspage.html" style="text-decoration: none; color: black;">
+                    <a href="carspage.html" style="text-decoration: none; color: black;">
                         <div>
                             <div class="card-title">Scoda Scala</div>
                             <p class="paragraph">SUV | AC | 5 Seats</p>
-                            <div class="Free">Free Cancellation Till 10 Aug 23</div>
                             <div class="card-details">
                                 <div class="detail">Manual</div>
                                 <div class="detail">1 Large bag</div>
@@ -275,6 +288,10 @@
                                     <div class="reviews">Exceptional <br>3,014 reviews</div>
                                     <div class="score">4.8</div>
                                 </div>
+
+                            </div>
+                            <div class="Detajet">
+                                <button style="width: 100%;" href="carspage.html">More</button>
                             </div>
                         </div>
                     </a>
@@ -284,9 +301,9 @@
             <div class="card5">
                 <div class="slider">
                     <div class="slides">
-                        <img class="slide" src="images/Cars/Bmw-Jasht-1.jpg" alt="Image #1">
-                        <img class="slide" src="images/Cars/Bmw-Jasht-2.jpg" alt="Image #2">
-                        <img class="slide" src="images/Cars/Bmw-Mbrenda-1.jpg" alt="Image #3">
+                        <img class="slide" src="/src/images/Cars/Bmw-Jasht-1.jpg" alt="Image #1">
+                        <img class="slide" src="/src/images/Cars/Bmw-Jasht-2.jpg" alt="Image #2">
+                        <img class="slide" src="/src/images/Cars/Bmw-Mbrenda-1.jpg" alt="Image #3">
                     </div>
                     <button class="prev" onclick="prevSlide()">&#10094;</button>
                     <button class="next" onclick="nextSlide()">&#10095;</button>
@@ -294,28 +311,33 @@
                 <div class="badge">600Kms included. After that $15/Kms</div>
 
                 <div class="card-body">
-                    <div>
-                        <div class="card-title">BMW 320d xDrive</div>
-                        <p class="paragraph">SUV | AC | 5 Seats</p>
-                        <div class="Free">Free Cancellation Till 10 Aug 23</div>
-                        <div class="card-details">
-                            <div class="detail">Manual</div>
-                            <div class="detail">1 Large bag</div>
-                            <div class="detail">3 Small bag</div>
-                            <div class="detail">Diesel</div>
-                        </div>
-                        <div class="price-section">
-                            <div class="price-section2">
-                                <div class="discount">17% Off</div>
-                                <div class="price">US$60 <span class="old-price">US$100</span></div>
+                    <a href="carspage.html" style="text-decoration: none; color: black;">
+                        <a href="carspage.html" style="text-decoration: none; color: black;">
+                            <div>
+                                <div class="card-title">BMW 320d xDrive</div>
+                                <p class="paragraph">SUV | AC | 5 Seats</p>
+                                <div class="card-details">
+                                    <div class="detail">Manual</div>
+                                    <div class="detail">1 Large bag</div>
+                                    <div class="detail">3 Small bag</div>
+                                    <div class="detail">Diesel</div>
+                                </div>
+                                <div class="price-section">
+                                    <div class="price-section2">
+                                        <div class="discount">17% Off</div>
+                                        <div class="price">US$60 <span class="old-price">US$100</span></div>
+                                    </div>
+                                    <div class="rating">
+                                        <div class="reviews">Exceptional <br>3,014 reviews</div>
+                                        <div class="score">4.7</div>
+                                    </div>
+                                </div>
+                                <div class="Detajet">
+                                    <button style="width: 100%;" href="carspage.html">More</button>
+                                </div>
                             </div>
-                            <div class="rating">
-                                <div class="reviews">Exceptional <br>3,014 reviews</div>
-                                <div class="score">4.7</div>
-                            </div>
-                        </div>
-                    </div>
-
+                        </a>
+                    </a>
                 </div>
             </div>
 
@@ -328,110 +350,120 @@
             <div class="card5">
                 <div class="slider">
                     <div class="slides">
-                        <img class="slide" src="images/Cars/Audi-jasht-1.jpg" alt="Image #1">
-                        <img class="slide" src="images/Cars/Audi-Jasht-2.jpg" alt="Image #2">
-                        <img class="slide" src="images/Cars/Audi-Mbrenda.jpg" alt="Image #3">
+                        <img class="slide" src="/src/images/Cars/Audi-jasht-1.jpg" alt="Image #1">
+                        <img class="slide" src="/src/images/Cars/Audi-Jasht-2.jpg" alt="Image #2">
+                        <img class="slide" src="/src/images/Cars/Audi-Mbrenda.jpg" alt="Image #3">
                     </div>
                     <button class="prev" onclick="prevSlide()">&#10094;</button>
                     <button class="next" onclick="nextSlide()">&#10095;</button>
                 </div>
                 <div class="badge">600Kms included. After that $15/Kms</div>
                 <div class="card-body">
-                    <div>
-                        <div class="card-title">Audi A4</div>
-                        <p class="paragraph">SUV | AC | 5 Seats</p>
-                        <div class="Free">Free Cancellation Till 10 Aug 23</div>
-                        <div class="card-details">
-                            <div class="detail">Manual</div>
-                            <div class="detail">1 Large bag</div>
-                            <div class="detail">1 Small bag</div>
-                            <div class="detail">Diesel</div>
-                        </div>
-                        <div class="price-section">
-                            <div class="price-section2">
-                                <div class="discount">15% Off</div>
-                                <div class="price">US$15 <span class="old-price">US$40</span></div>
+                    <a href="carspage.html" style="text-decoration: none; color: black;">
+                        <div>
+                            <div class="card-title">Audi A4</div>
+                            <p class="paragraph">SUV | AC | 5 Seats</p>
+                            <div class="card-details">
+                                <div class="detail">Manual</div>
+                                <div class="detail">1 Large bag</div>
+                                <div class="detail">1 Small bag</div>
+                                <div class="detail">Diesel</div>
                             </div>
-                            <div class="rating">
-                                <div class="reviews">Exceptional <br>3,014 reviews</div>
-                                <div class="score">4.6</div>
+                            <div class="price-section">
+                                <div class="price-section2">
+                                    <div class="discount">15% Off</div>
+                                    <div class="price">US$15 <span class="old-price">US$40</span></div>
+                                </div>
+                                <div class="rating">
+                                    <div class="reviews">Exceptional <br>3,014 reviews</div>
+                                    <div class="score">4.6</div>
+                                </div>
+                            </div>
+                            <div class="Detajet">
+                                <button style="width: 100%;" href="carspage.html">More</button>
                             </div>
                         </div>
-                    </div>
-
+                    </a>
                 </div>
             </div>
 
-            <div class="card5">
+            <div class="card5" data-status="reserved">
                 <div class="slider">
                     <div class="slides">
-                        <img class="slide" src="images/Cars/Scoda-Jassht-1.jpg" alt="Image #1">
-                        <img class="slide" src="images/Cars/Scoda-jasht.jpg" alt="Image #2">
-                        <img class="slide" src="images/Cars/Scoda-Mbrenda.jpg" alt="Image #3">
+                        <img class="slide" src="/src/images/Cars/Scoda-Jassht-1.jpg" alt="Image #1">
+                        <img class="slide" src="/src/images/Cars/Scoda-jasht.jpg" alt="Image #2">
+                        <img class="slide" src="/src/images/Cars/Scoda-Mbrenda.jpg" alt="Image #3">
                     </div>
                     <button class="prev" onclick="prevSlide()">&#10094;</button>
                     <button class="next" onclick="nextSlide()">&#10095;</button>
                 </div>
                 <div class="badge">600Kms included. After that $15/Kms</div>
                 <div class="card-body">
-                    <div>
-                        <div class="card-title">Scoda </div>
-                        <p class="paragraph">SUV | AC | 5 Seats</p>
-                        <div class="Free">Free Cancellation Till 10 Aug 23</div>
-                        <div class="card-details">
-                            <div class="detail">Manual</div>
-                            <div class="detail">1 Large bag</div>
-                            <div class="detail">1 Small bag</div>
-                            <div class="detail">Diesel</div>
-                        </div>
-                        <div class="price-section">
-                            <div class="price-section2">
-                                <div class="discount">15% Off</div>
-                                <div class="price">US$40 <span class="old-price">US$50</span></div>
+                    <a href="carspage.html" style="text-decoration: none; color: black;">
+                        <div>
+                            <div class="card-title">Scoda </div>
+                            <p class="paragraph">SUV | AC | 5 Seats</p>
+                            <div class="card-details">
+                                <div class="detail">Manual</div>
+                                <div class="detail">1 Large bag</div>
+                                <div class="detail">1 Small bag</div>
+                                <div class="detail">Diesel</div>
                             </div>
-                            <div class="rating">
-                                <div class="reviews">Exceptional <br>3,014 reviews</div>
-                                <div class="score">4.5</div>
+                            <div class="price-section">
+                                <div class="price-section2">
+                                    <div class="discount">15% Off</div>
+                                    <div class="price">US$40 <span class="old-price">US$50</span></div>
+                                </div>
+                                <div class="rating">
+                                    <div class="reviews">Exceptional <br>3,014 reviews</div>
+                                    <div class="score">4.5</div>
+                                </div>
+                            </div>
+                            <div class="Detajet">
+                                <button style="width: 100%;">More</button>
                             </div>
                         </div>
-                    </div>
-
+                    </a>
                 </div>
 
             </div>
-            <div class="card5">
+            <div class="card5" data-status="reserved">
                 <div class="slider">
                     <div class="slides">
-                        <img class="slide" src="images/Cars/Gle-Jasht-1.jpg" alt="Image #1">
-                        <img class="slide" src="images/Cars/Gle-Jasht-2.jpg" alt="Image #2">
-                        <img class="slide" src="images/Cars/Gle-Mbrenda.jpg" alt="Image #3">
+                        <img class="slide" src="/src/images/Cars/Gle-Jasht-1.jpg" alt="Image #1">
+                        <img class="slide" src="/src/images/Cars/Gle-Jasht-2.jpg" alt="Image #2">
+                        <img class="slide" src="/src/images/Cars/Gle-Mbrenda.jpg" alt="Image #3">
                     </div>
                     <button class="prev" onclick="prevSlide()">&#10094;</button>
                     <button class="next" onclick="nextSlide()">&#10095;</button>
                 </div>
                 <div class="badge">600Kms included. After that $15/Kms</div>
                 <div class="card-body">
-                    <div>
-                        <div class="card-title">Mercedes-benz GLE 400d</div>
-                        <p class="paragraph">SUV | AC | 5 Seats</p>
-                        <div class="Free">Free Cancellation Till 10 Aug 23</div>
-                        <div class="card-details">
-                            <div class="detail">Manual</div>
-                            <div class="detail">1 Large bag</div>
-                            <div class="detail">1 Small bag</div>
-                            <div class="detail">Diesel</div>
-                        </div>
-                        <div class="price-section">
-                            <div class="price-section2">
-                                <div class="discount">15% Off</div>
-                                <div class="price">US$80 <span class="old-price">US$90</span></div>
+                    <a href="carspage.html" style="text-decoration: none; color: black;">
+                        <div>
+                            <div class="card-title">Mercedes-benz GLE 400d</div>
+                            <p class="paragraph">SUV | AC | 5 Seats</p>
+                            <div class="card-details">
+                                <div class="detail">Manual</div>
+                                <div class="detail">1 Large bag</div>
+                                <div class="detail">1 Small bag</div>
+                                <div class="detail">Diesel</div>
                             </div>
-                            <div class="rating">
-                                <div class="reviews">Exceptional <br>3,014 reviews</div>
-                                <div class="score">4.4</div>
+                            <div class="price-section">
+                                <div class="price-section2">
+                                    <div class="discount">15% Off</div>
+                                    <div class="price">US$80 <span class="old-price">US$90</span></div>
+                                </div>
+                                <div class="rating">
+                                    <div class="reviews">Exceptional <br>3,014 reviews</div>
+                                    <div class="score">4.4</div>
+                                </div>
+                            </div>
+                            <div class="Detajet">
+                                <button style="width: 100%;" href="carspage.html">More</button>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
                 </div>
             </div>
@@ -445,46 +477,49 @@
             <div class="card5">
                 <div class="slider">
                     <div class="slides">
-                        <img class="slide" src="images/Cars/Bmw-Jasht-1.jpg" alt="Image #1">
-                        <img class="slide" src="images/Cars/Bmw-Jasht-2.jpg" alt="Image #2">
-                        <img class="slide" src="images/Cars/Bmw1-Mbrenda.jpg" alt="Image #3">
+                        <img class="slide" src="/src/images/Cars/Bmw-Jasht-1.jpg" alt="Image #1">
+                        <img class="slide" src="/src/images/Cars/Bmw-Jasht-2.jpg" alt="Image #2">
+                        <img class="slide" src="/src/images/Cars/Bmw1-Mbrenda.jpg" alt="Image #3">
                     </div>
                     <button class="prev" onclick="prevSlide()">&#10094;</button>
                     <button class="next" onclick="nextSlide()">&#10095;</button>
                 </div>
                 <div class="badge">600Kms included. After that $15/Kms</div>
                 <div class="card-body">
-                    <div>
-                        <div class="card-title">BMW 320d xDrive</div>
-                        <p class="paragraph">SUV | AC | 5 Seats</p>
-                        <div class="Free">Free Cancellation Till 10 Aug 23</div>
-                        <div class="card-details">
-                            <div class="detail">Manual</div>
-                            <div class="detail">1 Large bag</div>
-                            <div class="detail">1 Small bag</div>
-                            <div class="detail">Diesel</div>
-                        </div>
-
-                        <div class="price-section">
-                            <div class="price-section2">
-                                <div class="discount">15% Off</div>
-                                <div class="price">US$99<span class="old-price">US$110</span></div>
+                    <a href="carspage.html" style="text-decoration: none; color: black;">
+                        <div>
+                            <div class="card-title">BMW 320d xDrive</div>
+                            <p class="paragraph">SUV | AC | 5 Seats</p>
+                            <div class="card-details">
+                                <div class="detail">Manual</div>
+                                <div class="detail">1 Large bag</div>
+                                <div class="detail">1 Small bag</div>
+                                <div class="detail">Diesel</div>
                             </div>
-                            <div class="rating">
-                                <div class="reviews">Exceptional <br>3,014 reviews</div>
-                                <div class="score">4.3</div>
+
+                            <div class="price-section">
+                                <div class="price-section2">
+                                    <div class="discount">15% Off</div>
+                                    <div class="price">US$99<span class="old-price">US$110</span></div>
+                                </div>
+                                <div class="rating">
+                                    <div class="reviews">Exceptional <br>3,014 reviews</div>
+                                    <div class="score">4.3</div>
+                                </div>
+                            </div>
+                            <div class="Detajet">
+                                <button style="width: 100%;" href="carspage.html">More</button>
                             </div>
                         </div>
-                    </div>
-
+                    </a>
                 </div>
             </div>
             <div class="card5">
                 <div class="slider">
                     <div class="slides">
-                        <img class="slide" src="images/Cars/G8-Jasht.jpg" alt="Image #1">
-                        <img class="slide" src="images/Cars/G8-Jasht1.jpg" alt="Image #2">
-                        <img class="slide" src="images/Cars/G8-Mbrenda.jpg" alt="Image #3">
+                        <img class="slide" src="/src/images/Cars/G8-Jasht.jpg" alt="Image #1">
+                        <img class="slide" src="/src/images/Cars/G8-Jasht1.jpg" alt="Image #2">
+                        <img class="slide" src="/src/images/Cars/G8-Mbrenda.jpg" alt="Image #3">
                     </div>
                     <button class="prev" onclick="prevSlide()">&#10094;</button>
                     <button class="next" onclick="nextSlide()">&#10095;</button>
@@ -492,37 +527,40 @@
                 <div class="badge">600Kms included. After that $15/Kms</div>
 
                 <div class="card-body">
-                    <div>
-                        <div class="card-title">Golf 8</div>
-                        <p class="paragraph">SUV | AC | 5 Seats</p>
-                        <div class="Free">Free Cancellation Till 10 Aug 23</div>
-                        <div class="card-details">
-                            <div class="detail">Manual</div>
-                            <div class="detail">1 Large bag</div>
-                            <div class="detail">1 Small bag</div>
-                            <div class="detail">Diesel</div>
-                        </div>
-                        <div class="price-section">
-                            <div class="price-section2">
-                                <div class="discount">15% Off</div>
-                                <div class="price">US$200 <span class="old-price">US$240</span></div>
+                    <a href="carspage.html" style="text-decoration: none; color: black;">
+                        <div>
+                            <div class="card-title">Golf 8</div>
+                            <p class="paragraph">SUV | AC | 5 Seats</p>
+                            <div class="card-details">
+                                <div class="detail">Manual</div>
+                                <div class="detail">1 Large bag</div>
+                                <div class="detail">1 Small bag</div>
+                                <div class="detail">Diesel</div>
                             </div>
-                            <div class="rating">
-                                <div class="reviews">Exceptional <br>3,014 reviews</div>
-                                <div class="score">4.3</div>
+                            <div class="price-section">
+                                <div class="price-section2">
+                                    <div class="discount">15% Off</div>
+                                    <div class="price">US$200 <span class="old-price">US$240</span></div>
+                                </div>
+                                <div class="rating">
+                                    <div class="reviews">Exceptional <br>3,014 reviews</div>
+                                    <div class="score">4.3</div>
+                                </div>
+                            </div>
+                            <div class="Detajet">
+                                <button style="width: 100%;" href="carspage.html">More</button>
                             </div>
                         </div>
-                    </div>
-
+                    </a>
                 </div>
             </div>
 
             <div class="card5">
                 <div class="slider">
                     <div class="slides">
-                        <img class="slide" src="images/Cars/G8-Jasht.jpg" alt="Image #1">
-                        <img class="slide" src="images/Cars/G8-Jasht1.jpg" alt="Image #2">
-                        <img class="slide" src="images/Cars/G8-Mbrenda.jpg" alt="Image #3">
+                        <img class="slide" src="/src/images/Cars/G8-Jasht.jpg" alt="Image #1">
+                        <img class="slide" src="/src/images/Cars/G8-Jasht1.jpg" alt="Image #2">
+                        <img class="slide" src="/src/images/Cars/G8-Mbrenda.jpg" alt="Image #3">
                     </div>
                     <button class="prev" onclick="prevSlide()">&#10094;</button>
                     <button class="next" onclick="nextSlide()">&#10095;</button>
@@ -530,28 +568,31 @@
                 <div class="badge">600Kms included. After that $15/Kms</div>
 
                 <div class="card-body">
-                    <div>
-                        <div class="card-title">Golf 8</div>
-                        <p class="paragraph">SUV | AC | 5 Seats</p>
-                        <div class="Free">Free Cancellation Till 10 Aug 23</div>
-                        <div class="card-details">
-                            <div class="detail">Manual</div>
-                            <div class="detail">1 Large bag</div>
-                            <div class="detail">1 Small bag</div>
-                            <div class="detail">Diesel</div>
-                        </div>
-                        <div class="price-section">
-                            <div class="price-section2">
-                                <div class="discount">15% Off</div>
-                                <div class="price">US$59 <span class="old-price">US$79</span></div>
+                    <a href="carspage.html" style="text-decoration: none; color: black;">
+                        <div>
+                            <div class="card-title">Golf 8</div>
+                            <p class="paragraph">SUV | AC | 5 Seats</p>
+                            <div class="card-details">
+                                <div class="detail">Manual</div>
+                                <div class="detail">1 Large bag</div>
+                                <div class="detail">1 Small bag</div>
+                                <div class="detail">Diesel</div>
                             </div>
-                            <div class="rating">
-                                <div class="reviews">Exceptional <br>3,014 reviews</div>
-                                <div class="score">4.2</div>
+                            <div class="price-section">
+                                <div class="price-section2">
+                                    <div class="discount">15% Off</div>
+                                    <div class="price">US$59 <span class="old-price">US$79</span></div>
+                                </div>
+                                <div class="rating">
+                                    <div class="reviews">Exceptional <br>3,014 reviews</div>
+                                    <div class="score">4.2</div>
+                                </div>
+                            </div>
+                            <div class="Detajet">
+                                <button style="width: 100%;" href="carspage.html">More</button>
                             </div>
                         </div>
-                    </div>
-
+                    </a>
                 </div>
 
             </div>
@@ -566,7 +607,7 @@
     <footer style="margin-top: 50px; background-color: white;">
         <div class="footer-container">
             <div class="footer-section">
-                <img src="images/footer-photos/logo.webp" alt="">
+                <img src="/src/images/footer-photos/logo.webp" alt="">
                 <p>We make your dream more beautiful & enjoyable with lots of happiness.</p>
                 <div class="social-links">
                     <a href=""><i class='bx bxl-facebook-circle'></i></a>
@@ -609,18 +650,18 @@
             <div class="footer-section">
                 <h3>Payment Methods</h3>
                 <div class="paymentmethods">
-                    <img src="images/footer-photos/payment.webp" alt="">
+                    <img src="/src/images/footer-photos/payment.webp" alt="">
                 </div>
                 <h3>Our Partners</h3>
                 <div class="ourpartners">
                     <div class="partner1">
-                        <a><img src="images/footer-photos/mytrip.webp" alt=""></a>
+                        <a><img src="/src/images/footer-photos/mytrip.webp" alt=""></a>
                     </div>
                     <div class="partner1">
-                        <a><img src="images/footer-photos/tripadv.webp" alt=""></a>
+                        <a><img src="/src/images/footer-photos/tripadv.webp" alt=""></a>
                     </div>
                     <div class="partner1">
-                        <a><img src="images/footer-photos/goibibo.webp" alt=""></a>
+                        <a><img src="/src/images/footer-photos/goibibo.webp" alt=""></a>
                     </div>
                 </div>
             </div>

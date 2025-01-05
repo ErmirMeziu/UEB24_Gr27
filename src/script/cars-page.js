@@ -40,7 +40,7 @@ function updateDates() {
 
        
         if (dropoffDate < pickupDate) {
-            alert("Ke selektuar daten gabim!");
+            alert("You selected the wrong date!");
             return; 
         }
 
