@@ -51,15 +51,16 @@ header{
 }
 .search-input fieldset{
     border: none;
-    color:rgb(237,197,195) ;
+    color:rgb(240,240,240) ;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     padding:5px;
 }
 fieldset input{
     color: #05264e;
-    font-weight: 700;
+    font-weight: 500 !important;
 }
+
 .search-input button:hover{
     background-color: rgb(14,30,43);
     color: white;
@@ -189,7 +190,8 @@ fieldset input{
     background-color: rgb(44,167,113);
     border-radius: 10px;
     padding: 4px 5px;
-    position: relative;
+    position: relative
+    ;
 }
 
 .top-element .input form {
@@ -205,8 +207,8 @@ fieldset input{
     border-radius: 5px;
     padding: 5px 10px;
     width: 83px;
-    font-weight: 700;
-    /* background-color: rgb(240,240,240); */
+    font-weight: 300;
+    background-color: rgb(240,240,240);
 }
 
 .page-btn:hover {
@@ -217,10 +219,16 @@ fieldset input{
 
 .top-element .input  input[type="submit"] {
     height: 32px;
-    background-color: white;
+    background-color: rgb(196,41,29);
+    color: white;
     cursor: pointer;
     position: absolute;
     right: 7px;
+    font-weight: 400;
+}
+
+button, input {
+    font-family: 'Poppins';
 }
 
 .top-element #text{
