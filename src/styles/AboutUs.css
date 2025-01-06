@@ -319,6 +319,7 @@
     color: white;
     letter-spacing: .8px;
     margin-right: 20px;
+    
 }
 
 #contact-btn {
@@ -327,14 +328,16 @@
     border: none;
     border-radius: 5px;
     width: 100px;
-    height: 100%; /* Adjust height to match button size */
-    background-color: rgb(196, 41, 29); /* Same red color */
+    height: 40px; /* Adjust height to match button size */
+    background-color: rgb(196, 41, 29); 
     color: white;
     letter-spacing: 0.8px;
     cursor: pointer; /* Add cursor to make it look clickable */
     text-align: center;
-    line-height: 40px; /* To vertically align text in the button */
-
+    line-height: 40px;
+    
+    
+    
 }
 
 #contact-btn:hover {
