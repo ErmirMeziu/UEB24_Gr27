@@ -633,7 +633,9 @@ html {
     scroll-behavior: smooth;
 }
 
+/*go to top button*/
 .gotopbtn {
+    display: flex;
     visibility: hidden;
     position: fixed;
     opacity: 0;
@@ -645,14 +647,23 @@ html {
     border-radius: 10%;
     text-decoration: none;
     text-align: center;
-    line-height: 50px;
     color: white;
-    font-size: 22px;
     transition: opacity .5s ease, visibility .5s ease, brightness .5s ease ;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.gotopbtn svg {
+    height: 18px;
+}
+
+.gotopbtn:hover {
+    filter: brightness(0.9);
 }
 
 .gotopbtn:active {
-    filter: brightness(0.9);
+    filter: brightness(0.8);
 }
 
 .gotopbtn-special {
