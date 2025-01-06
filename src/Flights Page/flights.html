@@ -87,6 +87,40 @@
             </div>
         </div>
        </section>
+
+       <section class="register">
+        <div class="register-head">
+            <h4>Sign up</h4>
+            <p class="iks1"><i class="fa-solid fa-square-xmark fa-xl" style="color: #adb5bd;"></i></p>
+        </div>
+        <div class="register-form">
+            <form action="" method="post">
+                <div class="name-surname">
+                    <input class="login-change" type="text" id="register-name" placeholder="Enter your name" required>
+                    <input class="login-change" type="text" id="register-surname" placeholder="Enter your surname" required>
+                </div>
+                <div>
+                    <input class="login-change" type="email" id="register-email" placeholder="Enter your email" required>
+                </div>
+                <div style="position: relative;">
+                    <input class="login-change" type="password" id="register-password" placeholder="Enter your password" required>
+                    <i class="fa fa-eye-slash toggle-password2" aria-hidden="true" style="right: 30px;"></i>
+                </div>
+                <div style="position: relative;">
+                    <input class="login-change" type="password" id="confirm-password" placeholder="Confirm your password" required>
+                    <i class="fa fa-eye-slash toggle-password3" aria-hidden="true" style="right: 30px;"></i>
+                </div>
+                <div style="position: relative;">
+                    <input type="submit" style="width: 434px; margin: auto;" value="Sign up" id="register-submit"><br>
+                    <span id="message" style="position:absolute;font-size: 13px; top: -25px; width: 434px; transform: translateX(-50%);"></span>
+                </div>
+            </form>
+        </div>
+        <div class="register-end">
+            <p>You have an account? <span class="signbutton">Sign in</span></p>
+        </div>
+    </section>
+
        <section class="section__container header__container">
         <h1 class="section__header">Find And Book<br />A Great Experience</h1>
         <img src="../images/assets/header.jpg" alt="header" />
@@ -146,7 +180,7 @@
             </div>
           </div>
           
-          <button class="btn"><i class="ri-search-line"></i></button>
+          <button class="btn"><i class="ri-search-line"></i>Search</button>
          
         </script>          
       </form>
@@ -315,7 +349,7 @@
       </div>
     </section>
 
-    <footer style="margin-top: 150px;">
+    <footer>
       <div class="footer-container">
           <div class="footer-section">
               <img src="../images/footer-photos/logo.webp" alt="">
