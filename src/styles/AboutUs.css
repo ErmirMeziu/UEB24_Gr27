@@ -181,6 +181,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     width: 80%; 
     text-align: center; 
+    padding: 20px;
  
 }
 
@@ -219,6 +220,7 @@
     width: 100%;
     height: 150px;
     object-fit: cover; 
+    
 }
 
 /* Text styling */
@@ -234,13 +236,31 @@
     color: #666;
 }
 
+.news-item a{
+    text-decoration: none;
+    color: black;
+}
 
+.news-item a:hover{
+    color:dodgerblue;
+    text-decoration: underline;
+}
 
 .page-container {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
+}
+
+.address{
+
+ margin-top: 15px;
+ font-size: 18px;
+    color: #5D6F7D;
+    font-weight: 500;
+    
+    
 }
 
 /* Sidebar Container */
@@ -288,20 +308,105 @@
     transform: scale(1.02); 
 }
 
-
-
-/* Page Container Styling */
-.page-container {
-    font-family: "Poppins", Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
+.contact-form-container{
+    font-family: 'Poppins';
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 100%;
+    background-color: rgb(196, 41, 29);
+    color: white;
+    letter-spacing: .8px;
+    margin-right: 20px;
 }
 
+#contact-btn {
+    font-family: 'Poppins';
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 100%; /* Adjust height to match button size */
+    background-color: rgb(196, 41, 29); /* Same red color */
+    color: white;
+    letter-spacing: 0.8px;
+    cursor: pointer; /* Add cursor to make it look clickable */
+    text-align: center;
+    line-height: 40px; /* To vertically align text in the button */
+
+}
+
+#contact-btn:hover {
+    cursor: pointer;
+    background-color: rgb(255,230,229);
+    color: rgb(215,44,34);}
 
 
-@media (max-width: 768px) {
-    .sidebar {
-        display: none; /* Hide the sidebar on smaller screens */
-    }
+
+   /* Contact form modal styling */
+   .contact-form-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.contact-form-content {
+    background-color: white;
+    padding: 20px;
+    margin: 100px auto;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.contact-form-content h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.contact-form-content p{
+    line-height: 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.contact-form-content input,
+.contact-form-content textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form-content button {
+    background-color: rgb(206, 46, 37);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact-form-content button:hover {
+    cursor: pointer;
+    background-color: rgb(255,230,229);
+    color: rgb(215,44,34);
+}
+
+/* Close button styling */
+.close-form {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
 }
