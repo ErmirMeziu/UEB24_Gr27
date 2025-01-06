@@ -56,5 +56,26 @@ function updateDates() {
 document.getElementById('pickup-input').addEventListener('change', updateDates);
 document.getElementById('dropoff-input').addEventListener('change', updateDates);
 
+/*video-watch*/
+document.addEventListener('DOMContentLoaded', () => {
+    const watch = document.querySelector(".video-watch");
+    const video = document.querySelector(".video");
+    const overlay = document.querySelector(".video-overlay");
+
+    watch.addEventListener('click', function (event) {
+        video.classList.add("video-special");
+        overlay.classList.add("video-special");
+        event.stopPropagation();
+    });
+
+    overlay.addEventListener('click', function () {
+        video.classList.remove("video-special");
+        overlay.classList.remove("video-special");
+    });
+
+    video.addEventListener('click', function (event) {
+        event.stopPropagation();
+    });
+});
 
 

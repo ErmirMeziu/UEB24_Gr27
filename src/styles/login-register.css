@@ -10,6 +10,9 @@
     left: 0;
 }
 
+input {
+    font-weight: 400 !important;
+}
 .login,
 .register {
     visibility: hidden;
