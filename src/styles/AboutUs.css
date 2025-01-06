@@ -455,7 +455,7 @@ header {
   }
 
   /*go to top*/
-html {
+  html {
     scroll-behavior: smooth;
 }
 .gotopbtn {
@@ -472,13 +472,9 @@ html {
     text-decoration: none;
     text-align: center;
     color: white;
-    transition: opacity .5s ease, visibility .5s ease, brightness .5s ease ;
     align-items: center;
     justify-content: center;
-
 }
-
-
 
 
 .gotopbtn:hover {
@@ -488,6 +484,8 @@ html {
 .gotopbtn:active {
     filter: brightness(0.8);
 }
+
+
 
 .gotopbtn-special {
     visibility: visible;

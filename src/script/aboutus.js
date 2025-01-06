@@ -14,6 +14,7 @@ list.addEventListener('click', function(){
 //toggle show-hide
  contactBtn.addEventListener('click', function() {
     show_hide.classList.add('show-hide-special');
+    show_hide.scrollIntoView({ behavior: 'smooth', block: 'start' });
  });
 
  closeContactForm.addEventListener('click', function(){
@@ -22,15 +23,34 @@ list.addEventListener('click', function(){
 
 
 /*go to top */
-const gotopbtn = document.querySelector(".gotopbtn");
+$(document).ready(function () {
+   const $goTopBtn = $('.gotopbtn');
 
-window.onscroll = function () {
-    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-        gotopbtn.classList.add("gotopbtn-special");
-    } else {
-        gotopbtn.classList.remove("gotopbtn-special");
-    }
-};
+   // Kontrollo lëvizjen në scroll
+   $(window).scroll(function () {
+       if ($(window).scrollTop() > 500) {
+           $goTopBtn.stop().css('visibility', 'visible').animate({ opacity: 1 }, 300); 
+       } else {
+           $goTopBtn.stop().animate({ opacity: 0 }, 300, function () {
+               $(this).css('visibility', 'hidden');
+           });
+       }
+   });
+
+   $goTopBtn.click(function () {
+       $('html, body').animate({ scrollTop: 0 }, 800); 
+   });
+});
+
+
+//Audio
+const audio = document.getElementById("audio");
+const audioIcon = document.getElementById("audio-icon");
+
+audioIcon.addEventListener("click", function() {
+    audio.play();
+});
+
 
 
 
