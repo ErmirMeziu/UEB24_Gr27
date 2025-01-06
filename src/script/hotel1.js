@@ -64,17 +64,17 @@ const recommendations = document.querySelector('.recommendations');
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
 
-const cardWidth = 320; // Approximate width of a single card (adjust as needed)
-const visibleCards = Math.floor(window.innerWidth / cardWidth); // Number of visible cards
+const cardWidth = 320; // Width i nje karte duke perfshir dhe hapsiren
+const visibleCards = Math.floor(window.innerWidth / cardWidth); // Numri i kartave te dukshme
 const maxScroll = recommendations.scrollWidth - cardWidth * visibleCards;
 
 let scrollAmount = 0;
 
-// Scroll to the left
+// Levizja majtas
 prevButton.addEventListener('click', () => {
     scrollAmount -= cardWidth;
 
-    // Prevent scrolling beyond the first card
+    // Parandalimi per mos me leviz pertej kartes se pare
     if (scrollAmount < 0) {
         scrollAmount = 0;
     }
@@ -82,11 +82,11 @@ prevButton.addEventListener('click', () => {
     recommendations.style.transform = `translateX(-${scrollAmount}px)`;
 });
 
-// Scroll to the right
+// Levizja djathtas
 nextButton.addEventListener('click', () => {
     scrollAmount += cardWidth;
 
-    // Prevent scrolling beyond the last card
+    // Parandalimi per mos me leviz pertej kartes se fundit
     if (scrollAmount > maxScroll) {
         scrollAmount = maxScroll;
     }
@@ -96,21 +96,22 @@ nextButton.addEventListener('click', () => {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Step 1: Select all the rows in the table
+    //Selekton krejt rreshtat e tabeles
     const rows = document.querySelectorAll('.room-table tbody tr');
-    // Step 2: Add event listeners to each row
+    // Shtojm event listeners per cdo rresht
     rows.forEach(function(row, index) {
-        // Allow each row to be dragged
+        // Lejon qe cdo rresht me kan draggable
         row.setAttribute('draggable', 'true'); // Mundet edhe pa qet rresht se e kem specifiku ne html dokument
 
-        // Step 3: When a row starts being dragged, mark it
+        
         row.addEventListener('dragstart', function() {
-            row.classList.add('dragging');  // Add a class to style the dragged row
+            row.classList.add('dragging');  // Shtojm nje klas per rreshtin qe po bahet dragg me mujt me stilizu
         });
-        //Krijojm klase te re kur bojm drag me u dall rreshti qe po bahet drag -> ne style e kem klasen qe po e krijojm(.dragging)
-        // Step 4: When a row is dropped, move it to its new place
+        //Krijojm klase te re kur bojm drag me u dallu rreshti qe po bahet drag -> ne style e kem klasen qe po e krijojm(.dragging)
+
+        //Kur rreshti te behet drop, sigurohemi qe bahet drop ne vendin qe duam
         row.addEventListener('dragover', function(event) {
-            event.preventDefault(); // This is needed for the drop to work
+            event.preventDefault(); // E nevojshme me funksionu drag
         });
         //preventDeafault metod e gatshme qe na siguron qe rreshti bahet drop.
 
@@ -120,24 +121,24 @@ document.addEventListener('DOMContentLoaded', function() {
             if (draggedRow !== row) { // kushti siguron që ne të mos përpiqemi ta zhvendosim rreshtin në të njëjtin pozicion nga ku është tërhequr
                 const rowsContainer = row.parentNode; //Variabla prind ruan elementin prind (<tbody>)
                 rowsContainer.insertBefore(draggedRow, row); // Reorder rows
-                updateRowNumbers();  // Update row numbers after the change
+                updateRowNumbers();  // Bene update numrat pasi rreshtat jan ba drop.
             }
-            row.classList.remove('dragging');  // Remove the dragging effect after drop, pra largon efektin qe e kemi caktu ne style
+            row.classList.remove('dragging');  //  pra largon efektin qe e kemi caktu ne style
         });
 
-        // Step 5: Clean up the dragging effect when the drag ends
+        // Kur perfundon drag largon efektet qe kemi caktu ne style
         row.addEventListener('dragend', function() {
             row.classList.remove('dragging');
         });
     });
 
-    // Step 6: Update the numbers after the rows are rearranged
+    // Funksioni qe na mundeson me i ba update numrat ne rreshta
     function updateRowNumbers() {
         const rows = document.querySelectorAll('.room-table tbody tr');
         rows.forEach(function(row, index) {
-            // Find the span inside the row where the number is displayed
+            // Gjen hapsiren brenda rreshtit ku shfaqet numri
             const numberSpan = row.querySelector('.expand-icon');
-            numberSpan.textContent = index + 1; // Update the number to reflect the row's new position
+            numberSpan.textContent = index + 1; // Perditeson numrin për të treguar pozicionin e ri të rreshtit
         });
     }
 });
