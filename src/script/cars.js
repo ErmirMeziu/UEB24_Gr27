@@ -20,10 +20,10 @@ class ViewMoreToggle {
                 this.toggleElement.classList.toggle('mimshef-special');
 
                 if (!this.isExpanded) {
-                        this.viewMoreButton.textContent = "view less";
+                        this.viewMoreButton.textContent = "VIEW LESS";
                         this.toggleElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 } else {
-                        this.viewMoreButton.textContent = "view more";
+                        this.viewMoreButton.textContent = "VIEW MORE";
                         this.goTopElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
 
@@ -63,12 +63,11 @@ function initializeSlider(sliderIndex) {
         showSlide();
     }
 
-    $(sliders[sliderIndex]).find('.next').click(function() {
+    sliders[sliderIndex].querySelector('.next').addEventListener('click', function() {
         nextSlide();
-
     });
 
-    $(sliders[sliderIndex]).find('.prev').click(function() {
+    sliders[sliderIndex].querySelector('.prev').addEventListener('click', function() {
         prevSlide();
     });
 
@@ -88,7 +87,7 @@ $(document).ready(function() {
                 $('.card5').each(function() {
                     var status = $(this).data('status');
                     if (status === "reserved") {
-                        $(this).fadeOut("slow"); 
+                        $(this).fadeOut("slow");
                     }
                 });
             } else {
@@ -99,3 +98,15 @@ $(document).ready(function() {
             }
         });
 });
+
+
+/*go to top */
+const gotopbtn = document.querySelector(".gotopbtn");
+
+window.onscroll = function () {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        gotopbtn.classList.add("gotopbtn-special");
+    } else {
+        gotopbtn.classList.remove("gotopbtn-special");
+    }
+};

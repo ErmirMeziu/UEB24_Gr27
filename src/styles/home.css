@@ -30,16 +30,13 @@ body {
     overflow-y: scroll;
 }
 
-
-
-
 .search {
     display: flex;
     background-color: white;
     border-radius: 10px;
     padding: 17px 13px;
     width: 80%;
-    margin-left: 10%;
+    margin: auto;
     height: auto;
     margin-top: 230px;
     z-index: 1 !important;
@@ -50,9 +47,9 @@ body {
     width: 87%;
     background-color: white;
     margin: auto;
-    justify-content: space-evenly;
-    gap: 2%;
-    margin-right: 2%;
+    justify-content: space-between;
+    gap: 10px;
+    margin-right: 10px;
 }
 
 .search-bar input {
@@ -82,16 +79,16 @@ input, button {
 }
 
 .where-date {
-    width: 40%;
+    width: 50%;
 }
 
 .search button {
     border: none;
     width: 10%;
-    height: 46px;
+    height: 48px;
     align-self: center;
     margin-top: 7px;
-    margin-right: 5px;
+    margin-right: 12px;
     background-color: rgb(215, 44, 33);
     border-radius: 5px;
     color: white;
@@ -109,6 +106,7 @@ input, button {
     margin: auto;
     margin-right: 7px;
 }
+
 
 /*offers- sales*/
 .sales-container {

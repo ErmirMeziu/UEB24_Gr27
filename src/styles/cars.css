@@ -26,8 +26,10 @@ background-color: rgb(4,22,37);
     border-radius: 10px;
     padding: 17px 13px;
     width: 80%;
-    margin-left: 10%;
+    margin: auto;
     height: auto;
+    margin-top: 230px;
+    z-index: 1 !important;
 }
 
 .search-bar {
@@ -35,9 +37,9 @@ background-color: rgb(4,22,37);
     width: 87%;
     background-color: white;
     margin: auto;
-    justify-content: space-evenly;
-    gap: 2%;
-    margin-right: 2%;
+    justify-content: space-between;
+    gap: 10px;
+    margin-right: 10px;
 }
 
 .search-bar input {
@@ -49,7 +51,6 @@ background-color: rgb(4,22,37);
     color: #05264e;
     outline: none;
     width: 100%;
-
 }
 
 input, button {
@@ -68,16 +69,16 @@ input, button {
 }
 
 .where-date {
-    width: 40%;
+    width: 50%;
 }
 
 .search button {
     border: none;
     width: 10%;
-    height: 46px;
+    height: 48px;
     align-self: center;
     margin-top: 7px;
-    margin-right: 5px;
+    margin-right: 12px;
     background-color: rgb(215, 44, 33);
     border-radius: 5px;
     color: white;
@@ -164,9 +165,7 @@ input, button {
 .text
 {
     width: 87%;
-    margin: 0 auto;
-    margin-top: 80px;
-    
+    margin: 40px auto 50px;
 }
 .text h1
 {
@@ -505,7 +504,8 @@ img.displaySlide
     border-radius: 8px; 
     cursor: pointer; 
     transition: background-color 0.3s, transform 0.2s; 
-    margin-top: 12px;
+    margin-top: 33px;
+    margin-bottom: -20px;
 }
 
 #filterAvailableBtn:hover {
@@ -516,4 +516,33 @@ img.displaySlide
 #filterAvailableBtn:active {
     background-color: #831810; 
     transform: translateY(1px);
+}
+
+/*go to top*/
+html {
+    scroll-behavior: smooth;
+}
+
+.gotopbtn {
+    visibility: hidden;
+    position: fixed;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    background: rgb(196, 41, 29);
+    bottom: 40px;
+    right: 24px;
+    border-radius: 10%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+    transition: opacity .5s ease, visibility .5s ease, brightness .5s ease ;
+}
+
+.gotopbtn-special {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s ease;
 }
