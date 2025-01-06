@@ -1,4 +1,3 @@
-
 /* backgroud-slideshow */
 var i = 0;
 var images = [
@@ -8,6 +7,8 @@ var images = [
     'images/home-background/fourth.jpg',
     'images/home-background/fifth.jpg'
 ];
+var imglength = images.length - 1;
+
 
 var time = 5000;
 const home = document.querySelector(".home");
@@ -16,11 +17,7 @@ const home = document.querySelector(".home");
 function changeImg(callback) {
     home.style.backgroundImage = `url(${images[i]})`;
 
-    if (i < images.length - 1) {
-        i++;
-    } else {
-        i = 0;
-    }
+    i < imglength ? i++ : i = 0;
 
     setTimeout(() => callback(changeImg), time);
 }

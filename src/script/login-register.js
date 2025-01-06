@@ -185,7 +185,7 @@ $(document).ready(function(){
             $(this).removeClass('fa-eye-slash').addClass('fa-eye');
         } else {
             inputField.attr('type', 'password');
-            $(this).removeClass('fa-eye').addClass('fa-eye-slash'); 
+            $(this).removeClass('fa-eye').addClass('fa-eye-slash');
         }
     });
 

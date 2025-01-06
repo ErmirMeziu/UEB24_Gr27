@@ -30,7 +30,6 @@
     <script src="../script/cars-page.js" defer></script>
     <script src="../script/login-register.js" defer></script>
 
-
 </head>
 <body>
 
@@ -206,6 +205,7 @@
             </div>
             <div class="Extra">
                 <h3>Extra</h3>
+                
                 <div class="extra-button">
                     <button class="airbag">Airbag</button>
                     <button class="bluetooth">Bluetooth</button>
@@ -225,12 +225,32 @@
                         <button class="btn-ok" onclick="closeModal()">OK</button>
                     </div>
                 </div>
-               
-
             </div>
         </div>
     </section>
 
+    <canvas class = "canva" id="xCanvas" width="20" height="20"></canvas>
+
+    <script>
+        const canvas = document.getElementById('xCanvas');
+        const ctx = canvas.getContext('2d');
+
+        ctx.strokeStyle = '#c4291d';
+        ctx.lineWidth = 2;
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        ctx.beginPath();
+        ctx.moveTo(5, 5);
+        ctx.lineTo(20, 20);
+        ctx.stroke();
+
+
+        ctx.beginPath();
+        ctx.moveTo(20, 5);
+        ctx.lineTo(5, 20);
+        ctx.stroke();
+    </script>
 
 
 

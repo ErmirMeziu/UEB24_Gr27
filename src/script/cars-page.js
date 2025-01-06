@@ -28,6 +28,7 @@ function formatDate(date) {
     return date.toLocaleDateString('en-GB', options);
 }
 
+
 function updateDates() {
     const pickupInput = document.getElementById('pickup-input').value;
     const dropoffInput = document.getElementById('dropoff-input').value;
@@ -47,11 +48,15 @@ function updateDates() {
         document.getElementById('duration').textContent = `${durationInDays} Day(s)`;
 
         const dailyCost = parseFloat(document.getElementById("dailyCost").textContent);
-        const totalCost = durationInDays * dailyCost;
+        const totalCost = [durationInDays, dailyCost].reduce((acc, curr) => acc * curr);
 
         document.getElementById('total-cost').textContent = `${totalCost.toFixed(2)} €`;
+
+        const formattedDates = [pickupDate, dropoffDate].map(date => formatDate(date));
+        console.log(`Pickup Date: ${formattedDates[0]}, Dropoff Date: ${formattedDates[1]}`);
     }
 }
+
 
 document.getElementById('pickup-input').addEventListener('change', updateDates);
 document.getElementById('dropoff-input').addEventListener('change', updateDates);
@@ -61,21 +66,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const watch = document.querySelector(".video-watch");
     const video = document.querySelector(".video");
     const overlay = document.querySelector(".video-overlay");
+    const canvas = document.querySelector(".canva");
 
-    watch.addEventListener('click', function (event) {
+
+    watch.addEventListener('click', function () {
         video.classList.add("video-special");
         overlay.classList.add("video-special");
-        event.stopPropagation();
+        canvas.classList.add("canvas-special");
+
     });
 
-    overlay.addEventListener('click', function () {
+    canvas.addEventListener('click', function () {
         video.classList.remove("video-special");
         overlay.classList.remove("video-special");
-    });
-
-    video.addEventListener('click', function (event) {
-        event.stopPropagation();
+        canvas.classList.remove("canvas-special");
     });
 });
-
 
