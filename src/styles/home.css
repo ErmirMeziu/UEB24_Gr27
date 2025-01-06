@@ -1,291 +1,114 @@
 .home {
     width: 100%;
-    height: 650px;
-    background-image: url(../images/homeBackground.webp);
+    height: 700px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     animation: fadeIn 2s ease-in-out;
-    z-index: -1;
+    z-index: 1;
+    transition: 2s;
 }
 
- @keyframes fadeIn {
+@keyframes fadeIn {
     from {
         opacity: 0.3;
     }
+
     to {
-        opacity: 0.8;
+        opacity: 1;
     }
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
     overflow-y: scroll;
 }
 
-.all-special {
-    filter: brightness(0.5);
-}
-
-.home-text {
-    color: white;
-    text-align: center;
-    position: relative;
-    top: 180px;
-}
-
-.search{
+.search {
+    display: flex;
     background-color: white;
     border-radius: 10px;
     padding: 17px 13px;
     width: 80%;
-    margin-left: 10%;
+    margin: auto;
     height: auto;
-    margin-top: 210px;
-
+    margin-top: 230px;
+    z-index: 1 !important;
 }
-.search-bar{
+
+.search-bar {
     display: flex;
+    width: 87%;
     background-color: white;
     margin: auto;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap: 10px;
+    margin-right: 10px;
 }
-.search-bar input{
-    width: 100%;
+
+.search-bar input {
     border: none;
     color: #4E5F70;
     position: relative;
     bottom: 5px;
-    font-weight: 700;
+    font-weight: 500;
     color: #05264e;
     outline: none;
+    width: 100%;
 }
 
+input, button {
+    font-family: 'Poppins';
+}
 
-.search fieldset{
+.search fieldset {
     border: 1px solid rgb(192, 202, 208);
     font-size: 11px;
-    font-family:'Poppins';
+    font-family: 'Poppins';
     color: #4E5F70;
     font-weight: 500;
     height: auto;
     padding: 10px 8px 8px;
     border-radius: 5px;
 }
-.where-date{
-    width: 30%;
+
+.where-date {
+    width: 50%;
 }
-.memb{
-    width: 20%;
-}
-.search button{
+
+.search button {
+    border: none;
     width: 10%;
-    margin-top: 8px ;
+    height: 48px;
+    align-self: center;
+    margin-top: 7px;
+    margin-right: 12px;
     background-color: rgb(215, 44, 33);
-    border: none ;
     border-radius: 5px;
     color: white;
     cursor: pointer;
     font-family: 'Poppins';
 }
 
-.search button:hover{
-    background-color: rgb(255,230,229);
-    color: rgb(215, 44, 33);    
+.search button:hover {
+    background-color: rgb(255, 230, 229);
+    color: rgb(215, 44, 33);
+
 }
-.loop{
+
+.loop {
     margin: auto;
     margin-right: 7px;
 }
 
-/*Login-form, Register-form*/
-.login, .register {
-    visibility: hidden;
-    z-index: 2;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 5px;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 498px;
-    height: 607px;
-    color: rgb(11,43,82);
-    font-family: 'Poppins';
-    font-weight: 500;
-}
 
-
-.login .login-head, .register .register-head {
-    display: flex;
-    height: 67px;
-    padding: 16px;
-    font-size: 15px;
-    align-items: center;
-    font-weight: 500;
-}
-
-.iks, .iks1{
-    cursor: pointer;
-    position: absolute;
-    right: 25px;
-}
-
-
-.login-form, .register-form {
-     height: 480px;
-     font-size: 15px;
-     border-top: solid 0.1px  rgb(173,181,189);
-     border-bottom: solid 0.1px  rgb(173,181,189);
-     padding: 16px;
-}
-
-.login-form input, .register-form input {
-    color: rgb(11,43,82);
-    font-weight: 700;
-}
-
-.register-form {
-    padding: 24px 16px;
-}
-
-
-.login-form form {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 11%;
-}
-
-.register-form form {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 10%;
-}
-
-.login-input{
-    width: 466px;
-    height: 320px;
-    padding: 24px 16px;
-    color: rgb(11,43,82);
-}
-
-.login-change, .login-change, .share
- {
-    border: 1px solid rgb(173,181,189);
-    border-radius: 5px;
-    width: 434px;
-    height: 58px;
-    padding: 16px 12px;
-}
-.login-form .check{
-    display: flex;
-    justify-content: space-between;
-}
-
-.login .socials {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 24px;
-}
-
-.login .socials i {
-    font-size: 28px;
-    margin: auto;
-    margin-top: 15px;
-}
-
-.login .socials .social {
-    cursor: pointer;
-    width: 60px;
-    height: 60px;
-    border: 1px dashed rgb(173,181,189);
-}
-
-.login .login-end, .register .register-end{
-    height: 60px;
-    align-content: center;
-}
-
-.login .login-end p, .register .register-end p {
-    font-size: 15px;
-}
-.name-surname {
-    display: grid;
-    width: 434px;
-    margin: auto;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    padding-top: 5px;
-}
-
-.divider {
-    position: relative;
-    top: 2px;
-    margin: auto;
-}
-
-#register-name, #register-surname {
-    width: 100%;
-}
-
-.login .remember-me1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
-}
-
-.login a {
-    text-decoration: none;
-    color: rgb(206,46,37);
-}
-
-.login .sregister, .register .signbutton {
-    color: rgb(206,46,37);
-}
-
-.login a:hover, .login .sregister:hover, .register .signbutton:hover, .iks:hover, .iks1:hover{
-    cursor: pointer;
-}
-
-.login button, .register button {
-    background-color: rgb(206,46,37);
-    color: white;
-    font-weight: 300;
-    border: none;
-    padding: 12px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 15px;
-    padding: 15px 22.5px;
-    height: 62px;
-    border: 2px solid transparent;
- }
-
-.login  button:hover, .register button:hover {
-    cursor: pointer;
-    background-color: rgb(255,230,229);
-    color: rgb(215,44,34);
-}
-
-#remember-me {
-    position: relative;
-    top: 2px;
-    left: 1px;
-}
-
-.login span, .register span {cursor: pointer;}
-
-.login-special, .register-special{
-    visibility: visible;
-}
-
-.body-special {
-    overflow: hidden;
-}
-
-/*offers*/
+/*offers- sales*/
 .sales-container {
     width: 87%;
     display: flex;
@@ -303,6 +126,7 @@ body {
     width: 100%;
     height: auto;
 }
+
 .sales img {
     width: 80px;
     height: 80px;
@@ -319,157 +143,169 @@ body {
 
 .offpercent p {
     font-size: 14px;
-    color: rgb(95,115,136);
+    color: rgb(95, 115, 136);
 }
 
 /*Download*/
 
 .app {
-    background-color: rgb(255,230,229);
+    background-color: rgb(255, 230, 229);
     width: 87%;
     height: 275px;
     margin: auto;
     border-radius: 10px;
 }
+
 .app .left {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
 }
+
 .app-container {
     display: grid;
     padding: 14px;
     grid-template-columns: 3fr 2fr;
     gap: 30px;
     height: 100%;
-    color: rgb(5,38,78);
+    color: rgb(5, 38, 78);
     margin-top: 20px;
 }
 
 .app-container .left {
-   padding: 16px;
+    padding: 16px;
 }
 
-.app-container .left .download img{
+.app-container .left .download img {
     margin: auto;
 }
-.app-container .left .download{
+
+.app-container .left .download {
     display: grid;
     grid-template-columns: 1fr 5fr;
- }
+}
 
- .app-container .left  h4 {
+.app-container .left h4 {
     font-size: 30px;
- }
- .app-container .left .mobile  {
+}
+
+.app-container .left .mobile {
+    display: flex;
     width: 70%;
     margin-left: 30px;
- }
- .app-container .left .mobile form {
-    height: 75px;
     background-color: white;
-    align-content: center;
-    border-radius: 5px;
- }
+    align-items: center;
 
- .app-container .left .mobile form label {
-    padding: 20px;
- }
- .app-container .left .mobile form input{
+}
+
+.app-container .left .mobile form {
+    height: 75px;
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 35px;
+    align-content: center;
+}
+
+
+
+.app-container .left .mobile form input {
     border: none;
     outline: none;
-    width: 57%;
-    height: 45px;
+    width: 80%;
+    margin-left: 10px;
     font-size: 18px;
-    color: rgb(5,38,78);
+    color: rgb(5, 38, 78);
 
- }
+}
 
- .app-container .left .mobile form button {
+.app-container .left .mobile button {
     font-family: 'Poppins';
-    border: none;
     border-radius: 5px;
-    width: 110px;
-    height: 45px;
-    background-color: rgb(215,44,34);
+    width: 30%;
+    height: 50px;
+    margin-right: 15px;
+    background-color: rgb(215, 44, 34);
     color: white;
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
- }
+    border-image: linear-gradient(to right, red, orange) 1;
 
- .app-container .mobile  form button:hover{
-    background-color: rgb(255,230,229);
-    color: rgb(215,44,34);
 }
 
- .app-container .right {
-    padding: 20px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
- }
+.app-container .mobile button:hover {
+    background-color: rgb(255, 230, 229);
+    color: rgb(215, 44, 34);
+}
 
- .app-container .right i {
+.app-container .right {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+}
+
+.app-container .right i {
     font-size: 40px;
     margin-right: 20px;
     color: white;
- }
- .app-container .right .playstore{
+}
+
+.app-container .right .playstore {
     display: flex;
     font-family: 'Poppins';
     border: none;
     border-radius: 5px;
     width: 217px;
     height: 83px;
-    background-color: rgb(14,30,43);
+    background-color: rgb(14, 30, 43);
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
-    position: relative;
-    left: 250px;
     padding: 20px;
     font-weight: 700;
     font-size: 16px;
+    align-items: center;
+}
 
- }
+.app-container .right .same {
+    justify-content: center;
+}
 
- .app-container .right  .same {
-    position: relative;
-    bottom: 3px;
-
- }
-
- .app-container .right p {
+.app-container .right p {
     color: rgb(238, 248, 255);
- }
- .app-container .right span {
+}
+
+.app-container .right span {
     font-size: 18px;
     color: white;
- }
+}
 
- .app-container .right .appstore{
+.app-container .right .appstore {
     display: flex;
     font-family: 'Poppins';
     border: none;
     border-radius: 5px;
     width: 250px;
     height: 83px;
-    background-color: rgb(215,44,34);
+    background-color: rgb(215, 44, 34);
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
-    position: relative;
-    left: 217px;
     padding: 20px;
     font-size: 16px;
     font-weight: 700;
- }
- .app-container .right .appstore:hover, .app-container .right .playstore:hover{
-    background-color: rgb(0, 0, 0);
- }
+    align-items: center;
+}
 
-/*Homepage - destinations*/
+.app-container .right .appstore:hover,
+.app-container .right .playstore:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+/*Homepage - featured-routes*/
 .routes {
     display: grid;
     width: 87%;
@@ -500,64 +336,73 @@ body {
     width: 100%;
     height: 240px;
     border-radius: 5px 5px 0px 0px;
-    transition: transform 0.3s ease;
+    transition: .3s ease-in-out;
 }
 
-.routes img:hover{
+.routes img:hover {
     transform: scale(1.2);
 }
 
-.destinations .top, .rental .top {
+.destinations .top,
+.rental .top {
     width: 87%;
     display: flex;
     justify-content: space-between;
     margin: 50px auto 20px;
-    color: rgb(5,38,78);
+    color: rgb(5, 38, 78);
 }
 
-.destinations .top button, .rental .top button {
+.destinations .top button,
+.rental .top button {
     font-family: 'Poppins';
     border: none;
     border-radius: 5px;
     width: 110px;
     height: 45px;
-    background-color: rgb(255,230,229);
-    color: rgb(215,44,34);
+    background-color: rgb(255, 230, 229);
+    color: rgb(215, 44, 34);
     font-size: 14px;
     font-weight: 500;
 }
-.destinations .top button:hover, .rental .top button:hover{
-    background-color: rgb(215,44,34);
+
+.destinations .top button:hover,
+.rental .top button:hover {
+    background-color: rgb(215, 44, 34);
     color: white;
     cursor: pointer;
 }
+
 .directions {
     margin-top: 7px;
 }
-.directions h4{
+
+.directions h4 {
     font-weight: 600;
-    color: rgb(5,38,78);
+    color: rgb(5, 38, 78);
     padding-left: 15px;
     font-size: 16px;
 }
-.directions p{
+
+.directions p {
     font-size: 14px;
     padding-left: 15px;
-    color: rgb(95,115,136);
+    color: rgb(95, 115, 136);
 }
+
 .cost {
     display: flex;
     justify-content: end;
     padding: 15px;
 }
 
-.cost h5, .cost p {
+.cost h5,
+.cost p {
     align-content: end;
 }
 
 .cost h5 {
     font-size: 23px;
-    color: rgb(5,38,78);
+    color: rgb(5, 38, 78);
 }
 
 .cost p {
@@ -565,7 +410,7 @@ body {
     font-size: 14px;
     margin-right: 10px;
     bottom: 3px;
-    color: rgb(95,115,136);
+    color: rgb(95, 115, 136);
 }
 
 .routes-different {
@@ -576,10 +421,18 @@ body {
     cursor: auto;
     overflow: hidden;
     cursor: pointer;
-
+    justify-content: center;
+    position: relative;
+    text-align: center;
 }
 
-.routes-different img, .card-different img{
+
+.routes-different:hover img, .card-different:hover img {
+    filter: brightness(.7);
+}
+
+.routes-different img,
+.card-different img {
     width: 100%;
     height: 100%;
     border-radius: 5px;
@@ -587,60 +440,64 @@ body {
     z-index: -1;
 }
 
-.routes-different h4, .card-different h4{
+.routes-different h4,
+.card-different h4 {
+    width: 90%;
     z-index: 2;
     font-weight: 700;
     color: white;
     font-size: 17px;
-    position: relative;
-    bottom: 150px;
-    left: 25px;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
 }
 
-.routes-different button, .card-different button{
+.routes-different button,
+.card-different button {
     border: none;
     border-radius: 10px;
-    width: 80%;
+    width: 100%;
     height: 50px;
-    background-color: rgb(196,41,29);
+    background-color: rgb(196, 41, 29);
     color: white;
     font-weight: 700;
     font-size: 15px;
-    position: absolute;
 }
-.routes-different button:hover, .card-different button:hover {
-    background-color: rgb(255,230,229);
-    color: rgb(215,44,34);
+
+.routes-different button:hover,
+.card-different button:hover {
+    background-color: rgb(255, 230, 229);
+    color: rgb(215, 44, 34);
     cursor: pointer;
 }
 
-/*Property*/
-  .card-container
-  {
+/*featured-rentals*/
+.card-container {
     display: flex;
     width: 87%;
     gap: 1.5%;
     margin: auto;
     height: 400px;
-  }
-  .card
-  {
+}
+
+.card {
     display: grid;
     background-color: #f4f4f4;
     border-radius: 10px;
-    box-shadow: 0px 2px 4px rgba(0, 0,0,0.3);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     transition: transform 0.6s;
     width: 100%;
     height: 400px;
     grid-template-rows: 1fr 1fr;
     cursor: pointer;
-  }
-  .card:hover{
+}
+
+.card:hover {
     transform: translateY(-10px);
-  }
-.card .image
-{
+}
+
+.card .image {
     width: 100%;
     height: 180px;
     object-fit: cover;
@@ -664,36 +521,35 @@ body {
     cursor: pointer;
     overflow: hidden;
     border-radius: 5px;
-
+    position: relative;
+    text-align: center;
 }
 
 .card-different img {
-    transition: transform 0.3s ease;
-
+    transition: 0.3s ease;
 }
 
-.card-different img:hover{
+.card-different img:hover {
     transform: scale(1.2);
 }
 
 
 .property-same {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    }
-.property-same a
-{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.property-same a {
     font-family: 'Poppins';
     text-decoration: none;
-    border: 1px dashed rgb(135,147,160);
+    border: 1px dashed rgb(135, 147, 160);
     color: #45596C;
     border-radius: 2px;
     padding: 3px;
     font-size: 12px;
 }
 
-.head button
-{
+.head button {
     font-family: 'Poppins';
     border: none;
     border-radius: 5px;
@@ -708,8 +564,8 @@ body {
 }
 
 .end button {
-    background-color: rgb(255,230,229);
-    color: rgb(215,44,34);
+    background-color: rgb(255, 230, 229);
+    color: rgb(215, 44, 34);
     font-family: 'Poppins';
     border: none;
     border-radius: 5px;
@@ -731,12 +587,13 @@ body {
 .international-routes .buttons {
     margin-left: 6.5%;
 }
+
 .international-routes .buttons button {
     border: none;
     border-radius: 10px;
     width: auto;
     height: 50px;
-    background-color: rgb(196,41,29);
+    background-color: rgb(196, 41, 29);
     color: white;
     font-weight: 500;
     font-size: 13px;
@@ -746,7 +603,7 @@ body {
 }
 
 .international-routes .buttons .button-different {
-    background-color: rgb(19,27,36);
+    background-color: rgb(19, 27, 36);
 }
 
 .international-routes .all-flights {
@@ -756,7 +613,8 @@ body {
     margin-bottom: 70px;
 
 }
-.international-routes .all-flights  ul{
+
+.international-routes .all-flights ul {
     font-family: 'Poppins';
     color: #455873;
     font-size: 12px;
@@ -769,193 +627,44 @@ body {
     cursor: pointer;
 }
 
-/*footer*/
-footer {
-    width: 100%;
-    height: 550px;
-    background-color: #f9f9f9;
-    padding: 20px;
-}
-
-.footer-container {
-    width: 87%;
-    height: 400px;
-    margin:  30px auto auto;
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
-}
-
-.footer-section img {
-    margin-bottom: 20px;
-}
-
-.footer-section h3 {
-    color: #003366;
-    margin-bottom: 15px;
-    font-size: 15px;
-    font-weight: 700;
-}
-
-.footer-section p {
-    margin-bottom: 40px;
-    font-size: 13px;
-    color: #5D6F7D;
-    font-weight: 500;
-}
-.footer-section ul {
-    list-style: none;
-}
-
-.footer-section ul li a {
-    color: #5D6F7D;
-    font-weight: 500;
-    text-decoration: none;
-    font-size: 13px;
-}
 
 
-.social-links a,
-.payment-links a,
-.partner-links a {
-    display: inline-block;
-    margin-right: 10px;
-    text-decoration: none;
-    font-size: 23px;
-    color: #555;
-}
-
-.social-links a:hover,
-.payment-links a:hover,
-.partner-links a:hover {
-    color: #003366;
-}
-.footer-section .payment-links img
-{
-    margin-top: 10px;
-    width: 100%;
-    height: 50px;
-}
-
-.footer-section li
-{
-    line-height: 40px;
-}
-.footer-section li :hover
-{
-    color: rgb(215, 44, 33);
-    text-decoration: none;
-}
-.footer-section img
-{
-    width: 250px;
-    height:80px;
-}
-.footer-section {
-    margin: 10px;
-    min-width: 150px;
-    margin-top: 15px;
-    color: #003366;
-}
-.partner-links img
-{
-    width: 100%;
-    height: 40px;
-}
-.partner-links
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.footer-section
-{
-    line-height: 28px;
-}
-.social-links a
-{
-    width: 50px;
-    height: 50px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.2rem;
-}
-
-
-.footer-bottom {
-    width: 87%;
-    display: flex;
-    margin:  auto;
-    height: 50px;
-    justify-content: space-between;
-    margin-top: 36.75px;
-    font-size: 13px;
-    font-family: 'Poppins';
-    font-weight: 500;
-}
-.footer-bottom .copy {
-    color: #5D6F7D;
-}
-.footer-bottom .Terms
-{
-    width: 400px;
-    display: flex;
-    justify-content: space-evenly;
-}
-.footer-bottom .Terms a {
-    text-decoration: none;
-    color: #003366;
-}
-.footer-section .social-links a
-{
-    background-color: #dce5eb ;
-}
-.footer-section .social-links a:hover
-{
-    background-color: #f0f5f8 ;
-    color: #FFFFFF;
-    transition: 0.5s;
-}
-
-.footer-section .paymentmethods img{
-    width: 100%;
-    height: 35px;
-}
-
-.footer-section .ourpartners {
-    display: flex;
-    justify-content: space-between;
-    color: #5D6F7D;
-}
-
-.footer-section .ourpartners img {
-    width: 85%;
-    height: 30px;
-}
-
-
-.html
-{
+html {
     scroll-behavior: smooth;
 }
-.gotopbtn
-{
+
+.gotopbtn {
+    visibility: hidden;
     position: fixed;
+    opacity: 0;
     width: 50px;
     height: 50px;
-    background: #27ae60;
+    background: rgb(196, 41, 29);
     bottom: 40px;
-    right: 50px;
+    right: 24px;
+    border-radius: 10%;
     text-decoration: none;
     text-align: center;
     line-height: 50px;
     color: white;
-    font-size:  22px;
+    font-size: 22px;
+    transition: opacity .5s ease, visibility .5s ease, brightness .5s ease ;
 }
 
-.home1{
+.gotopbtn:active {
+    filter: brightness(0.9);
+}
+
+.gotopbtn-special {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.home1 {
+    padding: 20px;
     height: 550px;
-    background-image: url(../images/bg.jpg);
+    background-image: url(../images/home-background/bg.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
     align-content: center;
@@ -963,6 +672,8 @@ footer {
     margin-top: 40px;
 
 }
+
+
 
 .home1 h4 {
     font-size: 30px;
@@ -982,18 +693,21 @@ footer {
     border: none;
     padding: 0px 10px 0px 20px;
     border-radius: 5px;
-}
- .input1 {
-    width: 100%;
-    height: 85%;
- }
-
- .button1 {
-    width: 100%;
-    height: 85%;
 
 }
-.home1 .button1 input{
+
+.input1 {
+    width: 100%;
+    height: 85%;
+}
+
+.button1 {
+    width: 100%;
+    height: 85%;
+
+}
+
+.home1 .button1 input {
     width: 100%;
     height: 100%;
     margin-top: 4px;
@@ -1005,48 +719,59 @@ footer {
     width: 100%;
     height: 100%;
     margin-top: 4px;
-    border: none;
     outline: none;
     font-family: 'Poppins';
-    color:#5D6F7D;
+    color: #5D6F7D;
     font-weight: 500;
+    border: none;
+
 
 }
-.home1 .button1 input
-{
+
+.home1 .button1 input {
     background-color: rgb(215, 44, 33);
     font-family: 'Poppins';
     font-weight: 500;
     color: white;
-    border:none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 4.5px;
+    border-image: radial-gradient(ellipse at center, red, orange) 1;
+
 }
+
 .home1 .button1 input:hover {
-    background-color: rgb(255,230,229);
+    background-color: rgb(255, 230, 229);
     color: rgb(215, 44, 33);
 }
 
+/*popular destinations*/
 .container4 {
     width: 87%;
-    margin: 0 auto;
+    margin: 20px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px !important;
-    margin-top: 20px;
+    gap: 1%;
+    cursor: pointer;
 }
 
+
+
 .card1 {
-    position: relative; 
-    width: 320.33px;
-    height:400.65px;
+    position: relative;
+    width: 100%;
+    height: 400px;
 }
 
 .card1 img {
     width: 100%;
     height: 100%;
     border-radius: 5px;
+    transition: .5s ease-in-out;
+}
+
+.card1:hover img{
+    filter: brightness(0.6);
 }
 
 .container2 {
@@ -1064,12 +789,14 @@ footer {
     padding: 20px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    
+
 }
 
-.card1:hover .container2 {
-    opacity: 1; 
+.card1:hover .container2{
+    opacity: 1;
 }
+
+
 
 .text1 h2 {
     font-weight: 600;
@@ -1078,7 +805,7 @@ footer {
 }
 
 .button3 button {
-   
+
     background-color: #ffffff;
     color: black;
     border: none;
@@ -1088,34 +815,40 @@ footer {
     width: 200px;
     height: 50px;
 
-  
+
 }
 
 .button3 button:hover {
     background-color: #CD2c22;
     color: white;
 }
-.container2 h2
-{
+
+.container2 h2 {
     margin: 18px;
 }
-.top
-{
+
+.top {
     display: flex;
     justify-content: space-between;
     width: 87%;
     margin: 0 auto;
-    
+
 }
-.top button
-{
+
+.top button {
     font-family: 'Poppins';
     border: none;
     border-radius: 5px;
     width: 110px;
     height: 45px;
-    background-color: rgb(255,230,229);
-    color: rgb(215,44,34);
+    background-color: rgb(255, 230, 229);
+    color: rgb(215, 44, 34);
     font-size: 14px;
     font-weight: 500;
+    cursor: pointer;
+}
+
+.top button:hover {
+    background-color: rgb(215, 44, 33);
+    color: rgb(255, 230, 229);
 }

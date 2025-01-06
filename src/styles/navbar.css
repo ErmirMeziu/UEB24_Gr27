@@ -14,25 +14,26 @@ body{
     line-height: 1.55;
 }
 
-nav {
+header {
     display: flex;
     grid-template-columns: 1fr 1fr 1fr ;
     height: 76px;
-    width: auto;
+    width: 100%;
     padding: 13px 0px;
-    background-color: rgb(4,22,37);
-
+    position: fixed;
+    z-index: 10;
+    transition: background-color 1s ease;
 }
 .logo {
     position: relative;
     padding-top: 2.5px;
 }
-nav img {
+header img {
     width: 140px;
     height: 45px;
     margin: auto 20px auto 50px;
 }
-nav ul {
+header ul {
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -41,20 +42,20 @@ nav ul {
     font-size: 14px;
 }
 
-nav h3 {
+header h3 {
     display: flex;
     margin: auto;
     color: white;
 }
 
-nav ul a{
+header ul a{
     display: flex;
     align-items: center;
     text-decoration: none;
     color: #FFFFFf;
 }
 
-nav ul li {
+header ul li {
     list-style: none;
 }
 
@@ -62,12 +63,12 @@ nav ul li {
     margin-right: 8px;
 }
 
-nav form {
+header form {
     margin: auto;
     margin-right: 50px;
 }
 
-nav .langu-menu {
+header .langu-menu {
     margin: auto;
     margin-left: 20px;
     color: white;
