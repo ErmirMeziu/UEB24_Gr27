@@ -779,6 +779,7 @@ html {
     height: 100%;
     border-radius: 5px;
     transition: .5s ease-in-out;
+    float: left;
 }
 
 .card1:hover img{
