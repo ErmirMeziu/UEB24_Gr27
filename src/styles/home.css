@@ -179,6 +179,7 @@ input, button {
 
 .app-container .left .download img {
     margin: auto;
+    float: right;
 }
 
 .app-container .left .download {
