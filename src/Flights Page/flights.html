@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoTrip - Tour & Travel Booking</title>
+  <link rel="icon" href="../images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../styles/navbar.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="../styles/home.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+  <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c2f2fe035b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../styles/hotels.css">
+  <script src="../script/login-register.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="../styles/hotel-child.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="stylesheet" href="../styles/login-register.css">
+  <link rel="stylesheet" href="../styles/styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo"><img src="../images/navbar-photos/uebLogo.webp" alt="ueb-logo"></div>
+        <ul>
+          <li><a href="../index.html"><i class="fa-solid fa-house icon"></i>Home</a>
+          </li>
+          <li><a href="../Hotel Page/hotels.html"><i class="fa-solid fa-hotel icon"></i>Hotels</a></li>
+          <li><a href="#Flights" style="color: rgb(215, 44, 33);><i class="fa-solid fa-jet-fighter icon"></i>Flights</a></li>
+          <li><a href="../Cars-Page/cars.html"><i class="fa-solid fa-car icon"></i>Cars</a></li>
+          <li><a href="#AboutUs"><i class="fa-solid fa-circle-info icon"></i>About Us</a></li>
+        </ul>
+        <div class="login-register">
+            <button id="sign-in">Sign in/Sign up</button>
+        </div>
+    </header>
+      <section class="login-all">
+        <div class="login">
+            <div class="login-head">
+                <h4>Sign in</h4>
+                <p class="iks"><i class="fa-solid fa-square-xmark fa-xl" style="color: #adb5bd;"></i></p>
+            </div>
+            <div class="login-form">
+                <div class="login-input">
+                    <form action="" method="post">
+                        <div><input class="login-change" type="email" id="login-email" placeholder="Enter your email" required></div>
+                        <div style="position: relative;">
+                            <input class="login-change" type="password" id="login-password" placeholder="Enter your password" required>
+                            <i class="fa fa-eye-slash toggle-password1" aria-hidden="true"></i>
+                        </div>
+    
+                        <div style="position: relative; margin-bottom: -20px;">
+                            <button id="login-submit" style="width: 100%;">Log In</button>
+                            <p id = "message1" style="position: absolute; top: -23px; left: 50%; transform: translateX(-50%); font-size: 13px;"></p>
+                        </div>
+    
+                        <div class="check">
+                            <div class="remember">
+                                <input type="checkbox" name="remember-me" id="remember-me">
+                                <label for="remember-me" style="cursor: pointer;">Remember me</label>
+                            </div>
+                            <div><a href="">Forgot password?</a></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="divider">
+                    <p style="font-weight: 300; font-size: 14px; margin-top: -10px; margin-bottom: 10px;">-------------
+                        <i>Sign In With More Methods</i> -------------</p>
+                </div>
+                <div class="socials">
+                    <div class="social"><i class="fa-brands fa-facebook" style="color: #0033ff;"></i></div>
+                    <div class="social"><i class="fa-brands fa-whatsapp" style="color: #1bde32;"></i></div>
+                    <div class="social"><i class="fa-brands fa-linkedin icon" style="color: #0033ff;"></i></div>
+                    <div class="social"><i class="fa-brands fa-square-x-twitter icon" style="color: #002f80;"></i></div>
+                </div>
+            </div>
+            <div class="login-end">
+                <p>Don't have an account yet? <span class="sregister">Sign up</span></p>
+            </div>
+        </div>
+       </section>
+       <section class="section__container header__container">
+        <h1 class="section__header">Find And Book<br />A Great Experience</h1>
+        <img src="../images/assets/header.jpg" alt="header" />
+      </section>
+
+    <section class="section__container booking__container">
+      <div class="booking__nav">
+        <span>Economy Class</span>
+        <span>Business Class</span>
+        <span>First Class</span>
+      </div>
+      <form>
+        <div class="form__group">
+          <span><i class="ri-map-pin-line"></i></span>
+          <div class="input__content">
+            <div class="input__group">
+              <input type="text" />
+              <label>Location</label>
+            </div>
+            <p>Where are you planning on going?</p>
+          </div>
+        </div>
+        <div class="form__group">
+          <span><i class="ri-user-3-line"></i></span>
+          <div class="input__content">
+            <div class="input__group">
+              <input type="number" />
+              <label>Travellers</label>
+            </div>
+            <p>Add guests</p>
+          </div>
+        </div>
+        <div class="form__group">
+            <span><i class="ri-calendar-line"></i></span>
+            <div class="input__content">
+              <div class="input__group">
+                
+                <fieldset>
+                    <legend>Departure</legend>
+                    <input type="date" name="date" id="date" class="same" min="2025-01-01">
+                </fieldset>
+              </div>
+              <p>Add date</p>
+            </div>
+          </div>
+          
+          <div class="form__group">
+            <span><i class="ri-calendar-line"></i></span>
+            <div class="input__content">
+              <div class="input__group">
+                <fieldset>
+                    <legend>Return</legend>
+                    <input type="date" name="date" id="date" class="same" min="2025-01-01">
+                </fieldset>
+              </div>
+              <p>Add date</p>
+            </div>
+          </div>
+          
+          <button class="btn"><i class="ri-search-line"></i></button>
+         
+        </script>          
+      </form>
+    </section>
+
+    <section class="section__container plan__container">
+      <p class="subheader">TRAVEL SUPPORT</p>
+      <h2 class="section__header">Plan your travel with confidence</h2>
+      <p class="description">
+        Find help with your bookings and travel plans, and seee what to expect
+        along your journey.
+      </p>
+      <div class="plan__grid">
+        <div class="plan__content">
+          <span class="number">01</span>
+          <h4>Travel Requirements for Dubai</h4>
+          <p>
+            Stay informed and prepared for your trip to Dubai with essential
+            travel requirements, ensuring a smooth and hassle-free experience in
+            this vibrant and captivating city.
+          </p>
+          <span class="number">02</span>
+          <h4>Multi-risk travel insurance</h4>
+          <p>
+            Comprehensive protection for your peace of mind, covering a range of
+            potential travel risks and unexpected situations.
+          </p>
+          <span class="number">03</span>
+          <h4>Travel Requirements by destinations</h4>
+          <p>
+            Stay informed and plan your trip with ease, as we provide up-to-date
+            information on travel requirements specific to your desired
+            destinations.
+          </p>
+        </div>
+        <div class="plan__image">
+          <img src="../images/assets/plan-1.jpg" alt="plan" />
+          <img src="../images/assets/plan-2.jpg" alt="plan" />
+          <img src="../images/assets/plan-3.jpg" alt="plan" />
+        </div>
+      </div>
+    </section>
+
+    <section class="memories">
+      <div class="section__container memories__container">
+        <div class="memories__header">
+          <h2 class="section__header">
+            Travel to make memories all around the world
+          </h2>
+          <button class="view__all">View All</button>
+        </div>
+        <div class="memories__grid">
+          <div class="memories__card">
+            <span><i class="ri-calendar-2-line"></i></span>
+            <h4>Book & relax</h4>
+            <p>
+              With "Book and Relax," you can sit back, unwind, and enjoy the
+              journey while we take care of everything else.
+            </p>
+          </div>
+          <div class="memories__card">
+            <span><i class="ri-shield-check-line"></i></span>
+            <h4>Smart Checklist</h4>
+            <p>
+              Introducing Smart Checklist with us, the innovative solution
+              revolutionizing the way you travel with our airline.
+            </p>
+          </div>
+          <div class="memories__card">
+            <span><i class="ri-bookmark-2-line"></i></span>
+            <h4>Save More</h4>
+            <p>
+              From discounted ticket prices to exclusive promotions and deals,
+              we prioritize affordability without compromising on quality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container lounge__container">
+      <div class="lounge__image">
+        <img src="../images/assets/lounge-1.jpg" alt="lounge" />
+        <img src="../images/assets/lounge-2.jpg" alt="lounge" />
+      </div>
+      <div class="lounge__content">
+        <h2 class="section__header">Unaccompanied Minor Lounge</h2>
+        <div class="lounge__grid">
+          <div class="lounge__details">
+            <h4>Experience Tranquility</h4>
+            <p>
+              Serenity Haven offers a tranquil escape, featuring comfortable
+              seating, calming ambiance, and attentive service.
+            </p>
+          </div>
+          <div class="lounge__details">
+            <h4>Elevate Your Experience</h4>
+            <p>
+              Designed for discerning travelers, this exclusive lounge offers
+              premium amenities, assistance, and private workspaces.
+            </p>
+          </div>
+          <div class="lounge__details">
+            <h4>A Welcoming Space</h4>
+            <p>
+              Creating a family-friendly atmosphere, The Family Zone is the
+              perfect haven for parents and children.
+            </p>
+          </div>
+          <div class="lounge__details">
+            <h4>A Culinary Delight</h4>
+            <p>
+              Immerse yourself in a world of flavors, offering international
+              cuisines, gourmet dishes, and carefully curated beverages.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container travellers__container">
+      <h2 class="section__header">Travellers of the month</h2>
+      <div class="travellers__grid">
+        <div class="travellers__card">
+          <img src="../images/assets/traveller-1.jpg" alt="traveller" />
+          <div class="travellers__card__content">
+            <img src="../images/assets/client-1.jpg" alt="client" />
+            <h4>Emily Johnson</h4>
+            <p>Dubai</p>
+          </div>
+        </div>
+        <div class="travellers__card">
+          <img src="../images/assets/traveller-2.jpg" alt="traveller" />
+          <div class="travellers__card__content">
+            <img src="../images/assets/client-2.jpg" alt="client" />
+            <h4>David Smith</h4>
+            <p>Paris</p>
+          </div>
+        </div>
+        <div class="travellers__card">
+          <img src="../images/assets/traveller-3.jpg" alt="traveller" />
+          <div class="travellers__card__content">
+            <img src="../images/assets/client-3.jpg" alt="client" />
+            <h4>Olivia Brown</h4>
+            <p>Singapore</p>
+          </div>
+        </div>
+        <div class="travellers__card">
+          <img src="../images/assets/traveller-4.jpg" alt="traveller" />
+          <div class="travellers__card__content">
+            <img src="../images/assets/client-4.jpg" alt="client" />
+            <h4>Daniel Taylor</h4>
+            <p>Malaysia</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe">
+      <div class="section__container subscribe__container">
+        <h2 class="section__header">Subscribe newsletter & get latest news</h2>
+        <form class="subscribe__form">
+          <input type="text" placeholder="Enter your email here" />
+          <button class="btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <footer style="margin-top: 150px;">
+      <div class="footer-container">
+          <div class="footer-section">
+              <img src="../images/footer-photos/logo.webp" alt="">
+              <p>We make your dream more beautiful & enjoyable with lots of happiness.</p>
+              <div class="social-links">
+                  <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                  <a href=""><i class='bx bxl-linkedin-square'></i></i></a>
+                  <a href=""><i class='bx bxl-github'></i></a>
+                  <a href=""><i class='bx bxl-twitter'></i></a>
+              </div>
+          </div>
+          <div class="footer-section">
+              <h3>The Navigation</h3>
+              <ul>
+                  <li><a href="#">Talent Marketplace</a></li>
+                  <li><a href="#">Payroll Services</a></li>
+                  <li><a href="#">Direct Contracts</a></li>
+                  <li><a href="#">Hire Worldwide</a></li>
+                  <li><a href="#">Hire in the USA</a></li>
+                  <li><a href="#">How to Hire</a></li>
+              </ul>
+          </div>
+          <div class="footer-section">
+              <h3>Our Resources</h3>
+              <ul>
+                  <li><a href="#">Free Business Tools</a></li>
+                  <li><a href="#">Affiliate Program</a></li>
+                  <li><a href="#">Success Stories</a></li>
+                  <li><a href="#">Upwork Reviews</a></li>
+                  <li><a href="#">Help & Support</a></li>
+              </ul>
+          </div>
+          <div class="footer-section">
+              <h3>The Company</h3>
+              <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Leadership</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Investor Relations</a></li>
+                  <li><a href="#">Trust, Safety & Security</a></li>
+              </ul>
+          </div>
+          <div class="footer-section">
+              <h3>Payment Methods</h3>
+              <div class="paymentmethods">
+                  <img src="../images/footer-photos/payment.webp" alt="">
+              </div>
+              <h3>Our Partners</h3>
+              <div class="ourpartners">
+                  <div class="partner1">
+                      <a><img src="../images/footer-photos/mytrip.webp" alt=""></a>
+                  </div>
+                  <div class="partner1">
+                      <a><img src="../images/footer-photos/tripadv.webp" alt=""></a>
+                  </div>
+                  <div class="partner1">
+                      <a><img src="../images/footer-photos/goibibo.webp" alt=""></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+          <div class="copy"> &copy; <u>2024 GeoTrip. Design by GeoTrip </u></div>
+          <div class="Terms">
+              <a href="#">Terms of Service</a><a href="#">Privacy
+                  Policy</a><a href="#">Cookies</a>
+          </div>
+      </div>
+  </footer>
+  </body>
+</html>
