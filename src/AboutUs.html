@@ -23,27 +23,27 @@
         <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/c2f2fe035b.js" crossorigin="anonymous"></script>
-    <script src="script/script.js" defer></script>
+    <script src="script/login-register.js" defer></script>
+    <script src="script/aboutus.js" defer></script>
+
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="logo"><img src="images/navbar-photos/uebLogo.webp" alt="ueb-logo"></div>
-            <ul>
-                <li><a href="index.html"><i class="fa-solid fa-house icon"></i>Home</a></li>
-                <li><a href="Hotel Page/hotels.html"><i class="fa-solid fa-hotel icon"></i>Hotels</a></li>
-                <li><a href="#Flights"><i class="fa-solid fa-jet-fighter icon"></i>Flights</a></li>
-                <li><a href="cars.html"><i class="fa-solid fa-car icon"></i>Cars</a></li>
-                <li><a href="AboutUs.html" style="color: rgb(215, 44, 33);"><i class="fa-solid fa-circle-info icon"></i>About Us</a></li>
-            </ul>
-            <div class="login-register">
-                <button id="sign-in">Sign in/Sign up</button>
-            </div>
-            <div class="contact-form-container" id="contact-form">
-                <button id="contact-btn">Contact Us</button>
-            </div>
-        </nav>
+        <div class="logo"><img src="images/navbar-photos/uebLogo.webp" alt="ueb-logo"></div>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house icon"></i>Home</a>
+            </li>
+            <li><a href="Hotel Page/hotels.html"><i class="fa-solid fa-hotel icon"></i>Hotels</a></li>
+            <li><a href="Flights Page/flights.html"><i class="fa-solid fa-jet-fighter icon"></i>Flights</a></li>
+            <li><a href="Cars-Page/cars.html"><i
+                        class="fa-solid fa-car icon"></i>Cars</a></li>
+            <li><a href="AboutUs.html"  style="color: rgb(215, 44, 33);"><i class="fa-solid fa-circle-info icon"></i>About Us</a></li>
+        </ul>
+        <div class="login-register">
+
+            <button id="sign-in">Sign in/Sign up</button>
+        </div>
     </header>
 
     <section class="about-us">
@@ -56,6 +56,8 @@
 
     <section class="about-section" id="About-GeoTrip">
         <div class="about-container">
+            <i class="fa-solid fa-list list"></i>
+
             <h1>About GeoTrip</h1>
             <h2>(we love to help you travel)</h2>
             <h3>OUR MISSION</h3>
@@ -82,8 +84,6 @@
         <a href="#Discount">Special Discount</a>
     </div>
 </div>
-
-
 
     <section class="about-us-body" id="Travel">
 
@@ -200,23 +200,30 @@
             </div>
         </div>
     </section>
-    
-  
-    <section id="Discount">
-        <div class="home1">
-            <h4>Subscribe & Get </h4>
-            <h4> Our Weekly Travel Ideas
-                and a Special discount from GeoTrip.com </h4>
-            <div class="home-search1">
-                <div class="input1">
-                    <input type="email" placeholder="Enter your email">
-                </div>
-                <div class="button1">
-                    <input type="submit" value="Submit ">
-                </div>
-            </div>
-        </div>
-    </section>
+
+    <!-- Contact Form Modal -->
+    <div class="contact-form-content">
+        <span class="close-form" id="close-contact-form">&times;</span>
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to get in touch with us, feel free to send us a message:</p>
+        <form action="mailto:info@geotrip.com" method="post" enctype="text/plain">
+            <label for="user-name-field">Your Name:</label>
+            <input type="text" id="user-name-field" name="user-name" required>
+
+            <label for="user-email-field">Your Email:</label>
+            <input type="email" id="user-email-field" name="user-email" required>
+
+            <label for="user-message-field">Your Message:</label>
+            <textarea id="user-message-field" name="user-message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+ 
+
+ <script>
+   
+</script> 
 
     <footer>
         <div class="footer-container">
@@ -229,14 +236,6 @@
                     <a href=""><i class='bx bxl-github'></i></a>
                     <a href=""><i class='bx bxl-twitter'></i></a>
                 </div>
-                <div class="address">
-                <address>
-                    GeoTrip Inc.<br>
-                    123 Main Street, Denver, CO 80014<br>
-                    Email: <a href="mailto:info@geotrip.com">info@geotrip.com</a><br>
-                    Phone: +1-800-555-5555
-                </address>
-            </div>
             </div>
             <div class="footer-section">
                 <h3>The Navigation</h3>
@@ -290,133 +289,97 @@
         </div>
         <hr>
         <div class="footer-bottom">
-            <div class="copy"> &copy; 2023 GeoTrip. Design by GeoTrip</div>
+            <div class="copy"> &copy; <u>2024 GeoTrip. Design by GeoTrip </u></div>
             <div class="Terms">
                 <a href="#">Terms of Service</a><a href="#">Privacy
                     Policy</a><a href="#">Cookies</a>
             </div>
         </div>
     </footer>
-    <!-- <a class="gotopbtn" href="#"><i class="fas fa-arrow-up "></i></a> -->
 
-</section>
-
-<section class="login">
-    <div class="login-head">
-        <h4>Sign in</h4>
-        <p class="iks"><i class="fa-solid fa-square-xmark fa-xl" style="color: #adb5bd;"></i></p>
-    </div>
-    <div class="login-form">
-        <div class="login-input">
+<section class="all">
+    <section class="login-all">
+        <div class="login">
+            <div class="login-head">
+                <h4>Sign in</h4>
+                <p class="iks"><i class="fa-solid fa-square-xmark fa-xl" style="color: #adb5bd;"></i></p>
+            </div>
+            <div class="login-form">
+                <div class="login-input">
+                    <form action="" method="post">
+                        <div><input class="login-change" type="email" id="login-email" placeholder="Enter your email" required></div>
+                        <div style="position: relative;">
+                            <input class="login-change" type="password" id="login-password" placeholder="Enter your password" required>
+                            <i class="fa fa-eye-slash toggle-password1" aria-hidden="true"></i>
+                        </div>
+    
+                        <div style="position: relative; margin-bottom: -20px;">
+                            <button id="login-submit" style="width: 100%;">Log In</button>
+                            <p id = "message1" style="position: absolute; top: -23px; left: 50%; transform: translateX(-50%); font-size: 13px;"></p>
+                        </div>
+    
+                        <div class="check">
+                            <div class="remember">
+                                <input type="checkbox" name="remember-me" id="remember-me">
+                                <label for="remember-me" style="cursor: pointer;">Remember me</label>
+                            </div>
+                            <div><a href="">Forgot password?</a></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="divider">
+                    <p style="font-weight: 300; font-size: 14px; margin-top: -10px; margin-bottom: 10px;">-------------
+                        <i>Sign In With More Methods</i> -------------</p>
+                </div>
+                <div class="socials">
+                    <div class="social"><i class="fa-brands fa-facebook" style="color: #0033ff;"></i></div>
+                    <div class="social"><i class="fa-brands fa-whatsapp" style="color: #1bde32;"></i></div>
+                    <div class="social"><i class="fa-brands fa-linkedin icon" style="color: #0033ff;"></i></div>
+                    <div class="social"><i class="fa-brands fa-square-x-twitter icon" style="color: #002f80;"></i></div>
+                </div>
+            </div>
+            <div class="login-end">
+                <p>Don't have an account yet? <span class="sregister">Sign up</span></p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="register">
+        <div class="register-head">
+            <h4>Sign up</h4>
+            <p class="iks1"><i class="fa-solid fa-square-xmark fa-xl" style="color: #adb5bd;"></i></p>
+        </div>
+        <div class="register-form">
             <form action="" method="post">
-                <div><input class="login-change" type="email" id="login-email" placeholder="Enter your email"
-                        required></div>
-                <div><input class="login-change" type="password" id="login-password"
-                        placeholder="Enter your password" required></div>
-                <button>Log In</button>
-                <div class="check">
-                    <div class="remember">
-                        <input type="checkbox" name="remember-me" id="remember-me">
-                        <label for="remember-me" style="cursor: pointer;">Remember me</label>
-                    </div>
-                    <div><a href="">Forgot password?</a></div>
+                <div class="name-surname">
+                    <input class="login-change" type="text" id="register-name" placeholder="Enter your name" required>
+                    <input class="login-change" type="text" id="register-surname" placeholder="Enter your surname" required>
+                </div>
+                <div>
+                    <input class="login-change" type="email" id="register-email" placeholder="Enter your email" required>
+                </div>
+                <div style="position: relative;">
+                    <input class="login-change" type="password" id="register-password" placeholder="Enter your password" required>
+                    <i class="fa fa-eye-slash toggle-password2" aria-hidden="true" style="right: 30px;"></i>
+                </div>
+                <div style="position: relative;">
+                    <input class="login-change" type="password" id="confirm-password" placeholder="Confirm your password" required>
+                    <i class="fa fa-eye-slash toggle-password3" aria-hidden="true" style="right: 30px;"></i>
+                </div>
+                <div style="position: relative;">
+                    <input type="submit" style="width: 434px; margin: auto;" value="Sign up" id="register-submit"><br>
+                    <span id="message" style="position:absolute;font-size: 13px; top: -25px; width: 434px; transform: translateX(-50%);"></span>
                 </div>
             </form>
         </div>
-        <div class="divider">
-            <p style="font-weight: 300; font-size: 14px;">------------Sign In With More Methods------------</p>
+        <div class="register-end">
+            <p>You have an account? <span class="signbutton">Sign in</span></p>
         </div>
-        <div class="socials">
-            <div class="social"><i class="fa-brands fa-facebook" style="color: #0033ff;"></i></div>
-            <div class="social"><i class="fa-brands fa-whatsapp" style="color: #1bde32;"></i></div>
-            <div class="social"><i class="fa-brands fa-linkedin icon" style="color: #0033ff;"></i></i></div>
-            <div class="social"><i class="fa-brands fa-square-x-twitter" style="color: #002f80;"></i></div>
-        </div>
-    </div>
-    <div class="login-end">
-        <p>Don't have an account yet? <span class="sregister">Sign up</span></p>
-    </div>
-</section>
-<section class="register">
-    <div class="register-head">
-        <h4>Sign up</h4>
-        <p class="iks1"><i class="fa-solid fa-square-xmark fa-xl" style="color: #adb5bd;"></i></p>
-    </div>
-    <div class="register-form">
-        <form action="" method="post">
-            <div class="name-surname">
-                <input class="login-change" type="text" id="register-name" placeholder="Enter your name" required>
-                <input class="login-change" type="text" id="register-surname" placeholder="Enter your surname"
-                    required>
-            </div>
-            <div><input class="login-change" type="email" id="register-email" placeholder="Enter your email"
-                    required></div>
-            <div><input class="login-change" type="password" id="register-password"
-                    placeholder="Enter your password" required></div>
-            <div><input class="login-change" type="password" id="registerc-password"
-                    placeholder="Confirm your password" required></div>
-            <button style="width: 434px; margin: auto;">Sign up</button>
-        </form>
-    </div>
-    <div class="register-end">
-        <p>You have an account? <span class="signbutton">Sign in</span></p>
-    </div>
-</section>
+    </section>
 
-   <!-- Contact Form Modal -->
-   <div class="contact-form-modal" id="contact-form-modal">
-    <div class="contact-form-content">
-        <span class="close-form" id="close-contact-form">&times;</span>
-        <h2>Contact Us</h2>
-        <p>If you have any questions or would like to get in touch with us, feel free to send us a message:</p>
-        <form action="mailto:info@geotrip.com" method="post" enctype="text/plain">
-            <label for="user-name-field">Your Name:</label>
-            <input type="text" id="user-name-field" name="user-name" required>
+   
 
-            <label for="user-email-field">Your Email:</label>
-            <input type="email" id="user-email-field" name="user-email" required>
 
-            <label for="user-message-field">Your Message:</label>
-            <textarea id="user-message-field" name="user-message" rows="4" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-</div>
-
-<script>
-    // Get the elements
-    const contactBtn = document.getElementById('contact-btn');
-    const contactFormModal = document.getElementById('contact-form-modal');
-    const closeContactForm = document.getElementById('close-contact-form');
-
-    // Show the contact form when "Contact Us" button is clicked
-    contactBtn.addEventListener('click', function() {
-        contactFormModal.style.display = 'block';
-    });
-
-    // Close the contact form when the close button (×) is clicked
-    closeContactForm.addEventListener('click', function() {
-        contactFormModal.style.display = 'none';
-    });
-
-    // Close the contact form if the user clicks outside the modal
-    window.addEventListener('click', function(event) {
-        if (event.target === contactFormModal) {
-            contactFormModal.style.display = 'none';
-        }
-    });
-</script>
-
-</body>
-
-</html>
-
-  
-    <footer>
-        <p>&copy; 2025 GeoTrip. All Rights Reserved.</p>
-    </footer>
-</section>
 </body>
 
 </html>
