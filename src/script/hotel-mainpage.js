@@ -13,7 +13,7 @@ class PriceFilter {
             this.submitButton.addEventListener('click', () => this.filterHotels());
         } else {
             console.error("One or more elements not found in the DOM.");
-        }
+        }   
     }
 
     filterHotels() {

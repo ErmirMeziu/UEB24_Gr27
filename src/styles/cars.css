@@ -107,6 +107,8 @@ input, button {
     gap: 2%;
 }
 
+
+
 .sales {
     display: flex;
     border: 1px solid gainsboro;
@@ -120,6 +122,7 @@ input, button {
     height: 80px;
     margin: 10px;
     border-radius: 4px;
+    
 }
 
 .offpercent {

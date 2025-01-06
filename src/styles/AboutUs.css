@@ -438,5 +438,59 @@ header {
 
   p {
     font-family: 'Poppins';
-    font-size: 13px;
   }
+
+
+  .button-show {
+    visibility: visible !important;
+    font-family: 'Poppins';
+  }
+
+  .show-hide {
+    display: none;
+  }
+
+  .show-hide-special {
+    display: block;
+  }
+
+  /*go to top*/
+html {
+    scroll-behavior: smooth;
+}
+.gotopbtn {
+    display: flex;
+    visibility: hidden;
+    position: fixed;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    background: rgb(196, 41, 29);
+    bottom: 40px;
+    right: 24px;
+    border-radius: 10%;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    transition: opacity .5s ease, visibility .5s ease, brightness .5s ease ;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+.gotopbtn:hover {
+    filter: brightness(0.9);
+}
+
+.gotopbtn:active {
+    filter: brightness(0.8);
+}
+
+.gotopbtn-special {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
