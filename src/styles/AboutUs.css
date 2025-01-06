@@ -455,8 +455,8 @@ header {
   }
 
   /*go to top*/
-  html {
-    scroll-behavior: smooth;
+  html{
+  scroll-behavior: smooth;
 }
 .gotopbtn {
     display: flex;
@@ -487,8 +487,3 @@ header {
 
 
 
-.gotopbtn-special {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 1s ease;
-}

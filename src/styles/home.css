@@ -611,19 +611,35 @@ input, button {
     margin: auto;
     margin-top: 30px;
     margin-bottom: 70px;
-
 }
 
-.international-routes .all-flights ul {
-    font-family: 'Poppins';
+.international-routes .all-flights table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.international-routes .all-flights th,
+.international-routes .all-flights td {
+    font-family: 'Poppins', sans-serif;
     color: #455873;
     font-size: 12px;
     font-weight: 400;
-    display: grid;
-    list-style: none;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin-top: 20px;
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.international-routes .all-flights th {
+    background-color: #f4f4f4;
     letter-spacing: -0.2px;
+}
+
+.international-routes .all-flights tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.international-routes .all-flights tr:hover {
+    background-color: #e0e0e0;
     cursor: pointer;
 }
 
