@@ -120,12 +120,12 @@ fieldset input{
 .bed .button-part{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    width: 500px !important;
 }
 
-.button-part button{
-    height: 30px;
-    width: auto;
+.button-part td{
+    height: 40px;
+    width: 400px !important;
     border-radius: 5px;
     background-color: rgb(243,246,251);
     border: none;
@@ -133,9 +133,10 @@ fieldset input{
     font-weight: 600;
     color: rgb(121,131,141);
     cursor: pointer;
+    text-align: center;
 }
 
-.button-part button:hover{
+.button-part td:hover{
     background-color: rgb(205,44,34);
     color: white;
     transition: 1s ease;

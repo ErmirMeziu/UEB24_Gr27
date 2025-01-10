@@ -7,23 +7,50 @@ list.addEventListener('click', function(){
 });
 
  // Get the elements
- const contactBtn = document.getElementById('contact-btn');
- const contactFormModal = document.getElementById('contact-form-modal');
- const closeContactForm = document.getElementById('close-contact-form');
+ const contactBtn = document.querySelector('.button-show');
+ const show_hide = document.querySelector('.show-hide');
+ const closeContactForm = document.querySelector('.close-form');
 
- // Show the contact form when "Contact Us" button is clicked
+//toggle show-hide
  contactBtn.addEventListener('click', function() {
-     contactFormModal.style.display = 'block';
+    show_hide.classList.add('show-hide-special');
+    show_hide.scrollIntoView({ behavior: 'smooth', block: 'start' });
  });
 
- // Close the contact form when the close button (×) is clicked
- closeContactForm.addEventListener('click', function() {
-     contactFormModal.style.display = 'none';
- });
+ closeContactForm.addEventListener('click', function(){
+    show_hide.classList.remove('show-hide-special');
+ })
 
- // Close the contact form if the user clicks outside the modal
- window.addEventListener('click', function(event) {
-     if (event.target === contactFormModal) {
-         contactFormModal.style.display = 'none';
-     }
- });
+
+/*go to top */
+$(document).ready(function () {
+   const $goTopBtn = $('.gotopbtn');
+
+   // Kontrollo lëvizjen në scroll
+   $(window).scroll(function () {
+       if ($(window).scrollTop() > 500) {
+           $goTopBtn.stop().css('visibility', 'visible').animate({ opacity: 1 }, 300); 
+       } else {
+           $goTopBtn.stop().animate({ opacity: 0 }, 300, function () {
+               $(this).css('visibility', 'hidden');
+           });
+       }
+   });
+
+   $goTopBtn.click(function () {
+       $('html, body').animate({ scrollTop: 0 }, 800); 
+   });
+});
+
+
+//Audio
+const audio = document.getElementById("audio");
+const audioIcon = document.getElementById("audio-icon");
+
+audioIcon.addEventListener("click", function() {
+    audio.play();
+});
+
+
+
+

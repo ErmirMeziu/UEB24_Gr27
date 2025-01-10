@@ -4,15 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - GeoTrip</title>
+    <title>GeoTrip - Tour & Travel Booking</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/login-register.css">
-    <link rel="stylesheet" href="styles/styles.css">
-
-
-    <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/AboutUs.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,11 +17,13 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
 
     <script src="https://kit.fontawesome.com/c2f2fe035b.js" crossorigin="anonymous"></script>
     <script src="script/login-register.js" defer></script>
     <script src="script/aboutus.js" defer></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -45,9 +44,16 @@
         </div>
     </header>
 
-    <section class="about-us">
+    <abbr title="Go up button">
+        <a href="#About-GeoTrip" class="gotopbtn">
+            <i class="fa-solid fa-arrow-up fa-sm"></i>
+        </a>
+    </abbr>
+    
+
+    <section class="about-us" >
         <div class="videocontainer">
-            <video autoplay muted loop id="myVideo">
+            <video autoplay muted loop id="myVideo" >
                 <source src="//s202.q4cdn.com/757635260/files/videos/home-bg-final.mp4" type="video/mp4">
             </video>
         </div>
@@ -57,8 +63,9 @@
         <div class="about-container">
             <i class="fa-solid fa-list list"></i>
 
-            <h1>About GeoTrip</h1>
-            <h2>(we love to help you travel)</h2>
+            <h1>About GeoTrip </h1>
+            <h2>(we love to help you travel) <i class="fa-solid fa-volume-high audio-icon" id="audio-icon"></i></h2>
+            <audio id="audio" src="../src/Video/Audio1.mp3" preload="auto"></audio>
             <h3>OUR MISSION</h3>
             <p>
                 GeoTrip is a SaaS-based web solution focused on simplifying travel discovery, planning, and booking processes for personal and business travelers, particularly those seeking local and unique experiences. GeoTrip organizes travel in one place in the cloud, making it instantly searchable and available wherever the user goes.
@@ -76,11 +83,11 @@
     
    <!-- Sidebar -->
    <div class="page-container">
-    <div class="sidebar">
+    <div class="sidebar" >
         <a href="#About-GeoTrip">About GeoTrip</a>
         <a href="#Travel">Travel</a>
         <a href="#News">News</a>
-        <a href="#Discount">Special Discount</a>
+        <a href="#Message">Message</a>
     </div>
 </div>
 
@@ -130,7 +137,7 @@
 
         <div class="button-container">
             <a href="index.html" class="button">Create New Trip</a>
-            <a href="cars.html" class="button">Explore Destinations</a>
+            <a href="Hotel Page/hotels.html" class="button">Explore Destinations</a>
             
           </div>
 
@@ -201,28 +208,23 @@
     </section>
 
     <!-- Contact Form Modal -->
-    <div class="contact-form-content">
-        <span class="close-form" id="close-contact-form">&times;</span>
-        <h2>Contact Us</h2>
-        <p>If you have any questions or would like to get in touch with us, feel free to send us a message:</p>
-        <form action="mailto:info@geotrip.com" method="post" enctype="text/plain">
-            <label for="user-name-field">Your Name:</label>
-            <input type="text" id="user-name-field" name="user-name" required>
+    <address class="contact-form-content" >
+        <div class="show-hide">
+            <span class="close-form" id="close-contact-form">&times;</span>
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to get in touch with us, feel free to send us a message:</p>
+            <form action="mailto:info@geotrip.com" method="post" enctype="text/plain">
+                <label for="user-name-field">Your Name:</label>
+                <input type="text" id="user-name-field" name="user-name" required>
+                <label for="user-email-field">Your Email:</label>
+                <input type="email" id="user-email-field" name="user-email" required>
+                <label for="user-message-field">Your Message:</label>
+                <textarea id="user-message-field" name="user-message" rows="4" required></textarea>
+        </div>
 
-            <label for="user-email-field">Your Email:</label>
-            <input type="email" id="user-email-field" name="user-email" required>
-
-            <label for="user-message-field">Your Message:</label>
-            <textarea id="user-message-field" name="user-message" rows="4" required></textarea>
-
-            <button type="submit">Send Message</button>
+            <button type="submit" class="button-show" id = "Message">Send Message</button>
         </form>
-    </div>
- 
-
- <script>
-   
-</script> 
+    </address>
 
     <footer>
         <div class="footer-container">

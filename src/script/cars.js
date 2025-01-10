@@ -37,46 +37,36 @@ new ViewMoreToggle('.mimshef', '.view-more', '.goTop');
 
 
 /*slider*/
-const sliders = document.querySelectorAll('.slider');
-let intervalId = null;
+$(document).ready(function() {
+    $('.slider').each(function() {
+        const $slider = $(this);
+        const $slides = $slider.find('.slide');
+        let slideIndex = 0;
 
-function initializeSlider(sliderIndex) {
-    const slides = sliders[sliderIndex].querySelectorAll('.slide');
-    let slideIndex = 0;
+        function showSlide() {
+            $slides.hide();
+            $slides.eq(slideIndex).show();
+        }
 
-    function showSlide() {
-        slides.forEach(slide => {
-            slide.style.display = 'none';
-        });
-        slides[slideIndex].style.display = 'block';
-    }
+        function nextSlide() {
+            slideIndex++;
+            if (slideIndex >= $slides.length) slideIndex = 0;
+            showSlide();
+        }
 
-    function nextSlide() {
-        slideIndex++;
-        if (slideIndex >= slides.length) slideIndex = 0;
+        function prevSlide() {
+            slideIndex--;
+            if (slideIndex < 0) slideIndex = $slides.length - 1;
+            showSlide();
+        }
+
+        $slider.find('.next').on('click', nextSlide);
+        $slider.find('.prev').on('click', prevSlide);
+
         showSlide();
-    }
-
-    function prevSlide() {
-        slideIndex--;
-        if (slideIndex < 0) slideIndex = slides.length - 1;
-        showSlide();
-    }
-
-    sliders[sliderIndex].querySelector('.next').addEventListener('click', function() {
-        nextSlide();
     });
-
-    sliders[sliderIndex].querySelector('.prev').addEventListener('click', function() {
-        prevSlide();
-    });
-
-    showSlide();
-}
-
-sliders.forEach((slider, index) => {
-    initializeSlider(index);
 });
+
 
 ///Fade
 $(document).ready(function() {
